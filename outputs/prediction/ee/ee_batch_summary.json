@@ -1,0 +1,204 @@
+{
+  "task": "ee_full_integrated_fight_stalking_enhanced",
+  "description": "fight/stalking 강화 + sidewalk riding/no helmet/electric kickboard/intrusion 전체 label 유지",
+  "video_root": "C:\\Users\\우성한\\Sample (1)\\Sample",
+  "output_root": "C:\\Users\\우성한\\outputs\\prediction\\ee",
+  "total_video_count": 22,
+  "success_count": 1,
+  "failed_count": 21,
+  "settings": {
+    "ANALYZE_FPS": 3.0,
+    "MAX_SECONDS_PER_VIDEO": null,
+    "WINDOW_SEC": 4.0,
+    "WINDOW_STEP_SEC": 2.0,
+    "USE_POSE": true,
+    "USE_YOLO_WORLD": true,
+    "USE_SEGFORMER": true,
+    "DETECT_MODEL_NAME": "yolo11n.pt",
+    "POSE_MODEL_NAME": "yolo11n-pose.pt",
+    "WORLD_MODEL_NAME": "yolov8s-worldv2.pt",
+    "HELMET_MODEL_PATH": null,
+    "KICKBOARD_MODEL_PATH": null,
+    "LABEL_WEIGHTS": {
+      "fight": 1.35,
+      "stalking": 1.18,
+      "sidewalk_riding": 1.12,
+      "no_helmet": 1.18,
+      "electric_kickboard": 1.12,
+      "intrusion": 1.25,
+      "other": 0.0
+    },
+    "LABEL_THRESHOLDS": {
+      "fight": 0.42,
+      "stalking": 0.46,
+      "sidewalk_riding": 0.48,
+      "no_helmet": 0.52,
+      "electric_kickboard": 0.42,
+      "intrusion": 0.52
+    }
+  },
+  "label_ko": {
+    "fight": "싸움",
+    "stalking": "스토킹",
+    "sidewalk_riding": "이륜차 인도 주행",
+    "no_helmet": "헬멧 미착용",
+    "electric_kickboard": "전동 킥보드",
+    "intrusion": "침입",
+    "other": "기타"
+  },
+  "results": [
+    {
+      "video_name": "ms_e3500_c2.mp4",
+      "video_path": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터\\이륜 이동수단 인도 주행\\오토바이 인도 주행\\ms_e3500\\ms_e3500_c2.mp4",
+      "final_label": "other",
+      "final_label_ko": "기타",
+      "final_weighted_score": 0.0,
+      "final_raw_score": 0.0,
+      "fight_score": 0.0,
+      "stalking_score": 0.0,
+      "sidewalk_riding_score": 0.0,
+      "no_helmet_score": 0.0,
+      "electric_kickboard_score": 0.0,
+      "intrusion_score": 0.0,
+      "rider_frame_ratio": 0.0,
+      "sidewalk_ratio": 0.0,
+      "helmet_status": "no_rider",
+      "intrusion_status": "unknown",
+      "person_track_count": 0,
+      "max_persons_in_frame": 0,
+      "pair_count": 0,
+      "best_fight_window": "-",
+      "best_stalking_window": "-",
+      "evidence": "no abnormal label passed gates",
+      "json_path": "C:\\Users\\우성한\\outputs\\prediction\\ee\\details\\ms_e3500_c2_ee_detail.json"
+    }
+  ],
+  "failed": [
+    {
+      "video_name": "lo_e1281_c1.mp4",
+      "video_path": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터\\스토킹\\특정 구역 내 지속 배회\\lo_e1281\\lo_e1281_c1.mp4",
+      "error": "TypeError(\"object of type 'int' has no len()\")",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\4031410386.py\", line 6, in <module>\n    row, detail = process_video(vp)\n                  ^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\2480119832.py\", line 48, in process_video\n    intrusion_res = analyze_intrusion(frames)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\3189872864.py\", line 48, in analyze_intrusion\n    barrier_support = safe_div(barrier_near_events, max(1, sum(len(h) for h in histories)), 0.0)\n                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\3189872864.py\", line 48, in <genexpr>\n    barrier_support = safe_div(barrier_near_events, max(1, sum(len(h) for h in histories)), 0.0)\n                                                               ^^^^^^\nTypeError: object of type 'int' has no len()\n"
+    },
+    {
+      "video_name": "lo_e1281_c2.mp4",
+      "video_path": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터\\스토킹\\특정 구역 내 지속 배회\\lo_e1281\\lo_e1281_c2.mp4",
+      "error": "TypeError(\"object of type 'int' has no len()\")",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\4031410386.py\", line 6, in <module>\n    row, detail = process_video(vp)\n                  ^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\2480119832.py\", line 48, in process_video\n    intrusion_res = analyze_intrusion(frames)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\3189872864.py\", line 48, in analyze_intrusion\n    barrier_support = safe_div(barrier_near_events, max(1, sum(len(h) for h in histories)), 0.0)\n                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\3189872864.py\", line 48, in <genexpr>\n    barrier_support = safe_div(barrier_near_events, max(1, sum(len(h) for h in histories)), 0.0)\n                                                               ^^^^^^\nTypeError: object of type 'int' has no len()\n"
+    },
+    {
+      "video_name": "fp_e1520_c1.mp4",
+      "video_path": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터\\스토킹\\특정 인물을 뒤따라가며 배회\\fp_e1520\\fp_e1520_c1.mp4",
+      "error": "TypeError(\"object of type 'int' has no len()\")",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\4031410386.py\", line 6, in <module>\n    row, detail = process_video(vp)\n                  ^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\2480119832.py\", line 48, in process_video\n    intrusion_res = analyze_intrusion(frames)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\3189872864.py\", line 48, in analyze_intrusion\n    barrier_support = safe_div(barrier_near_events, max(1, sum(len(h) for h in histories)), 0.0)\n                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\3189872864.py\", line 48, in <genexpr>\n    barrier_support = safe_div(barrier_near_events, max(1, sum(len(h) for h in histories)), 0.0)\n                                                               ^^^^^^\nTypeError: object of type 'int' has no len()\n"
+    },
+    {
+      "video_name": "fp_e1520_c2.mp4",
+      "video_path": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터\\스토킹\\특정 인물을 뒤따라가며 배회\\fp_e1520\\fp_e1520_c2.mp4",
+      "error": "TypeError(\"object of type 'int' has no len()\")",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\4031410386.py\", line 6, in <module>\n    row, detail = process_video(vp)\n                  ^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\2480119832.py\", line 48, in process_video\n    intrusion_res = analyze_intrusion(frames)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\3189872864.py\", line 48, in analyze_intrusion\n    barrier_support = safe_div(barrier_near_events, max(1, sum(len(h) for h in histories)), 0.0)\n                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\3189872864.py\", line 48, in <genexpr>\n    barrier_support = safe_div(barrier_near_events, max(1, sum(len(h) for h in histories)), 0.0)\n                                                               ^^^^^^\nTypeError: object of type 'int' has no len()\n"
+    },
+    {
+      "video_name": "ph_e2063_c1.mp4",
+      "video_path": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터\\싸움\\신체적 충돌을 동반한 싸움\\ph_e2063\\ph_e2063_c1.mp4",
+      "error": "TypeError(\"object of type 'int' has no len()\")",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\4031410386.py\", line 6, in <module>\n    row, detail = process_video(vp)\n                  ^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\2480119832.py\", line 48, in process_video\n    intrusion_res = analyze_intrusion(frames)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\3189872864.py\", line 48, in analyze_intrusion\n    barrier_support = safe_div(barrier_near_events, max(1, sum(len(h) for h in histories)), 0.0)\n                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\3189872864.py\", line 48, in <genexpr>\n    barrier_support = safe_div(barrier_near_events, max(1, sum(len(h) for h in histories)), 0.0)\n                                                               ^^^^^^\nTypeError: object of type 'int' has no len()\n"
+    },
+    {
+      "video_name": "ph_e2063_c2.mp4",
+      "video_path": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터\\싸움\\신체적 충돌을 동반한 싸움\\ph_e2063\\ph_e2063_c2.mp4",
+      "error": "TypeError(\"object of type 'int' has no len()\")",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\4031410386.py\", line 6, in <module>\n    row, detail = process_video(vp)\n                  ^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\2480119832.py\", line 48, in process_video\n    intrusion_res = analyze_intrusion(frames)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\3189872864.py\", line 48, in analyze_intrusion\n    barrier_support = safe_div(barrier_near_events, max(1, sum(len(h) for h in histories)), 0.0)\n                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\3189872864.py\", line 48, in <genexpr>\n    barrier_support = safe_div(barrier_near_events, max(1, sum(len(h) for h in histories)), 0.0)\n                                                               ^^^^^^\nTypeError: object of type 'int' has no len()\n"
+    },
+    {
+      "video_name": "ms_e3500_c1.mp4",
+      "video_path": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터\\이륜 이동수단 인도 주행\\오토바이 인도 주행\\ms_e3500\\ms_e3500_c1.mp4",
+      "error": "TypeError(\"object of type 'int' has no len()\")",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\4031410386.py\", line 6, in <module>\n    row, detail = process_video(vp)\n                  ^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\2480119832.py\", line 48, in process_video\n    intrusion_res = analyze_intrusion(frames)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\3189872864.py\", line 48, in analyze_intrusion\n    barrier_support = safe_div(barrier_near_events, max(1, sum(len(h) for h in histories)), 0.0)\n                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\3189872864.py\", line 48, in <genexpr>\n    barrier_support = safe_div(barrier_near_events, max(1, sum(len(h) for h in histories)), 0.0)\n                                                               ^^^^^^\nTypeError: object of type 'int' has no len()\n"
+    },
+    {
+      "video_name": "bs_e4387_c1.mp4",
+      "video_path": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터\\이륜 이동수단 인도 주행\\자전거 인도 주행\\bs_e4387\\bs_e4387_c1.mp4",
+      "error": "TypeError(\"object of type 'int' has no len()\")",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\4031410386.py\", line 6, in <module>\n    row, detail = process_video(vp)\n                  ^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\2480119832.py\", line 48, in process_video\n    intrusion_res = analyze_intrusion(frames)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\3189872864.py\", line 48, in analyze_intrusion\n    barrier_support = safe_div(barrier_near_events, max(1, sum(len(h) for h in histories)), 0.0)\n                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\3189872864.py\", line 48, in <genexpr>\n    barrier_support = safe_div(barrier_near_events, max(1, sum(len(h) for h in histories)), 0.0)\n                                                               ^^^^^^\nTypeError: object of type 'int' has no len()\n"
+    },
+    {
+      "video_name": "bs_e4387_c2.mp4",
+      "video_path": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터\\이륜 이동수단 인도 주행\\자전거 인도 주행\\bs_e4387\\bs_e4387_c2.mp4",
+      "error": "TypeError(\"object of type 'int' has no len()\")",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\4031410386.py\", line 6, in <module>\n    row, detail = process_video(vp)\n                  ^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\2480119832.py\", line 48, in process_video\n    intrusion_res = analyze_intrusion(frames)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\3189872864.py\", line 48, in analyze_intrusion\n    barrier_support = safe_div(barrier_near_events, max(1, sum(len(h) for h in histories)), 0.0)\n                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\3189872864.py\", line 48, in <genexpr>\n    barrier_support = safe_div(barrier_near_events, max(1, sum(len(h) for h in histories)), 0.0)\n                                                               ^^^^^^\nTypeError: object of type 'int' has no len()\n"
+    },
+    {
+      "video_name": "es_e3768_c1.mp4",
+      "video_path": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터\\이륜 이동수단 인도 주행\\전동킥보드 인도 주행\\es_e3768\\es_e3768_c1.mp4",
+      "error": "TypeError(\"object of type 'int' has no len()\")",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\4031410386.py\", line 6, in <module>\n    row, detail = process_video(vp)\n                  ^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\2480119832.py\", line 48, in process_video\n    intrusion_res = analyze_intrusion(frames)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\3189872864.py\", line 48, in analyze_intrusion\n    barrier_support = safe_div(barrier_near_events, max(1, sum(len(h) for h in histories)), 0.0)\n                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\3189872864.py\", line 48, in <genexpr>\n    barrier_support = safe_div(barrier_near_events, max(1, sum(len(h) for h in histories)), 0.0)\n                                                               ^^^^^^\nTypeError: object of type 'int' has no len()\n"
+    },
+    {
+      "video_name": "es_e3768_c2.mp4",
+      "video_path": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터\\이륜 이동수단 인도 주행\\전동킥보드 인도 주행\\es_e3768\\es_e3768_c2.mp4",
+      "error": "TypeError(\"object of type 'int' has no len()\")",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\4031410386.py\", line 6, in <module>\n    row, detail = process_video(vp)\n                  ^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\2480119832.py\", line 48, in process_video\n    intrusion_res = analyze_intrusion(frames)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\3189872864.py\", line 48, in analyze_intrusion\n    barrier_support = safe_div(barrier_near_events, max(1, sum(len(h) for h in histories)), 0.0)\n                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\3189872864.py\", line 48, in <genexpr>\n    barrier_support = safe_div(barrier_near_events, max(1, sum(len(h) for h in histories)), 0.0)\n                                                               ^^^^^^\nTypeError: object of type 'int' has no len()\n"
+    },
+    {
+      "video_name": "md_e2122_c1.mp4",
+      "video_path": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터\\이륜 이동수단 헬멧 미착용\\이륜 이동수단 운전자 1인 헬멧 미착용\\md_e2122\\md_e2122_c1.mp4",
+      "error": "TypeError(\"object of type 'int' has no len()\")",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\4031410386.py\", line 6, in <module>\n    row, detail = process_video(vp)\n                  ^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\2480119832.py\", line 48, in process_video\n    intrusion_res = analyze_intrusion(frames)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\3189872864.py\", line 48, in analyze_intrusion\n    barrier_support = safe_div(barrier_near_events, max(1, sum(len(h) for h in histories)), 0.0)\n                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\3189872864.py\", line 48, in <genexpr>\n    barrier_support = safe_div(barrier_near_events, max(1, sum(len(h) for h in histories)), 0.0)\n                                                               ^^^^^^\nTypeError: object of type 'int' has no len()\n"
+    },
+    {
+      "video_name": "md_e2122_c2.mp4",
+      "video_path": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터\\이륜 이동수단 헬멧 미착용\\이륜 이동수단 운전자 1인 헬멧 미착용\\md_e2122\\md_e2122_c2.mp4",
+      "error": "TypeError(\"object of type 'int' has no len()\")",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\4031410386.py\", line 6, in <module>\n    row, detail = process_video(vp)\n                  ^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\2480119832.py\", line 48, in process_video\n    intrusion_res = analyze_intrusion(frames)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\3189872864.py\", line 48, in analyze_intrusion\n    barrier_support = safe_div(barrier_near_events, max(1, sum(len(h) for h in histories)), 0.0)\n                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\3189872864.py\", line 48, in <genexpr>\n    barrier_support = safe_div(barrier_near_events, max(1, sum(len(h) for h in histories)), 0.0)\n                                                               ^^^^^^\nTypeError: object of type 'int' has no len()\n"
+    },
+    {
+      "video_name": "mp_e2730_c1.mp4",
+      "video_path": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터\\이륜 이동수단 헬멧 미착용\\이륜 이동수단 탑승자 일부 또는 전체 헬멧 미착용\\mp_e2730\\mp_e2730_c1.mp4",
+      "error": "TypeError(\"object of type 'int' has no len()\")",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\4031410386.py\", line 6, in <module>\n    row, detail = process_video(vp)\n                  ^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\2480119832.py\", line 48, in process_video\n    intrusion_res = analyze_intrusion(frames)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\3189872864.py\", line 48, in analyze_intrusion\n    barrier_support = safe_div(barrier_near_events, max(1, sum(len(h) for h in histories)), 0.0)\n                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\3189872864.py\", line 48, in <genexpr>\n    barrier_support = safe_div(barrier_near_events, max(1, sum(len(h) for h in histories)), 0.0)\n                                                               ^^^^^^\nTypeError: object of type 'int' has no len()\n"
+    },
+    {
+      "video_name": "mp_e2730_c2.mp4",
+      "video_path": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터\\이륜 이동수단 헬멧 미착용\\이륜 이동수단 탑승자 일부 또는 전체 헬멧 미착용\\mp_e2730\\mp_e2730_c2.mp4",
+      "error": "TypeError(\"object of type 'int' has no len()\")",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\4031410386.py\", line 6, in <module>\n    row, detail = process_video(vp)\n                  ^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\2480119832.py\", line 48, in process_video\n    intrusion_res = analyze_intrusion(frames)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\3189872864.py\", line 48, in analyze_intrusion\n    barrier_support = safe_div(barrier_near_events, max(1, sum(len(h) for h in histories)), 0.0)\n                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\3189872864.py\", line 48, in <genexpr>\n    barrier_support = safe_div(barrier_near_events, max(1, sum(len(h) for h in histories)), 0.0)\n                                                               ^^^^^^\nTypeError: object of type 'int' has no len()\n"
+    },
+    {
+      "video_name": "st_e4803_c1.mp4",
+      "video_path": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터\\전동킥보드 2인 이상 주행\\전동킥보드 앞뒤 2인 탑승\\st_e4803\\st_e4803_c1.mp4",
+      "error": "TypeError(\"object of type 'int' has no len()\")",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\4031410386.py\", line 6, in <module>\n    row, detail = process_video(vp)\n                  ^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\2480119832.py\", line 48, in process_video\n    intrusion_res = analyze_intrusion(frames)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\3189872864.py\", line 48, in analyze_intrusion\n    barrier_support = safe_div(barrier_near_events, max(1, sum(len(h) for h in histories)), 0.0)\n                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\3189872864.py\", line 48, in <genexpr>\n    barrier_support = safe_div(barrier_near_events, max(1, sum(len(h) for h in histories)), 0.0)\n                                                               ^^^^^^\nTypeError: object of type 'int' has no len()\n"
+    },
+    {
+      "video_name": "st_e4803_c2.mp4",
+      "video_path": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터\\전동킥보드 2인 이상 주행\\전동킥보드 앞뒤 2인 탑승\\st_e4803\\st_e4803_c2.mp4",
+      "error": "TypeError(\"object of type 'int' has no len()\")",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\4031410386.py\", line 6, in <module>\n    row, detail = process_video(vp)\n                  ^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\2480119832.py\", line 48, in process_video\n    intrusion_res = analyze_intrusion(frames)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\3189872864.py\", line 48, in analyze_intrusion\n    barrier_support = safe_div(barrier_near_events, max(1, sum(len(h) for h in histories)), 0.0)\n                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\3189872864.py\", line 48, in <genexpr>\n    barrier_support = safe_div(barrier_near_events, max(1, sum(len(h) for h in histories)), 0.0)\n                                                               ^^^^^^\nTypeError: object of type 'int' has no len()\n"
+    },
+    {
+      "video_name": "bl_e0272_c1.mp4",
+      "video_path": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터\\침입\\경계선을 통한 침입\\bl_e0272\\bl_e0272_c1.mp4",
+      "error": "TypeError(\"object of type 'int' has no len()\")",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\4031410386.py\", line 6, in <module>\n    row, detail = process_video(vp)\n                  ^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\2480119832.py\", line 48, in process_video\n    intrusion_res = analyze_intrusion(frames)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\3189872864.py\", line 48, in analyze_intrusion\n    barrier_support = safe_div(barrier_near_events, max(1, sum(len(h) for h in histories)), 0.0)\n                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\3189872864.py\", line 48, in <genexpr>\n    barrier_support = safe_div(barrier_near_events, max(1, sum(len(h) for h in histories)), 0.0)\n                                                               ^^^^^^\nTypeError: object of type 'int' has no len()\n"
+    },
+    {
+      "video_name": "bl_e0272_c2.mp4",
+      "video_path": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터\\침입\\경계선을 통한 침입\\bl_e0272\\bl_e0272_c2.mp4",
+      "error": "TypeError(\"object of type 'int' has no len()\")",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\4031410386.py\", line 6, in <module>\n    row, detail = process_video(vp)\n                  ^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\2480119832.py\", line 48, in process_video\n    intrusion_res = analyze_intrusion(frames)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\3189872864.py\", line 48, in analyze_intrusion\n    barrier_support = safe_div(barrier_near_events, max(1, sum(len(h) for h in histories)), 0.0)\n                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\3189872864.py\", line 48, in <genexpr>\n    barrier_support = safe_div(barrier_near_events, max(1, sum(len(h) for h in histories)), 0.0)\n                                                               ^^^^^^\nTypeError: object of type 'int' has no len()\n"
+    },
+    {
+      "video_name": "ab_e0457_c1.mp4",
+      "video_path": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터\\침입\\비정상적인 경로로의 침범\\ab_e0457\\ab_e0457_c1.mp4",
+      "error": "TypeError(\"object of type 'int' has no len()\")",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\4031410386.py\", line 6, in <module>\n    row, detail = process_video(vp)\n                  ^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\2480119832.py\", line 48, in process_video\n    intrusion_res = analyze_intrusion(frames)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\3189872864.py\", line 48, in analyze_intrusion\n    barrier_support = safe_div(barrier_near_events, max(1, sum(len(h) for h in histories)), 0.0)\n                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\3189872864.py\", line 48, in <genexpr>\n    barrier_support = safe_div(barrier_near_events, max(1, sum(len(h) for h in histories)), 0.0)\n                                                               ^^^^^^\nTypeError: object of type 'int' has no len()\n"
+    },
+    {
+      "video_name": "ab_e0457_c2.mp4",
+      "video_path": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터\\침입\\비정상적인 경로로의 침범\\ab_e0457\\ab_e0457_c2.mp4",
+      "error": "TypeError(\"object of type 'int' has no len()\")",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\4031410386.py\", line 6, in <module>\n    row, detail = process_video(vp)\n                  ^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\2480119832.py\", line 48, in process_video\n    intrusion_res = analyze_intrusion(frames)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\3189872864.py\", line 48, in analyze_intrusion\n    barrier_support = safe_div(barrier_near_events, max(1, sum(len(h) for h in histories)), 0.0)\n                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\우성한\\AppData\\Local\\Temp\\ipykernel_17604\\3189872864.py\", line 48, in <genexpr>\n    barrier_support = safe_div(barrier_near_events, max(1, sum(len(h) for h in histories)), 0.0)\n                                                               ^^^^^^\nTypeError: object of type 'int' has no len()\n"
+    }
+  ]
+}

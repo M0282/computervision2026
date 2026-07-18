@@ -1,0 +1,3620 @@
+{
+  "video_name": "bs_e4387_c1.mp4",
+  "video_path": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터\\이륜 이동수단 인도 주행\\자전거 인도 주행\\bs_e4387\\bs_e4387_c1.mp4",
+  "relative_video_path": "이륜 이동수단 인도 주행\\자전거 인도 주행\\bs_e4387\\bs_e4387_c1.mp4",
+  "final_label": "fence_or_railing_intrusion + sidewalk_two_wheeler",
+  "final_primary_event": {
+    "event_type": "abnormal_path_intrusion",
+    "event_subtype": "fence_or_railing_intrusion",
+    "label": "intrusion",
+    "score": 0.6917,
+    "confidence": 0.901,
+    "evidence": {
+      "type": "same_track_crossing",
+      "before": {
+        "source": "base_track",
+        "class_id": 0,
+        "class": "person",
+        "confidence": 0.6782,
+        "bbox": [
+          1179,
+          158,
+          1236,
+          299
+        ],
+        "center": [
+          1207.5,
+          228.5
+        ],
+        "bottom_center": [
+          1207.5,
+          299.0
+        ],
+        "area": 8037.0,
+        "track_id": 32,
+        "obj_label": "person",
+        "frame_id": 328,
+        "time_sec": 10.933,
+        "track_source": "yolo_bytetrack",
+        "intrusion_point": [
+          1207.5,
+          299.0
+        ],
+        "point": [
+          1207.5,
+          299.0
+        ],
+        "line_side_value": 46459.5,
+        "line_side": 1
+      },
+      "after": {
+        "source": "base_track",
+        "class_id": 0,
+        "class": "person",
+        "confidence": 0.4848,
+        "bbox": [
+          1091,
+          108,
+          1142,
+          240
+        ],
+        "center": [
+          1116.5,
+          174.0
+        ],
+        "bottom_center": [
+          1116.5,
+          240.0
+        ],
+        "area": 6732.0,
+        "track_id": 32,
+        "obj_label": "person",
+        "frame_id": 392,
+        "time_sec": 13.067,
+        "track_source": "yolo_bytetrack",
+        "intrusion_point": [
+          1116.5,
+          240.0
+        ],
+        "point": [
+          1116.5,
+          240.0
+        ],
+        "line_side_value": -4666.5,
+        "line_side": -1
+      },
+      "side_transition": "1_to_-1",
+      "frame_gap": 64,
+      "duration_sec": 2.134,
+      "movement_px": 108.45,
+      "before_streak": 2,
+      "after_streak": 2,
+      "direction_cos": 0.7469,
+      "cross_midpoint": [
+        1162.0,
+        269.5
+      ],
+      "cross_midpoint_distance_to_structure": 0.0,
+      "track_id": "32",
+      "center_ratio": 0.32
+    },
+    "reason": "gate/fence/wall/barrier 구조물 근처에서 사람 foot_point track이 boundary line을 통과했습니다."
+  },
+  "candidate_events": [
+    {
+      "event_type": "abnormal_path_intrusion",
+      "event_subtype": "fence_or_railing_intrusion",
+      "label": "intrusion",
+      "score": 0.6917,
+      "confidence": 0.901,
+      "evidence": {
+        "type": "same_track_crossing",
+        "before": {
+          "source": "base_track",
+          "class_id": 0,
+          "class": "person",
+          "confidence": 0.6782,
+          "bbox": [
+            1179,
+            158,
+            1236,
+            299
+          ],
+          "center": [
+            1207.5,
+            228.5
+          ],
+          "bottom_center": [
+            1207.5,
+            299.0
+          ],
+          "area": 8037.0,
+          "track_id": 32,
+          "obj_label": "person",
+          "frame_id": 328,
+          "time_sec": 10.933,
+          "track_source": "yolo_bytetrack",
+          "intrusion_point": [
+            1207.5,
+            299.0
+          ],
+          "point": [
+            1207.5,
+            299.0
+          ],
+          "line_side_value": 46459.5,
+          "line_side": 1
+        },
+        "after": {
+          "source": "base_track",
+          "class_id": 0,
+          "class": "person",
+          "confidence": 0.4848,
+          "bbox": [
+            1091,
+            108,
+            1142,
+            240
+          ],
+          "center": [
+            1116.5,
+            174.0
+          ],
+          "bottom_center": [
+            1116.5,
+            240.0
+          ],
+          "area": 6732.0,
+          "track_id": 32,
+          "obj_label": "person",
+          "frame_id": 392,
+          "time_sec": 13.067,
+          "track_source": "yolo_bytetrack",
+          "intrusion_point": [
+            1116.5,
+            240.0
+          ],
+          "point": [
+            1116.5,
+            240.0
+          ],
+          "line_side_value": -4666.5,
+          "line_side": -1
+        },
+        "side_transition": "1_to_-1",
+        "frame_gap": 64,
+        "duration_sec": 2.134,
+        "movement_px": 108.45,
+        "before_streak": 2,
+        "after_streak": 2,
+        "direction_cos": 0.7469,
+        "cross_midpoint": [
+          1162.0,
+          269.5
+        ],
+        "cross_midpoint_distance_to_structure": 0.0,
+        "track_id": "32",
+        "center_ratio": 0.32
+      },
+      "reason": "gate/fence/wall/barrier 구조물 근처에서 사람 foot_point track이 boundary line을 통과했습니다."
+    },
+    {
+      "event_type": "traffic_violation",
+      "event_subtype": "sidewalk_two_wheeler",
+      "label": "sidewalk_riding",
+      "score": 0.6408,
+      "confidence": 0.6408,
+      "evidence": [
+        {
+          "frame_id": 160,
+          "time_sec": 5.333,
+          "status": "sidewalk",
+          "score": 0.91,
+          "has_rider_pair": true,
+          "best_rider_pair_score": 1.0,
+          "bbox": [
+            1392,
+            428,
+            1494,
+            655
+          ],
+          "two_wheeler_class": "electric bike",
+          "seg_sidewalk_ratio": 1.0,
+          "band_sidewalk_ratio": 1.0,
+          "world_sidewalk_bbox_score": 0.25,
+          "road_score": 0.225
+        },
+        {
+          "frame_id": 168,
+          "time_sec": 5.6,
+          "status": "sidewalk",
+          "score": 0.91,
+          "has_rider_pair": true,
+          "best_rider_pair_score": 1.0,
+          "bbox": [
+            1395,
+            411,
+            1487,
+            632
+          ],
+          "two_wheeler_class": "electric bike",
+          "seg_sidewalk_ratio": 1.0,
+          "band_sidewalk_ratio": 1.0,
+          "world_sidewalk_bbox_score": 0.25,
+          "road_score": 0.2374
+        },
+        {
+          "frame_id": 168,
+          "time_sec": 5.6,
+          "status": "sidewalk",
+          "score": 0.9084,
+          "has_rider_pair": true,
+          "best_rider_pair_score": 0.9899,
+          "bbox": [
+            1402,
+            503,
+            1476,
+            633
+          ],
+          "two_wheeler_class": "electric bike",
+          "seg_sidewalk_ratio": 1.0,
+          "band_sidewalk_ratio": 1.0,
+          "world_sidewalk_bbox_score": 0.25,
+          "road_score": 0.2374
+        },
+        {
+          "frame_id": 160,
+          "time_sec": 5.333,
+          "status": "sidewalk",
+          "score": 0.906,
+          "has_rider_pair": true,
+          "best_rider_pair_score": 0.9747,
+          "bbox": [
+            1433,
+            533,
+            1482,
+            656
+          ],
+          "two_wheeler_class": "bike",
+          "seg_sidewalk_ratio": 1.0,
+          "band_sidewalk_ratio": 1.0,
+          "world_sidewalk_bbox_score": 0.25,
+          "road_score": 0.225
+        },
+        {
+          "frame_id": 144,
+          "time_sec": 4.8,
+          "status": "sidewalk",
+          "score": 0.8266,
+          "has_rider_pair": true,
+          "best_rider_pair_score": 0.9381,
+          "bbox": [
+            1478,
+            580,
+            1507,
+            637
+          ],
+          "two_wheeler_class": "bike",
+          "seg_sidewalk_ratio": 0.6222,
+          "band_sidewalk_ratio": 0.902,
+          "world_sidewalk_bbox_score": 0.25,
+          "road_score": 0.225
+        }
+      ],
+      "reason": "이륜차 기준점 또는 하단 band가 인도 영역에 반복적으로 위치했습니다."
+    }
+  ],
+  "action_label": "other",
+  "fight_label": "not_fight",
+  "stalking_label": "not_stalking",
+  "riding_label": "sidewalk_riding",
+  "helmet_label": "helmet",
+  "intrusion_label": "intrusion",
+  "fight": {
+    "fight_label": "not_fight",
+    "fight_score": 0.0422,
+    "is_fight": false,
+    "best_fight_window": {
+      "window_score": 0.0541,
+      "close_pairs": 0,
+      "near_pairs": 0,
+      "overlap_pairs": 0,
+      "multi_person_frames": 0,
+      "mean_person_count": 0.0,
+      "flow_score": 0.3707,
+      "pose_score": 0.0534,
+      "abrupt_score": 0.0,
+      "start_sec": 21.0,
+      "end_sec": 26.0,
+      "frame_count": 19
+    },
+    "high_window_count": 0,
+    "window_count": 20,
+    "reason": "싸움 조건을 만족하는 window가 없습니다."
+  },
+  "stalking": {
+    "stalking_label": "not_stalking",
+    "stalking_score": 0.0,
+    "is_stalking": false,
+    "best_pair": null,
+    "candidate_pairs": [],
+    "reason": "스토킹 조건을 비교할 만큼 긴 사람 track pair가 없습니다."
+  },
+  "riding": {
+    "riding_label": "sidewalk_riding",
+    "sidewalk_riding_score": 0.6408,
+    "is_sidewalk_riding": true,
+    "tw_frame_count": 113,
+    "rider_frame_count": 26,
+    "sidewalk_hits": 27,
+    "sidewalk_candidate_hits": 133,
+    "road_hits": 117,
+    "sidewalk_ratio": 0.0951,
+    "candidate_ratio": 0.5634,
+    "mean_evidence_score": 0.1726,
+    "max_evidence_score": 0.91,
+    "best_evidence": [
+      {
+        "frame_id": 160,
+        "time_sec": 5.333,
+        "status": "sidewalk",
+        "score": 0.91,
+        "has_rider_pair": true,
+        "best_rider_pair_score": 1.0,
+        "bbox": [
+          1392,
+          428,
+          1494,
+          655
+        ],
+        "two_wheeler_class": "electric bike",
+        "seg_sidewalk_ratio": 1.0,
+        "band_sidewalk_ratio": 1.0,
+        "world_sidewalk_bbox_score": 0.25,
+        "road_score": 0.225
+      },
+      {
+        "frame_id": 168,
+        "time_sec": 5.6,
+        "status": "sidewalk",
+        "score": 0.91,
+        "has_rider_pair": true,
+        "best_rider_pair_score": 1.0,
+        "bbox": [
+          1395,
+          411,
+          1487,
+          632
+        ],
+        "two_wheeler_class": "electric bike",
+        "seg_sidewalk_ratio": 1.0,
+        "band_sidewalk_ratio": 1.0,
+        "world_sidewalk_bbox_score": 0.25,
+        "road_score": 0.2374
+      },
+      {
+        "frame_id": 168,
+        "time_sec": 5.6,
+        "status": "sidewalk",
+        "score": 0.9084,
+        "has_rider_pair": true,
+        "best_rider_pair_score": 0.9899,
+        "bbox": [
+          1402,
+          503,
+          1476,
+          633
+        ],
+        "two_wheeler_class": "electric bike",
+        "seg_sidewalk_ratio": 1.0,
+        "band_sidewalk_ratio": 1.0,
+        "world_sidewalk_bbox_score": 0.25,
+        "road_score": 0.2374
+      },
+      {
+        "frame_id": 160,
+        "time_sec": 5.333,
+        "status": "sidewalk",
+        "score": 0.906,
+        "has_rider_pair": true,
+        "best_rider_pair_score": 0.9747,
+        "bbox": [
+          1433,
+          533,
+          1482,
+          656
+        ],
+        "two_wheeler_class": "bike",
+        "seg_sidewalk_ratio": 1.0,
+        "band_sidewalk_ratio": 1.0,
+        "world_sidewalk_bbox_score": 0.25,
+        "road_score": 0.225
+      },
+      {
+        "frame_id": 144,
+        "time_sec": 4.8,
+        "status": "sidewalk",
+        "score": 0.8266,
+        "has_rider_pair": true,
+        "best_rider_pair_score": 0.9381,
+        "bbox": [
+          1478,
+          580,
+          1507,
+          637
+        ],
+        "two_wheeler_class": "bike",
+        "seg_sidewalk_ratio": 0.6222,
+        "band_sidewalk_ratio": 0.902,
+        "world_sidewalk_bbox_score": 0.25,
+        "road_score": 0.225
+      },
+      {
+        "frame_id": 192,
+        "time_sec": 6.4,
+        "status": "sidewalk",
+        "score": 0.7349,
+        "has_rider_pair": true,
+        "best_rider_pair_score": 1.0,
+        "bbox": [
+          1381,
+          367,
+          1471,
+          579
+        ],
+        "two_wheeler_class": "moped",
+        "seg_sidewalk_ratio": 0.8425,
+        "band_sidewalk_ratio": 0.7666,
+        "world_sidewalk_bbox_score": 0.25,
+        "road_score": 0.225
+      },
+      {
+        "frame_id": 200,
+        "time_sec": 6.667,
+        "status": "sidewalk",
+        "score": 0.7233,
+        "has_rider_pair": true,
+        "best_rider_pair_score": 1.0,
+        "bbox": [
+          1375,
+          354,
+          1465,
+          560
+        ],
+        "two_wheeler_class": "moped",
+        "seg_sidewalk_ratio": 0.8602,
+        "band_sidewalk_ratio": 0.751,
+        "world_sidewalk_bbox_score": 0.25,
+        "road_score": 0.225
+      },
+      {
+        "frame_id": 144,
+        "time_sec": 4.8,
+        "status": "sidewalk",
+        "score": 0.7191,
+        "has_rider_pair": true,
+        "best_rider_pair_score": 0.9914,
+        "bbox": [
+          1433,
+          570,
+          1508,
+          640
+        ],
+        "two_wheeler_class": "bike",
+        "seg_sidewalk_ratio": 0.4074,
+        "band_sidewalk_ratio": 0.7474,
+        "world_sidewalk_bbox_score": 0.25,
+        "road_score": 0.2499
+      },
+      {
+        "frame_id": 224,
+        "time_sec": 7.467,
+        "status": "sidewalk",
+        "score": 0.7059,
+        "has_rider_pair": true,
+        "best_rider_pair_score": 1.0,
+        "bbox": [
+          1374,
+          394,
+          1426,
+          499
+        ],
+        "two_wheeler_class": "bike",
+        "seg_sidewalk_ratio": 0.9333,
+        "band_sidewalk_ratio": 0.7279,
+        "world_sidewalk_bbox_score": 0.25,
+        "road_score": 0.2966
+      },
+      {
+        "frame_id": 224,
+        "time_sec": 7.467,
+        "status": "sidewalk",
+        "score": 0.6674,
+        "has_rider_pair": true,
+        "best_rider_pair_score": 1.0,
+        "bbox": [
+          1355,
+          317,
+          1435,
+          498
+        ],
+        "two_wheeler_class": "motorcycle",
+        "seg_sidewalk_ratio": 0.9225,
+        "band_sidewalk_ratio": 0.6343,
+        "world_sidewalk_bbox_score": 0.25,
+        "road_score": 0.2966
+      }
+    ],
+    "reason": "이륜차 기준점 또는 하단 band가 인도 영역에 반복적으로 위치했습니다."
+  },
+  "helmet": {
+    "helmet_label": "helmet",
+    "no_helmet_score": 0.3461,
+    "is_no_helmet": false,
+    "rider_frames": 26,
+    "helmet_count": 24,
+    "no_helmet_count": 0,
+    "no_helmet_candidate_count": 6,
+    "unknown_count": 33,
+    "helmet_ratio": 0.381,
+    "no_helmet_ratio": 0.0,
+    "candidate_ratio": 0.0952,
+    "unknown_ratio": 0.5238,
+    "best_evidence": [
+      {
+        "frame_id": 400,
+        "person_track_id": 32,
+        "two_wheeler_track_id": null,
+        "head_box": [
+          1074,
+          95,
+          1141,
+          149
+        ],
+        "helmet_status": "no_helmet_candidate",
+        "helmet_confidence": 0.68,
+        "helmet_score": 0.0,
+        "no_helmet_score": 0.0,
+        "neutral_head_score": 0.3935,
+        "reason": "head는 잡혔지만 helmet 후보가 약함. 후보로만 사용",
+        "world_matches": [
+          {
+            "label": "hat",
+            "confidence": 0.3935,
+            "bbox": [
+              1093,
+              104,
+              1114,
+              122
+            ],
+            "match_score": 0.3935,
+            "iou_head": 0.1045,
+            "overlap_head": 1.0,
+            "center_inside_head": true
+          }
+        ],
+        "local_detections": [],
+        "time_sec": 13.333,
+        "no_helmet_frame_score": 0.68
+      },
+      {
+        "frame_id": 400,
+        "person_track_id": 32,
+        "two_wheeler_track_id": null,
+        "head_box": [
+          1074,
+          95,
+          1141,
+          149
+        ],
+        "helmet_status": "no_helmet_candidate",
+        "helmet_confidence": 0.68,
+        "helmet_score": 0.0,
+        "no_helmet_score": 0.0,
+        "neutral_head_score": 0.3935,
+        "reason": "head는 잡혔지만 helmet 후보가 약함. 후보로만 사용",
+        "world_matches": [
+          {
+            "label": "hat",
+            "confidence": 0.3935,
+            "bbox": [
+              1093,
+              104,
+              1114,
+              122
+            ],
+            "match_score": 0.3935,
+            "iou_head": 0.1045,
+            "overlap_head": 1.0,
+            "center_inside_head": true
+          }
+        ],
+        "local_detections": [],
+        "time_sec": 13.333,
+        "no_helmet_frame_score": 0.68
+      },
+      {
+        "frame_id": 400,
+        "person_track_id": 32,
+        "two_wheeler_track_id": null,
+        "head_box": [
+          1074,
+          95,
+          1141,
+          149
+        ],
+        "helmet_status": "no_helmet_candidate",
+        "helmet_confidence": 0.68,
+        "helmet_score": 0.0,
+        "no_helmet_score": 0.0,
+        "neutral_head_score": 0.3935,
+        "reason": "head는 잡혔지만 helmet 후보가 약함. 후보로만 사용",
+        "world_matches": [
+          {
+            "label": "hat",
+            "confidence": 0.3935,
+            "bbox": [
+              1093,
+              104,
+              1114,
+              122
+            ],
+            "match_score": 0.3935,
+            "iou_head": 0.1045,
+            "overlap_head": 1.0,
+            "center_inside_head": true
+          }
+        ],
+        "local_detections": [],
+        "time_sec": 13.333,
+        "no_helmet_frame_score": 0.68
+      },
+      {
+        "frame_id": 320,
+        "person_track_id": 32,
+        "two_wheeler_track_id": null,
+        "head_box": [
+          1178,
+          151,
+          1261,
+          215
+        ],
+        "helmet_status": "no_helmet_candidate",
+        "helmet_confidence": 0.4549,
+        "helmet_score": 0.0,
+        "no_helmet_score": 0.0,
+        "neutral_head_score": 0.1549,
+        "reason": "head는 잡혔지만 helmet 후보가 약함. 후보로만 사용",
+        "world_matches": [
+          {
+            "label": "hat",
+            "confidence": 0.1549,
+            "bbox": [
+              1202,
+              152,
+              1235,
+              179
+            ],
+            "match_score": 0.1549,
+            "iou_head": 0.1677,
+            "overlap_head": 1.0,
+            "center_inside_head": true
+          },
+          {
+            "label": "hat",
+            "confidence": 0.0798,
+            "bbox": [
+              1212,
+              162,
+              1234,
+              182
+            ],
+            "match_score": 0.0798,
+            "iou_head": 0.0828,
+            "overlap_head": 1.0,
+            "center_inside_head": true
+          }
+        ],
+        "local_detections": [],
+        "time_sec": 10.667,
+        "no_helmet_frame_score": 0.4549
+      },
+      {
+        "frame_id": 320,
+        "person_track_id": 32,
+        "two_wheeler_track_id": null,
+        "head_box": [
+          1178,
+          151,
+          1261,
+          215
+        ],
+        "helmet_status": "no_helmet_candidate",
+        "helmet_confidence": 0.4549,
+        "helmet_score": 0.0,
+        "no_helmet_score": 0.0,
+        "neutral_head_score": 0.1549,
+        "reason": "head는 잡혔지만 helmet 후보가 약함. 후보로만 사용",
+        "world_matches": [
+          {
+            "label": "hat",
+            "confidence": 0.1549,
+            "bbox": [
+              1202,
+              152,
+              1235,
+              179
+            ],
+            "match_score": 0.1549,
+            "iou_head": 0.1677,
+            "overlap_head": 1.0,
+            "center_inside_head": true
+          },
+          {
+            "label": "hat",
+            "confidence": 0.0798,
+            "bbox": [
+              1212,
+              162,
+              1234,
+              182
+            ],
+            "match_score": 0.0798,
+            "iou_head": 0.0828,
+            "overlap_head": 1.0,
+            "center_inside_head": true
+          }
+        ],
+        "local_detections": [],
+        "time_sec": 10.667,
+        "no_helmet_frame_score": 0.4549
+      },
+      {
+        "frame_id": 320,
+        "person_track_id": 32,
+        "two_wheeler_track_id": null,
+        "head_box": [
+          1178,
+          151,
+          1261,
+          215
+        ],
+        "helmet_status": "no_helmet_candidate",
+        "helmet_confidence": 0.4549,
+        "helmet_score": 0.0,
+        "no_helmet_score": 0.0,
+        "neutral_head_score": 0.1549,
+        "reason": "head는 잡혔지만 helmet 후보가 약함. 후보로만 사용",
+        "world_matches": [
+          {
+            "label": "hat",
+            "confidence": 0.1549,
+            "bbox": [
+              1202,
+              152,
+              1235,
+              179
+            ],
+            "match_score": 0.1549,
+            "iou_head": 0.1677,
+            "overlap_head": 1.0,
+            "center_inside_head": true
+          },
+          {
+            "label": "hat",
+            "confidence": 0.0798,
+            "bbox": [
+              1212,
+              162,
+              1234,
+              182
+            ],
+            "match_score": 0.0798,
+            "iou_head": 0.0828,
+            "overlap_head": 1.0,
+            "center_inside_head": true
+          }
+        ],
+        "local_detections": [],
+        "time_sec": 10.667,
+        "no_helmet_frame_score": 0.4549
+      },
+      {
+        "frame_id": 48,
+        "person_track_id": 1,
+        "two_wheeler_track_id": null,
+        "head_box": [
+          576,
+          101,
+          621,
+          144
+        ],
+        "helmet_status": "unknown",
+        "helmet_confidence": 0.0,
+        "helmet_score": 0.0,
+        "no_helmet_score": 0.0,
+        "neutral_head_score": 0.0,
+        "reason": "rider는 있으나 head-zone 내부 helmet/head 후보가 없음",
+        "world_matches": [],
+        "local_detections": [],
+        "time_sec": 1.6,
+        "no_helmet_frame_score": 0.0
+      },
+      {
+        "frame_id": 120,
+        "person_track_id": 8,
+        "two_wheeler_track_id": null,
+        "head_box": [
+          1392,
+          504,
+          1538,
+          595
+        ],
+        "helmet_status": "unknown",
+        "helmet_confidence": 0.0,
+        "helmet_score": 0.0,
+        "no_helmet_score": 0.0,
+        "neutral_head_score": 0.0,
+        "reason": "rider는 있으나 head-zone 내부 helmet/head 후보가 없음",
+        "world_matches": [],
+        "local_detections": [],
+        "time_sec": 4.0,
+        "no_helmet_frame_score": 0.0
+      },
+      {
+        "frame_id": 120,
+        "person_track_id": 8,
+        "two_wheeler_track_id": 7,
+        "head_box": [
+          1392,
+          504,
+          1538,
+          595
+        ],
+        "helmet_status": "unknown",
+        "helmet_confidence": 0.0,
+        "helmet_score": 0.0,
+        "no_helmet_score": 0.0,
+        "neutral_head_score": 0.0,
+        "reason": "rider는 있으나 head-zone 내부 helmet/head 후보가 없음",
+        "world_matches": [],
+        "local_detections": [],
+        "time_sec": 4.0,
+        "no_helmet_frame_score": 0.0
+      },
+      {
+        "frame_id": 128,
+        "person_track_id": 8,
+        "two_wheeler_track_id": null,
+        "head_box": [
+          1400,
+          493,
+          1534,
+          577
+        ],
+        "helmet_status": "unknown",
+        "helmet_confidence": 0.0,
+        "helmet_score": 0.0,
+        "no_helmet_score": 0.0,
+        "neutral_head_score": 0.0,
+        "reason": "rider는 있으나 head-zone 내부 helmet/head 후보가 없음",
+        "world_matches": [],
+        "local_detections": [],
+        "time_sec": 4.267,
+        "no_helmet_frame_score": 0.0
+      },
+      {
+        "frame_id": 136,
+        "person_track_id": 8,
+        "two_wheeler_track_id": null,
+        "head_box": [
+          1402,
+          454,
+          1539,
+          540
+        ],
+        "helmet_status": "unknown",
+        "helmet_confidence": 0.0,
+        "helmet_score": 0.0463,
+        "no_helmet_score": 0.0,
+        "neutral_head_score": 0.0,
+        "reason": "helmet/no-helmet 근거가 서로 약하거나 불충분",
+        "world_matches": [
+          {
+            "label": "helmet",
+            "confidence": 0.0689,
+            "bbox": [
+              1431,
+              433,
+              1506,
+              497
+            ],
+            "match_score": 0.0463,
+            "iou_head": 0.2414,
+            "overlap_head": 0.6719,
+            "center_inside_head": true
+          }
+        ],
+        "local_detections": [],
+        "time_sec": 4.533,
+        "no_helmet_frame_score": 0.0
+      },
+      {
+        "frame_id": 136,
+        "person_track_id": 8,
+        "two_wheeler_track_id": null,
+        "head_box": [
+          1402,
+          454,
+          1539,
+          540
+        ],
+        "helmet_status": "unknown",
+        "helmet_confidence": 0.0,
+        "helmet_score": 0.0463,
+        "no_helmet_score": 0.0,
+        "neutral_head_score": 0.0,
+        "reason": "helmet/no-helmet 근거가 서로 약하거나 불충분",
+        "world_matches": [
+          {
+            "label": "helmet",
+            "confidence": 0.0689,
+            "bbox": [
+              1431,
+              433,
+              1506,
+              497
+            ],
+            "match_score": 0.0463,
+            "iou_head": 0.2414,
+            "overlap_head": 0.6719,
+            "center_inside_head": true
+          }
+        ],
+        "local_detections": [],
+        "time_sec": 4.533,
+        "no_helmet_frame_score": 0.0
+      }
+    ],
+    "reason": "rider head-zone에서 helmet 근거가 더 강합니다."
+  },
+  "intrusion": {
+    "intrusion_label": "intrusion",
+    "intrusion_score": 0.6917,
+    "is_intrusion": true,
+    "intrusion_direction_auto": [
+      -0.26497125882805045,
+      -0.9642563103216272
+    ],
+    "detected_events": [
+      {
+        "event_class": "abnormal_path_intrusion",
+        "event_subtype": "fence_or_railing_intrusion",
+        "detected": true,
+        "confidence": 0.901,
+        "score": 0.6917,
+        "label": "intrusion",
+        "scene_object": {
+          "label": "fence",
+          "confidence": 0.2838,
+          "bbox": [
+            894,
+            118,
+            1292,
+            466
+          ],
+          "frame_id": 296,
+          "selection_score": 0.685,
+          "distance_to_track": 0.0
+        },
+        "boundary_line": {
+          "boundary_line": [
+            [
+              967,
+              421
+            ],
+            [
+              1286,
+              66
+            ]
+          ],
+          "line_center": [
+            1126.74,
+            243.34
+          ],
+          "line_direction_vector": [
+            -0.743294,
+            -0.668965
+          ],
+          "line_length": 477,
+          "center_ratio": 0.32,
+          "nearest_track_frame": 320,
+          "nearest_track_distance": 0.0,
+          "bbox": [
+            894,
+            118,
+            1292,
+            466
+          ]
+        },
+        "track": {
+          "track_id": "32",
+          "movement_px": 123.58,
+          "length": 11
+        },
+        "evidence": {
+          "type": "same_track_crossing",
+          "before": {
+            "source": "base_track",
+            "class_id": 0,
+            "class": "person",
+            "confidence": 0.6782,
+            "bbox": [
+              1179,
+              158,
+              1236,
+              299
+            ],
+            "center": [
+              1207.5,
+              228.5
+            ],
+            "bottom_center": [
+              1207.5,
+              299.0
+            ],
+            "area": 8037.0,
+            "track_id": 32,
+            "obj_label": "person",
+            "frame_id": 328,
+            "time_sec": 10.933,
+            "track_source": "yolo_bytetrack",
+            "intrusion_point": [
+              1207.5,
+              299.0
+            ],
+            "point": [
+              1207.5,
+              299.0
+            ],
+            "line_side_value": 46459.5,
+            "line_side": 1
+          },
+          "after": {
+            "source": "base_track",
+            "class_id": 0,
+            "class": "person",
+            "confidence": 0.4848,
+            "bbox": [
+              1091,
+              108,
+              1142,
+              240
+            ],
+            "center": [
+              1116.5,
+              174.0
+            ],
+            "bottom_center": [
+              1116.5,
+              240.0
+            ],
+            "area": 6732.0,
+            "track_id": 32,
+            "obj_label": "person",
+            "frame_id": 392,
+            "time_sec": 13.067,
+            "track_source": "yolo_bytetrack",
+            "intrusion_point": [
+              1116.5,
+              240.0
+            ],
+            "point": [
+              1116.5,
+              240.0
+            ],
+            "line_side_value": -4666.5,
+            "line_side": -1
+          },
+          "side_transition": "1_to_-1",
+          "frame_gap": 64,
+          "duration_sec": 2.134,
+          "movement_px": 108.45,
+          "before_streak": 2,
+          "after_streak": 2,
+          "direction_cos": 0.7469,
+          "cross_midpoint": [
+            1162.0,
+            269.5
+          ],
+          "cross_midpoint_distance_to_structure": 0.0,
+          "track_id": "32",
+          "center_ratio": 0.32
+        },
+        "reason": "gate/fence/wall/barrier 구조물 근처에서 사람 foot_point track이 boundary line을 통과했습니다.",
+        "source": "dd_integrated_intrusion_reasoning"
+      }
+    ],
+    "best_event": {
+      "event": {
+        "type": "same_track_crossing",
+        "before": {
+          "source": "base_track",
+          "class_id": 0,
+          "class": "person",
+          "confidence": 0.6782,
+          "bbox": [
+            1179,
+            158,
+            1236,
+            299
+          ],
+          "center": [
+            1207.5,
+            228.5
+          ],
+          "bottom_center": [
+            1207.5,
+            299.0
+          ],
+          "area": 8037.0,
+          "track_id": 32,
+          "obj_label": "person",
+          "frame_id": 328,
+          "time_sec": 10.933,
+          "track_source": "yolo_bytetrack",
+          "intrusion_point": [
+            1207.5,
+            299.0
+          ],
+          "point": [
+            1207.5,
+            299.0
+          ],
+          "line_side_value": 46459.5,
+          "line_side": 1
+        },
+        "after": {
+          "source": "base_track",
+          "class_id": 0,
+          "class": "person",
+          "confidence": 0.4848,
+          "bbox": [
+            1091,
+            108,
+            1142,
+            240
+          ],
+          "center": [
+            1116.5,
+            174.0
+          ],
+          "bottom_center": [
+            1116.5,
+            240.0
+          ],
+          "area": 6732.0,
+          "track_id": 32,
+          "obj_label": "person",
+          "frame_id": 392,
+          "time_sec": 13.067,
+          "track_source": "yolo_bytetrack",
+          "intrusion_point": [
+            1116.5,
+            240.0
+          ],
+          "point": [
+            1116.5,
+            240.0
+          ],
+          "line_side_value": -4666.5,
+          "line_side": -1
+        },
+        "side_transition": "1_to_-1",
+        "frame_gap": 64,
+        "duration_sec": 2.134,
+        "movement_px": 108.45,
+        "before_streak": 2,
+        "after_streak": 2,
+        "direction_cos": 0.7469,
+        "cross_midpoint": [
+          1162.0,
+          269.5
+        ],
+        "cross_midpoint_distance_to_structure": 0.0,
+        "track_id": "32",
+        "center_ratio": 0.32
+      },
+      "line_info": {
+        "boundary_line": [
+          [
+            967,
+            421
+          ],
+          [
+            1286,
+            66
+          ]
+        ],
+        "line_center": [
+          1126.74,
+          243.34
+        ],
+        "line_direction_vector": [
+          -0.743294,
+          -0.668965
+        ],
+        "line_length": 477,
+        "center_ratio": 0.32,
+        "nearest_track_frame": 320,
+        "nearest_track_distance": 0.0,
+        "bbox": [
+          894,
+          118,
+          1292,
+          466
+        ]
+      },
+      "structure_candidate": {
+        "object": {
+          "source": "yolo_world",
+          "class_id": 34,
+          "class": "fence",
+          "confidence": 0.2838,
+          "bbox": [
+            894,
+            118,
+            1292,
+            466
+          ],
+          "center": [
+            1093.0,
+            292.0
+          ],
+          "bottom_center": [
+            1093.0,
+            466.0
+          ],
+          "area": 138504.0,
+          "frame_id": 296,
+          "time_sec": 9.867,
+          "label": "fence"
+        },
+        "score": 0.685,
+        "distance_to_track": 0.0,
+        "distance_score": 1.0,
+        "shape_score": 1.0,
+        "aspect_score": 0.2859,
+        "nearest_track_id": "32",
+        "nearest_track_frame": 320
+      },
+      "track": {
+        "track_id": "32",
+        "movement_px": 123.58,
+        "length": 11
+      },
+      "event_subtype": "fence_or_railing_intrusion",
+      "score": 0.6917
+    },
+    "candidate_results": [
+      {
+        "event": {
+          "type": "same_track_crossing",
+          "before": {
+            "source": "base_track",
+            "class_id": 0,
+            "class": "person",
+            "confidence": 0.6782,
+            "bbox": [
+              1179,
+              158,
+              1236,
+              299
+            ],
+            "center": [
+              1207.5,
+              228.5
+            ],
+            "bottom_center": [
+              1207.5,
+              299.0
+            ],
+            "area": 8037.0,
+            "track_id": 32,
+            "obj_label": "person",
+            "frame_id": 328,
+            "time_sec": 10.933,
+            "track_source": "yolo_bytetrack",
+            "intrusion_point": [
+              1207.5,
+              299.0
+            ],
+            "point": [
+              1207.5,
+              299.0
+            ],
+            "line_side_value": 46459.5,
+            "line_side": 1
+          },
+          "after": {
+            "source": "base_track",
+            "class_id": 0,
+            "class": "person",
+            "confidence": 0.4848,
+            "bbox": [
+              1091,
+              108,
+              1142,
+              240
+            ],
+            "center": [
+              1116.5,
+              174.0
+            ],
+            "bottom_center": [
+              1116.5,
+              240.0
+            ],
+            "area": 6732.0,
+            "track_id": 32,
+            "obj_label": "person",
+            "frame_id": 392,
+            "time_sec": 13.067,
+            "track_source": "yolo_bytetrack",
+            "intrusion_point": [
+              1116.5,
+              240.0
+            ],
+            "point": [
+              1116.5,
+              240.0
+            ],
+            "line_side_value": -4666.5,
+            "line_side": -1
+          },
+          "side_transition": "1_to_-1",
+          "frame_gap": 64,
+          "duration_sec": 2.134,
+          "movement_px": 108.45,
+          "before_streak": 2,
+          "after_streak": 2,
+          "direction_cos": 0.7469,
+          "cross_midpoint": [
+            1162.0,
+            269.5
+          ],
+          "cross_midpoint_distance_to_structure": 0.0,
+          "track_id": "32",
+          "center_ratio": 0.32
+        },
+        "line_info": {
+          "boundary_line": [
+            [
+              967,
+              421
+            ],
+            [
+              1286,
+              66
+            ]
+          ],
+          "line_center": [
+            1126.74,
+            243.34
+          ],
+          "line_direction_vector": [
+            -0.743294,
+            -0.668965
+          ],
+          "line_length": 477,
+          "center_ratio": 0.32,
+          "nearest_track_frame": 320,
+          "nearest_track_distance": 0.0,
+          "bbox": [
+            894,
+            118,
+            1292,
+            466
+          ]
+        },
+        "structure_candidate": {
+          "object": {
+            "source": "yolo_world",
+            "class_id": 34,
+            "class": "fence",
+            "confidence": 0.2838,
+            "bbox": [
+              894,
+              118,
+              1292,
+              466
+            ],
+            "center": [
+              1093.0,
+              292.0
+            ],
+            "bottom_center": [
+              1093.0,
+              466.0
+            ],
+            "area": 138504.0,
+            "frame_id": 296,
+            "time_sec": 9.867,
+            "label": "fence"
+          },
+          "score": 0.685,
+          "distance_to_track": 0.0,
+          "distance_score": 1.0,
+          "shape_score": 1.0,
+          "aspect_score": 0.2859,
+          "nearest_track_id": "32",
+          "nearest_track_frame": 320
+        },
+        "track": {
+          "track_id": "32",
+          "movement_px": 123.58,
+          "length": 11
+        },
+        "event_subtype": "fence_or_railing_intrusion",
+        "score": 0.6917
+      },
+      {
+        "event": {
+          "type": "same_track_crossing",
+          "before": {
+            "source": "base_track",
+            "class_id": 0,
+            "class": "person",
+            "confidence": 0.6782,
+            "bbox": [
+              1179,
+              158,
+              1236,
+              299
+            ],
+            "center": [
+              1207.5,
+              228.5
+            ],
+            "bottom_center": [
+              1207.5,
+              299.0
+            ],
+            "area": 8037.0,
+            "track_id": 32,
+            "obj_label": "person",
+            "frame_id": 328,
+            "time_sec": 10.933,
+            "track_source": "yolo_bytetrack",
+            "intrusion_point": [
+              1207.5,
+              299.0
+            ],
+            "point": [
+              1207.5,
+              299.0
+            ],
+            "line_side_value": 47632.5,
+            "line_side": 1
+          },
+          "after": {
+            "source": "base_track",
+            "class_id": 0,
+            "class": "person",
+            "confidence": 0.4848,
+            "bbox": [
+              1091,
+              108,
+              1142,
+              240
+            ],
+            "center": [
+              1116.5,
+              174.0
+            ],
+            "bottom_center": [
+              1116.5,
+              240.0
+            ],
+            "area": 6732.0,
+            "track_id": 32,
+            "obj_label": "person",
+            "frame_id": 392,
+            "time_sec": 13.067,
+            "track_source": "yolo_bytetrack",
+            "intrusion_point": [
+              1116.5,
+              240.0
+            ],
+            "point": [
+              1116.5,
+              240.0
+            ],
+            "line_side_value": -2893.5,
+            "line_side": -1
+          },
+          "side_transition": "1_to_-1",
+          "frame_gap": 64,
+          "duration_sec": 2.134,
+          "movement_px": 108.45,
+          "before_streak": 2,
+          "after_streak": 2,
+          "direction_cos": 0.7469,
+          "cross_midpoint": [
+            1162.0,
+            269.5
+          ],
+          "cross_midpoint_distance_to_structure": 0.0,
+          "track_id": "32",
+          "center_ratio": 0.32
+        },
+        "line_info": {
+          "boundary_line": [
+            [
+              965,
+              418
+            ],
+            [
+              1280,
+              67
+            ]
+          ],
+          "line_center": [
+            1122.42,
+            242.25
+          ],
+          "line_direction_vector": [
+            -0.743294,
+            -0.668965
+          ],
+          "line_length": 472,
+          "center_ratio": 0.32,
+          "nearest_track_frame": 320,
+          "nearest_track_distance": 0.0,
+          "bbox": [
+            890,
+            117,
+            1284,
+            464
+          ]
+        },
+        "structure_candidate": {
+          "object": {
+            "source": "yolo_world",
+            "class_id": 34,
+            "class": "fence",
+            "confidence": 0.2592,
+            "bbox": [
+              890,
+              117,
+              1284,
+              464
+            ],
+            "center": [
+              1087.0,
+              290.5
+            ],
+            "bottom_center": [
+              1087.0,
+              464.0
+            ],
+            "area": 136718.0,
+            "frame_id": 352,
+            "time_sec": 11.733,
+            "label": "fence"
+          },
+          "score": 0.676,
+          "distance_to_track": 0.0,
+          "distance_score": 1.0,
+          "shape_score": 1.0,
+          "aspect_score": 0.2839,
+          "nearest_track_id": "32",
+          "nearest_track_frame": 320
+        },
+        "track": {
+          "track_id": "32",
+          "movement_px": 123.58,
+          "length": 11
+        },
+        "event_subtype": "fence_or_railing_intrusion",
+        "score": 0.6892
+      },
+      {
+        "event": {
+          "type": "same_track_crossing",
+          "before": {
+            "source": "base_track",
+            "class_id": 0,
+            "class": "person",
+            "confidence": 0.6782,
+            "bbox": [
+              1179,
+              158,
+              1236,
+              299
+            ],
+            "center": [
+              1207.5,
+              228.5
+            ],
+            "bottom_center": [
+              1207.5,
+              299.0
+            ],
+            "area": 8037.0,
+            "track_id": 32,
+            "obj_label": "person",
+            "frame_id": 328,
+            "time_sec": 10.933,
+            "track_source": "yolo_bytetrack",
+            "intrusion_point": [
+              1207.5,
+              299.0
+            ],
+            "point": [
+              1207.5,
+              299.0
+            ],
+            "line_side_value": 49682.5,
+            "line_side": 1
+          },
+          "after": {
+            "source": "base_track",
+            "class_id": 0,
+            "class": "person",
+            "confidence": 0.4848,
+            "bbox": [
+              1091,
+              108,
+              1142,
+              240
+            ],
+            "center": [
+              1116.5,
+              174.0
+            ],
+            "bottom_center": [
+              1116.5,
+              240.0
+            ],
+            "area": 6732.0,
+            "track_id": 32,
+            "obj_label": "person",
+            "frame_id": 392,
+            "time_sec": 13.067,
+            "track_source": "yolo_bytetrack",
+            "intrusion_point": [
+              1116.5,
+              240.0
+            ],
+            "point": [
+              1116.5,
+              240.0
+            ],
+            "line_side_value": -1802.5,
+            "line_side": -1
+          },
+          "side_transition": "1_to_-1",
+          "frame_gap": 64,
+          "duration_sec": 2.134,
+          "movement_px": 108.45,
+          "before_streak": 2,
+          "after_streak": 2,
+          "direction_cos": 0.7469,
+          "cross_midpoint": [
+            1162.0,
+            269.5
+          ],
+          "cross_midpoint_distance_to_structure": 0.0,
+          "track_id": "32",
+          "center_ratio": 0.32
+        },
+        "line_info": {
+          "boundary_line": [
+            [
+              961,
+              418
+            ],
+            [
+              1283,
+              61
+            ]
+          ],
+          "line_center": [
+            1122.06,
+            239.73
+          ],
+          "line_direction_vector": [
+            -0.743294,
+            -0.668965
+          ],
+          "line_length": 481,
+          "center_ratio": 0.32,
+          "nearest_track_frame": 320,
+          "nearest_track_distance": 0.0,
+          "bbox": [
+            886,
+            112,
+            1287,
+            465
+          ]
+        },
+        "structure_candidate": {
+          "object": {
+            "source": "yolo_world",
+            "class_id": 34,
+            "class": "fence",
+            "confidence": 0.2491,
+            "bbox": [
+              886,
+              112,
+              1287,
+              465
+            ],
+            "center": [
+              1086.5,
+              288.5
+            ],
+            "bottom_center": [
+              1086.5,
+              465.0
+            ],
+            "area": 141553.0,
+            "frame_id": 456,
+            "time_sec": 15.2,
+            "label": "fence"
+          },
+          "score": 0.6724,
+          "distance_to_track": 0.0,
+          "distance_score": 1.0,
+          "shape_score": 1.0,
+          "aspect_score": 0.284,
+          "nearest_track_id": "32",
+          "nearest_track_frame": 320
+        },
+        "track": {
+          "track_id": "32",
+          "movement_px": 123.58,
+          "length": 11
+        },
+        "event_subtype": "fence_or_railing_intrusion",
+        "score": 0.6882
+      },
+      {
+        "event": {
+          "type": "same_track_crossing",
+          "before": {
+            "source": "base_track",
+            "class_id": 0,
+            "class": "person",
+            "confidence": 0.6782,
+            "bbox": [
+              1179,
+              158,
+              1236,
+              299
+            ],
+            "center": [
+              1207.5,
+              228.5
+            ],
+            "bottom_center": [
+              1207.5,
+              299.0
+            ],
+            "area": 8037.0,
+            "track_id": 32,
+            "obj_label": "person",
+            "frame_id": 328,
+            "time_sec": 10.933,
+            "track_source": "yolo_bytetrack",
+            "intrusion_point": [
+              1207.5,
+              299.0
+            ],
+            "point": [
+              1207.5,
+              299.0
+            ],
+            "line_side_value": 47003.0,
+            "line_side": 1
+          },
+          "after": {
+            "source": "base_track",
+            "class_id": 0,
+            "class": "person",
+            "confidence": 0.4848,
+            "bbox": [
+              1091,
+              108,
+              1142,
+              240
+            ],
+            "center": [
+              1116.5,
+              174.0
+            ],
+            "bottom_center": [
+              1116.5,
+              240.0
+            ],
+            "area": 6732.0,
+            "track_id": 32,
+            "obj_label": "person",
+            "frame_id": 392,
+            "time_sec": 13.067,
+            "track_source": "yolo_bytetrack",
+            "intrusion_point": [
+              1116.5,
+              240.0
+            ],
+            "point": [
+              1116.5,
+              240.0
+            ],
+            "line_side_value": -3732.0,
+            "line_side": -1
+          },
+          "side_transition": "1_to_-1",
+          "frame_gap": 64,
+          "duration_sec": 2.134,
+          "movement_px": 108.45,
+          "before_streak": 2,
+          "after_streak": 2,
+          "direction_cos": 0.7469,
+          "cross_midpoint": [
+            1162.0,
+            269.5
+          ],
+          "cross_midpoint_distance_to_structure": 0.0,
+          "track_id": "32",
+          "center_ratio": 0.32
+        },
+        "line_info": {
+          "boundary_line": [
+            [
+              965,
+              420
+            ],
+            [
+              1282,
+              68
+            ]
+          ],
+          "line_center": [
+            1123.5,
+            243.86
+          ],
+          "line_direction_vector": [
+            -0.743294,
+            -0.668965
+          ],
+          "line_length": 474,
+          "center_ratio": 0.32,
+          "nearest_track_frame": 320,
+          "nearest_track_distance": 0.0,
+          "bbox": [
+            891,
+            118,
+            1286,
+            468
+          ]
+        },
+        "structure_candidate": {
+          "object": {
+            "source": "yolo_world",
+            "class_id": 34,
+            "class": "fence",
+            "confidence": 0.2468,
+            "bbox": [
+              891,
+              118,
+              1286,
+              468
+            ],
+            "center": [
+              1088.5,
+              293.0
+            ],
+            "bottom_center": [
+              1088.5,
+              468.0
+            ],
+            "area": 138250.0,
+            "frame_id": 440,
+            "time_sec": 14.667,
+            "label": "fence"
+          },
+          "score": 0.6714,
+          "distance_to_track": 0.0,
+          "distance_score": 1.0,
+          "shape_score": 1.0,
+          "aspect_score": 0.2821,
+          "nearest_track_id": "32",
+          "nearest_track_frame": 320
+        },
+        "track": {
+          "track_id": "32",
+          "movement_px": 123.58,
+          "length": 11
+        },
+        "event_subtype": "fence_or_railing_intrusion",
+        "score": 0.6879
+      },
+      {
+        "event": {
+          "type": "same_track_crossing",
+          "before": {
+            "source": "base_track",
+            "class_id": 0,
+            "class": "person",
+            "confidence": 0.6782,
+            "bbox": [
+              1179,
+              158,
+              1236,
+              299
+            ],
+            "center": [
+              1207.5,
+              228.5
+            ],
+            "bottom_center": [
+              1207.5,
+              299.0
+            ],
+            "area": 8037.0,
+            "track_id": 32,
+            "obj_label": "person",
+            "frame_id": 328,
+            "time_sec": 10.933,
+            "track_source": "yolo_bytetrack",
+            "intrusion_point": [
+              1207.5,
+              299.0
+            ],
+            "point": [
+              1207.5,
+              299.0
+            ],
+            "line_side_value": 48162.5,
+            "line_side": 1
+          },
+          "after": {
+            "source": "base_track",
+            "class_id": 0,
+            "class": "person",
+            "confidence": 0.4848,
+            "bbox": [
+              1091,
+              108,
+              1142,
+              240
+            ],
+            "center": [
+              1116.5,
+              174.0
+            ],
+            "bottom_center": [
+              1116.5,
+              240.0
+            ],
+            "area": 6732.0,
+            "track_id": 32,
+            "obj_label": "person",
+            "frame_id": 392,
+            "time_sec": 13.067,
+            "track_source": "yolo_bytetrack",
+            "intrusion_point": [
+              1116.5,
+              240.0
+            ],
+            "point": [
+              1116.5,
+              240.0
+            ],
+            "line_side_value": -2963.5,
+            "line_side": -1
+          },
+          "side_transition": "1_to_-1",
+          "frame_gap": 64,
+          "duration_sec": 2.134,
+          "movement_px": 108.45,
+          "before_streak": 2,
+          "after_streak": 2,
+          "direction_cos": 0.7469,
+          "cross_midpoint": [
+            1162.0,
+            269.5
+          ],
+          "cross_midpoint_distance_to_structure": 0.0,
+          "track_id": "32",
+          "center_ratio": 0.32
+        },
+        "line_info": {
+          "boundary_line": [
+            [
+              964,
+              419
+            ],
+            [
+              1283,
+              64
+            ]
+          ],
+          "line_center": [
+            1123.5,
+            241.4
+          ],
+          "line_direction_vector": [
+            -0.743294,
+            -0.668965
+          ],
+          "line_length": 478,
+          "center_ratio": 0.32,
+          "nearest_track_frame": 320,
+          "nearest_track_distance": 0.0,
+          "bbox": [
+            889,
+            115,
+            1288,
+            465
+          ]
+        },
+        "structure_candidate": {
+          "object": {
+            "source": "yolo_world",
+            "class_id": 34,
+            "class": "fence",
+            "confidence": 0.2419,
+            "bbox": [
+              889,
+              115,
+              1288,
+              465
+            ],
+            "center": [
+              1088.5,
+              290.0
+            ],
+            "bottom_center": [
+              1088.5,
+              465.0
+            ],
+            "area": 139650.0,
+            "frame_id": 464,
+            "time_sec": 15.467,
+            "label": "fence"
+          },
+          "score": 0.6699,
+          "distance_to_track": 0.0,
+          "distance_score": 1.0,
+          "shape_score": 1.0,
+          "aspect_score": 0.285,
+          "nearest_track_id": "32",
+          "nearest_track_frame": 320
+        },
+        "track": {
+          "track_id": "32",
+          "movement_px": 123.58,
+          "length": 11
+        },
+        "event_subtype": "fence_or_railing_intrusion",
+        "score": 0.6875
+      },
+      {
+        "event": {
+          "type": "same_track_crossing",
+          "before": {
+            "source": "base_track",
+            "class_id": 0,
+            "class": "person",
+            "confidence": 0.6782,
+            "bbox": [
+              1179,
+              158,
+              1236,
+              299
+            ],
+            "center": [
+              1207.5,
+              228.5
+            ],
+            "bottom_center": [
+              1207.5,
+              299.0
+            ],
+            "area": 8037.0,
+            "track_id": 32,
+            "obj_label": "person",
+            "frame_id": 328,
+            "time_sec": 10.933,
+            "track_source": "yolo_bytetrack",
+            "intrusion_point": [
+              1207.5,
+              299.0
+            ],
+            "point": [
+              1207.5,
+              299.0
+            ],
+            "line_side_value": 46695.0,
+            "line_side": 1
+          },
+          "after": {
+            "source": "base_track",
+            "class_id": 0,
+            "class": "person",
+            "confidence": 0.4848,
+            "bbox": [
+              1091,
+              108,
+              1142,
+              240
+            ],
+            "center": [
+              1116.5,
+              174.0
+            ],
+            "bottom_center": [
+              1116.5,
+              240.0
+            ],
+            "area": 6732.0,
+            "track_id": 32,
+            "obj_label": "person",
+            "frame_id": 392,
+            "time_sec": 13.067,
+            "track_source": "yolo_bytetrack",
+            "intrusion_point": [
+              1116.5,
+              240.0
+            ],
+            "point": [
+              1116.5,
+              240.0
+            ],
+            "line_side_value": -4281.0,
+            "line_side": -1
+          },
+          "side_transition": "1_to_-1",
+          "frame_gap": 64,
+          "duration_sec": 2.134,
+          "movement_px": 108.45,
+          "before_streak": 2,
+          "after_streak": 2,
+          "direction_cos": 0.7469,
+          "cross_midpoint": [
+            1162.0,
+            269.5
+          ],
+          "cross_midpoint_distance_to_structure": 0.0,
+          "track_id": "32",
+          "center_ratio": 0.32
+        },
+        "line_info": {
+          "boundary_line": [
+            [
+              966,
+              421
+            ],
+            [
+              1284,
+              67
+            ]
+          ],
+          "line_center": [
+            1124.94,
+            243.86
+          ],
+          "line_direction_vector": [
+            -0.743294,
+            -0.668965
+          ],
+          "line_length": 476,
+          "center_ratio": 0.32,
+          "nearest_track_frame": 320,
+          "nearest_track_distance": 0.0,
+          "bbox": [
+            892,
+            118,
+            1289,
+            468
+          ]
+        },
+        "structure_candidate": {
+          "object": {
+            "source": "yolo_world",
+            "class_id": 34,
+            "class": "fence",
+            "confidence": 0.2419,
+            "bbox": [
+              892,
+              118,
+              1289,
+              468
+            ],
+            "center": [
+              1090.5,
+              293.0
+            ],
+            "bottom_center": [
+              1090.5,
+              468.0
+            ],
+            "area": 138950.0,
+            "frame_id": 232,
+            "time_sec": 7.733,
+            "label": "fence"
+          },
+          "score": 0.6698,
+          "distance_to_track": 0.0,
+          "distance_score": 1.0,
+          "shape_score": 1.0,
+          "aspect_score": 0.2836,
+          "nearest_track_id": "32",
+          "nearest_track_frame": 320
+        },
+        "track": {
+          "track_id": "32",
+          "movement_px": 123.58,
+          "length": 11
+        },
+        "event_subtype": "fence_or_railing_intrusion",
+        "score": 0.6875
+      },
+      {
+        "event": {
+          "type": "same_track_crossing",
+          "before": {
+            "source": "base_track",
+            "class_id": 0,
+            "class": "person",
+            "confidence": 0.6782,
+            "bbox": [
+              1179,
+              158,
+              1236,
+              299
+            ],
+            "center": [
+              1207.5,
+              228.5
+            ],
+            "bottom_center": [
+              1207.5,
+              299.0
+            ],
+            "area": 8037.0,
+            "track_id": 32,
+            "obj_label": "person",
+            "frame_id": 328,
+            "time_sec": 10.933,
+            "track_source": "yolo_bytetrack",
+            "intrusion_point": [
+              1207.5,
+              299.0
+            ],
+            "point": [
+              1207.5,
+              299.0
+            ],
+            "line_side_value": 46334.0,
+            "line_side": 1
+          },
+          "after": {
+            "source": "base_track",
+            "class_id": 0,
+            "class": "person",
+            "confidence": 0.4848,
+            "bbox": [
+              1091,
+              108,
+              1142,
+              240
+            ],
+            "center": [
+              1116.5,
+              174.0
+            ],
+            "bottom_center": [
+              1116.5,
+              240.0
+            ],
+            "area": 6732.0,
+            "track_id": 32,
+            "obj_label": "person",
+            "frame_id": 392,
+            "time_sec": 13.067,
+            "track_source": "yolo_bytetrack",
+            "intrusion_point": [
+              1116.5,
+              240.0
+            ],
+            "point": [
+              1116.5,
+              240.0
+            ],
+            "line_side_value": -4401.0,
+            "line_side": -1
+          },
+          "side_transition": "1_to_-1",
+          "frame_gap": 64,
+          "duration_sec": 2.134,
+          "movement_px": 108.45,
+          "before_streak": 2,
+          "after_streak": 2,
+          "direction_cos": 0.7469,
+          "cross_midpoint": [
+            1162.0,
+            269.5
+          ],
+          "cross_midpoint_distance_to_structure": 0.0,
+          "track_id": "32",
+          "center_ratio": 0.32
+        },
+        "line_info": {
+          "boundary_line": [
+            [
+              966,
+              421
+            ],
+            [
+              1283,
+              69
+            ]
+          ],
+          "line_center": [
+            1124.22,
+            244.68
+          ],
+          "line_direction_vector": [
+            -0.743294,
+            -0.668965
+          ],
+          "line_length": 474,
+          "center_ratio": 0.32,
+          "nearest_track_frame": 320,
+          "nearest_track_distance": 0.0,
+          "bbox": [
+            892,
+            119,
+            1287,
+            469
+          ]
+        },
+        "structure_candidate": {
+          "object": {
+            "source": "yolo_world",
+            "class_id": 34,
+            "class": "fence",
+            "confidence": 0.2375,
+            "bbox": [
+              892,
+              119,
+              1287,
+              469
+            ],
+            "center": [
+              1089.5,
+              294.0
+            ],
+            "bottom_center": [
+              1089.5,
+              469.0
+            ],
+            "area": 138250.0,
+            "frame_id": 424,
+            "time_sec": 14.133,
+            "label": "fence"
+          },
+          "score": 0.6681,
+          "distance_to_track": 0.0,
+          "distance_score": 1.0,
+          "shape_score": 1.0,
+          "aspect_score": 0.2821,
+          "nearest_track_id": "32",
+          "nearest_track_frame": 320
+        },
+        "track": {
+          "track_id": "32",
+          "movement_px": 123.58,
+          "length": 11
+        },
+        "event_subtype": "fence_or_railing_intrusion",
+        "score": 0.687
+      },
+      {
+        "event": {
+          "type": "same_track_crossing",
+          "before": {
+            "source": "base_track",
+            "class_id": 0,
+            "class": "person",
+            "confidence": 0.6782,
+            "bbox": [
+              1179,
+              158,
+              1236,
+              299
+            ],
+            "center": [
+              1207.5,
+              228.5
+            ],
+            "bottom_center": [
+              1207.5,
+              299.0
+            ],
+            "area": 8037.0,
+            "track_id": 32,
+            "obj_label": "person",
+            "frame_id": 328,
+            "time_sec": 10.933,
+            "track_source": "yolo_bytetrack",
+            "intrusion_point": [
+              1207.5,
+              299.0
+            ],
+            "point": [
+              1207.5,
+              299.0
+            ],
+            "line_side_value": 46453.5,
+            "line_side": 1
+          },
+          "after": {
+            "source": "base_track",
+            "class_id": 0,
+            "class": "person",
+            "confidence": 0.4848,
+            "bbox": [
+              1091,
+              108,
+              1142,
+              240
+            ],
+            "center": [
+              1116.5,
+              174.0
+            ],
+            "bottom_center": [
+              1116.5,
+              240.0
+            ],
+            "area": 6732.0,
+            "track_id": 32,
+            "obj_label": "person",
+            "frame_id": 392,
+            "time_sec": 13.067,
+            "track_source": "yolo_bytetrack",
+            "intrusion_point": [
+              1116.5,
+              240.0
+            ],
+            "point": [
+              1116.5,
+              240.0
+            ],
+            "line_side_value": -4431.5,
+            "line_side": -1
+          },
+          "side_transition": "1_to_-1",
+          "frame_gap": 64,
+          "duration_sec": 2.134,
+          "movement_px": 108.45,
+          "before_streak": 2,
+          "after_streak": 2,
+          "direction_cos": 0.7469,
+          "cross_midpoint": [
+            1162.0,
+            269.5
+          ],
+          "cross_midpoint_distance_to_structure": 0.0,
+          "track_id": "32",
+          "center_ratio": 0.32
+        },
+        "line_info": {
+          "boundary_line": [
+            [
+              966,
+              421
+            ],
+            [
+              1284,
+              68
+            ]
+          ],
+          "line_center": [
+            1125.3,
+            244.16
+          ],
+          "line_direction_vector": [
+            -0.743294,
+            -0.668965
+          ],
+          "line_length": 475,
+          "center_ratio": 0.32,
+          "nearest_track_frame": 320,
+          "nearest_track_distance": 0.0,
+          "bbox": [
+            893,
+            119,
+            1289,
+            467
+          ]
+        },
+        "structure_candidate": {
+          "object": {
+            "source": "yolo_world",
+            "class_id": 34,
+            "class": "fence",
+            "confidence": 0.2362,
+            "bbox": [
+              893,
+              119,
+              1289,
+              467
+            ],
+            "center": [
+              1091.0,
+              293.0
+            ],
+            "bottom_center": [
+              1091.0,
+              467.0
+            ],
+            "area": 137808.0,
+            "frame_id": 896,
+            "time_sec": 29.867,
+            "label": "fence"
+          },
+          "score": 0.6678,
+          "distance_to_track": 0.0,
+          "distance_score": 1.0,
+          "shape_score": 1.0,
+          "aspect_score": 0.2845,
+          "nearest_track_id": "32",
+          "nearest_track_frame": 320
+        },
+        "track": {
+          "track_id": "32",
+          "movement_px": 123.58,
+          "length": 11
+        },
+        "event_subtype": "fence_or_railing_intrusion",
+        "score": 0.6869
+      },
+      {
+        "event": {
+          "type": "same_track_crossing",
+          "before": {
+            "source": "base_track",
+            "class_id": 0,
+            "class": "person",
+            "confidence": 0.6782,
+            "bbox": [
+              1179,
+              158,
+              1236,
+              299
+            ],
+            "center": [
+              1207.5,
+              228.5
+            ],
+            "bottom_center": [
+              1207.5,
+              299.0
+            ],
+            "area": 8037.0,
+            "track_id": 32,
+            "obj_label": "person",
+            "frame_id": 328,
+            "time_sec": 10.933,
+            "track_source": "yolo_bytetrack",
+            "intrusion_point": [
+              1207.5,
+              299.0
+            ],
+            "point": [
+              1207.5,
+              299.0
+            ],
+            "line_side_value": 46334.0,
+            "line_side": 1
+          },
+          "after": {
+            "source": "base_track",
+            "class_id": 0,
+            "class": "person",
+            "confidence": 0.4848,
+            "bbox": [
+              1091,
+              108,
+              1142,
+              240
+            ],
+            "center": [
+              1116.5,
+              174.0
+            ],
+            "bottom_center": [
+              1116.5,
+              240.0
+            ],
+            "area": 6732.0,
+            "track_id": 32,
+            "obj_label": "person",
+            "frame_id": 392,
+            "time_sec": 13.067,
+            "track_source": "yolo_bytetrack",
+            "intrusion_point": [
+              1116.5,
+              240.0
+            ],
+            "point": [
+              1116.5,
+              240.0
+            ],
+            "line_side_value": -4401.0,
+            "line_side": -1
+          },
+          "side_transition": "1_to_-1",
+          "frame_gap": 64,
+          "duration_sec": 2.134,
+          "movement_px": 108.45,
+          "before_streak": 2,
+          "after_streak": 2,
+          "direction_cos": 0.7469,
+          "cross_midpoint": [
+            1162.0,
+            269.5
+          ],
+          "cross_midpoint_distance_to_structure": 0.0,
+          "track_id": "32",
+          "center_ratio": 0.32
+        },
+        "line_info": {
+          "boundary_line": [
+            [
+              966,
+              421
+            ],
+            [
+              1283,
+              69
+            ]
+          ],
+          "line_center": [
+            1124.22,
+            244.68
+          ],
+          "line_direction_vector": [
+            -0.743294,
+            -0.668965
+          ],
+          "line_length": 474,
+          "center_ratio": 0.32,
+          "nearest_track_frame": 320,
+          "nearest_track_distance": 0.0,
+          "bbox": [
+            892,
+            119,
+            1287,
+            469
+          ]
+        },
+        "structure_candidate": {
+          "object": {
+            "source": "yolo_world",
+            "class_id": 34,
+            "class": "fence",
+            "confidence": 0.2334,
+            "bbox": [
+              892,
+              119,
+              1287,
+              469
+            ],
+            "center": [
+              1089.5,
+              294.0
+            ],
+            "bottom_center": [
+              1089.5,
+              469.0
+            ],
+            "area": 138250.0,
+            "frame_id": 432,
+            "time_sec": 14.4,
+            "label": "fence"
+          },
+          "score": 0.6666,
+          "distance_to_track": 0.0,
+          "distance_score": 1.0,
+          "shape_score": 1.0,
+          "aspect_score": 0.2821,
+          "nearest_track_id": "32",
+          "nearest_track_frame": 320
+        },
+        "track": {
+          "track_id": "32",
+          "movement_px": 123.58,
+          "length": 11
+        },
+        "event_subtype": "fence_or_railing_intrusion",
+        "score": 0.6866
+      },
+      {
+        "event": {
+          "type": "same_track_crossing",
+          "before": {
+            "source": "base_track",
+            "class_id": 0,
+            "class": "person",
+            "confidence": 0.6782,
+            "bbox": [
+              1179,
+              158,
+              1236,
+              299
+            ],
+            "center": [
+              1207.5,
+              228.5
+            ],
+            "bottom_center": [
+              1207.5,
+              299.0
+            ],
+            "area": 8037.0,
+            "track_id": 32,
+            "obj_label": "person",
+            "frame_id": 328,
+            "time_sec": 10.933,
+            "track_source": "yolo_bytetrack",
+            "intrusion_point": [
+              1207.5,
+              299.0
+            ],
+            "point": [
+              1207.5,
+              299.0
+            ],
+            "line_side_value": 24798.0,
+            "line_side": 1
+          },
+          "after": {
+            "source": "base_track",
+            "class_id": 0,
+            "class": "person",
+            "confidence": 0.4848,
+            "bbox": [
+              1091,
+              108,
+              1142,
+              240
+            ],
+            "center": [
+              1116.5,
+              174.0
+            ],
+            "bottom_center": [
+              1116.5,
+              240.0
+            ],
+            "area": 6732.0,
+            "track_id": 32,
+            "obj_label": "person",
+            "frame_id": 392,
+            "time_sec": 13.067,
+            "track_source": "yolo_bytetrack",
+            "intrusion_point": [
+              1116.5,
+              240.0
+            ],
+            "point": [
+              1116.5,
+              240.0
+            ],
+            "line_side_value": -15191.0,
+            "line_side": -1
+          },
+          "side_transition": "1_to_-1",
+          "frame_gap": 64,
+          "duration_sec": 2.134,
+          "movement_px": 108.45,
+          "before_streak": 2,
+          "after_streak": 2,
+          "direction_cos": 0.7469,
+          "cross_midpoint": [
+            1162.0,
+            269.5
+          ],
+          "cross_midpoint_distance_to_structure": 0.0,
+          "track_id": "32",
+          "center_ratio": 0.32
+        },
+        "line_info": {
+          "boundary_line": [
+            [
+              1035,
+              392
+            ],
+            [
+              1284,
+              114
+            ]
+          ],
+          "line_center": [
+            1159.5,
+            252.88
+          ],
+          "line_direction_vector": [
+            -0.743294,
+            -0.668965
+          ],
+          "line_length": 373,
+          "center_ratio": 0.32,
+          "nearest_track_frame": 320,
+          "nearest_track_distance": 0.0,
+          "bbox": [
+            989,
+            137,
+            1288,
+            462
+          ]
+        },
+        "structure_candidate": {
+          "object": {
+            "source": "yolo_world",
+            "class_id": 34,
+            "class": "fence",
+            "confidence": 0.2337,
+            "bbox": [
+              989,
+              137,
+              1288,
+              462
+            ],
+            "center": [
+              1138.5,
+              299.5
+            ],
+            "bottom_center": [
+              1138.5,
+              462.0
+            ],
+            "area": 97175.0,
+            "frame_id": 624,
+            "time_sec": 20.8,
+            "label": "fence"
+          },
+          "score": 0.6659,
+          "distance_to_track": 0.0,
+          "distance_score": 1.0,
+          "shape_score": 1.0,
+          "aspect_score": 0.2717,
+          "nearest_track_id": "32",
+          "nearest_track_frame": 320
+        },
+        "track": {
+          "track_id": "32",
+          "movement_px": 123.58,
+          "length": 11
+        },
+        "event_subtype": "fence_or_railing_intrusion",
+        "score": 0.6864
+      }
+    ],
+    "structure_candidates": [
+      {
+        "object": {
+          "source": "yolo_world",
+          "class_id": 34,
+          "class": "fence",
+          "confidence": 0.2838,
+          "bbox": [
+            894,
+            118,
+            1292,
+            466
+          ],
+          "center": [
+            1093.0,
+            292.0
+          ],
+          "bottom_center": [
+            1093.0,
+            466.0
+          ],
+          "area": 138504.0,
+          "frame_id": 296,
+          "time_sec": 9.867,
+          "label": "fence"
+        },
+        "score": 0.685,
+        "distance_to_track": 0.0,
+        "distance_score": 1.0,
+        "shape_score": 1.0,
+        "aspect_score": 0.2859,
+        "nearest_track_id": "32",
+        "nearest_track_frame": 320
+      },
+      {
+        "object": {
+          "source": "yolo_world",
+          "class_id": 34,
+          "class": "fence",
+          "confidence": 0.2592,
+          "bbox": [
+            890,
+            117,
+            1284,
+            464
+          ],
+          "center": [
+            1087.0,
+            290.5
+          ],
+          "bottom_center": [
+            1087.0,
+            464.0
+          ],
+          "area": 136718.0,
+          "frame_id": 352,
+          "time_sec": 11.733,
+          "label": "fence"
+        },
+        "score": 0.676,
+        "distance_to_track": 0.0,
+        "distance_score": 1.0,
+        "shape_score": 1.0,
+        "aspect_score": 0.2839,
+        "nearest_track_id": "32",
+        "nearest_track_frame": 320
+      },
+      {
+        "object": {
+          "source": "yolo_world",
+          "class_id": 34,
+          "class": "fence",
+          "confidence": 0.2491,
+          "bbox": [
+            886,
+            112,
+            1287,
+            465
+          ],
+          "center": [
+            1086.5,
+            288.5
+          ],
+          "bottom_center": [
+            1086.5,
+            465.0
+          ],
+          "area": 141553.0,
+          "frame_id": 456,
+          "time_sec": 15.2,
+          "label": "fence"
+        },
+        "score": 0.6724,
+        "distance_to_track": 0.0,
+        "distance_score": 1.0,
+        "shape_score": 1.0,
+        "aspect_score": 0.284,
+        "nearest_track_id": "32",
+        "nearest_track_frame": 320
+      },
+      {
+        "object": {
+          "source": "yolo_world",
+          "class_id": 34,
+          "class": "fence",
+          "confidence": 0.2468,
+          "bbox": [
+            891,
+            118,
+            1286,
+            468
+          ],
+          "center": [
+            1088.5,
+            293.0
+          ],
+          "bottom_center": [
+            1088.5,
+            468.0
+          ],
+          "area": 138250.0,
+          "frame_id": 440,
+          "time_sec": 14.667,
+          "label": "fence"
+        },
+        "score": 0.6714,
+        "distance_to_track": 0.0,
+        "distance_score": 1.0,
+        "shape_score": 1.0,
+        "aspect_score": 0.2821,
+        "nearest_track_id": "32",
+        "nearest_track_frame": 320
+      },
+      {
+        "object": {
+          "source": "yolo_world",
+          "class_id": 34,
+          "class": "fence",
+          "confidence": 0.2419,
+          "bbox": [
+            889,
+            115,
+            1288,
+            465
+          ],
+          "center": [
+            1088.5,
+            290.0
+          ],
+          "bottom_center": [
+            1088.5,
+            465.0
+          ],
+          "area": 139650.0,
+          "frame_id": 464,
+          "time_sec": 15.467,
+          "label": "fence"
+        },
+        "score": 0.6699,
+        "distance_to_track": 0.0,
+        "distance_score": 1.0,
+        "shape_score": 1.0,
+        "aspect_score": 0.285,
+        "nearest_track_id": "32",
+        "nearest_track_frame": 320
+      },
+      {
+        "object": {
+          "source": "yolo_world",
+          "class_id": 34,
+          "class": "fence",
+          "confidence": 0.2419,
+          "bbox": [
+            892,
+            118,
+            1289,
+            468
+          ],
+          "center": [
+            1090.5,
+            293.0
+          ],
+          "bottom_center": [
+            1090.5,
+            468.0
+          ],
+          "area": 138950.0,
+          "frame_id": 232,
+          "time_sec": 7.733,
+          "label": "fence"
+        },
+        "score": 0.6698,
+        "distance_to_track": 0.0,
+        "distance_score": 1.0,
+        "shape_score": 1.0,
+        "aspect_score": 0.2836,
+        "nearest_track_id": "32",
+        "nearest_track_frame": 320
+      },
+      {
+        "object": {
+          "source": "yolo_world",
+          "class_id": 34,
+          "class": "fence",
+          "confidence": 0.2375,
+          "bbox": [
+            892,
+            119,
+            1287,
+            469
+          ],
+          "center": [
+            1089.5,
+            294.0
+          ],
+          "bottom_center": [
+            1089.5,
+            469.0
+          ],
+          "area": 138250.0,
+          "frame_id": 424,
+          "time_sec": 14.133,
+          "label": "fence"
+        },
+        "score": 0.6681,
+        "distance_to_track": 0.0,
+        "distance_score": 1.0,
+        "shape_score": 1.0,
+        "aspect_score": 0.2821,
+        "nearest_track_id": "32",
+        "nearest_track_frame": 320
+      },
+      {
+        "object": {
+          "source": "yolo_world",
+          "class_id": 34,
+          "class": "fence",
+          "confidence": 0.2362,
+          "bbox": [
+            893,
+            119,
+            1289,
+            467
+          ],
+          "center": [
+            1091.0,
+            293.0
+          ],
+          "bottom_center": [
+            1091.0,
+            467.0
+          ],
+          "area": 137808.0,
+          "frame_id": 896,
+          "time_sec": 29.867,
+          "label": "fence"
+        },
+        "score": 0.6678,
+        "distance_to_track": 0.0,
+        "distance_score": 1.0,
+        "shape_score": 1.0,
+        "aspect_score": 0.2845,
+        "nearest_track_id": "32",
+        "nearest_track_frame": 320
+      }
+    ],
+    "track_candidates": [
+      {
+        "track_id": "8",
+        "movement_px": 250.97,
+        "length": 13
+      },
+      {
+        "track_id": "32",
+        "movement_px": 123.58,
+        "length": 11
+      }
+    ],
+    "reason": "gate/fence/wall/barrier 구조물 근처에서 사람 foot_point track이 boundary line을 통과했습니다."
+  },
+  "track_summary": {
+    "1": {
+      "length": 15,
+      "distance": 42.675,
+      "displacement": 35.735,
+      "mean_speed": 11.432,
+      "direction_changes": 0,
+      "first_frame": 0,
+      "last_frame": 112,
+      "first_time": 0.0,
+      "last_time": 3.733,
+      "track_source": "yolo_bytetrack"
+    },
+    "8": {
+      "length": 13,
+      "distance": 259.869,
+      "displacement": 250.683,
+      "mean_speed": 74.955,
+      "direction_changes": 0,
+      "first_frame": 120,
+      "last_frame": 224,
+      "first_time": 4.0,
+      "last_time": 7.467,
+      "track_source": "yolo_bytetrack"
+    },
+    "32": {
+      "length": 11,
+      "distance": 133.383,
+      "displacement": 132.076,
+      "mean_speed": 50.031,
+      "direction_changes": 0,
+      "first_frame": 320,
+      "last_frame": 400,
+      "first_time": 10.667,
+      "last_time": 13.333,
+      "track_source": "yolo_bytetrack"
+    },
+    "36": {
+      "length": 1,
+      "distance": 0.0,
+      "displacement": 0.0,
+      "mean_speed": 0.0,
+      "direction_changes": 0
+    }
+  },
+  "vehicle_track_summary": {
+    "1": {
+      "length": 113,
+      "distance": 90.376,
+      "displacement": 4.743,
+      "mean_speed": 3.026,
+      "direction_changes": 0,
+      "first_frame": 0,
+      "last_frame": 896,
+      "first_time": 0.0,
+      "last_time": 29.867,
+      "track_source": "custom_greedy"
+    },
+    "2": {
+      "length": 1,
+      "distance": 0.0,
+      "displacement": 0.0,
+      "mean_speed": 0.0,
+      "direction_changes": 0
+    },
+    "3": {
+      "length": 1,
+      "distance": 0.0,
+      "displacement": 0.0,
+      "mean_speed": 0.0,
+      "direction_changes": 0
+    },
+    "4": {
+      "length": 17,
+      "distance": 682.277,
+      "displacement": 598.094,
+      "mean_speed": 127.935,
+      "direction_changes": 2,
+      "first_frame": 56,
+      "last_frame": 216,
+      "first_time": 1.867,
+      "last_time": 7.2,
+      "track_source": "custom_greedy"
+    },
+    "5": {
+      "length": 24,
+      "distance": 810.449,
+      "displacement": 627.76,
+      "mean_speed": 116.897,
+      "direction_changes": 3,
+      "first_frame": 56,
+      "last_frame": 264,
+      "first_time": 1.867,
+      "last_time": 8.8,
+      "track_source": "custom_greedy"
+    },
+    "6": {
+      "length": 1,
+      "distance": 0.0,
+      "displacement": 0.0,
+      "mean_speed": 0.0,
+      "direction_changes": 0
+    },
+    "7": {
+      "length": 4,
+      "distance": 1.0,
+      "displacement": 0.0,
+      "mean_speed": 1.25,
+      "direction_changes": 0,
+      "first_frame": 152,
+      "last_frame": 176,
+      "first_time": 5.067,
+      "last_time": 5.867,
+      "track_source": "custom_greedy"
+    },
+    "8": {
+      "length": 22,
+      "distance": 506.108,
+      "displacement": 373.451,
+      "mean_speed": 82.522,
+      "direction_changes": 5,
+      "first_frame": 216,
+      "last_frame": 400,
+      "first_time": 7.2,
+      "last_time": 13.333,
+      "track_source": "custom_greedy"
+    },
+    "9": {
+      "length": 5,
+      "distance": 218.39,
+      "displacement": 21.691,
+      "mean_speed": 204.677,
+      "direction_changes": 2,
+      "first_frame": 216,
+      "last_frame": 248,
+      "first_time": 7.2,
+      "last_time": 8.267,
+      "track_source": "custom_greedy"
+    },
+    "10": {
+      "length": 19,
+      "distance": 660.87,
+      "displacement": 71.39,
+      "mean_speed": 123.921,
+      "direction_changes": 6,
+      "first_frame": 240,
+      "last_frame": 400,
+      "first_time": 8.0,
+      "last_time": 13.333,
+      "track_source": "custom_greedy"
+    },
+    "11": {
+      "length": 2,
+      "distance": 40.697,
+      "displacement": 40.697,
+      "mean_speed": 76.355,
+      "direction_changes": 0,
+      "first_frame": 248,
+      "last_frame": 264,
+      "first_time": 8.267,
+      "last_time": 8.8,
+      "track_source": "custom_greedy"
+    },
+    "12": {
+      "length": 4,
+      "distance": 50.648,
+      "displacement": 36.418,
+      "mean_speed": 63.31,
+      "direction_changes": 1,
+      "first_frame": 248,
+      "last_frame": 272,
+      "first_time": 8.267,
+      "last_time": 9.067,
+      "track_source": "custom_greedy"
+    },
+    "13": {
+      "length": 19,
+      "distance": 516.749,
+      "displacement": 391.012,
+      "mean_speed": 102.003,
+      "direction_changes": 2,
+      "first_frame": 248,
+      "last_frame": 400,
+      "first_time": 8.267,
+      "last_time": 13.333,
+      "track_source": "custom_greedy"
+    },
+    "14": {
+      "length": 3,
+      "distance": 0.5,
+      "displacement": 0.5,
+      "mean_speed": 0.938,
+      "direction_changes": 0,
+      "first_frame": 272,
+      "last_frame": 288,
+      "first_time": 9.067,
+      "last_time": 9.6,
+      "track_source": "custom_greedy"
+    },
+    "15": {
+      "length": 2,
+      "distance": 207.478,
+      "displacement": 207.478,
+      "mean_speed": 779.994,
+      "direction_changes": 0,
+      "first_frame": 320,
+      "last_frame": 328,
+      "first_time": 10.667,
+      "last_time": 10.933,
+      "track_source": "custom_greedy"
+    },
+    "16": {
+      "length": 1,
+      "distance": 0.0,
+      "displacement": 0.0,
+      "mean_speed": 0.0,
+      "direction_changes": 0
+    },
+    "17": {
+      "length": 2,
+      "distance": 51.152,
+      "displacement": 51.152,
+      "mean_speed": 191.58,
+      "direction_changes": 0,
+      "first_frame": 384,
+      "last_frame": 392,
+      "first_time": 12.8,
+      "last_time": 13.067,
+      "track_source": "custom_greedy"
+    },
+    "18": {
+      "length": 6,
+      "distance": 84.177,
+      "displacement": 44.421,
+      "mean_speed": 45.111,
+      "direction_changes": 1,
+      "first_frame": 440,
+      "last_frame": 496,
+      "first_time": 14.667,
+      "last_time": 16.533,
+      "track_source": "custom_greedy"
+    },
+    "19": {
+      "length": 4,
+      "distance": 37.351,
+      "displacement": 32.882,
+      "mean_speed": 46.689,
+      "direction_changes": 0,
+      "first_frame": 448,
+      "last_frame": 472,
+      "first_time": 14.933,
+      "last_time": 15.733,
+      "track_source": "custom_greedy"
+    },
+    "20": {
+      "length": 4,
+      "distance": 4.207,
+      "displacement": 3.041,
+      "mean_speed": 5.259,
+      "direction_changes": 0,
+      "first_frame": 448,
+      "last_frame": 472,
+      "first_time": 14.933,
+      "last_time": 15.733,
+      "track_source": "custom_greedy"
+    },
+    "21": {
+      "length": 8,
+      "distance": 53.038,
+      "displacement": 25.831,
+      "mean_speed": 28.408,
+      "direction_changes": 1,
+      "first_frame": 448,
+      "last_frame": 504,
+      "first_time": 14.933,
+      "last_time": 16.8,
+      "track_source": "custom_greedy"
+    },
+    "22": {
+      "length": 4,
+      "distance": 48.854,
+      "displacement": 30.083,
+      "mean_speed": 61.067,
+      "direction_changes": 0,
+      "first_frame": 448,
+      "last_frame": 472,
+      "first_time": 14.933,
+      "last_time": 15.733,
+      "track_source": "custom_greedy"
+    },
+    "23": {
+      "length": 2,
+      "distance": 1.0,
+      "displacement": 1.0,
+      "mean_speed": 3.745,
+      "direction_changes": 0,
+      "first_frame": 552,
+      "last_frame": 560,
+      "first_time": 18.4,
+      "last_time": 18.667,
+      "track_source": "custom_greedy"
+    },
+    "24": {
+      "length": 4,
+      "distance": 426.46,
+      "displacement": 79.889,
+      "mean_speed": 533.075,
+      "direction_changes": 1,
+      "first_frame": 624,
+      "last_frame": 648,
+      "first_time": 20.8,
+      "last_time": 21.6,
+      "track_source": "custom_greedy"
+    },
+    "25": {
+      "length": 3,
+      "distance": 12.54,
+      "displacement": 12.54,
+      "mean_speed": 23.483,
+      "direction_changes": 0,
+      "first_frame": 640,
+      "last_frame": 656,
+      "first_time": 21.333,
+      "last_time": 21.867,
+      "track_source": "custom_greedy"
+    },
+    "26": {
+      "length": 2,
+      "distance": 58.002,
+      "displacement": 58.002,
+      "mean_speed": 217.237,
+      "direction_changes": 0,
+      "first_frame": 640,
+      "last_frame": 648,
+      "first_time": 21.333,
+      "last_time": 21.6,
+      "track_source": "custom_greedy"
+    },
+    "27": {
+      "length": 1,
+      "distance": 0.0,
+      "displacement": 0.0,
+      "mean_speed": 0.0,
+      "direction_changes": 0
+    },
+    "28": {
+      "length": 3,
+      "distance": 0.5,
+      "displacement": 0.5,
+      "mean_speed": 0.936,
+      "direction_changes": 0,
+      "first_frame": 784,
+      "last_frame": 800,
+      "first_time": 26.133,
+      "last_time": 26.667,
+      "track_source": "custom_greedy"
+    },
+    "29": {
+      "length": 3,
+      "distance": 0.0,
+      "displacement": 0.0,
+      "mean_speed": 0.0,
+      "direction_changes": 0,
+      "first_frame": 872,
+      "last_frame": 888,
+      "first_time": 29.067,
+      "last_time": 29.6,
+      "track_source": "custom_greedy"
+    }
+  },
+  "model_status": {
+    "cc_version": "dd_all_in_one_cc_plus_integrated_intrusion_v1",
+    "device": "cuda",
+    "base_yolo": "C:\\Users\\우성한\\yolo11s.pt",
+    "pose_model": "C:\\Users\\우성한\\yolo11s-pose.pt",
+    "world_model": "C:\\Users\\우성한\\yolov8s-world.pt",
+    "world_model_active": true,
+    "world_classes": [
+      "person",
+      "rider",
+      "pedestrian",
+      "bicycle",
+      "bike",
+      "electric bike",
+      "motorcycle",
+      "motorbike",
+      "scooter",
+      "electric scooter",
+      "kickboard",
+      "moped",
+      "helmet",
+      "motorcycle helmet",
+      "bike helmet",
+      "no helmet",
+      "bare head",
+      "head",
+      "hat",
+      "cap",
+      "sidewalk",
+      "walkway",
+      "pavement",
+      "road",
+      "street",
+      "crosswalk",
+      "curb",
+      "lane",
+      "gate",
+      "entrance gate",
+      "open gate",
+      "metal gate",
+      "access gate",
+      "doorway",
+      "fence",
+      "green fence",
+      "metal fence",
+      "railing",
+      "guard rail",
+      "handrail",
+      "barrier",
+      "wall",
+      "low wall",
+      "boundary fence"
+    ],
+    "segformer": "nvidia/segformer-b5-finetuned-cityscapes-1024-1024",
+    "helmet_backend": "none",
+    "helmet_model": null,
+    "tracker": "bytetrack.yaml"
+  },
+  "feature_json": "C:\\Users\\우성한\\outputs\\prediction\\dd\\dd_features\\이륜_이동수단_인도_주행__자전거_인도_주행__bs_e4387__bs_e4387_c1.json"
+}

@@ -1,0 +1,131 @@
+{
+  "sidewalk_riding_segments": [
+    {
+      "video_name": "bs_e4387_c1.mp4",
+      "start_frame": 255,
+      "end_frame": 255,
+      "frame_count": 1,
+      "status_key": "sidewalk_status",
+      "status": "sidewalk_riding",
+      "sample_reason": "bottom center (1364, 434), road_ratio=0.000, sidewalk_ratio=0.204"
+    },
+    {
+      "video_name": "es_e3768_c2.mp4",
+      "start_frame": 150,
+      "end_frame": 185,
+      "frame_count": 8,
+      "status_key": "sidewalk_status",
+      "status": "sidewalk_riding",
+      "sample_reason": "bottom center (854, 473), road_ratio=0.000, sidewalk_ratio=0.765"
+    },
+    {
+      "video_name": "es_e3768_c2.mp4",
+      "start_frame": 205,
+      "end_frame": 235,
+      "frame_count": 10,
+      "status_key": "sidewalk_status",
+      "status": "sidewalk_riding",
+      "sample_reason": "bottom center (856, 474), road_ratio=0.000, sidewalk_ratio=0.356"
+    },
+    {
+      "video_name": "es_e3768_c2.mp4",
+      "start_frame": 265,
+      "end_frame": 275,
+      "frame_count": 2,
+      "status_key": "sidewalk_status",
+      "status": "sidewalk_riding",
+      "sample_reason": "bottom center (938, 494), road_ratio=0.000, sidewalk_ratio=0.644"
+    },
+    {
+      "video_name": "es_e3768_c2.mp4",
+      "start_frame": 330,
+      "end_frame": 360,
+      "frame_count": 7,
+      "status_key": "sidewalk_status",
+      "status": "sidewalk_riding",
+      "sample_reason": "bottom center (1072, 508), road_ratio=0.000, sidewalk_ratio=0.661"
+    },
+    {
+      "video_name": "es_e3768_c2.mp4",
+      "start_frame": 390,
+      "end_frame": 415,
+      "frame_count": 8,
+      "status_key": "sidewalk_status",
+      "status": "sidewalk_riding",
+      "sample_reason": "bottom center (1228, 578), road_ratio=0.000, sidewalk_ratio=0.242"
+    },
+    {
+      "video_name": "es_e3768_c2.mp4",
+      "start_frame": 430,
+      "end_frame": 445,
+      "frame_count": 4,
+      "status_key": "sidewalk_status",
+      "status": "sidewalk_riding",
+      "sample_reason": "bottom center (1268, 594), road_ratio=0.000, sidewalk_ratio=0.273"
+    },
+    {
+      "video_name": "es_e3768_c2.mp4",
+      "start_frame": 460,
+      "end_frame": 515,
+      "frame_count": 18,
+      "status_key": "sidewalk_status",
+      "status": "sidewalk_riding",
+      "sample_reason": "bottom center (1267, 593), road_ratio=0.000, sidewalk_ratio=0.280"
+    },
+    {
+      "video_name": "es_e3768_c2.mp4",
+      "start_frame": 535,
+      "end_frame": 540,
+      "frame_count": 4,
+      "status_key": "sidewalk_status",
+      "status": "sidewalk_riding",
+      "sample_reason": "bottom center (1244, 596), road_ratio=0.028, sidewalk_ratio=0.540"
+    },
+    {
+      "video_name": "es_e3768_c2.mp4",
+      "start_frame": 585,
+      "end_frame": 625,
+      "frame_count": 13,
+      "status_key": "sidewalk_status",
+      "status": "sidewalk_riding",
+      "sample_reason": "bottom center (1262, 597), road_ratio=0.000, sidewalk_ratio=0.436"
+    },
+    {
+      "video_name": "es_e3768_c2.mp4",
+      "start_frame": 650,
+      "end_frame": 710,
+      "frame_count": 24,
+      "status_key": "sidewalk_status",
+      "status": "sidewalk_riding",
+      "sample_reason": "bottom center (1311, 720), road_ratio=0.000, sidewalk_ratio=0.924"
+    },
+    {
+      "video_name": "es_e3768_c2.mp4",
+      "start_frame": 745,
+      "end_frame": 745,
+      "frame_count": 1,
+      "status_key": "sidewalk_status",
+      "status": "sidewalk_riding",
+      "sample_reason": "bottom center (1228, 583), road_ratio=0.000, sidewalk_ratio=0.374"
+    },
+    {
+      "video_name": "es_e3768_c2.mp4",
+      "start_frame": 760,
+      "end_frame": 840,
+      "frame_count": 31,
+      "status_key": "sidewalk_status",
+      "status": "sidewalk_riding",
+      "sample_reason": "bottom center (787, 447), road_ratio=0.000, sidewalk_ratio=0.190"
+    },
+    {
+      "video_name": "es_e3768_c2.mp4",
+      "start_frame": 860,
+      "end_frame": 910,
+      "frame_count": 12,
+      "status_key": "sidewalk_status",
+      "status": "sidewalk_riding",
+      "sample_reason": "bottom center (1277, 596), road_ratio=0.000, sidewalk_ratio=0.273"
+    }
+  ],
+  "no_helmet_segments": []
+}

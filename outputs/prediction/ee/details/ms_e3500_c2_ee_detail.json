@@ -1,0 +1,1052 @@
+{
+  "video_name": "ms_e3500_c2.mp4",
+  "video_path": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터\\이륜 이동수단 인도 주행\\오토바이 인도 주행\\ms_e3500\\ms_e3500_c2.mp4",
+  "video_info": {
+    "ok": true,
+    "fps": 30.0,
+    "frame_count": 909,
+    "width": 1920,
+    "height": 1080,
+    "duration": 30.3
+  },
+  "final": {
+    "final_label": "other",
+    "final_label_ko": "기타",
+    "final_raw_score": 0.0,
+    "final_adjusted_score": 0.0,
+    "final_weighted_score": 0.0,
+    "candidates": [],
+    "raw_scores": {
+      "fight": 0.0,
+      "stalking": 0.0,
+      "sidewalk_riding": 0.0,
+      "no_helmet": 0.0,
+      "electric_kickboard": 0.0,
+      "intrusion": 0.0
+    },
+    "adjusted_scores": {
+      "fight": 0.0,
+      "stalking": 0.0,
+      "sidewalk_riding": 0.0,
+      "no_helmet": 0.0,
+      "electric_kickboard": 0.0,
+      "intrusion": 0.0
+    }
+  },
+  "evidence": "no abnormal label passed gates",
+  "pair_result": {
+    "pair_count": 0,
+    "window_count": 0,
+    "fight_score": 0.0,
+    "stalking_score": 0.0,
+    "best_fight": null,
+    "best_stalking": null,
+    "top_windows": []
+  },
+  "twowheeler_sidewalk_result": {
+    "twowheeler_score": 0.005494505494505495,
+    "sidewalk_riding_score": 0.0,
+    "electric_kickboard_score": 0.0,
+    "rider_frame_ratio": 0.0,
+    "sidewalk_ratio": 0.0,
+    "surface_known_frames": 0,
+    "kickboard_ratio": 0.0,
+    "kickboard_rider_ratio": 0.0,
+    "kickboard_sidewalk_ratio": 0.0,
+    "sidewalk_status": "unknown",
+    "twowheeler_classes": {
+      "motorcycle": 1
+    },
+    "evidence": "tw_frames=1, rider_frames=0, surface_known=0, sidewalk_frames=0, kickboard_frames=0, kickboard_rider_frames=0, classes={'motorcycle': 1}"
+  },
+  "helmet_result": {
+    "no_helmet_score": 0.0,
+    "helmet_status": "no_rider",
+    "rider_obs": 0,
+    "helmet_obs": 0,
+    "no_helmet_obs": 0,
+    "helmet_unknown_obs": 0,
+    "helmet_valid_ratio": 0.0,
+    "helmet_sources": {},
+    "evidence": "rider_obs=0, helmet=0, no_helmet=0, unknown=0, sources={}"
+  },
+  "intrusion_result": {
+    "intrusion_score": 0.0,
+    "intrusion_status": "unknown",
+    "track_count": 0,
+    "barrier_frames": 0,
+    "barrier_near_events": 0,
+    "explicit_cross": 0,
+    "restricted_enter": 0,
+    "examples": [],
+    "evidence": "explicit_cross=0, restricted_enter=0, barrier_frames=0, barrier_near_events=0"
+  },
+  "person_track_count": 0,
+  "max_persons_in_frame": 0,
+  "frames": [
+    {
+      "frame_idx": 0,
+      "sampled_idx": 0,
+      "t": 0.0,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 10,
+      "sampled_idx": 1,
+      "t": 0.3333333333333333,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 20,
+      "sampled_idx": 2,
+      "t": 0.6666666666666666,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 30,
+      "sampled_idx": 3,
+      "t": 1.0,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 40,
+      "sampled_idx": 4,
+      "t": 1.3333333333333333,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 50,
+      "sampled_idx": 5,
+      "t": 1.6666666666666667,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 60,
+      "sampled_idx": 6,
+      "t": 2.0,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 70,
+      "sampled_idx": 7,
+      "t": 2.3333333333333335,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 80,
+      "sampled_idx": 8,
+      "t": 2.6666666666666665,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 90,
+      "sampled_idx": 9,
+      "t": 3.0,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 100,
+      "sampled_idx": 10,
+      "t": 3.3333333333333335,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 110,
+      "sampled_idx": 11,
+      "t": 3.6666666666666665,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 120,
+      "sampled_idx": 12,
+      "t": 4.0,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 130,
+      "sampled_idx": 13,
+      "t": 4.333333333333333,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 140,
+      "sampled_idx": 14,
+      "t": 4.666666666666667,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 150,
+      "sampled_idx": 15,
+      "t": 5.0,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 160,
+      "sampled_idx": 16,
+      "t": 5.333333333333333,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 170,
+      "sampled_idx": 17,
+      "t": 5.666666666666667,
+      "person_count": 0,
+      "object_count": 1,
+      "object_classes": {
+        "train": 1
+      },
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 180,
+      "sampled_idx": 18,
+      "t": 6.0,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 190,
+      "sampled_idx": 19,
+      "t": 6.333333333333333,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 200,
+      "sampled_idx": 20,
+      "t": 6.666666666666667,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 210,
+      "sampled_idx": 21,
+      "t": 7.0,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 220,
+      "sampled_idx": 22,
+      "t": 7.333333333333333,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 230,
+      "sampled_idx": 23,
+      "t": 7.666666666666667,
+      "person_count": 0,
+      "object_count": 1,
+      "object_classes": {
+        "train": 1
+      },
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 240,
+      "sampled_idx": 24,
+      "t": 8.0,
+      "person_count": 0,
+      "object_count": 1,
+      "object_classes": {
+        "person": 1
+      },
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 250,
+      "sampled_idx": 25,
+      "t": 8.333333333333334,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 260,
+      "sampled_idx": 26,
+      "t": 8.666666666666666,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 270,
+      "sampled_idx": 27,
+      "t": 9.0,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 280,
+      "sampled_idx": 28,
+      "t": 9.333333333333334,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 290,
+      "sampled_idx": 29,
+      "t": 9.666666666666666,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 300,
+      "sampled_idx": 30,
+      "t": 10.0,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 310,
+      "sampled_idx": 31,
+      "t": 10.333333333333334,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 320,
+      "sampled_idx": 32,
+      "t": 10.666666666666666,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 330,
+      "sampled_idx": 33,
+      "t": 11.0,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 340,
+      "sampled_idx": 34,
+      "t": 11.333333333333334,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 350,
+      "sampled_idx": 35,
+      "t": 11.666666666666666,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 360,
+      "sampled_idx": 36,
+      "t": 12.0,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 370,
+      "sampled_idx": 37,
+      "t": 12.333333333333334,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 380,
+      "sampled_idx": 38,
+      "t": 12.666666666666666,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 390,
+      "sampled_idx": 39,
+      "t": 13.0,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 400,
+      "sampled_idx": 40,
+      "t": 13.333333333333334,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 410,
+      "sampled_idx": 41,
+      "t": 13.666666666666666,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 420,
+      "sampled_idx": 42,
+      "t": 14.0,
+      "person_count": 0,
+      "object_count": 1,
+      "object_classes": {
+        "chair": 1
+      },
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 430,
+      "sampled_idx": 43,
+      "t": 14.333333333333334,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 440,
+      "sampled_idx": 44,
+      "t": 14.666666666666666,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 450,
+      "sampled_idx": 45,
+      "t": 15.0,
+      "person_count": 0,
+      "object_count": 1,
+      "object_classes": {
+        "chair": 1
+      },
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 460,
+      "sampled_idx": 46,
+      "t": 15.333333333333334,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 470,
+      "sampled_idx": 47,
+      "t": 15.666666666666666,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 480,
+      "sampled_idx": 48,
+      "t": 16.0,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 490,
+      "sampled_idx": 49,
+      "t": 16.333333333333332,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 500,
+      "sampled_idx": 50,
+      "t": 16.666666666666668,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 510,
+      "sampled_idx": 51,
+      "t": 17.0,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 520,
+      "sampled_idx": 52,
+      "t": 17.333333333333332,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 530,
+      "sampled_idx": 53,
+      "t": 17.666666666666668,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 540,
+      "sampled_idx": 54,
+      "t": 18.0,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 550,
+      "sampled_idx": 55,
+      "t": 18.333333333333332,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 560,
+      "sampled_idx": 56,
+      "t": 18.666666666666668,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 570,
+      "sampled_idx": 57,
+      "t": 19.0,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 580,
+      "sampled_idx": 58,
+      "t": 19.333333333333332,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 590,
+      "sampled_idx": 59,
+      "t": 19.666666666666668,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 600,
+      "sampled_idx": 60,
+      "t": 20.0,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 610,
+      "sampled_idx": 61,
+      "t": 20.333333333333332,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 620,
+      "sampled_idx": 62,
+      "t": 20.666666666666668,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 630,
+      "sampled_idx": 63,
+      "t": 21.0,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 640,
+      "sampled_idx": 64,
+      "t": 21.333333333333332,
+      "person_count": 0,
+      "object_count": 1,
+      "object_classes": {
+        "train": 1
+      },
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 650,
+      "sampled_idx": 65,
+      "t": 21.666666666666668,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 660,
+      "sampled_idx": 66,
+      "t": 22.0,
+      "person_count": 0,
+      "object_count": 2,
+      "object_classes": {
+        "car": 1,
+        "train": 1
+      },
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 670,
+      "sampled_idx": 67,
+      "t": 22.333333333333332,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 680,
+      "sampled_idx": 68,
+      "t": 22.666666666666668,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 690,
+      "sampled_idx": 69,
+      "t": 23.0,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 700,
+      "sampled_idx": 70,
+      "t": 23.333333333333332,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 710,
+      "sampled_idx": 71,
+      "t": 23.666666666666668,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 720,
+      "sampled_idx": 72,
+      "t": 24.0,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 730,
+      "sampled_idx": 73,
+      "t": 24.333333333333332,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 740,
+      "sampled_idx": 74,
+      "t": 24.666666666666668,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 750,
+      "sampled_idx": 75,
+      "t": 25.0,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 760,
+      "sampled_idx": 76,
+      "t": 25.333333333333332,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 770,
+      "sampled_idx": 77,
+      "t": 25.666666666666668,
+      "person_count": 0,
+      "object_count": 2,
+      "object_classes": {
+        "train": 1,
+        "car": 1
+      },
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 780,
+      "sampled_idx": 78,
+      "t": 26.0,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 790,
+      "sampled_idx": 79,
+      "t": 26.333333333333332,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 800,
+      "sampled_idx": 80,
+      "t": 26.666666666666668,
+      "person_count": 0,
+      "object_count": 0,
+      "object_classes": {},
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 810,
+      "sampled_idx": 81,
+      "t": 27.0,
+      "person_count": 0,
+      "object_count": 3,
+      "object_classes": {
+        "person": 3
+      },
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 820,
+      "sampled_idx": 82,
+      "t": 27.333333333333332,
+      "person_count": 0,
+      "object_count": 1,
+      "object_classes": {
+        "train": 1
+      },
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 830,
+      "sampled_idx": 83,
+      "t": 27.666666666666668,
+      "person_count": 0,
+      "object_count": 4,
+      "object_classes": {
+        "person without helmet": 2,
+        "person": 1,
+        "train": 1
+      },
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 840,
+      "sampled_idx": 84,
+      "t": 28.0,
+      "person_count": 0,
+      "object_count": 2,
+      "object_classes": {
+        "person without helmet": 1,
+        "motorcycle": 1
+      },
+      "persons": [],
+      "twowheelers": [
+        {
+          "box": [
+            540.585693359375,
+            669.4188232421875,
+            743.85400390625,
+            839.1224365234375
+          ],
+          "conf": 0.2651536464691162,
+          "class_name": "motorcycle",
+          "source": "world"
+        }
+      ]
+    },
+    {
+      "frame_idx": 850,
+      "sampled_idx": 85,
+      "t": 28.333333333333332,
+      "person_count": 0,
+      "object_count": 3,
+      "object_classes": {
+        "person without helmet": 2,
+        "person": 1
+      },
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 860,
+      "sampled_idx": 86,
+      "t": 28.666666666666668,
+      "person_count": 0,
+      "object_count": 1,
+      "object_classes": {
+        "car": 1
+      },
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 870,
+      "sampled_idx": 87,
+      "t": 29.0,
+      "person_count": 0,
+      "object_count": 2,
+      "object_classes": {
+        "car": 2
+      },
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 880,
+      "sampled_idx": 88,
+      "t": 29.333333333333332,
+      "person_count": 0,
+      "object_count": 2,
+      "object_classes": {
+        "car": 2
+      },
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 890,
+      "sampled_idx": 89,
+      "t": 29.666666666666668,
+      "person_count": 0,
+      "object_count": 4,
+      "object_classes": {
+        "car": 4
+      },
+      "persons": [],
+      "twowheelers": []
+    },
+    {
+      "frame_idx": 900,
+      "sampled_idx": 90,
+      "t": 30.0,
+      "person_count": 0,
+      "object_count": 1,
+      "object_classes": {
+        "car": 1
+      },
+      "persons": [],
+      "twowheelers": []
+    }
+  ]
+}

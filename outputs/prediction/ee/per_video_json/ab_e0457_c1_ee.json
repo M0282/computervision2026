@@ -1,0 +1,1305 @@
+{
+  "task": "ee_sliding_window_pair_fight_stalking",
+  "settings": {
+    "model": "yolo11n.pt",
+    "frame_stride": 5,
+    "window_sec": 4.0,
+    "step_sec": 1.0,
+    "fight_th": 0.56,
+    "stalking_th": 0.58,
+    "close_dist_norm": 1.2,
+    "very_close_dist_norm": 0.65
+  },
+  "summary": {
+    "video_name": "ab_e0457_c1.mp4",
+    "video_path": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터\\침입\\비정상적인 경로로의 침범\\ab_e0457\\ab_e0457_c1.mp4",
+    "fps": 30.0,
+    "total_frames": 900,
+    "duration_sec": 30.0,
+    "processed_frames": 180,
+    "max_people_seen": 1,
+    "pair_feature_rows": 0,
+    "window_rows": 0,
+    "final_label": "other",
+    "final_score": 0.0,
+    "best_fight_score": 0.0,
+    "best_stalking_score": 0.0,
+    "final_reason": "person pair window가 충분히 형성되지 않음",
+    "event_start_sec": null,
+    "event_end_sec": null,
+    "event_pair": null
+  },
+  "best_windows": {
+    "best_fight_score": 0.0,
+    "best_stalking_score": 0.0,
+    "best_fight_window": null,
+    "best_stalking_window": null,
+    "final_label": "other",
+    "final_score": 0.0,
+    "final_reason": "person pair window가 충분히 형성되지 않음"
+  },
+  "frame_summaries": [
+    {
+      "frame_idx": 0,
+      "t": 0.0,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 5,
+      "t": 0.16666666666666666,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 10,
+      "t": 0.3333333333333333,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 15,
+      "t": 0.5,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 20,
+      "t": 0.6666666666666666,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 25,
+      "t": 0.8333333333333334,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 30,
+      "t": 1.0,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 35,
+      "t": 1.1666666666666667,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 40,
+      "t": 1.3333333333333333,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 45,
+      "t": 1.5,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 50,
+      "t": 1.6666666666666667,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 55,
+      "t": 1.8333333333333333,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 60,
+      "t": 2.0,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 65,
+      "t": 2.1666666666666665,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 70,
+      "t": 2.3333333333333335,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 75,
+      "t": 2.5,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 80,
+      "t": 2.6666666666666665,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 85,
+      "t": 2.8333333333333335,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 90,
+      "t": 3.0,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 95,
+      "t": 3.1666666666666665,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 100,
+      "t": 3.3333333333333335,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 105,
+      "t": 3.5,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 110,
+      "t": 3.6666666666666665,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 115,
+      "t": 3.8333333333333335,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 120,
+      "t": 4.0,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 125,
+      "t": 4.166666666666667,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 130,
+      "t": 4.333333333333333,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 135,
+      "t": 4.5,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 140,
+      "t": 4.666666666666667,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 145,
+      "t": 4.833333333333333,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 150,
+      "t": 5.0,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 155,
+      "t": 5.166666666666667,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 160,
+      "t": 5.333333333333333,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 165,
+      "t": 5.5,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 170,
+      "t": 5.666666666666667,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 175,
+      "t": 5.833333333333333,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 180,
+      "t": 6.0,
+      "person_detections": 1,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 185,
+      "t": 6.166666666666667,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 190,
+      "t": 6.333333333333333,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 195,
+      "t": 6.5,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 200,
+      "t": 6.666666666666667,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 205,
+      "t": 6.833333333333333,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 210,
+      "t": 7.0,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 215,
+      "t": 7.166666666666667,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 220,
+      "t": 7.333333333333333,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 225,
+      "t": 7.5,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 230,
+      "t": 7.666666666666667,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 235,
+      "t": 7.833333333333333,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 240,
+      "t": 8.0,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 245,
+      "t": 8.166666666666666,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 250,
+      "t": 8.333333333333334,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 255,
+      "t": 8.5,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 260,
+      "t": 8.666666666666666,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 265,
+      "t": 8.833333333333334,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 270,
+      "t": 9.0,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 275,
+      "t": 9.166666666666666,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 280,
+      "t": 9.333333333333334,
+      "person_detections": 1,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 285,
+      "t": 9.5,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 290,
+      "t": 9.666666666666666,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 295,
+      "t": 9.833333333333334,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 300,
+      "t": 10.0,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 305,
+      "t": 10.166666666666666,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 310,
+      "t": 10.333333333333334,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 315,
+      "t": 10.5,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 320,
+      "t": 10.666666666666666,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 325,
+      "t": 10.833333333333334,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 330,
+      "t": 11.0,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 335,
+      "t": 11.166666666666666,
+      "person_detections": 1,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 340,
+      "t": 11.333333333333334,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 345,
+      "t": 11.5,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 350,
+      "t": 11.666666666666666,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 355,
+      "t": 11.833333333333334,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 360,
+      "t": 12.0,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 365,
+      "t": 12.166666666666666,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 370,
+      "t": 12.333333333333334,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 375,
+      "t": 12.5,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 380,
+      "t": 12.666666666666666,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 385,
+      "t": 12.833333333333334,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 390,
+      "t": 13.0,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 395,
+      "t": 13.166666666666666,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 400,
+      "t": 13.333333333333334,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 405,
+      "t": 13.5,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 410,
+      "t": 13.666666666666666,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 415,
+      "t": 13.833333333333334,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 420,
+      "t": 14.0,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 425,
+      "t": 14.166666666666666,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 430,
+      "t": 14.333333333333334,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 435,
+      "t": 14.5,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 440,
+      "t": 14.666666666666666,
+      "person_detections": 1,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 445,
+      "t": 14.833333333333334,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 450,
+      "t": 15.0,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 455,
+      "t": 15.166666666666666,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 460,
+      "t": 15.333333333333334,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 465,
+      "t": 15.5,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 470,
+      "t": 15.666666666666666,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 475,
+      "t": 15.833333333333334,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 480,
+      "t": 16.0,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 485,
+      "t": 16.166666666666668,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 490,
+      "t": 16.333333333333332,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 495,
+      "t": 16.5,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 500,
+      "t": 16.666666666666668,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 505,
+      "t": 16.833333333333332,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 510,
+      "t": 17.0,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 515,
+      "t": 17.166666666666668,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 520,
+      "t": 17.333333333333332,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 525,
+      "t": 17.5,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 530,
+      "t": 17.666666666666668,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 535,
+      "t": 17.833333333333332,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 540,
+      "t": 18.0,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 545,
+      "t": 18.166666666666668,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 550,
+      "t": 18.333333333333332,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 555,
+      "t": 18.5,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 560,
+      "t": 18.666666666666668,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 565,
+      "t": 18.833333333333332,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 570,
+      "t": 19.0,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 575,
+      "t": 19.166666666666668,
+      "person_detections": 1,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 580,
+      "t": 19.333333333333332,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 585,
+      "t": 19.5,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 590,
+      "t": 19.666666666666668,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 595,
+      "t": 19.833333333333332,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 600,
+      "t": 20.0,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 605,
+      "t": 20.166666666666668,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 610,
+      "t": 20.333333333333332,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 615,
+      "t": 20.5,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 620,
+      "t": 20.666666666666668,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 625,
+      "t": 20.833333333333332,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 630,
+      "t": 21.0,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 635,
+      "t": 21.166666666666668,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 640,
+      "t": 21.333333333333332,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 645,
+      "t": 21.5,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 650,
+      "t": 21.666666666666668,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 655,
+      "t": 21.833333333333332,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 660,
+      "t": 22.0,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 665,
+      "t": 22.166666666666668,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 670,
+      "t": 22.333333333333332,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 675,
+      "t": 22.5,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 680,
+      "t": 22.666666666666668,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 685,
+      "t": 22.833333333333332,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 690,
+      "t": 23.0,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 695,
+      "t": 23.166666666666668,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 700,
+      "t": 23.333333333333332,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 705,
+      "t": 23.5,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 710,
+      "t": 23.666666666666668,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 715,
+      "t": 23.833333333333332,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 720,
+      "t": 24.0,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 725,
+      "t": 24.166666666666668,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 730,
+      "t": 24.333333333333332,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 735,
+      "t": 24.5,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 740,
+      "t": 24.666666666666668,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 745,
+      "t": 24.833333333333332,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 750,
+      "t": 25.0,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 755,
+      "t": 25.166666666666668,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 760,
+      "t": 25.333333333333332,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 765,
+      "t": 25.5,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 770,
+      "t": 25.666666666666668,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 775,
+      "t": 25.833333333333332,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 780,
+      "t": 26.0,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 785,
+      "t": 26.166666666666668,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 790,
+      "t": 26.333333333333332,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 795,
+      "t": 26.5,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 800,
+      "t": 26.666666666666668,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 805,
+      "t": 26.833333333333332,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 810,
+      "t": 27.0,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 815,
+      "t": 27.166666666666668,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 820,
+      "t": 27.333333333333332,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 825,
+      "t": 27.5,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 830,
+      "t": 27.666666666666668,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 835,
+      "t": 27.833333333333332,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 840,
+      "t": 28.0,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 845,
+      "t": 28.166666666666668,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 850,
+      "t": 28.333333333333332,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 855,
+      "t": 28.5,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 860,
+      "t": 28.666666666666668,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 865,
+      "t": 28.833333333333332,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 870,
+      "t": 29.0,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 875,
+      "t": 29.166666666666668,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 880,
+      "t": 29.333333333333332,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 885,
+      "t": 29.5,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 890,
+      "t": 29.666666666666668,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 895,
+      "t": 29.833333333333332,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    }
+  ],
+  "pair_features": [],
+  "window_scores": []
+}

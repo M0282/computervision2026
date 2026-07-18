@@ -1,0 +1,14 @@
+{
+    "person": 775,
+    "bicycle": 18,
+    "motorcycle": 264,
+    "two_wheel": 282,
+    "bicycle_ratio": 0.064,
+    "motorcycle_ratio": 0.936,
+    "vehicle_frames": 155,
+    "riding_frames": 97,
+    "riding_ratio": 0.626,
+    "total_pairs": 291,
+    "max_riding_streak": 21,
+    "avg_distance": 281.9
+}

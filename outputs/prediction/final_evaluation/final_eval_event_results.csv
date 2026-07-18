@@ -1,0 +1,12 @@
+﻿event_id,gt_label,camera_count,correct_camera_count,candidate_hit_camera_count,any_camera_correct,all_camera_correct,any_camera_candidate_hit,camera_predictions
+ab_e0457,intrusion,2,1,1,True,False,True,intrusion | other
+bl_e0272,intrusion,2,0,0,False,False,False,other | other
+bs_e4387,two_wheeler_sidewalk,2,1,1,True,False,True,two_wheeler_sidewalk | other
+es_e3768,two_wheeler_sidewalk,2,0,0,False,False,False,other | other
+fp_e1520,stalking,2,0,0,False,False,False,other | other
+lo_e1281,stalking,2,1,1,True,False,True,stalking | other
+md_e2122,two_wheeler_helmet,2,0,0,False,False,False,fight | fight
+mp_e2730,two_wheeler_helmet,2,0,0,False,False,False,intrusion | other
+ms_e3500,two_wheeler_sidewalk,2,0,0,False,False,False,other | other
+ph_e2063,fight,2,1,1,True,False,True,other | fight
+st_e4803,two_wheeler_sidewalk,2,0,0,False,False,False,other | other

@@ -1,0 +1,31 @@
+CC FINAL REPORT
+summary: C:\Users\우성한\outputs\prediction\gg\final_gg\ee_final_summary.json
+total: 22
+final_label_count: {'stalking': 1, 'electric_kickboard': 9, 'other': 6, 'fight': 3, 'sidewalk_riding': 1, 'intrusion': 2}
+fight_label_count: {'not_fight': 19, 'fight': 3}
+stalking_label_count: {'stalking': 1, 'not_stalking': 21}
+riding_label_count: {'road_riding_or_unknown': 15, 'sidewalk_candidate': 6, 'sidewalk_riding': 1}
+helmet_label_count: {'helmet_unknown': 16, 'not_applicable': 3, 'helmet': 3}
+
+ph_e2063_c2.mp4 | final=fight | primary=fight conf=0.9333 | fight=fight:0.8642 | stalking=not_stalking:0.3409 | riding=sidewalk_candidate:0.4577 | helmet=helmet_unknown:0.245
+md_e2122_c2.mp4 | final=fight | primary=fight conf=0.8912 | fight=fight:0.8252 | stalking=not_stalking:0.3495 | riding=road_riding_or_unknown:0.2921 | helmet=helmet_unknown:0.3665
+md_e2122_c1.mp4 | final=fight | primary=fight conf=0.8488 | fight=fight:0.7859 | stalking=not_stalking:0.3007 | riding=sidewalk_candidate:0.3931 | helmet=helmet_unknown:0.3365
+es_e3768_c2.mp4 | final=electric_kickboard | primary=electric_kickboard conf=0.7212 | fight=not_fight:0.0841 | stalking=not_stalking:0.0 | riding=sidewalk_candidate:0.4374 | helmet=helmet_unknown:0.08
+es_e3768_c1.mp4 | final=electric_kickboard | primary=electric_kickboard conf=0.7067 | fight=not_fight:0.2371 | stalking=not_stalking:0.0 | riding=sidewalk_candidate:0.3621 | helmet=helmet_unknown:0.08
+lo_e1281_c1.mp4 | final=stalking | primary=stalking conf=0.7019 | fight=not_fight:0.2992 | stalking=stalking:0.7019 | riding=road_riding_or_unknown:0.1907 | helmet=helmet_unknown:0.0474
+lo_e1281_c2.mp4 | final=electric_kickboard | primary=electric_kickboard conf=0.6001 | fight=not_fight:0.0212 | stalking=not_stalking:0.0 | riding=sidewalk_candidate:0.3877 | helmet=helmet_unknown:0.3029
+st_e4803_c1.mp4 | final=electric_kickboard | primary=electric_kickboard conf=0.5875 | fight=not_fight:0.0676 | stalking=not_stalking:0.0 | riding=road_riding_or_unknown:0.2456 | helmet=helmet_unknown:0.0246
+ab_e0457_c1.mp4 | final=intrusion | primary=intrusion conf=0.5772 | fight=not_fight:0.0402 | stalking=not_stalking:0.0 | riding=sidewalk_candidate:0.4671 | helmet=helmet_unknown:0.1976
+bs_e4387_c1.mp4 | final=sidewalk_riding | primary=sidewalk_riding conf=0.5652 | fight=not_fight:0.0516 | stalking=not_stalking:0.0 | riding=sidewalk_riding:0.5541 | helmet=helmet:0.3461
+mp_e2730_c2.mp4 | final=electric_kickboard | primary=electric_kickboard conf=0.555 | fight=not_fight:0.0594 | stalking=not_stalking:0.0 | riding=road_riding_or_unknown:0.268 | helmet=helmet:0.3405
+mp_e2730_c1.mp4 | final=intrusion | primary=intrusion conf=0.5408 | fight=not_fight:0.0402 | stalking=not_stalking:0.0 | riding=road_riding_or_unknown:0.2662 | helmet=helmet:0.3417
+st_e4803_c2.mp4 | final=electric_kickboard | primary=electric_kickboard conf=0.5314 | fight=not_fight:0.0661 | stalking=not_stalking:0.0 | riding=road_riding_or_unknown:0.145 | helmet=helmet_unknown:0.0191
+bl_e0272_c1.mp4 | final=electric_kickboard | primary=electric_kickboard conf=0.5097 | fight=not_fight:0.0212 | stalking=not_stalking:0.0 | riding=road_riding_or_unknown:0.2633 | helmet=not_applicable:0.0
+ab_e0457_c2.mp4 | final=electric_kickboard | primary=electric_kickboard conf=0.4614 | fight=not_fight:0.0312 | stalking=not_stalking:0.0 | riding=road_riding_or_unknown:0.2304 | helmet=helmet_unknown:0.0335
+ms_e3500_c1.mp4 | final=electric_kickboard | primary=electric_kickboard conf=0.4504 | fight=not_fight:0.149 | stalking=not_stalking:0.0 | riding=road_riding_or_unknown:0.2322 | helmet=helmet_unknown:0.0075
+fp_e1520_c1.mp4 | final=other | primary=None conf=None | fight=not_fight:0.037 | stalking=not_stalking:0.0 | riding=road_riding_or_unknown:0.222 | helmet=helmet_unknown:0.0155
+fp_e1520_c2.mp4 | final=other | primary=None conf=None | fight=not_fight:0.0304 | stalking=not_stalking:0.0 | riding=road_riding_or_unknown:0.2766 | helmet=helmet_unknown:0.0015
+ph_e2063_c1.mp4 | final=other | primary=None conf=None | fight=not_fight:0.0177 | stalking=not_stalking:0.0 | riding=road_riding_or_unknown:0.2811 | helmet=helmet_unknown:0.0108
+ms_e3500_c2.mp4 | final=other | primary=None conf=None | fight=not_fight:0.0721 | stalking=not_stalking:0.0 | riding=road_riding_or_unknown:0.083 | helmet=not_applicable:0.0
+bs_e4387_c2.mp4 | final=other | primary=None conf=None | fight=not_fight:0.0728 | stalking=not_stalking:0.0 | riding=road_riding_or_unknown:0.2572 | helmet=helmet_unknown:0.2083
+bl_e0272_c2.mp4 | final=other | primary=None conf=None | fight=not_fight:0.0163 | stalking=not_stalking:0.0 | riding=road_riding_or_unknown:0.3257 | helmet=not_applicable:0.0

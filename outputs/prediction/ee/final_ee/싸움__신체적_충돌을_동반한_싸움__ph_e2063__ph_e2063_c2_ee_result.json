@@ -1,0 +1,4664 @@
+{
+  "video_name": "ph_e2063_c2.mp4",
+  "video_path": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터\\싸움\\신체적 충돌을 동반한 싸움\\ph_e2063\\ph_e2063_c2.mp4",
+  "relative_video_path": "싸움\\신체적 충돌을 동반한 싸움\\ph_e2063\\ph_e2063_c2.mp4",
+  "final_label": "fight",
+  "final_primary_event": {
+    "event_type": "abnormal_action",
+    "event_subtype": "fight",
+    "label": "fight",
+    "score": 0.7995,
+    "confidence": 0.8635,
+    "evidence": {
+      "pair": [
+        21,
+        22
+      ],
+      "start_sec": 23.0,
+      "end_sec": 27.0,
+      "frame_count": 15,
+      "common_frames": 4,
+      "window_score": 0.793,
+      "close_score": 1.0,
+      "contact_score": 1.0,
+      "abrupt_score": 0.906,
+      "speed_score": 0.3122,
+      "flow_score": 0.0163,
+      "pose_score": 0.0652,
+      "distance_mean": 62.462,
+      "norm_distance_mean": 0.4639,
+      "overlap_max": 0.03744,
+      "close_ratio": 1.0,
+      "very_close_ratio": 1.0,
+      "contact_ratio": 1.0,
+      "mean_relative_speed": 54.3994,
+      "mean_speed": 37.4624,
+      "direction_changes": 2,
+      "pair_boxes": [
+        {
+          "frame_id": 696,
+          "time_sec": 23.2,
+          "bbox": [
+            826,
+            505,
+            935,
+            658
+          ],
+          "distance": 54.34,
+          "norm_distance": 0.4245,
+          "overlap": 0.03606
+        },
+        {
+          "frame_id": 704,
+          "time_sec": 23.467,
+          "bbox": [
+            819,
+            519,
+            933,
+            656
+          ],
+          "distance": 56.5,
+          "norm_distance": 0.4363,
+          "overlap": 0.03744
+        },
+        {
+          "frame_id": 712,
+          "time_sec": 23.733,
+          "bbox": [
+            815,
+            504,
+            946,
+            654
+          ],
+          "distance": 66.12,
+          "norm_distance": 0.4529,
+          "overlap": 0.0
+        },
+        {
+          "frame_id": 720,
+          "time_sec": 24.0,
+          "bbox": [
+            822,
+            506,
+            954,
+            654
+          ],
+          "distance": 72.89,
+          "norm_distance": 0.5419,
+          "overlap": 0.0
+        }
+      ]
+    },
+    "reason": "track-pair window에서 근접/접촉/급격한 상대 움직임이 동시에 나타났습니다."
+  },
+  "candidate_events": [
+    {
+      "event_type": "abnormal_action",
+      "event_subtype": "fight",
+      "label": "fight",
+      "score": 0.7995,
+      "confidence": 0.8635,
+      "evidence": {
+        "pair": [
+          21,
+          22
+        ],
+        "start_sec": 23.0,
+        "end_sec": 27.0,
+        "frame_count": 15,
+        "common_frames": 4,
+        "window_score": 0.793,
+        "close_score": 1.0,
+        "contact_score": 1.0,
+        "abrupt_score": 0.906,
+        "speed_score": 0.3122,
+        "flow_score": 0.0163,
+        "pose_score": 0.0652,
+        "distance_mean": 62.462,
+        "norm_distance_mean": 0.4639,
+        "overlap_max": 0.03744,
+        "close_ratio": 1.0,
+        "very_close_ratio": 1.0,
+        "contact_ratio": 1.0,
+        "mean_relative_speed": 54.3994,
+        "mean_speed": 37.4624,
+        "direction_changes": 2,
+        "pair_boxes": [
+          {
+            "frame_id": 696,
+            "time_sec": 23.2,
+            "bbox": [
+              826,
+              505,
+              935,
+              658
+            ],
+            "distance": 54.34,
+            "norm_distance": 0.4245,
+            "overlap": 0.03606
+          },
+          {
+            "frame_id": 704,
+            "time_sec": 23.467,
+            "bbox": [
+              819,
+              519,
+              933,
+              656
+            ],
+            "distance": 56.5,
+            "norm_distance": 0.4363,
+            "overlap": 0.03744
+          },
+          {
+            "frame_id": 712,
+            "time_sec": 23.733,
+            "bbox": [
+              815,
+              504,
+              946,
+              654
+            ],
+            "distance": 66.12,
+            "norm_distance": 0.4529,
+            "overlap": 0.0
+          },
+          {
+            "frame_id": 720,
+            "time_sec": 24.0,
+            "bbox": [
+              822,
+              506,
+              954,
+              654
+            ],
+            "distance": 72.89,
+            "norm_distance": 0.5419,
+            "overlap": 0.0
+          }
+        ]
+      },
+      "reason": "track-pair window에서 근접/접촉/급격한 상대 움직임이 동시에 나타났습니다."
+    },
+    {
+      "event_type": "traffic_violation",
+      "event_subtype": "sidewalk_riding",
+      "label": "sidewalk_riding",
+      "score": 0.5106,
+      "confidence": 0.5208,
+      "evidence": [
+        {
+          "frame_id": 208,
+          "time_sec": 6.933,
+          "status": "sidewalk",
+          "score": 0.7614,
+          "has_rider_pair": true,
+          "best_rider_pair_score": 1.0,
+          "bbox": [
+            1164,
+            463,
+            1188,
+            501
+          ],
+          "two_wheeler_class": "bicycle",
+          "seg_sidewalk_ratio": 0.3353,
+          "band_sidewalk_ratio": 0.8019,
+          "world_sidewalk_bbox_score": 0.0,
+          "road_score": 0.3353
+        },
+        {
+          "frame_id": 200,
+          "time_sec": 6.667,
+          "status": "sidewalk",
+          "score": 0.6408,
+          "has_rider_pair": true,
+          "best_rider_pair_score": 1.0,
+          "bbox": [
+            1167,
+            470,
+            1188,
+            500
+          ],
+          "two_wheeler_class": "bicycle",
+          "seg_sidewalk_ratio": 0.3541,
+          "band_sidewalk_ratio": 0.6411,
+          "world_sidewalk_bbox_score": 0.0,
+          "road_score": 0.2811
+        },
+        {
+          "frame_id": 232,
+          "time_sec": 7.733,
+          "status": "sidewalk_candidate",
+          "score": 0.385,
+          "has_rider_pair": true,
+          "best_rider_pair_score": 1.0,
+          "bbox": [
+            1016,
+            596,
+            1059,
+            621
+          ],
+          "two_wheeler_class": "kickboard",
+          "seg_sidewalk_ratio": 0.0,
+          "band_sidewalk_ratio": 0.0,
+          "world_sidewalk_bbox_score": 0.25,
+          "road_score": 0.4888
+        },
+        {
+          "frame_id": 264,
+          "time_sec": 8.8,
+          "status": "sidewalk_candidate",
+          "score": 0.385,
+          "has_rider_pair": true,
+          "best_rider_pair_score": 1.0,
+          "bbox": [
+            1136,
+            497,
+            1192,
+            605
+          ],
+          "two_wheeler_class": "bike",
+          "seg_sidewalk_ratio": 0.0,
+          "band_sidewalk_ratio": 0.0,
+          "world_sidewalk_bbox_score": 0.25,
+          "road_score": 0.3482
+        },
+        {
+          "frame_id": 336,
+          "time_sec": 11.2,
+          "status": "sidewalk_candidate",
+          "score": 0.385,
+          "has_rider_pair": true,
+          "best_rider_pair_score": 1.0,
+          "bbox": [
+            883,
+            582,
+            921,
+            647
+          ],
+          "two_wheeler_class": "bicycle",
+          "seg_sidewalk_ratio": 0.0,
+          "band_sidewalk_ratio": 0.0,
+          "world_sidewalk_bbox_score": 0.25,
+          "road_score": 0.4664
+        }
+      ],
+      "reason": "이륜차 기준점 또는 하단 band가 인도 영역에 반복적으로 위치했습니다."
+    },
+    {
+      "event_type": "traffic_object",
+      "event_subtype": "electric_kickboard",
+      "label": "electric_kickboard_candidate",
+      "score": 0.4037,
+      "confidence": 0.3472,
+      "evidence": [
+        {
+          "frame_id": 128,
+          "time_sec": 4.267,
+          "class": "moped",
+          "confidence": 0.0464,
+          "bbox": [
+            1216,
+            450,
+            1308,
+            558
+          ],
+          "has_rider_pair": true
+        },
+        {
+          "frame_id": 184,
+          "time_sec": 6.133,
+          "class": "moped",
+          "confidence": 0.0529,
+          "bbox": [
+            1079,
+            476,
+            1115,
+            520
+          ],
+          "has_rider_pair": true
+        },
+        {
+          "frame_id": 200,
+          "time_sec": 6.667,
+          "class": "electric scooter",
+          "confidence": 0.0781,
+          "bbox": [
+            1077,
+            514,
+            1127,
+            609
+          ],
+          "has_rider_pair": true
+        },
+        {
+          "frame_id": 216,
+          "time_sec": 7.2,
+          "class": "kickboard",
+          "confidence": 0.0448,
+          "bbox": [
+            1039,
+            595,
+            1098,
+            614
+          ],
+          "has_rider_pair": true
+        },
+        {
+          "frame_id": 224,
+          "time_sec": 7.467,
+          "class": "moped",
+          "confidence": 0.0598,
+          "bbox": [
+            1075,
+            471,
+            1117,
+            521
+          ],
+          "has_rider_pair": true
+        }
+      ],
+      "reason": "전동킥보드/스쿠터류 후보가 있으나 지속성 또는 rider 근거가 부족합니다."
+    }
+  ],
+  "action_label": "fight",
+  "fight_label": "fight",
+  "stalking_label": "not_stalking",
+  "riding_label": "sidewalk_riding",
+  "helmet_label": "helmet_unknown",
+  "kickboard_label": "electric_kickboard_candidate",
+  "intrusion_label": "no_intrusion",
+  "fight": {
+    "fight_label": "fight",
+    "fight_score": 0.7995,
+    "is_fight": true,
+    "best_fight_window": {
+      "pair": [
+        21,
+        22
+      ],
+      "start_sec": 23.0,
+      "end_sec": 27.0,
+      "frame_count": 15,
+      "common_frames": 4,
+      "window_score": 0.793,
+      "close_score": 1.0,
+      "contact_score": 1.0,
+      "abrupt_score": 0.906,
+      "speed_score": 0.3122,
+      "flow_score": 0.0163,
+      "pose_score": 0.0652,
+      "distance_mean": 62.462,
+      "norm_distance_mean": 0.4639,
+      "overlap_max": 0.03744,
+      "close_ratio": 1.0,
+      "very_close_ratio": 1.0,
+      "contact_ratio": 1.0,
+      "mean_relative_speed": 54.3994,
+      "mean_speed": 37.4624,
+      "direction_changes": 2,
+      "pair_boxes": [
+        {
+          "frame_id": 696,
+          "time_sec": 23.2,
+          "bbox": [
+            826,
+            505,
+            935,
+            658
+          ],
+          "distance": 54.34,
+          "norm_distance": 0.4245,
+          "overlap": 0.03606
+        },
+        {
+          "frame_id": 704,
+          "time_sec": 23.467,
+          "bbox": [
+            819,
+            519,
+            933,
+            656
+          ],
+          "distance": 56.5,
+          "norm_distance": 0.4363,
+          "overlap": 0.03744
+        },
+        {
+          "frame_id": 712,
+          "time_sec": 23.733,
+          "bbox": [
+            815,
+            504,
+            946,
+            654
+          ],
+          "distance": 66.12,
+          "norm_distance": 0.4529,
+          "overlap": 0.0
+        },
+        {
+          "frame_id": 720,
+          "time_sec": 24.0,
+          "bbox": [
+            822,
+            506,
+            954,
+            654
+          ],
+          "distance": 72.89,
+          "norm_distance": 0.5419,
+          "overlap": 0.0
+        }
+      ]
+    },
+    "high_window_count": 29,
+    "strong_window_count": 22,
+    "window_count": 39,
+    "reason": "track-pair window에서 근접/접촉/급격한 상대 움직임이 동시에 나타났습니다.",
+    "ee_method": "track_pair_box_sliding_window"
+  },
+  "stalking": {
+    "stalking_label": "not_stalking",
+    "stalking_score": 0.4399,
+    "is_stalking": false,
+    "best_pair": {
+      "pair": [
+        21,
+        22
+      ],
+      "start_sec": 7.5,
+      "end_sec": 12.0,
+      "common_frames": 10,
+      "frame_count": 16,
+      "score": 0.8394,
+      "follow_ratio": 0.8889,
+      "same_direction_ratio": 0.8889,
+      "distance_mean": 175.997,
+      "distance_std": 15.485,
+      "stable_score": 0.8853,
+      "contact_ratio": 0.0,
+      "duration_sec": 2.4,
+      "evidence_frames": [
+        {
+          "frame_id": 288,
+          "time_sec": 9.6,
+          "distance": 190.62,
+          "same_direction_cos": 0.6982,
+          "behind_projection_abs": 117.92
+        },
+        {
+          "frame_id": 296,
+          "time_sec": 9.867,
+          "distance": 195.37,
+          "same_direction_cos": 0.9283,
+          "behind_projection_abs": 185.69
+        },
+        {
+          "frame_id": 304,
+          "time_sec": 10.133,
+          "distance": 185.97,
+          "same_direction_cos": 0.8938,
+          "behind_projection_abs": 180.87
+        },
+        {
+          "frame_id": 312,
+          "time_sec": 10.4,
+          "distance": 182.01,
+          "same_direction_cos": 0.9935,
+          "behind_projection_abs": 180.17
+        },
+        {
+          "frame_id": 320,
+          "time_sec": 10.667,
+          "distance": 179.36,
+          "same_direction_cos": 0.9701,
+          "behind_projection_abs": 177.46
+        },
+        {
+          "frame_id": 328,
+          "time_sec": 10.933,
+          "distance": 170.48,
+          "same_direction_cos": 0.9859,
+          "behind_projection_abs": 170.24
+        },
+        {
+          "frame_id": 336,
+          "time_sec": 11.2,
+          "distance": 163.42,
+          "same_direction_cos": 0.9998,
+          "behind_projection_abs": 163.41
+        },
+        {
+          "frame_id": 344,
+          "time_sec": 11.467,
+          "distance": 157.76,
+          "same_direction_cos": 0.9927,
+          "behind_projection_abs": 143.32
+        }
+      ],
+      "pair_boxes": [
+        {
+          "frame_id": 280,
+          "time_sec": 9.333,
+          "bbox": [
+            932,
+            467,
+            1177,
+            633
+          ],
+          "distance": 189.79
+        },
+        {
+          "frame_id": 288,
+          "time_sec": 9.6,
+          "bbox": [
+            915,
+            464,
+            1170,
+            637
+          ],
+          "distance": 190.62
+        },
+        {
+          "frame_id": 296,
+          "time_sec": 9.867,
+          "bbox": [
+            901,
+            465,
+            1161,
+            638
+          ],
+          "distance": 195.37
+        },
+        {
+          "frame_id": 304,
+          "time_sec": 10.133,
+          "bbox": [
+            898,
+            470,
+            1146,
+            642
+          ],
+          "distance": 185.97
+        },
+        {
+          "frame_id": 312,
+          "time_sec": 10.4,
+          "bbox": [
+            891,
+            475,
+            1132,
+            643
+          ],
+          "distance": 182.01
+        },
+        {
+          "frame_id": 320,
+          "time_sec": 10.667,
+          "bbox": [
+            883,
+            476,
+            1120,
+            645
+          ],
+          "distance": 179.36
+        },
+        {
+          "frame_id": 328,
+          "time_sec": 10.933,
+          "bbox": [
+            879,
+            476,
+            1106,
+            647
+          ],
+          "distance": 170.48
+        },
+        {
+          "frame_id": 336,
+          "time_sec": 11.2,
+          "bbox": [
+            874,
+            477,
+            1093,
+            648
+          ],
+          "distance": 163.42
+        },
+        {
+          "frame_id": 344,
+          "time_sec": 11.467,
+          "bbox": [
+            869,
+            489,
+            1081,
+            650
+          ],
+          "distance": 157.76
+        },
+        {
+          "frame_id": 352,
+          "time_sec": 11.733,
+          "bbox": [
+            867,
+            487,
+            1067,
+            651
+          ],
+          "distance": 145.18
+        }
+      ],
+      "cos_mean": 0.9328,
+      "behind_mean_abs": 164.884
+    },
+    "candidate_pairs": [
+      {
+        "pair": [
+          21,
+          22
+        ],
+        "start_sec": 7.5,
+        "end_sec": 12.0,
+        "common_frames": 10,
+        "frame_count": 16,
+        "score": 0.8394,
+        "follow_ratio": 0.8889,
+        "same_direction_ratio": 0.8889,
+        "distance_mean": 175.997,
+        "distance_std": 15.485,
+        "stable_score": 0.8853,
+        "contact_ratio": 0.0,
+        "duration_sec": 2.4,
+        "evidence_frames": [
+          {
+            "frame_id": 288,
+            "time_sec": 9.6,
+            "distance": 190.62,
+            "same_direction_cos": 0.6982,
+            "behind_projection_abs": 117.92
+          },
+          {
+            "frame_id": 296,
+            "time_sec": 9.867,
+            "distance": 195.37,
+            "same_direction_cos": 0.9283,
+            "behind_projection_abs": 185.69
+          },
+          {
+            "frame_id": 304,
+            "time_sec": 10.133,
+            "distance": 185.97,
+            "same_direction_cos": 0.8938,
+            "behind_projection_abs": 180.87
+          },
+          {
+            "frame_id": 312,
+            "time_sec": 10.4,
+            "distance": 182.01,
+            "same_direction_cos": 0.9935,
+            "behind_projection_abs": 180.17
+          },
+          {
+            "frame_id": 320,
+            "time_sec": 10.667,
+            "distance": 179.36,
+            "same_direction_cos": 0.9701,
+            "behind_projection_abs": 177.46
+          },
+          {
+            "frame_id": 328,
+            "time_sec": 10.933,
+            "distance": 170.48,
+            "same_direction_cos": 0.9859,
+            "behind_projection_abs": 170.24
+          },
+          {
+            "frame_id": 336,
+            "time_sec": 11.2,
+            "distance": 163.42,
+            "same_direction_cos": 0.9998,
+            "behind_projection_abs": 163.41
+          },
+          {
+            "frame_id": 344,
+            "time_sec": 11.467,
+            "distance": 157.76,
+            "same_direction_cos": 0.9927,
+            "behind_projection_abs": 143.32
+          }
+        ],
+        "pair_boxes": [
+          {
+            "frame_id": 280,
+            "time_sec": 9.333,
+            "bbox": [
+              932,
+              467,
+              1177,
+              633
+            ],
+            "distance": 189.79
+          },
+          {
+            "frame_id": 288,
+            "time_sec": 9.6,
+            "bbox": [
+              915,
+              464,
+              1170,
+              637
+            ],
+            "distance": 190.62
+          },
+          {
+            "frame_id": 296,
+            "time_sec": 9.867,
+            "bbox": [
+              901,
+              465,
+              1161,
+              638
+            ],
+            "distance": 195.37
+          },
+          {
+            "frame_id": 304,
+            "time_sec": 10.133,
+            "bbox": [
+              898,
+              470,
+              1146,
+              642
+            ],
+            "distance": 185.97
+          },
+          {
+            "frame_id": 312,
+            "time_sec": 10.4,
+            "bbox": [
+              891,
+              475,
+              1132,
+              643
+            ],
+            "distance": 182.01
+          },
+          {
+            "frame_id": 320,
+            "time_sec": 10.667,
+            "bbox": [
+              883,
+              476,
+              1120,
+              645
+            ],
+            "distance": 179.36
+          },
+          {
+            "frame_id": 328,
+            "time_sec": 10.933,
+            "bbox": [
+              879,
+              476,
+              1106,
+              647
+            ],
+            "distance": 170.48
+          },
+          {
+            "frame_id": 336,
+            "time_sec": 11.2,
+            "bbox": [
+              874,
+              477,
+              1093,
+              648
+            ],
+            "distance": 163.42
+          },
+          {
+            "frame_id": 344,
+            "time_sec": 11.467,
+            "bbox": [
+              869,
+              489,
+              1081,
+              650
+            ],
+            "distance": 157.76
+          },
+          {
+            "frame_id": 352,
+            "time_sec": 11.733,
+            "bbox": [
+              867,
+              487,
+              1067,
+              651
+            ],
+            "distance": 145.18
+          }
+        ],
+        "cos_mean": 0.9328,
+        "behind_mean_abs": 164.884
+      },
+      {
+        "pair": [
+          21,
+          22
+        ],
+        "start_sec": 6.0,
+        "end_sec": 10.5,
+        "common_frames": 6,
+        "frame_count": 17,
+        "score": 0.7155,
+        "follow_ratio": 0.8,
+        "same_direction_ratio": 0.8,
+        "distance_mean": 160.562,
+        "distance_std": 63.173,
+        "stable_score": 0.532,
+        "contact_ratio": 0.1667,
+        "duration_sec": 4.267,
+        "evidence_frames": [
+          {
+            "frame_id": 288,
+            "time_sec": 9.6,
+            "distance": 190.62,
+            "same_direction_cos": 0.6982,
+            "behind_projection_abs": 117.92
+          },
+          {
+            "frame_id": 296,
+            "time_sec": 9.867,
+            "distance": 195.37,
+            "same_direction_cos": 0.9283,
+            "behind_projection_abs": 185.69
+          },
+          {
+            "frame_id": 304,
+            "time_sec": 10.133,
+            "distance": 185.97,
+            "same_direction_cos": 0.8938,
+            "behind_projection_abs": 180.87
+          },
+          {
+            "frame_id": 312,
+            "time_sec": 10.4,
+            "distance": 182.01,
+            "same_direction_cos": 0.9935,
+            "behind_projection_abs": 180.17
+          }
+        ],
+        "pair_boxes": [
+          {
+            "frame_id": 184,
+            "time_sec": 6.133,
+            "bbox": [
+              1107,
+              469,
+              1166,
+              604
+            ],
+            "distance": 19.6
+          },
+          {
+            "frame_id": 280,
+            "time_sec": 9.333,
+            "bbox": [
+              932,
+              467,
+              1177,
+              633
+            ],
+            "distance": 189.79
+          },
+          {
+            "frame_id": 288,
+            "time_sec": 9.6,
+            "bbox": [
+              915,
+              464,
+              1170,
+              637
+            ],
+            "distance": 190.62
+          },
+          {
+            "frame_id": 296,
+            "time_sec": 9.867,
+            "bbox": [
+              901,
+              465,
+              1161,
+              638
+            ],
+            "distance": 195.37
+          },
+          {
+            "frame_id": 304,
+            "time_sec": 10.133,
+            "bbox": [
+              898,
+              470,
+              1146,
+              642
+            ],
+            "distance": 185.97
+          },
+          {
+            "frame_id": 312,
+            "time_sec": 10.4,
+            "bbox": [
+              891,
+              475,
+              1132,
+              643
+            ],
+            "distance": 182.01
+          }
+        ],
+        "cos_mean": 0.6018,
+        "behind_mean_abs": 170.783
+      },
+      {
+        "pair": [
+          21,
+          62
+        ],
+        "start_sec": 25.5,
+        "end_sec": 30.0,
+        "common_frames": 9,
+        "frame_count": 17,
+        "score": 0.5266,
+        "follow_ratio": 0.375,
+        "same_direction_ratio": 0.375,
+        "distance_mean": 120.328,
+        "distance_std": 40.261,
+        "stable_score": 0.7018,
+        "contact_ratio": 0.1111,
+        "duration_sec": 4.267,
+        "evidence_frames": [
+          {
+            "frame_id": 808,
+            "time_sec": 26.933,
+            "distance": 186.15,
+            "same_direction_cos": 0.8948,
+            "behind_projection_abs": 169.61
+          },
+          {
+            "frame_id": 888,
+            "time_sec": 29.6,
+            "distance": 85.53,
+            "same_direction_cos": 0.9909,
+            "behind_projection_abs": 85.42
+          },
+          {
+            "frame_id": 896,
+            "time_sec": 29.867,
+            "distance": 79.13,
+            "same_direction_cos": 0.8011,
+            "behind_projection_abs": 77.11
+          }
+        ],
+        "pair_boxes": [
+          {
+            "frame_id": 768,
+            "time_sec": 25.6,
+            "bbox": [
+              899,
+              477,
+              1048,
+              647
+            ],
+            "distance": 85.97
+          },
+          {
+            "frame_id": 776,
+            "time_sec": 25.867,
+            "bbox": [
+              915,
+              496,
+              1060,
+              647
+            ],
+            "distance": 87.47
+          },
+          {
+            "frame_id": 784,
+            "time_sec": 26.133,
+            "bbox": [
+              903,
+              493,
+              1084,
+              647
+            ],
+            "distance": 125.85
+          },
+          {
+            "frame_id": 792,
+            "time_sec": 26.4,
+            "bbox": [
+              901,
+              495,
+              1110,
+              650
+            ],
+            "distance": 155.03
+          },
+          {
+            "frame_id": 800,
+            "time_sec": 26.667,
+            "bbox": [
+              896,
+              497,
+              1138,
+              651
+            ],
+            "distance": 178.68
+          },
+          {
+            "frame_id": 808,
+            "time_sec": 26.933,
+            "bbox": [
+              916,
+              501,
+              1161,
+              649
+            ],
+            "distance": 186.15
+          },
+          {
+            "frame_id": 872,
+            "time_sec": 29.067,
+            "bbox": [
+              962,
+              500,
+              1124,
+              648
+            ],
+            "distance": 99.14
+          },
+          {
+            "frame_id": 888,
+            "time_sec": 29.6,
+            "bbox": [
+              937,
+              514,
+              1088,
+              648
+            ],
+            "distance": 85.53
+          },
+          {
+            "frame_id": 896,
+            "time_sec": 29.867,
+            "bbox": [
+              932,
+              506,
+              1075,
+              649
+            ],
+            "distance": 79.13
+          }
+        ],
+        "cos_mean": 0.0716,
+        "behind_mean_abs": 112.133
+      },
+      {
+        "pair": [
+          21,
+          62
+        ],
+        "start_sec": 27.0,
+        "end_sec": 31.5,
+        "common_frames": 6,
+        "frame_count": 14,
+        "score": 0.5026,
+        "follow_ratio": 1.0,
+        "same_direction_ratio": 1.0,
+        "distance_mean": 75.666,
+        "distance_std": 13.774,
+        "stable_score": 0.898,
+        "contact_ratio": 0.5,
+        "duration_sec": 1.6,
+        "evidence_frames": [
+          {
+            "frame_id": 888,
+            "time_sec": 29.6,
+            "distance": 85.53,
+            "same_direction_cos": 0.9909,
+            "behind_projection_abs": 85.42
+          },
+          {
+            "frame_id": 896,
+            "time_sec": 29.867,
+            "distance": 79.13,
+            "same_direction_cos": 0.8011,
+            "behind_projection_abs": 77.11
+          },
+          {
+            "frame_id": 904,
+            "time_sec": 30.133,
+            "distance": 67.47,
+            "same_direction_cos": 0.9969,
+            "behind_projection_abs": 66.28
+          },
+          {
+            "frame_id": 912,
+            "time_sec": 30.4,
+            "distance": 60.52,
+            "same_direction_cos": 0.6286,
+            "behind_projection_abs": 60.21
+          },
+          {
+            "frame_id": 920,
+            "time_sec": 30.667,
+            "distance": 62.2,
+            "same_direction_cos": 0.7071,
+            "behind_projection_abs": 61.44
+          }
+        ],
+        "pair_boxes": [
+          {
+            "frame_id": 872,
+            "time_sec": 29.067,
+            "bbox": [
+              962,
+              500,
+              1124,
+              648
+            ],
+            "distance": 99.14
+          },
+          {
+            "frame_id": 888,
+            "time_sec": 29.6,
+            "bbox": [
+              937,
+              514,
+              1088,
+              648
+            ],
+            "distance": 85.53
+          },
+          {
+            "frame_id": 896,
+            "time_sec": 29.867,
+            "bbox": [
+              932,
+              506,
+              1075,
+              649
+            ],
+            "distance": 79.13
+          },
+          {
+            "frame_id": 904,
+            "time_sec": 30.133,
+            "bbox": [
+              914,
+              506,
+              1047,
+              652
+            ],
+            "distance": 67.47
+          },
+          {
+            "frame_id": 912,
+            "time_sec": 30.4,
+            "bbox": [
+              896,
+              521,
+              1027,
+              655
+            ],
+            "distance": 60.52
+          },
+          {
+            "frame_id": 920,
+            "time_sec": 30.667,
+            "bbox": [
+              889,
+              517,
+              1023,
+              656
+            ],
+            "distance": 62.2
+          }
+        ],
+        "cos_mean": 0.8249,
+        "behind_mean_abs": 70.091
+      },
+      {
+        "pair": [
+          21,
+          62
+        ],
+        "start_sec": 28.5,
+        "end_sec": 33.0,
+        "common_frames": 6,
+        "frame_count": 9,
+        "score": 0.5026,
+        "follow_ratio": 1.0,
+        "same_direction_ratio": 1.0,
+        "distance_mean": 75.666,
+        "distance_std": 13.774,
+        "stable_score": 0.898,
+        "contact_ratio": 0.5,
+        "duration_sec": 1.6,
+        "evidence_frames": [
+          {
+            "frame_id": 888,
+            "time_sec": 29.6,
+            "distance": 85.53,
+            "same_direction_cos": 0.9909,
+            "behind_projection_abs": 85.42
+          },
+          {
+            "frame_id": 896,
+            "time_sec": 29.867,
+            "distance": 79.13,
+            "same_direction_cos": 0.8011,
+            "behind_projection_abs": 77.11
+          },
+          {
+            "frame_id": 904,
+            "time_sec": 30.133,
+            "distance": 67.47,
+            "same_direction_cos": 0.9969,
+            "behind_projection_abs": 66.28
+          },
+          {
+            "frame_id": 912,
+            "time_sec": 30.4,
+            "distance": 60.52,
+            "same_direction_cos": 0.6286,
+            "behind_projection_abs": 60.21
+          },
+          {
+            "frame_id": 920,
+            "time_sec": 30.667,
+            "distance": 62.2,
+            "same_direction_cos": 0.7071,
+            "behind_projection_abs": 61.44
+          }
+        ],
+        "pair_boxes": [
+          {
+            "frame_id": 872,
+            "time_sec": 29.067,
+            "bbox": [
+              962,
+              500,
+              1124,
+              648
+            ],
+            "distance": 99.14
+          },
+          {
+            "frame_id": 888,
+            "time_sec": 29.6,
+            "bbox": [
+              937,
+              514,
+              1088,
+              648
+            ],
+            "distance": 85.53
+          },
+          {
+            "frame_id": 896,
+            "time_sec": 29.867,
+            "bbox": [
+              932,
+              506,
+              1075,
+              649
+            ],
+            "distance": 79.13
+          },
+          {
+            "frame_id": 904,
+            "time_sec": 30.133,
+            "bbox": [
+              914,
+              506,
+              1047,
+              652
+            ],
+            "distance": 67.47
+          },
+          {
+            "frame_id": 912,
+            "time_sec": 30.4,
+            "bbox": [
+              896,
+              521,
+              1027,
+              655
+            ],
+            "distance": 60.52
+          },
+          {
+            "frame_id": 920,
+            "time_sec": 30.667,
+            "bbox": [
+              889,
+              517,
+              1023,
+              656
+            ],
+            "distance": 62.2
+          }
+        ],
+        "cos_mean": 0.8249,
+        "behind_mean_abs": 70.091
+      },
+      {
+        "pair": [
+          21,
+          62
+        ],
+        "start_sec": 30.0,
+        "end_sec": 34.5,
+        "common_frames": 3,
+        "frame_count": 3,
+        "score": 0.4887,
+        "follow_ratio": 1.0,
+        "same_direction_ratio": 1.0,
+        "distance_mean": 63.396,
+        "distance_std": 2.96,
+        "stable_score": 0.9781,
+        "contact_ratio": 1.0,
+        "duration_sec": 0.534,
+        "evidence_frames": [
+          {
+            "frame_id": 912,
+            "time_sec": 30.4,
+            "distance": 60.52,
+            "same_direction_cos": 0.6286,
+            "behind_projection_abs": 60.21
+          },
+          {
+            "frame_id": 920,
+            "time_sec": 30.667,
+            "distance": 62.2,
+            "same_direction_cos": 0.7071,
+            "behind_projection_abs": 61.44
+          }
+        ],
+        "pair_boxes": [
+          {
+            "frame_id": 904,
+            "time_sec": 30.133,
+            "bbox": [
+              914,
+              506,
+              1047,
+              652
+            ],
+            "distance": 67.47
+          },
+          {
+            "frame_id": 912,
+            "time_sec": 30.4,
+            "bbox": [
+              896,
+              521,
+              1027,
+              655
+            ],
+            "distance": 60.52
+          },
+          {
+            "frame_id": 920,
+            "time_sec": 30.667,
+            "bbox": [
+              889,
+              517,
+              1023,
+              656
+            ],
+            "distance": 62.2
+          }
+        ],
+        "cos_mean": 0.6678,
+        "behind_mean_abs": 60.825
+      },
+      {
+        "pair": [
+          21,
+          22
+        ],
+        "start_sec": 9.0,
+        "end_sec": 13.5,
+        "common_frames": 16,
+        "frame_count": 17,
+        "score": 0.4787,
+        "follow_ratio": 0.5333,
+        "same_direction_ratio": 0.5333,
+        "distance_mean": 145.865,
+        "distance_std": 43.284,
+        "stable_score": 0.6794,
+        "contact_ratio": 0.1875,
+        "duration_sec": 4.0,
+        "evidence_frames": [
+          {
+            "frame_id": 288,
+            "time_sec": 9.6,
+            "distance": 190.62,
+            "same_direction_cos": 0.6982,
+            "behind_projection_abs": 117.92
+          },
+          {
+            "frame_id": 296,
+            "time_sec": 9.867,
+            "distance": 195.37,
+            "same_direction_cos": 0.9283,
+            "behind_projection_abs": 185.69
+          },
+          {
+            "frame_id": 304,
+            "time_sec": 10.133,
+            "distance": 185.97,
+            "same_direction_cos": 0.8938,
+            "behind_projection_abs": 180.87
+          },
+          {
+            "frame_id": 312,
+            "time_sec": 10.4,
+            "distance": 182.01,
+            "same_direction_cos": 0.9935,
+            "behind_projection_abs": 180.17
+          },
+          {
+            "frame_id": 320,
+            "time_sec": 10.667,
+            "distance": 179.36,
+            "same_direction_cos": 0.9701,
+            "behind_projection_abs": 177.46
+          },
+          {
+            "frame_id": 328,
+            "time_sec": 10.933,
+            "distance": 170.48,
+            "same_direction_cos": 0.9859,
+            "behind_projection_abs": 170.24
+          },
+          {
+            "frame_id": 336,
+            "time_sec": 11.2,
+            "distance": 163.42,
+            "same_direction_cos": 0.9998,
+            "behind_projection_abs": 163.41
+          },
+          {
+            "frame_id": 344,
+            "time_sec": 11.467,
+            "distance": 157.76,
+            "same_direction_cos": 0.9927,
+            "behind_projection_abs": 143.32
+          }
+        ],
+        "pair_boxes": [
+          {
+            "frame_id": 280,
+            "time_sec": 9.333,
+            "bbox": [
+              932,
+              467,
+              1177,
+              633
+            ],
+            "distance": 189.79
+          },
+          {
+            "frame_id": 288,
+            "time_sec": 9.6,
+            "bbox": [
+              915,
+              464,
+              1170,
+              637
+            ],
+            "distance": 190.62
+          },
+          {
+            "frame_id": 296,
+            "time_sec": 9.867,
+            "bbox": [
+              901,
+              465,
+              1161,
+              638
+            ],
+            "distance": 195.37
+          },
+          {
+            "frame_id": 304,
+            "time_sec": 10.133,
+            "bbox": [
+              898,
+              470,
+              1146,
+              642
+            ],
+            "distance": 185.97
+          },
+          {
+            "frame_id": 312,
+            "time_sec": 10.4,
+            "bbox": [
+              891,
+              475,
+              1132,
+              643
+            ],
+            "distance": 182.01
+          },
+          {
+            "frame_id": 320,
+            "time_sec": 10.667,
+            "bbox": [
+              883,
+              476,
+              1120,
+              645
+            ],
+            "distance": 179.36
+          },
+          {
+            "frame_id": 328,
+            "time_sec": 10.933,
+            "bbox": [
+              879,
+              476,
+              1106,
+              647
+            ],
+            "distance": 170.48
+          },
+          {
+            "frame_id": 336,
+            "time_sec": 11.2,
+            "bbox": [
+              874,
+              477,
+              1093,
+              648
+            ],
+            "distance": 163.42
+          },
+          {
+            "frame_id": 344,
+            "time_sec": 11.467,
+            "bbox": [
+              869,
+              489,
+              1081,
+              650
+            ],
+            "distance": 157.76
+          },
+          {
+            "frame_id": 352,
+            "time_sec": 11.733,
+            "bbox": [
+              867,
+              487,
+              1067,
+              651
+            ],
+            "distance": 145.18
+          }
+        ],
+        "cos_mean": 0.7739,
+        "behind_mean_abs": 153.481
+      },
+      {
+        "pair": [
+          21,
+          62
+        ],
+        "start_sec": 22.5,
+        "end_sec": 27.0,
+        "common_frames": 6,
+        "frame_count": 17,
+        "score": 0.3701,
+        "follow_ratio": 0.2,
+        "same_direction_ratio": 0.2,
+        "distance_mean": 136.525,
+        "distance_std": 40.119,
+        "stable_score": 0.7028,
+        "contact_ratio": 0.1667,
+        "duration_sec": 1.333,
+        "evidence_frames": [
+          {
+            "frame_id": 808,
+            "time_sec": 26.933,
+            "distance": 186.15,
+            "same_direction_cos": 0.8948,
+            "behind_projection_abs": 169.61
+          }
+        ],
+        "pair_boxes": [
+          {
+            "frame_id": 768,
+            "time_sec": 25.6,
+            "bbox": [
+              899,
+              477,
+              1048,
+              647
+            ],
+            "distance": 85.97
+          },
+          {
+            "frame_id": 776,
+            "time_sec": 25.867,
+            "bbox": [
+              915,
+              496,
+              1060,
+              647
+            ],
+            "distance": 87.47
+          },
+          {
+            "frame_id": 784,
+            "time_sec": 26.133,
+            "bbox": [
+              903,
+              493,
+              1084,
+              647
+            ],
+            "distance": 125.85
+          },
+          {
+            "frame_id": 792,
+            "time_sec": 26.4,
+            "bbox": [
+              901,
+              495,
+              1110,
+              650
+            ],
+            "distance": 155.03
+          },
+          {
+            "frame_id": 800,
+            "time_sec": 26.667,
+            "bbox": [
+              896,
+              497,
+              1138,
+              651
+            ],
+            "distance": 178.68
+          },
+          {
+            "frame_id": 808,
+            "time_sec": 26.933,
+            "bbox": [
+              916,
+              501,
+              1161,
+              649
+            ],
+            "distance": 186.15
+          }
+        ],
+        "cos_mean": -0.0441,
+        "behind_mean_abs": 127.364
+      },
+      {
+        "pair": [
+          21,
+          62
+        ],
+        "start_sec": 24.0,
+        "end_sec": 28.5,
+        "common_frames": 6,
+        "frame_count": 17,
+        "score": 0.3701,
+        "follow_ratio": 0.2,
+        "same_direction_ratio": 0.2,
+        "distance_mean": 136.525,
+        "distance_std": 40.119,
+        "stable_score": 0.7028,
+        "contact_ratio": 0.1667,
+        "duration_sec": 1.333,
+        "evidence_frames": [
+          {
+            "frame_id": 808,
+            "time_sec": 26.933,
+            "distance": 186.15,
+            "same_direction_cos": 0.8948,
+            "behind_projection_abs": 169.61
+          }
+        ],
+        "pair_boxes": [
+          {
+            "frame_id": 768,
+            "time_sec": 25.6,
+            "bbox": [
+              899,
+              477,
+              1048,
+              647
+            ],
+            "distance": 85.97
+          },
+          {
+            "frame_id": 776,
+            "time_sec": 25.867,
+            "bbox": [
+              915,
+              496,
+              1060,
+              647
+            ],
+            "distance": 87.47
+          },
+          {
+            "frame_id": 784,
+            "time_sec": 26.133,
+            "bbox": [
+              903,
+              493,
+              1084,
+              647
+            ],
+            "distance": 125.85
+          },
+          {
+            "frame_id": 792,
+            "time_sec": 26.4,
+            "bbox": [
+              901,
+              495,
+              1110,
+              650
+            ],
+            "distance": 155.03
+          },
+          {
+            "frame_id": 800,
+            "time_sec": 26.667,
+            "bbox": [
+              896,
+              497,
+              1138,
+              651
+            ],
+            "distance": 178.68
+          },
+          {
+            "frame_id": 808,
+            "time_sec": 26.933,
+            "bbox": [
+              916,
+              501,
+              1161,
+              649
+            ],
+            "distance": 186.15
+          }
+        ],
+        "cos_mean": -0.0441,
+        "behind_mean_abs": 127.364
+      },
+      {
+        "pair": [
+          22,
+          23
+        ],
+        "start_sec": 3.0,
+        "end_sec": 7.5,
+        "common_frames": 6,
+        "frame_count": 17,
+        "score": 0.2963,
+        "follow_ratio": 0.0,
+        "same_direction_ratio": 0.0,
+        "distance_mean": 111.282,
+        "distance_std": 25.607,
+        "stable_score": 0.8103,
+        "contact_ratio": 0.0,
+        "duration_sec": 1.334,
+        "evidence_frames": [],
+        "pair_boxes": [
+          {
+            "frame_id": 184,
+            "time_sec": 6.133,
+            "bbox": [
+              1107,
+              446,
+              1198,
+              604
+            ],
+            "distance": 80.6
+          },
+          {
+            "frame_id": 192,
+            "time_sec": 6.4,
+            "bbox": [
+              1096,
+              445,
+              1195,
+              604
+            ],
+            "distance": 87.53
+          },
+          {
+            "frame_id": 200,
+            "time_sec": 6.667,
+            "bbox": [
+              1075,
+              444,
+              1192,
+              608
+            ],
+            "distance": 100.16
+          },
+          {
+            "frame_id": 208,
+            "time_sec": 6.933,
+            "bbox": [
+              1061,
+              440,
+              1190,
+              611
+            ],
+            "distance": 111.14
+          },
+          {
+            "frame_id": 216,
+            "time_sec": 7.2,
+            "bbox": [
+              1046,
+              439,
+              1188,
+              613
+            ],
+            "distance": 135.53
+          },
+          {
+            "frame_id": 224,
+            "time_sec": 7.467,
+            "bbox": [
+              1036,
+              441,
+              1184,
+              615
+            ],
+            "distance": 152.73
+          }
+        ],
+        "cos_mean": null,
+        "behind_mean_abs": null
+      },
+      {
+        "pair": [
+          22,
+          23
+        ],
+        "start_sec": 4.5,
+        "end_sec": 9.0,
+        "common_frames": 6,
+        "frame_count": 17,
+        "score": 0.2963,
+        "follow_ratio": 0.0,
+        "same_direction_ratio": 0.0,
+        "distance_mean": 111.282,
+        "distance_std": 25.607,
+        "stable_score": 0.8103,
+        "contact_ratio": 0.0,
+        "duration_sec": 1.334,
+        "evidence_frames": [],
+        "pair_boxes": [
+          {
+            "frame_id": 184,
+            "time_sec": 6.133,
+            "bbox": [
+              1107,
+              446,
+              1198,
+              604
+            ],
+            "distance": 80.6
+          },
+          {
+            "frame_id": 192,
+            "time_sec": 6.4,
+            "bbox": [
+              1096,
+              445,
+              1195,
+              604
+            ],
+            "distance": 87.53
+          },
+          {
+            "frame_id": 200,
+            "time_sec": 6.667,
+            "bbox": [
+              1075,
+              444,
+              1192,
+              608
+            ],
+            "distance": 100.16
+          },
+          {
+            "frame_id": 208,
+            "time_sec": 6.933,
+            "bbox": [
+              1061,
+              440,
+              1190,
+              611
+            ],
+            "distance": 111.14
+          },
+          {
+            "frame_id": 216,
+            "time_sec": 7.2,
+            "bbox": [
+              1046,
+              439,
+              1188,
+              613
+            ],
+            "distance": 135.53
+          },
+          {
+            "frame_id": 224,
+            "time_sec": 7.467,
+            "bbox": [
+              1036,
+              441,
+              1184,
+              615
+            ],
+            "distance": 152.73
+          }
+        ],
+        "cos_mean": null,
+        "behind_mean_abs": null
+      },
+      {
+        "pair": [
+          22,
+          23
+        ],
+        "start_sec": 6.0,
+        "end_sec": 10.5,
+        "common_frames": 6,
+        "frame_count": 17,
+        "score": 0.2963,
+        "follow_ratio": 0.0,
+        "same_direction_ratio": 0.0,
+        "distance_mean": 111.282,
+        "distance_std": 25.607,
+        "stable_score": 0.8103,
+        "contact_ratio": 0.0,
+        "duration_sec": 1.334,
+        "evidence_frames": [],
+        "pair_boxes": [
+          {
+            "frame_id": 184,
+            "time_sec": 6.133,
+            "bbox": [
+              1107,
+              446,
+              1198,
+              604
+            ],
+            "distance": 80.6
+          },
+          {
+            "frame_id": 192,
+            "time_sec": 6.4,
+            "bbox": [
+              1096,
+              445,
+              1195,
+              604
+            ],
+            "distance": 87.53
+          },
+          {
+            "frame_id": 200,
+            "time_sec": 6.667,
+            "bbox": [
+              1075,
+              444,
+              1192,
+              608
+            ],
+            "distance": 100.16
+          },
+          {
+            "frame_id": 208,
+            "time_sec": 6.933,
+            "bbox": [
+              1061,
+              440,
+              1190,
+              611
+            ],
+            "distance": 111.14
+          },
+          {
+            "frame_id": 216,
+            "time_sec": 7.2,
+            "bbox": [
+              1046,
+              439,
+              1188,
+              613
+            ],
+            "distance": 135.53
+          },
+          {
+            "frame_id": 224,
+            "time_sec": 7.467,
+            "bbox": [
+              1036,
+              441,
+              1184,
+              615
+            ],
+            "distance": 152.73
+          }
+        ],
+        "cos_mean": null,
+        "behind_mean_abs": null
+      },
+      {
+        "pair": [
+          21,
+          22
+        ],
+        "start_sec": 10.5,
+        "end_sec": 15.0,
+        "common_frames": 17,
+        "frame_count": 17,
+        "score": 0.2582,
+        "follow_ratio": 0.25,
+        "same_direction_ratio": 0.25,
+        "distance_mean": 105.216,
+        "distance_std": 42.347,
+        "stable_score": 0.6863,
+        "contact_ratio": 0.5294,
+        "duration_sec": 4.266,
+        "evidence_frames": [
+          {
+            "frame_id": 328,
+            "time_sec": 10.933,
+            "distance": 170.48,
+            "same_direction_cos": 0.9859,
+            "behind_projection_abs": 170.24
+          },
+          {
+            "frame_id": 336,
+            "time_sec": 11.2,
+            "distance": 163.42,
+            "same_direction_cos": 0.9998,
+            "behind_projection_abs": 163.41
+          },
+          {
+            "frame_id": 344,
+            "time_sec": 11.467,
+            "distance": 157.76,
+            "same_direction_cos": 0.9927,
+            "behind_projection_abs": 143.32
+          },
+          {
+            "frame_id": 440,
+            "time_sec": 14.667,
+            "distance": 69.79,
+            "same_direction_cos": 0.9964,
+            "behind_projection_abs": 17.18
+          }
+        ],
+        "pair_boxes": [
+          {
+            "frame_id": 320,
+            "time_sec": 10.667,
+            "bbox": [
+              883,
+              476,
+              1120,
+              645
+            ],
+            "distance": 179.36
+          },
+          {
+            "frame_id": 328,
+            "time_sec": 10.933,
+            "bbox": [
+              879,
+              476,
+              1106,
+              647
+            ],
+            "distance": 170.48
+          },
+          {
+            "frame_id": 336,
+            "time_sec": 11.2,
+            "bbox": [
+              874,
+              477,
+              1093,
+              648
+            ],
+            "distance": 163.42
+          },
+          {
+            "frame_id": 344,
+            "time_sec": 11.467,
+            "bbox": [
+              869,
+              489,
+              1081,
+              650
+            ],
+            "distance": 157.76
+          },
+          {
+            "frame_id": 352,
+            "time_sec": 11.733,
+            "bbox": [
+              867,
+              487,
+              1067,
+              651
+            ],
+            "distance": 145.18
+          },
+          {
+            "frame_id": 360,
+            "time_sec": 12.0,
+            "bbox": [
+              865,
+              485,
+              1054,
+              651
+            ],
+            "distance": 131.67
+          },
+          {
+            "frame_id": 368,
+            "time_sec": 12.267,
+            "bbox": [
+              863,
+              488,
+              1039,
+              651
+            ],
+            "distance": 118.16
+          },
+          {
+            "frame_id": 376,
+            "time_sec": 12.533,
+            "bbox": [
+              861,
+              490,
+              1018,
+              650
+            ],
+            "distance": 99.01
+          },
+          {
+            "frame_id": 384,
+            "time_sec": 12.8,
+            "bbox": [
+              860,
+              486,
+              1004,
+              650
+            ],
+            "distance": 87.28
+          },
+          {
+            "frame_id": 392,
+            "time_sec": 13.067,
+            "bbox": [
+              859,
+              486,
+              987,
+              650
+            ],
+            "distance": 73.75
+          }
+        ],
+        "cos_mean": 0.5414,
+        "behind_mean_abs": 103.095
+      },
+      {
+        "pair": [
+          21,
+          22
+        ],
+        "start_sec": 13.5,
+        "end_sec": 18.0,
+        "common_frames": 11,
+        "frame_count": 17,
+        "score": 0.2362,
+        "follow_ratio": 0.1,
+        "same_direction_ratio": 0.2,
+        "distance_mean": 60.757,
+        "distance_std": 10.215,
+        "stable_score": 0.9243,
+        "contact_ratio": 1.0,
+        "duration_sec": 4.0,
+        "evidence_frames": [
+          {
+            "frame_id": 440,
+            "time_sec": 14.667,
+            "distance": 69.79,
+            "same_direction_cos": 0.9964,
+            "behind_projection_abs": 17.18
+          }
+        ],
+        "pair_boxes": [
+          {
+            "frame_id": 408,
+            "time_sec": 13.6,
+            "bbox": [
+              859,
+              493,
+              979,
+              650
+            ],
+            "distance": 63.44
+          },
+          {
+            "frame_id": 416,
+            "time_sec": 13.867,
+            "bbox": [
+              860,
+              489,
+              979,
+              650
+            ],
+            "distance": 63.55
+          },
+          {
+            "frame_id": 424,
+            "time_sec": 14.133,
+            "bbox": [
+              859,
+              489,
+              978,
+              651
+            ],
+            "distance": 64.72
+          },
+          {
+            "frame_id": 432,
+            "time_sec": 14.4,
+            "bbox": [
+              851,
+              489,
+              979,
+              650
+            ],
+            "distance": 69.68
+          },
+          {
+            "frame_id": 440,
+            "time_sec": 14.667,
+            "bbox": [
+              855,
+              509,
+              974,
+              650
+            ],
+            "distance": 69.79
+          },
+          {
+            "frame_id": 448,
+            "time_sec": 14.933,
+            "bbox": [
+              861,
+              510,
+              975,
+              650
+            ],
+            "distance": 67.43
+          },
+          {
+            "frame_id": 456,
+            "time_sec": 15.2,
+            "bbox": [
+              864,
+              502,
+              971,
+              649
+            ],
+            "distance": 64.88
+          },
+          {
+            "frame_id": 464,
+            "time_sec": 15.467,
+            "bbox": [
+              855,
+              500,
+              970,
+              650
+            ],
+            "distance": 70.58
+          },
+          {
+            "frame_id": 504,
+            "time_sec": 16.8,
+            "bbox": [
+              845,
+              532,
+              942,
+              653
+            ],
+            "distance": 42.92
+          },
+          {
+            "frame_id": 512,
+            "time_sec": 17.067,
+            "bbox": [
+              837,
+              511,
+              943,
+              652
+            ],
+            "distance": 42.17
+          }
+        ],
+        "cos_mean": 0.323,
+        "behind_mean_abs": 30.129
+      },
+      {
+        "pair": [
+          21,
+          22
+        ],
+        "start_sec": 19.5,
+        "end_sec": 24.0,
+        "common_frames": 14,
+        "frame_count": 16,
+        "score": 0.2179,
+        "follow_ratio": 0.0769,
+        "same_direction_ratio": 0.0769,
+        "distance_mean": 48.132,
+        "distance_std": 9.764,
+        "stable_score": 0.9277,
+        "contact_ratio": 1.0,
+        "duration_sec": 4.0,
+        "evidence_frames": [
+          {
+            "frame_id": 712,
+            "time_sec": 23.733,
+            "distance": 66.12,
+            "same_direction_cos": 0.7071,
+            "behind_projection_abs": 30.79
+          }
+        ],
+        "pair_boxes": [
+          {
+            "frame_id": 592,
+            "time_sec": 19.733,
+            "bbox": [
+              829,
+              506,
+              947,
+              657
+            ],
+            "distance": 58.72
+          },
+          {
+            "frame_id": 600,
+            "time_sec": 20.0,
+            "bbox": [
+              832,
+              505,
+              942,
+              657
+            ],
+            "distance": 51.7
+          },
+          {
+            "frame_id": 608,
+            "time_sec": 20.267,
+            "bbox": [
+              832,
+              507,
+              940,
+              657
+            ],
+            "distance": 51.09
+          },
+          {
+            "frame_id": 624,
+            "time_sec": 20.8,
+            "bbox": [
+              828,
+              502,
+              937,
+              656
+            ],
+            "distance": 51.62
+          },
+          {
+            "frame_id": 632,
+            "time_sec": 21.067,
+            "bbox": [
+              831,
+              504,
+              937,
+              657
+            ],
+            "distance": 48.23
+          },
+          {
+            "frame_id": 640,
+            "time_sec": 21.333,
+            "bbox": [
+              831,
+              507,
+              935,
+              657
+            ],
+            "distance": 48.4
+          },
+          {
+            "frame_id": 648,
+            "time_sec": 21.6,
+            "bbox": [
+              833,
+              508,
+              932,
+              658
+            ],
+            "distance": 44.3
+          },
+          {
+            "frame_id": 656,
+            "time_sec": 21.867,
+            "bbox": [
+              835,
+              508,
+              931,
+              658
+            ],
+            "distance": 38.75
+          },
+          {
+            "frame_id": 664,
+            "time_sec": 22.133,
+            "bbox": [
+              838,
+              507,
+              928,
+              658
+            ],
+            "distance": 34.35
+          },
+          {
+            "frame_id": 680,
+            "time_sec": 22.667,
+            "bbox": [
+              844,
+              510,
+              925,
+              657
+            ],
+            "distance": 27.39
+          }
+        ],
+        "cos_mean": -0.5625,
+        "behind_mean_abs": 24.444
+      },
+      {
+        "pair": [
+          21,
+          22
+        ],
+        "start_sec": 22.5,
+        "end_sec": 27.0,
+        "common_frames": 6,
+        "frame_count": 17,
+        "score": 0.2175,
+        "follow_ratio": 0.2,
+        "same_direction_ratio": 0.2,
+        "distance_mean": 53.261,
+        "distance_std": 15.006,
+        "stable_score": 0.8888,
+        "contact_ratio": 1.0,
+        "duration_sec": 1.333,
+        "evidence_frames": [
+          {
+            "frame_id": 712,
+            "time_sec": 23.733,
+            "distance": 66.12,
+            "same_direction_cos": 0.7071,
+            "behind_projection_abs": 30.79
+          }
+        ],
+        "pair_boxes": [
+          {
+            "frame_id": 680,
+            "time_sec": 22.667,
+            "bbox": [
+              844,
+              510,
+              925,
+              657
+            ],
+            "distance": 27.39
+          },
+          {
+            "frame_id": 688,
+            "time_sec": 22.933,
+            "bbox": [
+              832,
+              508,
+              930,
+              658
+            ],
+            "distance": 42.32
+          },
+          {
+            "frame_id": 696,
+            "time_sec": 23.2,
+            "bbox": [
+              826,
+              505,
+              935,
+              658
+            ],
+            "distance": 54.34
+          },
+          {
+            "frame_id": 704,
+            "time_sec": 23.467,
+            "bbox": [
+              819,
+              519,
+              933,
+              656
+            ],
+            "distance": 56.5
+          },
+          {
+            "frame_id": 712,
+            "time_sec": 23.733,
+            "bbox": [
+              815,
+              504,
+              946,
+              654
+            ],
+            "distance": 66.12
+          },
+          {
+            "frame_id": 720,
+            "time_sec": 24.0,
+            "bbox": [
+              822,
+              506,
+              954,
+              654
+            ],
+            "distance": 72.89
+          }
+        ],
+        "cos_mean": -0.4202,
+        "behind_mean_abs": 26.468
+      },
+      {
+        "pair": [
+          21,
+          22
+        ],
+        "start_sec": 21.0,
+        "end_sec": 25.5,
+        "common_frames": 11,
+        "frame_count": 17,
+        "score": 0.2124,
+        "follow_ratio": 0.1,
+        "same_direction_ratio": 0.1,
+        "distance_mean": 48.509,
+        "distance_std": 12.792,
+        "stable_score": 0.9052,
+        "contact_ratio": 1.0,
+        "duration_sec": 2.933,
+        "evidence_frames": [
+          {
+            "frame_id": 712,
+            "time_sec": 23.733,
+            "distance": 66.12,
+            "same_direction_cos": 0.7071,
+            "behind_projection_abs": 30.79
+          }
+        ],
+        "pair_boxes": [
+          {
+            "frame_id": 632,
+            "time_sec": 21.067,
+            "bbox": [
+              831,
+              504,
+              937,
+              657
+            ],
+            "distance": 48.23
+          },
+          {
+            "frame_id": 640,
+            "time_sec": 21.333,
+            "bbox": [
+              831,
+              507,
+              935,
+              657
+            ],
+            "distance": 48.4
+          },
+          {
+            "frame_id": 648,
+            "time_sec": 21.6,
+            "bbox": [
+              833,
+              508,
+              932,
+              658
+            ],
+            "distance": 44.3
+          },
+          {
+            "frame_id": 656,
+            "time_sec": 21.867,
+            "bbox": [
+              835,
+              508,
+              931,
+              658
+            ],
+            "distance": 38.75
+          },
+          {
+            "frame_id": 664,
+            "time_sec": 22.133,
+            "bbox": [
+              838,
+              507,
+              928,
+              658
+            ],
+            "distance": 34.35
+          },
+          {
+            "frame_id": 680,
+            "time_sec": 22.667,
+            "bbox": [
+              844,
+              510,
+              925,
+              657
+            ],
+            "distance": 27.39
+          },
+          {
+            "frame_id": 688,
+            "time_sec": 22.933,
+            "bbox": [
+              832,
+              508,
+              930,
+              658
+            ],
+            "distance": 42.32
+          },
+          {
+            "frame_id": 696,
+            "time_sec": 23.2,
+            "bbox": [
+              826,
+              505,
+              935,
+              658
+            ],
+            "distance": 54.34
+          },
+          {
+            "frame_id": 704,
+            "time_sec": 23.467,
+            "bbox": [
+              819,
+              519,
+              933,
+              656
+            ],
+            "distance": 56.5
+          },
+          {
+            "frame_id": 712,
+            "time_sec": 23.733,
+            "bbox": [
+              815,
+              504,
+              946,
+              654
+            ],
+            "distance": 66.12
+          }
+        ],
+        "cos_mean": -0.4202,
+        "behind_mean_abs": 26.468
+      },
+      {
+        "pair": [
+          21,
+          22
+        ],
+        "start_sec": 12.0,
+        "end_sec": 16.5,
+        "common_frames": 14,
+        "frame_count": 17,
+        "score": 0.2054,
+        "follow_ratio": 0.0769,
+        "same_direction_ratio": 0.0769,
+        "distance_mean": 79.139,
+        "distance_std": 21.195,
+        "stable_score": 0.843,
+        "contact_ratio": 0.7857,
+        "duration_sec": 3.467,
+        "evidence_frames": [
+          {
+            "frame_id": 440,
+            "time_sec": 14.667,
+            "distance": 69.79,
+            "same_direction_cos": 0.9964,
+            "behind_projection_abs": 17.18
+          }
+        ],
+        "pair_boxes": [
+          {
+            "frame_id": 360,
+            "time_sec": 12.0,
+            "bbox": [
+              865,
+              485,
+              1054,
+              651
+            ],
+            "distance": 131.67
+          },
+          {
+            "frame_id": 368,
+            "time_sec": 12.267,
+            "bbox": [
+              863,
+              488,
+              1039,
+              651
+            ],
+            "distance": 118.16
+          },
+          {
+            "frame_id": 376,
+            "time_sec": 12.533,
+            "bbox": [
+              861,
+              490,
+              1018,
+              650
+            ],
+            "distance": 99.01
+          },
+          {
+            "frame_id": 384,
+            "time_sec": 12.8,
+            "bbox": [
+              860,
+              486,
+              1004,
+              650
+            ],
+            "distance": 87.28
+          },
+          {
+            "frame_id": 392,
+            "time_sec": 13.067,
+            "bbox": [
+              859,
+              486,
+              987,
+              650
+            ],
+            "distance": 73.75
+          },
+          {
+            "frame_id": 400,
+            "time_sec": 13.333,
+            "bbox": [
+              860,
+              497,
+              981,
+              650
+            ],
+            "distance": 64.0
+          },
+          {
+            "frame_id": 408,
+            "time_sec": 13.6,
+            "bbox": [
+              859,
+              493,
+              979,
+              650
+            ],
+            "distance": 63.44
+          },
+          {
+            "frame_id": 416,
+            "time_sec": 13.867,
+            "bbox": [
+              860,
+              489,
+              979,
+              650
+            ],
+            "distance": 63.55
+          },
+          {
+            "frame_id": 424,
+            "time_sec": 14.133,
+            "bbox": [
+              859,
+              489,
+              978,
+              651
+            ],
+            "distance": 64.72
+          },
+          {
+            "frame_id": 432,
+            "time_sec": 14.4,
+            "bbox": [
+              851,
+              489,
+              979,
+              650
+            ],
+            "distance": 69.68
+          }
+        ],
+        "cos_mean": -0.1067,
+        "behind_mean_abs": 51.417
+      },
+      {
+        "pair": [
+          21,
+          22
+        ],
+        "start_sec": 16.5,
+        "end_sec": 21.0,
+        "common_frames": 13,
+        "frame_count": 17,
+        "score": 0.2054,
+        "follow_ratio": 0.0,
+        "same_direction_ratio": 0.0833,
+        "distance_mean": 51.676,
+        "distance_std": 6.003,
+        "stable_score": 0.9555,
+        "contact_ratio": 1.0,
+        "duration_sec": 4.0,
+        "evidence_frames": [],
+        "pair_boxes": [
+          {
+            "frame_id": 504,
+            "time_sec": 16.8,
+            "bbox": [
+              845,
+              532,
+              942,
+              653
+            ],
+            "distance": 42.92
+          },
+          {
+            "frame_id": 512,
+            "time_sec": 17.067,
+            "bbox": [
+              837,
+              511,
+              943,
+              652
+            ],
+            "distance": 42.17
+          },
+          {
+            "frame_id": 528,
+            "time_sec": 17.6,
+            "bbox": [
+              840,
+              517,
+              944,
+              654
+            ],
+            "distance": 49.16
+          },
+          {
+            "frame_id": 544,
+            "time_sec": 18.133,
+            "bbox": [
+              834,
+              533,
+              945,
+              656
+            ],
+            "distance": 54.08
+          },
+          {
+            "frame_id": 552,
+            "time_sec": 18.4,
+            "bbox": [
+              835,
+              516,
+              941,
+              657
+            ],
+            "distance": 46.04
+          },
+          {
+            "frame_id": 560,
+            "time_sec": 18.667,
+            "bbox": [
+              835,
+              508,
+              941,
+              657
+            ],
+            "distance": 47.3
+          },
+          {
+            "frame_id": 568,
+            "time_sec": 18.933,
+            "bbox": [
+              834,
+              501,
+              948,
+              657
+            ],
+            "distance": 54.71
+          },
+          {
+            "frame_id": 576,
+            "time_sec": 19.2,
+            "bbox": [
+              829,
+              499,
+              951,
+              657
+            ],
+            "distance": 60.73
+          },
+          {
+            "frame_id": 584,
+            "time_sec": 19.467,
+            "bbox": [
+              830,
+              502,
+              952,
+              657
+            ],
+            "distance": 61.54
+          },
+          {
+            "frame_id": 592,
+            "time_sec": 19.733,
+            "bbox": [
+              829,
+              506,
+              947,
+              657
+            ],
+            "distance": 58.72
+          }
+        ],
+        "cos_mean": 0.4994,
+        "behind_mean_abs": 14.139
+      },
+      {
+        "pair": [
+          21,
+          22
+        ],
+        "start_sec": 15.0,
+        "end_sec": 19.5,
+        "common_frames": 11,
+        "frame_count": 17,
+        "score": 0.2044,
+        "follow_ratio": 0.0,
+        "same_direction_ratio": 0.1,
+        "distance_mean": 54.01,
+        "distance_std": 8.997,
+        "stable_score": 0.9334,
+        "contact_ratio": 1.0,
+        "duration_sec": 4.267,
+        "evidence_frames": [],
+        "pair_boxes": [
+          {
+            "frame_id": 456,
+            "time_sec": 15.2,
+            "bbox": [
+              864,
+              502,
+              971,
+              649
+            ],
+            "distance": 64.88
+          },
+          {
+            "frame_id": 464,
+            "time_sec": 15.467,
+            "bbox": [
+              855,
+              500,
+              970,
+              650
+            ],
+            "distance": 70.58
+          },
+          {
+            "frame_id": 504,
+            "time_sec": 16.8,
+            "bbox": [
+              845,
+              532,
+              942,
+              653
+            ],
+            "distance": 42.92
+          },
+          {
+            "frame_id": 512,
+            "time_sec": 17.067,
+            "bbox": [
+              837,
+              511,
+              943,
+              652
+            ],
+            "distance": 42.17
+          },
+          {
+            "frame_id": 528,
+            "time_sec": 17.6,
+            "bbox": [
+              840,
+              517,
+              944,
+              654
+            ],
+            "distance": 49.16
+          },
+          {
+            "frame_id": 544,
+            "time_sec": 18.133,
+            "bbox": [
+              834,
+              533,
+              945,
+              656
+            ],
+            "distance": 54.08
+          },
+          {
+            "frame_id": 552,
+            "time_sec": 18.4,
+            "bbox": [
+              835,
+              516,
+              941,
+              657
+            ],
+            "distance": 46.04
+          },
+          {
+            "frame_id": 560,
+            "time_sec": 18.667,
+            "bbox": [
+              835,
+              508,
+              941,
+              657
+            ],
+            "distance": 47.3
+          },
+          {
+            "frame_id": 568,
+            "time_sec": 18.933,
+            "bbox": [
+              834,
+              501,
+              948,
+              657
+            ],
+            "distance": 54.71
+          },
+          {
+            "frame_id": 576,
+            "time_sec": 19.2,
+            "bbox": [
+              829,
+              499,
+              951,
+              657
+            ],
+            "distance": 60.73
+          }
+        ],
+        "cos_mean": 0.4383,
+        "behind_mean_abs": 23.131
+      },
+      {
+        "pair": [
+          21,
+          22
+        ],
+        "start_sec": 18.0,
+        "end_sec": 22.5,
+        "common_frames": 15,
+        "frame_count": 17,
+        "score": 0.193,
+        "follow_ratio": 0.0,
+        "same_direction_ratio": 0.0,
+        "distance_mean": 50.104,
+        "distance_std": 7.314,
+        "stable_score": 0.9458,
+        "contact_ratio": 1.0,
+        "duration_sec": 4.0,
+        "evidence_frames": [],
+        "pair_boxes": [
+          {
+            "frame_id": 544,
+            "time_sec": 18.133,
+            "bbox": [
+              834,
+              533,
+              945,
+              656
+            ],
+            "distance": 54.08
+          },
+          {
+            "frame_id": 552,
+            "time_sec": 18.4,
+            "bbox": [
+              835,
+              516,
+              941,
+              657
+            ],
+            "distance": 46.04
+          },
+          {
+            "frame_id": 560,
+            "time_sec": 18.667,
+            "bbox": [
+              835,
+              508,
+              941,
+              657
+            ],
+            "distance": 47.3
+          },
+          {
+            "frame_id": 568,
+            "time_sec": 18.933,
+            "bbox": [
+              834,
+              501,
+              948,
+              657
+            ],
+            "distance": 54.71
+          },
+          {
+            "frame_id": 576,
+            "time_sec": 19.2,
+            "bbox": [
+              829,
+              499,
+              951,
+              657
+            ],
+            "distance": 60.73
+          },
+          {
+            "frame_id": 584,
+            "time_sec": 19.467,
+            "bbox": [
+              830,
+              502,
+              952,
+              657
+            ],
+            "distance": 61.54
+          },
+          {
+            "frame_id": 592,
+            "time_sec": 19.733,
+            "bbox": [
+              829,
+              506,
+              947,
+              657
+            ],
+            "distance": 58.72
+          },
+          {
+            "frame_id": 600,
+            "time_sec": 20.0,
+            "bbox": [
+              832,
+              505,
+              942,
+              657
+            ],
+            "distance": 51.7
+          },
+          {
+            "frame_id": 608,
+            "time_sec": 20.267,
+            "bbox": [
+              832,
+              507,
+              940,
+              657
+            ],
+            "distance": 51.09
+          },
+          {
+            "frame_id": 624,
+            "time_sec": 20.8,
+            "bbox": [
+              828,
+              502,
+              937,
+              656
+            ],
+            "distance": 51.62
+          }
+        ],
+        "cos_mean": null,
+        "behind_mean_abs": null
+      }
+    ],
+    "high_window_count": 7,
+    "window_count": 21,
+    "reason": "스토킹 조건을 만족하는 pair-window가 없습니다.",
+    "ee_method": "track_pair_box_sliding_window"
+  },
+  "riding": {
+    "riding_label": "sidewalk_riding",
+    "sidewalk_riding_score": 0.5106,
+    "is_sidewalk_riding": true,
+    "tw_frame_count": 107,
+    "rider_frame_count": 56,
+    "sidewalk_hits": 2,
+    "sidewalk_candidate_hits": 39,
+    "road_hits": 153,
+    "sidewalk_ratio": 0.0103,
+    "candidate_ratio": 0.2113,
+    "mean_evidence_score": 0.123,
+    "max_evidence_score": 0.7614,
+    "best_evidence": [
+      {
+        "frame_id": 208,
+        "time_sec": 6.933,
+        "status": "sidewalk",
+        "score": 0.7614,
+        "has_rider_pair": true,
+        "best_rider_pair_score": 1.0,
+        "bbox": [
+          1164,
+          463,
+          1188,
+          501
+        ],
+        "two_wheeler_class": "bicycle",
+        "seg_sidewalk_ratio": 0.3353,
+        "band_sidewalk_ratio": 0.8019,
+        "world_sidewalk_bbox_score": 0.0,
+        "road_score": 0.3353
+      },
+      {
+        "frame_id": 200,
+        "time_sec": 6.667,
+        "status": "sidewalk",
+        "score": 0.6408,
+        "has_rider_pair": true,
+        "best_rider_pair_score": 1.0,
+        "bbox": [
+          1167,
+          470,
+          1188,
+          500
+        ],
+        "two_wheeler_class": "bicycle",
+        "seg_sidewalk_ratio": 0.3541,
+        "band_sidewalk_ratio": 0.6411,
+        "world_sidewalk_bbox_score": 0.0,
+        "road_score": 0.2811
+      },
+      {
+        "frame_id": 232,
+        "time_sec": 7.733,
+        "status": "sidewalk_candidate",
+        "score": 0.385,
+        "has_rider_pair": true,
+        "best_rider_pair_score": 1.0,
+        "bbox": [
+          1016,
+          596,
+          1059,
+          621
+        ],
+        "two_wheeler_class": "kickboard",
+        "seg_sidewalk_ratio": 0.0,
+        "band_sidewalk_ratio": 0.0,
+        "world_sidewalk_bbox_score": 0.25,
+        "road_score": 0.4888
+      },
+      {
+        "frame_id": 264,
+        "time_sec": 8.8,
+        "status": "sidewalk_candidate",
+        "score": 0.385,
+        "has_rider_pair": true,
+        "best_rider_pair_score": 1.0,
+        "bbox": [
+          1136,
+          497,
+          1192,
+          605
+        ],
+        "two_wheeler_class": "bike",
+        "seg_sidewalk_ratio": 0.0,
+        "band_sidewalk_ratio": 0.0,
+        "world_sidewalk_bbox_score": 0.25,
+        "road_score": 0.3482
+      },
+      {
+        "frame_id": 336,
+        "time_sec": 11.2,
+        "status": "sidewalk_candidate",
+        "score": 0.385,
+        "has_rider_pair": true,
+        "best_rider_pair_score": 1.0,
+        "bbox": [
+          883,
+          582,
+          921,
+          647
+        ],
+        "two_wheeler_class": "bicycle",
+        "seg_sidewalk_ratio": 0.0,
+        "band_sidewalk_ratio": 0.0,
+        "world_sidewalk_bbox_score": 0.25,
+        "road_score": 0.4664
+      },
+      {
+        "frame_id": 528,
+        "time_sec": 17.6,
+        "status": "sidewalk_candidate",
+        "score": 0.385,
+        "has_rider_pair": true,
+        "best_rider_pair_score": 1.0,
+        "bbox": [
+          818,
+          559,
+          903,
+          654
+        ],
+        "two_wheeler_class": "moped",
+        "seg_sidewalk_ratio": 0.0,
+        "band_sidewalk_ratio": 0.0,
+        "world_sidewalk_bbox_score": 0.25,
+        "road_score": 0.5476
+      },
+      {
+        "frame_id": 216,
+        "time_sec": 7.2,
+        "status": "sidewalk_candidate",
+        "score": 0.3843,
+        "has_rider_pair": true,
+        "best_rider_pair_score": 0.9959,
+        "bbox": [
+          1039,
+          595,
+          1098,
+          614
+        ],
+        "two_wheeler_class": "kickboard",
+        "seg_sidewalk_ratio": 0.0,
+        "band_sidewalk_ratio": 0.0,
+        "world_sidewalk_bbox_score": 0.25,
+        "road_score": 0.5202
+      },
+      {
+        "frame_id": 264,
+        "time_sec": 8.8,
+        "status": "sidewalk_candidate",
+        "score": 0.3717,
+        "has_rider_pair": true,
+        "best_rider_pair_score": 0.9167,
+        "bbox": [
+          1148,
+          481,
+          1191,
+          572
+        ],
+        "two_wheeler_class": "bike",
+        "seg_sidewalk_ratio": 0.0,
+        "band_sidewalk_ratio": 0.0,
+        "world_sidewalk_bbox_score": 0.25,
+        "road_score": 0.7336
+      },
+      {
+        "frame_id": 224,
+        "time_sec": 7.467,
+        "status": "road",
+        "score": 0.3648,
+        "has_rider_pair": true,
+        "best_rider_pair_score": 1.0,
+        "bbox": [
+          1142,
+          466,
+          1177,
+          502
+        ],
+        "two_wheeler_class": "bike",
+        "seg_sidewalk_ratio": 0.084,
+        "band_sidewalk_ratio": 0.273,
+        "world_sidewalk_bbox_score": 0.0,
+        "road_score": 0.4315
+      },
+      {
+        "frame_id": 408,
+        "time_sec": 13.6,
+        "status": "sidewalk_candidate",
+        "score": 0.3169,
+        "has_rider_pair": true,
+        "best_rider_pair_score": 0.5744,
+        "bbox": [
+          928,
+          489,
+          978,
+          538
+        ],
+        "two_wheeler_class": "bike helmet",
+        "seg_sidewalk_ratio": 0.0,
+        "band_sidewalk_ratio": 0.0,
+        "world_sidewalk_bbox_score": 0.25,
+        "road_score": 0.3275
+      }
+    ],
+    "reason": "이륜차 기준점 또는 하단 band가 인도 영역에 반복적으로 위치했습니다."
+  },
+  "helmet": {
+    "helmet_label": "helmet_unknown",
+    "no_helmet_score": 0.08,
+    "is_no_helmet": false,
+    "rider_frames": 56,
+    "helmet_count": 6,
+    "no_helmet_count": 0,
+    "no_helmet_candidate_count": 0,
+    "unknown_count": 113,
+    "helmet_ratio": 0.0504,
+    "no_helmet_ratio": 0.0,
+    "candidate_ratio": 0.0,
+    "unknown_ratio": 0.9496,
+    "best_evidence": [
+      {
+        "frame_id": 16,
+        "person_track_id": null,
+        "two_wheeler_track_id": null,
+        "head_box": [
+          1186,
+          443,
+          1207,
+          458
+        ],
+        "helmet_status": "unknown",
+        "helmet_confidence": 0.0,
+        "helmet_score": 0.0,
+        "no_helmet_score": 0.0,
+        "neutral_head_score": 0.0,
+        "reason": "rider는 있으나 head-zone 내부 helmet/head 후보가 없음",
+        "world_matches": [],
+        "local_detections": [],
+        "time_sec": 0.533,
+        "no_helmet_frame_score": 0.0
+      },
+      {
+        "frame_id": 48,
+        "person_track_id": null,
+        "two_wheeler_track_id": null,
+        "head_box": [
+          1185,
+          444,
+          1202,
+          460
+        ],
+        "helmet_status": "unknown",
+        "helmet_confidence": 0.0,
+        "helmet_score": 0.0,
+        "no_helmet_score": 0.0,
+        "neutral_head_score": 0.0,
+        "reason": "rider는 있으나 head-zone 내부 helmet/head 후보가 없음",
+        "world_matches": [],
+        "local_detections": [],
+        "time_sec": 1.6,
+        "no_helmet_frame_score": 0.0
+      },
+      {
+        "frame_id": 48,
+        "person_track_id": null,
+        "two_wheeler_track_id": null,
+        "head_box": [
+          1186,
+          444,
+          1206,
+          460
+        ],
+        "helmet_status": "unknown",
+        "helmet_confidence": 0.0,
+        "helmet_score": 0.0,
+        "no_helmet_score": 0.0,
+        "neutral_head_score": 0.0,
+        "reason": "rider는 있으나 head-zone 내부 helmet/head 후보가 없음",
+        "world_matches": [],
+        "local_detections": [],
+        "time_sec": 1.6,
+        "no_helmet_frame_score": 0.0
+      },
+      {
+        "frame_id": 48,
+        "person_track_id": null,
+        "two_wheeler_track_id": null,
+        "head_box": [
+          1196,
+          444,
+          1211,
+          460
+        ],
+        "helmet_status": "unknown",
+        "helmet_confidence": 0.0,
+        "helmet_score": 0.0,
+        "no_helmet_score": 0.0,
+        "neutral_head_score": 0.0,
+        "reason": "rider는 있으나 head-zone 내부 helmet/head 후보가 없음",
+        "world_matches": [],
+        "local_detections": [],
+        "time_sec": 1.6,
+        "no_helmet_frame_score": 0.0
+      },
+      {
+        "frame_id": 56,
+        "person_track_id": null,
+        "two_wheeler_track_id": null,
+        "head_box": [
+          1196,
+          446,
+          1211,
+          462
+        ],
+        "helmet_status": "unknown",
+        "helmet_confidence": 0.0,
+        "helmet_score": 0.0,
+        "no_helmet_score": 0.0,
+        "neutral_head_score": 0.0,
+        "reason": "rider는 있으나 head-zone 내부 helmet/head 후보가 없음",
+        "world_matches": [],
+        "local_detections": [],
+        "time_sec": 1.867,
+        "no_helmet_frame_score": 0.0
+      },
+      {
+        "frame_id": 56,
+        "person_track_id": null,
+        "two_wheeler_track_id": null,
+        "head_box": [
+          1196,
+          446,
+          1211,
+          462
+        ],
+        "helmet_status": "unknown",
+        "helmet_confidence": 0.0,
+        "helmet_score": 0.0,
+        "no_helmet_score": 0.0,
+        "neutral_head_score": 0.0,
+        "reason": "rider는 있으나 head-zone 내부 helmet/head 후보가 없음",
+        "world_matches": [],
+        "local_detections": [],
+        "time_sec": 1.867,
+        "no_helmet_frame_score": 0.0
+      },
+      {
+        "frame_id": 64,
+        "person_track_id": null,
+        "two_wheeler_track_id": null,
+        "head_box": [
+          1133,
+          463,
+          1161,
+          478
+        ],
+        "helmet_status": "unknown",
+        "helmet_confidence": 0.0,
+        "helmet_score": 0.0,
+        "no_helmet_score": 0.0,
+        "neutral_head_score": 0.0,
+        "reason": "rider는 있으나 head-zone 내부 helmet/head 후보가 없음",
+        "world_matches": [],
+        "local_detections": [],
+        "time_sec": 2.133,
+        "no_helmet_frame_score": 0.0
+      },
+      {
+        "frame_id": 64,
+        "person_track_id": null,
+        "two_wheeler_track_id": null,
+        "head_box": [
+          1188,
+          443,
+          1209,
+          460
+        ],
+        "helmet_status": "unknown",
+        "helmet_confidence": 0.0,
+        "helmet_score": 0.0,
+        "no_helmet_score": 0.0,
+        "neutral_head_score": 0.0,
+        "reason": "rider는 있으나 head-zone 내부 helmet/head 후보가 없음",
+        "world_matches": [],
+        "local_detections": [],
+        "time_sec": 2.133,
+        "no_helmet_frame_score": 0.0
+      },
+      {
+        "frame_id": 64,
+        "person_track_id": null,
+        "two_wheeler_track_id": null,
+        "head_box": [
+          1191,
+          443,
+          1212,
+          460
+        ],
+        "helmet_status": "unknown",
+        "helmet_confidence": 0.0,
+        "helmet_score": 0.0,
+        "no_helmet_score": 0.0,
+        "neutral_head_score": 0.0,
+        "reason": "rider는 있으나 head-zone 내부 helmet/head 후보가 없음",
+        "world_matches": [],
+        "local_detections": [],
+        "time_sec": 2.133,
+        "no_helmet_frame_score": 0.0
+      },
+      {
+        "frame_id": 72,
+        "person_track_id": null,
+        "two_wheeler_track_id": null,
+        "head_box": [
+          1132,
+          463,
+          1161,
+          478
+        ],
+        "helmet_status": "unknown",
+        "helmet_confidence": 0.0,
+        "helmet_score": 0.0,
+        "no_helmet_score": 0.0,
+        "neutral_head_score": 0.0,
+        "reason": "rider는 있으나 head-zone 내부 helmet/head 후보가 없음",
+        "world_matches": [],
+        "local_detections": [],
+        "time_sec": 2.4,
+        "no_helmet_frame_score": 0.0
+      },
+      {
+        "frame_id": 72,
+        "person_track_id": null,
+        "two_wheeler_track_id": null,
+        "head_box": [
+          1187,
+          444,
+          1208,
+          461
+        ],
+        "helmet_status": "unknown",
+        "helmet_confidence": 0.0,
+        "helmet_score": 0.0,
+        "no_helmet_score": 0.0,
+        "neutral_head_score": 0.0,
+        "reason": "rider는 있으나 head-zone 내부 helmet/head 후보가 없음",
+        "world_matches": [],
+        "local_detections": [],
+        "time_sec": 2.4,
+        "no_helmet_frame_score": 0.0
+      },
+      {
+        "frame_id": 80,
+        "person_track_id": null,
+        "two_wheeler_track_id": null,
+        "head_box": [
+          1132,
+          463,
+          1161,
+          478
+        ],
+        "helmet_status": "unknown",
+        "helmet_confidence": 0.0,
+        "helmet_score": 0.0,
+        "no_helmet_score": 0.0,
+        "neutral_head_score": 0.0,
+        "reason": "rider는 있으나 head-zone 내부 helmet/head 후보가 없음",
+        "world_matches": [],
+        "local_detections": [],
+        "time_sec": 2.667,
+        "no_helmet_frame_score": 0.0
+      }
+    ],
+    "reason": "rider는 있으나 helmet/no-helmet 근거가 부족합니다. 전용 헬멧 모델 연결 시 개선됩니다."
+  },
+  "kickboard": {
+    "kickboard_label": "electric_kickboard_candidate",
+    "electric_kickboard_score": 0.4037,
+    "is_electric_kickboard": false,
+    "hit_frames": 34,
+    "rider_like_hits": 28,
+    "hit_ratio": 0.2931,
+    "rider_ratio": 0.8235,
+    "best_evidence": [
+      {
+        "frame_id": 128,
+        "time_sec": 4.267,
+        "class": "moped",
+        "confidence": 0.0464,
+        "bbox": [
+          1216,
+          450,
+          1308,
+          558
+        ],
+        "has_rider_pair": true
+      },
+      {
+        "frame_id": 184,
+        "time_sec": 6.133,
+        "class": "moped",
+        "confidence": 0.0529,
+        "bbox": [
+          1079,
+          476,
+          1115,
+          520
+        ],
+        "has_rider_pair": true
+      },
+      {
+        "frame_id": 200,
+        "time_sec": 6.667,
+        "class": "electric scooter",
+        "confidence": 0.0781,
+        "bbox": [
+          1077,
+          514,
+          1127,
+          609
+        ],
+        "has_rider_pair": true
+      },
+      {
+        "frame_id": 216,
+        "time_sec": 7.2,
+        "class": "kickboard",
+        "confidence": 0.0448,
+        "bbox": [
+          1039,
+          595,
+          1098,
+          614
+        ],
+        "has_rider_pair": true
+      },
+      {
+        "frame_id": 224,
+        "time_sec": 7.467,
+        "class": "moped",
+        "confidence": 0.0598,
+        "bbox": [
+          1075,
+          471,
+          1117,
+          521
+        ],
+        "has_rider_pair": true
+      },
+      {
+        "frame_id": 232,
+        "time_sec": 7.733,
+        "class": "kickboard",
+        "confidence": 0.068,
+        "bbox": [
+          1016,
+          596,
+          1059,
+          621
+        ],
+        "has_rider_pair": true
+      },
+      {
+        "frame_id": 240,
+        "time_sec": 8.0,
+        "class": "moped",
+        "confidence": 0.2563,
+        "bbox": [
+          1000,
+          517,
+          1044,
+          621
+        ],
+        "has_rider_pair": true
+      },
+      {
+        "frame_id": 256,
+        "time_sec": 8.533,
+        "class": "scooter",
+        "confidence": 0.2429,
+        "bbox": [
+          971,
+          525,
+          1023,
+          627
+        ],
+        "has_rider_pair": true
+      },
+      {
+        "frame_id": 264,
+        "time_sec": 8.8,
+        "class": "moped",
+        "confidence": 0.0391,
+        "bbox": [
+          1079,
+          478,
+          1115,
+          520
+        ],
+        "has_rider_pair": true
+      },
+      {
+        "frame_id": 272,
+        "time_sec": 9.067,
+        "class": "moped",
+        "confidence": 0.0516,
+        "bbox": [
+          1080,
+          477,
+          1116,
+          520
+        ],
+        "has_rider_pair": true
+      },
+      {
+        "frame_id": 280,
+        "time_sec": 9.333,
+        "class": "moped",
+        "confidence": 0.2261,
+        "bbox": [
+          935,
+          542,
+          978,
+          634
+        ],
+        "has_rider_pair": true
+      },
+      {
+        "frame_id": 296,
+        "time_sec": 9.867,
+        "class": "scooter",
+        "confidence": 0.1124,
+        "bbox": [
+          915,
+          496,
+          956,
+          638
+        ],
+        "has_rider_pair": true
+      }
+    ],
+    "reason": "전동킥보드/스쿠터류 후보가 있으나 지속성 또는 rider 근거가 부족합니다."
+  },
+  "intrusion": {
+    "intrusion_label": "no_intrusion",
+    "intrusion_score": 0.0,
+    "detected_events": [],
+    "intrusion_direction_auto": [
+      -0.9876224580771183,
+      0.15684986548196497
+    ],
+    "structure_candidates": [
+      {
+        "object": {
+          "source": "yolo_world",
+          "class_id": 31,
+          "class": "metal gate",
+          "confidence": 0.1353,
+          "bbox": [
+            721,
+            552,
+            830,
+            685
+          ],
+          "center": [
+            775.5,
+            618.5
+          ],
+          "bottom_center": [
+            775.5,
+            685.0
+          ],
+          "area": 14497.0,
+          "frame_id": 496,
+          "time_sec": 16.533,
+          "label": "metal gate"
+        },
+        "score": 0.4886,
+        "distance_to_track": 22.5,
+        "distance_score": 0.8,
+        "shape_score": 0.1271,
+        "aspect_score": 0.305,
+        "nearest_track_id": "22",
+        "nearest_track_frame": 704
+      },
+      {
+        "object": {
+          "source": "yolo_world",
+          "class_id": 32,
+          "class": "access gate",
+          "confidence": 0.1015,
+          "bbox": [
+            717,
+            541,
+            833,
+            687
+          ],
+          "center": [
+            775.0,
+            614.0
+          ],
+          "bottom_center": [
+            775.0,
+            687.0
+          ],
+          "area": 16936.0,
+          "frame_id": 424,
+          "time_sec": 14.133,
+          "label": "access gate"
+        },
+        "score": 0.4874,
+        "distance_to_track": 19.5,
+        "distance_score": 0.8219,
+        "shape_score": 0.1485,
+        "aspect_score": 0.3147,
+        "nearest_track_id": "22",
+        "nearest_track_frame": 704
+      },
+      {
+        "object": {
+          "source": "yolo_world",
+          "class_id": 31,
+          "class": "metal gate",
+          "confidence": 0.112,
+          "bbox": [
+            721,
+            546,
+            831,
+            686
+          ],
+          "center": [
+            776.0,
+            616.0
+          ],
+          "bottom_center": [
+            776.0,
+            686.0
+          ],
+          "area": 15400.0,
+          "frame_id": 504,
+          "time_sec": 16.8,
+          "label": "metal gate"
+        },
+        "score": 0.4849,
+        "distance_to_track": 21.5,
+        "distance_score": 0.8072,
+        "shape_score": 0.135,
+        "aspect_score": 0.3182,
+        "nearest_track_id": "22",
+        "nearest_track_frame": 704
+      },
+      {
+        "object": {
+          "source": "yolo_world",
+          "class_id": 32,
+          "class": "access gate",
+          "confidence": 0.0612,
+          "bbox": [
+            713,
+            542,
+            837,
+            687
+          ],
+          "center": [
+            775.0,
+            614.5
+          ],
+          "bottom_center": [
+            775.0,
+            687.0
+          ],
+          "area": 17980.0,
+          "frame_id": 440,
+          "time_sec": 14.667,
+          "label": "access gate"
+        },
+        "score": 0.4832,
+        "distance_to_track": 15.5,
+        "distance_score": 0.8531,
+        "shape_score": 0.1577,
+        "aspect_score": 0.2923,
+        "nearest_track_id": "22",
+        "nearest_track_frame": 704
+      },
+      {
+        "object": {
+          "source": "yolo_world",
+          "class_id": 31,
+          "class": "metal gate",
+          "confidence": 0.0866,
+          "bbox": [
+            716,
+            546,
+            833,
+            686
+          ],
+          "center": [
+            774.5,
+            616.0
+          ],
+          "bottom_center": [
+            774.5,
+            686.0
+          ],
+          "area": 16380.0,
+          "frame_id": 568,
+          "time_sec": 18.933,
+          "label": "metal gate"
+        },
+        "score": 0.4806,
+        "distance_to_track": 19.5,
+        "distance_score": 0.8219,
+        "shape_score": 0.1436,
+        "aspect_score": 0.2991,
+        "nearest_track_id": "22",
+        "nearest_track_frame": 704
+      },
+      {
+        "object": {
+          "source": "yolo_world",
+          "class_id": 31,
+          "class": "metal gate",
+          "confidence": 0.0955,
+          "bbox": [
+            726,
+            546,
+            833,
+            664
+          ],
+          "center": [
+            779.5,
+            605.0
+          ],
+          "bottom_center": [
+            779.5,
+            664.0
+          ],
+          "area": 12626.0,
+          "frame_id": 440,
+          "time_sec": 14.667,
+          "label": "metal gate"
+        },
+        "score": 0.4781,
+        "distance_to_track": 19.5,
+        "distance_score": 0.8219,
+        "shape_score": 0.1107,
+        "aspect_score": 0.2757,
+        "nearest_track_id": "22",
+        "nearest_track_frame": 704
+      },
+      {
+        "object": {
+          "source": "yolo_world",
+          "class_id": 32,
+          "class": "access gate",
+          "confidence": 0.0681,
+          "bbox": [
+            708,
+            541,
+            833,
+            687
+          ],
+          "center": [
+            770.5,
+            614.0
+          ],
+          "bottom_center": [
+            770.5,
+            687.0
+          ],
+          "area": 18250.0,
+          "frame_id": 432,
+          "time_sec": 14.4,
+          "label": "access gate"
+        },
+        "score": 0.4758,
+        "distance_to_track": 19.5,
+        "distance_score": 0.8219,
+        "shape_score": 0.16,
+        "aspect_score": 0.292,
+        "nearest_track_id": "22",
+        "nearest_track_frame": 704
+      },
+      {
+        "object": {
+          "source": "yolo_world",
+          "class_id": 29,
+          "class": "entrance gate",
+          "confidence": 0.0388,
+          "bbox": [
+            673,
+            504,
+            832,
+            685
+          ],
+          "center": [
+            752.5,
+            594.5
+          ],
+          "bottom_center": [
+            752.5,
+            685.0
+          ],
+          "area": 28779.0,
+          "frame_id": 320,
+          "time_sec": 10.667,
+          "label": "entrance gate"
+        },
+        "score": 0.474,
+        "distance_to_track": 20.5,
+        "distance_score": 0.8145,
+        "shape_score": 0.2523,
+        "aspect_score": 0.2846,
+        "nearest_track_id": "22",
+        "nearest_track_frame": 704
+      }
+    ],
+    "track_candidates": [
+      {
+        "track_id": "22",
+        "movement_px": 188.08,
+        "length": 64
+      },
+      {
+        "track_id": "21",
+        "movement_px": 146.21,
+        "length": 70
+      }
+    ],
+    "reason": "구조 후보는 찾았지만 사람 foot_point가 boundary line을 넘는 조건을 만족하지 않았습니다."
+  },
+  "track_summary": {
+    "9": {
+      "length": 1,
+      "distance": 0.0,
+      "displacement": 0.0,
+      "mean_speed": 0.0,
+      "direction_changes": 0
+    },
+    "10": {
+      "length": 1,
+      "distance": 0.0,
+      "displacement": 0.0,
+      "mean_speed": 0.0,
+      "direction_changes": 0
+    },
+    "15": {
+      "length": 3,
+      "distance": 13.352,
+      "displacement": 10.44,
+      "mean_speed": 4.173,
+      "direction_changes": 0,
+      "first_frame": 152,
+      "last_frame": 248,
+      "first_time": 5.067,
+      "last_time": 8.267,
+      "track_source": "yolo_bytetrack"
+    },
+    "16": {
+      "length": 3,
+      "distance": 9.518,
+      "displacement": 7.28,
+      "mean_speed": 2.745,
+      "direction_changes": 0,
+      "first_frame": 168,
+      "last_frame": 272,
+      "first_time": 5.6,
+      "last_time": 9.067,
+      "track_source": "yolo_bytetrack"
+    },
+    "21": {
+      "length": 70,
+      "distance": 639.408,
+      "displacement": 212.979,
+      "mean_speed": 26.062,
+      "direction_changes": 6,
+      "first_frame": 184,
+      "last_frame": 920,
+      "first_time": 6.133,
+      "last_time": 30.667,
+      "track_source": "yolo_bytetrack"
+    },
+    "22": {
+      "length": 64,
+      "distance": 485.658,
+      "displacement": 264.603,
+      "mean_speed": 25.65,
+      "direction_changes": 2,
+      "first_frame": 184,
+      "last_frame": 752,
+      "first_time": 6.133,
+      "last_time": 25.067,
+      "track_source": "yolo_bytetrack"
+    },
+    "23": {
+      "length": 6,
+      "distance": 15.313,
+      "displacement": 14.714,
+      "mean_speed": 11.479,
+      "direction_changes": 0,
+      "first_frame": 184,
+      "last_frame": 224,
+      "first_time": 6.133,
+      "last_time": 7.467,
+      "track_source": "yolo_bytetrack"
+    },
+    "62": {
+      "length": 20,
+      "distance": 286.38,
+      "displacement": 30.549,
+      "mean_speed": 53.689,
+      "direction_changes": 0,
+      "first_frame": 760,
+      "last_frame": 920,
+      "first_time": 25.333,
+      "last_time": 30.667,
+      "track_source": "yolo_bytetrack"
+    },
+    "63": {
+      "length": 1,
+      "distance": 0.0,
+      "displacement": 0.0,
+      "mean_speed": 0.0,
+      "direction_changes": 0
+    },
+    "64": {
+      "length": 1,
+      "distance": 0.0,
+      "displacement": 0.0,
+      "mean_speed": 0.0,
+      "direction_changes": 0
+    }
+  },
+  "vehicle_track_summary": {
+    "1": {
+      "length": 7,
+      "distance": 3.707,
+      "displacement": 0.707,
+      "mean_speed": 2.317,
+      "direction_changes": 0,
+      "first_frame": 8,
+      "last_frame": 56,
+      "first_time": 0.267,
+      "last_time": 1.867,
+      "track_source": "custom_greedy"
+    },
+    "2": {
+      "length": 29,
+      "distance": 691.91,
+      "displacement": 276.919,
+      "mean_speed": 76.319,
+      "direction_changes": 4,
+      "first_frame": 32,
+      "last_frame": 304,
+      "first_time": 1.067,
+      "last_time": 10.133,
+      "track_source": "custom_greedy"
+    },
+    "3": {
+      "length": 22,
+      "distance": 991.757,
+      "displacement": 114.242,
+      "mean_speed": 132.837,
+      "direction_changes": 7,
+      "first_frame": 104,
+      "last_frame": 328,
+      "first_time": 3.467,
+      "last_time": 10.933,
+      "track_source": "custom_greedy"
+    },
+    "4": {
+      "length": 2,
+      "distance": 35.7,
+      "displacement": 35.7,
+      "mean_speed": 66.854,
+      "direction_changes": 0,
+      "first_frame": 112,
+      "last_frame": 128,
+      "first_time": 3.733,
+      "last_time": 4.267,
+      "track_source": "custom_greedy"
+    },
+    "5": {
+      "length": 4,
+      "distance": 253.283,
+      "displacement": 90.468,
+      "mean_speed": 190.01,
+      "direction_changes": 1,
+      "first_frame": 200,
+      "last_frame": 240,
+      "first_time": 6.667,
+      "last_time": 8.0,
+      "track_source": "custom_greedy"
+    },
+    "6": {
+      "length": 7,
+      "distance": 83.167,
+      "displacement": 48.549,
+      "mean_speed": 38.991,
+      "direction_changes": 0,
+      "first_frame": 200,
+      "last_frame": 264,
+      "first_time": 6.667,
+      "last_time": 8.8,
+      "track_source": "custom_greedy"
+    },
+    "7": {
+      "length": 1,
+      "distance": 0.0,
+      "displacement": 0.0,
+      "mean_speed": 0.0,
+      "direction_changes": 0
+    },
+    "8": {
+      "length": 6,
+      "distance": 141.322,
+      "displacement": 117.18,
+      "mean_speed": 58.884,
+      "direction_changes": 1,
+      "first_frame": 224,
+      "last_frame": 296,
+      "first_time": 7.467,
+      "last_time": 9.867,
+      "track_source": "custom_greedy"
+    },
+    "9": {
+      "length": 4,
+      "distance": 313.012,
+      "displacement": 276.706,
+      "mean_speed": 293.357,
+      "direction_changes": 0,
+      "first_frame": 304,
+      "last_frame": 336,
+      "first_time": 10.133,
+      "last_time": 11.2,
+      "track_source": "custom_greedy"
+    },
+    "10": {
+      "length": 21,
+      "distance": 595.511,
+      "displacement": 231.027,
+      "mean_speed": 97.099,
+      "direction_changes": 4,
+      "first_frame": 312,
+      "last_frame": 496,
+      "first_time": 10.4,
+      "last_time": 16.533,
+      "track_source": "custom_greedy"
+    },
+    "11": {
+      "length": 7,
+      "distance": 42.835,
+      "displacement": 35.795,
+      "mean_speed": 20.082,
+      "direction_changes": 0,
+      "first_frame": 312,
+      "last_frame": 376,
+      "first_time": 10.4,
+      "last_time": 12.533,
+      "track_source": "custom_greedy"
+    },
+    "12": {
+      "length": 29,
+      "distance": 37.665,
+      "displacement": 4.528,
+      "mean_speed": 4.556,
+      "direction_changes": 0,
+      "first_frame": 408,
+      "last_frame": 656,
+      "first_time": 13.6,
+      "last_time": 21.867,
+      "track_source": "custom_greedy"
+    },
+    "13": {
+      "length": 4,
+      "distance": 365.551,
+      "displacement": 39.322,
+      "mean_speed": 342.918,
+      "direction_changes": 2,
+      "first_frame": 464,
+      "last_frame": 496,
+      "first_time": 15.467,
+      "last_time": 16.533,
+      "track_source": "custom_greedy"
+    },
+    "14": {
+      "length": 1,
+      "distance": 0.0,
+      "displacement": 0.0,
+      "mean_speed": 0.0,
+      "direction_changes": 0
+    },
+    "15": {
+      "length": 2,
+      "distance": 1.0,
+      "displacement": 1.0,
+      "mean_speed": 3.759,
+      "direction_changes": 0,
+      "first_frame": 560,
+      "last_frame": 568,
+      "first_time": 18.667,
+      "last_time": 18.933,
+      "track_source": "custom_greedy"
+    },
+    "16": {
+      "length": 4,
+      "distance": 62.034,
+      "displacement": 21.148,
+      "mean_speed": 33.227,
+      "direction_changes": 1,
+      "first_frame": 576,
+      "last_frame": 632,
+      "first_time": 19.2,
+      "last_time": 21.067,
+      "track_source": "custom_greedy"
+    },
+    "17": {
+      "length": 2,
+      "distance": 38.269,
+      "displacement": 38.269,
+      "mean_speed": 143.329,
+      "direction_changes": 0,
+      "first_frame": 576,
+      "last_frame": 584,
+      "first_time": 19.2,
+      "last_time": 19.467,
+      "track_source": "custom_greedy"
+    },
+    "18": {
+      "length": 1,
+      "distance": 0.0,
+      "displacement": 0.0,
+      "mean_speed": 0.0,
+      "direction_changes": 0
+    },
+    "19": {
+      "length": 2,
+      "distance": 0.0,
+      "displacement": 0.0,
+      "mean_speed": 0.0,
+      "direction_changes": 0,
+      "first_frame": 648,
+      "last_frame": 656,
+      "first_time": 21.6,
+      "last_time": 21.867,
+      "track_source": "custom_greedy"
+    },
+    "20": {
+      "length": 28,
+      "distance": 139.745,
+      "displacement": 0.0,
+      "mean_speed": 18.715,
+      "direction_changes": 0,
+      "first_frame": 696,
+      "last_frame": 920,
+      "first_time": 23.2,
+      "last_time": 30.667,
+      "track_source": "custom_greedy"
+    },
+    "21": {
+      "length": 2,
+      "distance": 0.5,
+      "displacement": 0.5,
+      "mean_speed": 1.88,
+      "direction_changes": 0,
+      "first_frame": 776,
+      "last_frame": 784,
+      "first_time": 25.867,
+      "last_time": 26.133,
+      "track_source": "custom_greedy"
+    },
+    "22": {
+      "length": 4,
+      "distance": 249.57,
+      "displacement": 186.605,
+      "mean_speed": 233.899,
+      "direction_changes": 1,
+      "first_frame": 816,
+      "last_frame": 848,
+      "first_time": 27.2,
+      "last_time": 28.267,
+      "track_source": "custom_greedy"
+    },
+    "23": {
+      "length": 5,
+      "distance": 122.161,
+      "displacement": 93.227,
+      "mean_speed": 65.432,
+      "direction_changes": 1,
+      "first_frame": 832,
+      "last_frame": 888,
+      "first_time": 27.733,
+      "last_time": 29.6,
+      "track_source": "custom_greedy"
+    }
+  },
+  "model_status": {
+    "cc_version": "ee_full_integrated_dd_base_pair_window_v2",
+    "device": "cuda",
+    "base_yolo": "C:\\Users\\우성한\\yolo11s.pt",
+    "pose_model": "C:\\Users\\우성한\\yolo11s-pose.pt",
+    "world_model": "C:\\Users\\우성한\\yolov8s-world.pt",
+    "world_model_active": true,
+    "world_classes": [
+      "person",
+      "rider",
+      "pedestrian",
+      "bicycle",
+      "bike",
+      "electric bike",
+      "motorcycle",
+      "motorbike",
+      "scooter",
+      "electric scooter",
+      "kickboard",
+      "moped",
+      "helmet",
+      "motorcycle helmet",
+      "bike helmet",
+      "no helmet",
+      "bare head",
+      "head",
+      "hat",
+      "cap",
+      "sidewalk",
+      "walkway",
+      "pavement",
+      "road",
+      "street",
+      "crosswalk",
+      "curb",
+      "lane",
+      "gate",
+      "entrance gate",
+      "open gate",
+      "metal gate",
+      "access gate",
+      "doorway",
+      "fence",
+      "green fence",
+      "metal fence",
+      "railing",
+      "guard rail",
+      "handrail",
+      "barrier",
+      "wall",
+      "low wall",
+      "boundary fence"
+    ],
+    "segformer": "nvidia/segformer-b5-finetuned-cityscapes-1024-1024",
+    "helmet_backend": "none",
+    "helmet_model": null,
+    "tracker": "bytetrack.yaml"
+  },
+  "feature_json": "C:\\Users\\우성한\\outputs\\prediction\\ee\\ee_features\\싸움__신체적_충돌을_동반한_싸움__ph_e2063__ph_e2063_c2.json"
+}

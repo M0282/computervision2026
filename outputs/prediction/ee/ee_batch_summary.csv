@@ -1,0 +1,2 @@
+﻿video_name,final_label,final_label_ko,final_weighted_score,fight_score,stalking_score,sidewalk_riding_score,no_helmet_score,electric_kickboard_score,intrusion_score,rider_frame_ratio,sidewalk_ratio,helmet_status,intrusion_status,person_track_count,max_persons_in_frame,best_fight_window,best_stalking_window,evidence,json_path
+ms_e3500_c2.mp4,other,기타,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no_rider,unknown,0,0,-,-,no abnormal label passed gates,C:\Users\우성한\outputs\prediction\ee\details\ms_e3500_c2_ee_detail.json

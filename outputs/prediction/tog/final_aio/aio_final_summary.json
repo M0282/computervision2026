@@ -1,0 +1,2960 @@
+{
+  "task": "aio_multi_model_parallel_classification_improved",
+  "aio_version": "tog_world_tracker_helmet_safe_v1",
+  "video_root": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터",
+  "output_dir": "C:\\Users\\우성한\\outputs\\prediction\\tog",
+  "feature_dir": "C:\\Users\\우성한\\outputs\\prediction\\tog\\aio_features",
+  "model_status": {
+    "aio_version": "tog_world_tracker_helmet_safe_v1",
+    "device": "cuda",
+    "base_yolo": "yolov8n.pt",
+    "pose_model": "yolo11n-pose.pt",
+    "world_model": "yolov8s-world.pt",
+    "world_model_active": true,
+    "world_classes": [
+      "person",
+      "bicycle",
+      "motorcycle",
+      "motorbike",
+      "scooter",
+      "electric scooter",
+      "kickboard",
+      "moped",
+      "helmet",
+      "no helmet",
+      "road",
+      "sidewalk",
+      "crosswalk"
+    ],
+    "world_set_classes_error": null,
+    "clip_status": {
+      "git_found": true,
+      "clip_import": true,
+      "error": null
+    },
+    "segformer": "nvidia/segformer-b5-finetuned-cityscapes-1024-1024",
+    "tracker": "bytetrack.yaml",
+    "lap_status": {
+      "lap_import": true,
+      "error": null
+    },
+    "helmet_backend": "none",
+    "helmet_model": null,
+    "roboflow_model_id": null
+  },
+  "settings": {
+    "frame_interval": 10,
+    "fight_threshold": 0.44,
+    "stalking_threshold": 0.42,
+    "ride_sidewalk_threshold": 0.3,
+    "no_helmet_threshold": 0.3,
+    "window_seconds": 5.0,
+    "window_stride_seconds": 1.5
+  },
+  "total_json": 22,
+  "success_count": 22,
+  "failed_count": 0,
+  "final_label_count": {
+    "stalking + two_wheeler_detected + two_wheeler_rider_like": 1,
+    "other + two_wheeler_detected + two_wheeler_rider_like": 14,
+    "other + two_wheeler_detected + two_wheeler_sidewalk_candidate": 3,
+    "other + two_wheeler_detected + two_wheeler_sidewalk_riding": 3,
+    "stalking + fight + two_wheeler_detected + two_wheeler_rider_like": 1
+  },
+  "action_label_count": {
+    "stalking": 2,
+    "other": 20
+  },
+  "riding_label_count": {
+    "two_wheeler_rider_like": 16,
+    "two_wheeler_sidewalk_candidate": 3,
+    "two_wheeler_sidewalk_riding": 3
+  },
+  "helmet_label_count": {
+    "helmet_model_not_connected": 22
+  },
+  "results": [
+    {
+      "video_name": "lo_e1281_c1.mp4",
+      "video_path": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터\\스토킹\\특정 구역 내 지속 배회\\lo_e1281\\lo_e1281_c1.mp4",
+      "relative_video_path": "스토킹\\특정 구역 내 지속 배회\\lo_e1281\\lo_e1281_c1.mp4",
+      "final_label": "stalking + two_wheeler_detected + two_wheeler_rider_like",
+      "final_tags": [
+        "stalking",
+        "two_wheeler_detected",
+        "two_wheeler_rider_like"
+      ],
+      "action_label": "stalking",
+      "fight_label": "not_fight",
+      "stalking_label": "stalking",
+      "riding_label": "two_wheeler_rider_like",
+      "helmet_label": "helmet_model_not_connected",
+      "fight": {
+        "fight_score": 0.0913,
+        "is_fight": false,
+        "best_fight_window": {
+          "start_time": 22.5,
+          "end_time": 27.5,
+          "score": 0.0913,
+          "multi_ratio": 0.5333,
+          "close_ratio": 0.0,
+          "overlap_ratio": 0.0,
+          "pose_score": 0.615,
+          "flow_score": 0.0088,
+          "aggressive_ratio": 0.0,
+          "reversal_ratio": 0.0
+        }
+      },
+      "stalking": {
+        "stalking_score": 0.6675,
+        "is_stalking": true,
+        "follow_events": 3,
+        "total_pair_events": 8,
+        "stable_events": 8,
+        "long_track_bonus": 2,
+        "best_pair": {
+          "pair": [
+            18,
+            55
+          ],
+          "events": 8,
+          "follow": 3,
+          "stable": 8,
+          "dist_mean": 413.763,
+          "dist_std": 14.82,
+          "score": 0.4125
+        }
+      },
+      "riding": {
+        "riding_label": "two_wheeler_rider_like",
+        "two_wheeler_detected": true,
+        "two_wheeler_ratio": 0.978,
+        "rider_ratio": 0.4725,
+        "detection_score": 1.0,
+        "sidewalk_score": 0.0,
+        "sidewalk_mean": 0.0,
+        "sidewalk_peak": 0.0,
+        "sidewalk_band_mean": 0.0,
+        "road_mean": 0.8959,
+        "road_band_mean": 0.5632,
+        "segformer_frame_count": 91,
+        "base_two_wheeler_object_count": 159,
+        "world_two_wheeler_object_count": 107
+      },
+      "helmet": {
+        "helmet_label": "helmet_model_not_connected",
+        "is_no_helmet": false,
+        "helmet_backend": "none",
+        "rider_pair_frames": 43,
+        "helmet_checked_frames": 0,
+        "no_helmet_hits": 0,
+        "helmet_hits": 0,
+        "unknown_hits": 0,
+        "no_helmet_ratio": 0.0,
+        "helmet_ratio": 0.0
+      },
+      "helmet_evidence": [],
+      "track_summary": {
+        "18": {
+          "length": 80,
+          "distance": 990.993,
+          "displacement": 692.189,
+          "direction_changes": 0,
+          "mean_speed": 37.633,
+          "source": "yolo_tracker",
+          "first_time": 3.667,
+          "last_time": 30.0
+        },
+        "55": {
+          "length": 9,
+          "distance": 386.568,
+          "displacement": 385.062,
+          "direction_changes": 0,
+          "mean_speed": 144.945,
+          "source": "yolo_tracker",
+          "first_time": 22.333,
+          "last_time": 25.0
+        }
+      },
+      "model_status": {
+        "aio_version": "tog_world_tracker_helmet_safe_v1",
+        "device": "cuda",
+        "base_yolo": "yolov8n.pt",
+        "pose_model": "yolo11n-pose.pt",
+        "world_model": "yolov8s-world.pt",
+        "world_model_active": true,
+        "world_classes": [
+          "person",
+          "bicycle",
+          "motorcycle",
+          "motorbike",
+          "scooter",
+          "electric scooter",
+          "kickboard",
+          "moped",
+          "helmet",
+          "no helmet",
+          "road",
+          "sidewalk",
+          "crosswalk"
+        ],
+        "world_set_classes_error": null,
+        "clip_status": {
+          "git_found": true,
+          "clip_import": true,
+          "error": null
+        },
+        "segformer": "nvidia/segformer-b5-finetuned-cityscapes-1024-1024",
+        "tracker": "bytetrack.yaml",
+        "lap_status": {
+          "lap_import": true,
+          "error": null
+        },
+        "helmet_backend": "none",
+        "helmet_model": null,
+        "roboflow_model_id": null
+      },
+      "feature_json": "C:\\Users\\우성한\\outputs\\prediction\\tog\\aio_features\\스토킹__특정 구역 내 지속 배회__lo_e1281__lo_e1281_c1.json"
+    },
+    {
+      "video_name": "lo_e1281_c2.mp4",
+      "video_path": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터\\스토킹\\특정 구역 내 지속 배회\\lo_e1281\\lo_e1281_c2.mp4",
+      "relative_video_path": "스토킹\\특정 구역 내 지속 배회\\lo_e1281\\lo_e1281_c2.mp4",
+      "final_label": "other + two_wheeler_detected + two_wheeler_rider_like",
+      "final_tags": [
+        "other",
+        "two_wheeler_detected",
+        "two_wheeler_rider_like"
+      ],
+      "action_label": "other",
+      "fight_label": "not_fight",
+      "stalking_label": "not_stalking",
+      "riding_label": "two_wheeler_rider_like",
+      "helmet_label": "helmet_model_not_connected",
+      "fight": {
+        "fight_score": 0.0631,
+        "is_fight": false,
+        "best_fight_window": {
+          "start_time": 24.0,
+          "end_time": 29.0,
+          "score": 0.0631,
+          "multi_ratio": 0.0,
+          "close_ratio": 0.0,
+          "overlap_ratio": 0.0,
+          "pose_score": 0.6238,
+          "flow_score": 0.0107,
+          "aggressive_ratio": 0.0,
+          "reversal_ratio": 0.0
+        }
+      },
+      "stalking": {
+        "stalking_score": 0.0,
+        "is_stalking": false,
+        "follow_events": 0,
+        "total_pair_events": 0,
+        "stable_events": 0,
+        "long_track_bonus": 0,
+        "best_pair": null
+      },
+      "riding": {
+        "riding_label": "two_wheeler_rider_like",
+        "two_wheeler_detected": true,
+        "two_wheeler_ratio": 0.8925,
+        "rider_ratio": 0.0,
+        "detection_score": 0.8301,
+        "sidewalk_score": 0.0099,
+        "sidewalk_mean": 0.0006,
+        "sidewalk_peak": 0.0387,
+        "sidewalk_band_mean": 0.0,
+        "road_mean": 0.6584,
+        "road_band_mean": 0.5269,
+        "segformer_frame_count": 93,
+        "base_two_wheeler_object_count": 151,
+        "world_two_wheeler_object_count": 53
+      },
+      "helmet": {
+        "helmet_label": "helmet_model_not_connected",
+        "is_no_helmet": false,
+        "helmet_backend": "none",
+        "rider_pair_frames": 0,
+        "helmet_checked_frames": 0,
+        "no_helmet_hits": 0,
+        "helmet_hits": 0,
+        "unknown_hits": 0,
+        "no_helmet_ratio": 0.0,
+        "helmet_ratio": 0.0
+      },
+      "helmet_evidence": [],
+      "track_summary": {
+        "5": {
+          "length": 3,
+          "distance": 98.164,
+          "displacement": 95.742,
+          "direction_changes": 0,
+          "mean_speed": 147.393,
+          "source": "yolo_tracker",
+          "first_time": 29.667,
+          "last_time": 30.333
+        }
+      },
+      "model_status": {
+        "aio_version": "tog_world_tracker_helmet_safe_v1",
+        "device": "cuda",
+        "base_yolo": "yolov8n.pt",
+        "pose_model": "yolo11n-pose.pt",
+        "world_model": "yolov8s-world.pt",
+        "world_model_active": true,
+        "world_classes": [
+          "person",
+          "bicycle",
+          "motorcycle",
+          "motorbike",
+          "scooter",
+          "electric scooter",
+          "kickboard",
+          "moped",
+          "helmet",
+          "no helmet",
+          "road",
+          "sidewalk",
+          "crosswalk"
+        ],
+        "world_set_classes_error": null,
+        "clip_status": {
+          "git_found": true,
+          "clip_import": true,
+          "error": null
+        },
+        "segformer": "nvidia/segformer-b5-finetuned-cityscapes-1024-1024",
+        "tracker": "bytetrack.yaml",
+        "lap_status": {
+          "lap_import": true,
+          "error": null
+        },
+        "helmet_backend": "none",
+        "helmet_model": null,
+        "roboflow_model_id": null
+      },
+      "feature_json": "C:\\Users\\우성한\\outputs\\prediction\\tog\\aio_features\\스토킹__특정 구역 내 지속 배회__lo_e1281__lo_e1281_c2.json"
+    },
+    {
+      "video_name": "fp_e1520_c1.mp4",
+      "video_path": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터\\스토킹\\특정 인물을 뒤따라가며 배회\\fp_e1520\\fp_e1520_c1.mp4",
+      "relative_video_path": "스토킹\\특정 인물을 뒤따라가며 배회\\fp_e1520\\fp_e1520_c1.mp4",
+      "final_label": "other + two_wheeler_detected + two_wheeler_rider_like",
+      "final_tags": [
+        "other",
+        "two_wheeler_detected",
+        "two_wheeler_rider_like"
+      ],
+      "action_label": "other",
+      "fight_label": "not_fight",
+      "stalking_label": "not_stalking",
+      "riding_label": "two_wheeler_rider_like",
+      "helmet_label": "helmet_model_not_connected",
+      "fight": {
+        "fight_score": 0.0719,
+        "is_fight": false,
+        "best_fight_window": {
+          "start_time": 9.0,
+          "end_time": 14.0,
+          "score": 0.0719,
+          "multi_ratio": 0.0,
+          "close_ratio": 0.0,
+          "overlap_ratio": 0.0,
+          "pose_score": 0.6456,
+          "flow_score": 0.0663,
+          "aggressive_ratio": 0.0,
+          "reversal_ratio": 0.0
+        }
+      },
+      "stalking": {
+        "stalking_score": 0.0,
+        "is_stalking": false,
+        "follow_events": 0,
+        "total_pair_events": 0,
+        "stable_events": 0,
+        "long_track_bonus": 0,
+        "best_pair": null
+      },
+      "riding": {
+        "riding_label": "two_wheeler_rider_like",
+        "two_wheeler_detected": true,
+        "two_wheeler_ratio": 0.4946,
+        "rider_ratio": 0.0,
+        "detection_score": 0.5375,
+        "sidewalk_score": 0.0,
+        "sidewalk_mean": 0.0,
+        "sidewalk_peak": 0.0,
+        "sidewalk_band_mean": 0.0,
+        "road_mean": 0.3535,
+        "road_band_mean": 0.2408,
+        "segformer_frame_count": 93,
+        "base_two_wheeler_object_count": 39,
+        "world_two_wheeler_object_count": 18
+      },
+      "helmet": {
+        "helmet_label": "helmet_model_not_connected",
+        "is_no_helmet": false,
+        "helmet_backend": "none",
+        "rider_pair_frames": 0,
+        "helmet_checked_frames": 0,
+        "no_helmet_hits": 0,
+        "helmet_hits": 0,
+        "unknown_hits": 0,
+        "no_helmet_ratio": 0.0,
+        "helmet_ratio": 0.0
+      },
+      "helmet_evidence": [],
+      "track_summary": {},
+      "model_status": {
+        "aio_version": "tog_world_tracker_helmet_safe_v1",
+        "device": "cuda",
+        "base_yolo": "yolov8n.pt",
+        "pose_model": "yolo11n-pose.pt",
+        "world_model": "yolov8s-world.pt",
+        "world_model_active": true,
+        "world_classes": [
+          "person",
+          "bicycle",
+          "motorcycle",
+          "motorbike",
+          "scooter",
+          "electric scooter",
+          "kickboard",
+          "moped",
+          "helmet",
+          "no helmet",
+          "road",
+          "sidewalk",
+          "crosswalk"
+        ],
+        "world_set_classes_error": null,
+        "clip_status": {
+          "git_found": true,
+          "clip_import": true,
+          "error": null
+        },
+        "segformer": "nvidia/segformer-b5-finetuned-cityscapes-1024-1024",
+        "tracker": "bytetrack.yaml",
+        "lap_status": {
+          "lap_import": true,
+          "error": null
+        },
+        "helmet_backend": "none",
+        "helmet_model": null,
+        "roboflow_model_id": null
+      },
+      "feature_json": "C:\\Users\\우성한\\outputs\\prediction\\tog\\aio_features\\스토킹__특정 인물을 뒤따라가며 배회__fp_e1520__fp_e1520_c1.json"
+    },
+    {
+      "video_name": "fp_e1520_c2.mp4",
+      "video_path": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터\\스토킹\\특정 인물을 뒤따라가며 배회\\fp_e1520\\fp_e1520_c2.mp4",
+      "relative_video_path": "스토킹\\특정 인물을 뒤따라가며 배회\\fp_e1520\\fp_e1520_c2.mp4",
+      "final_label": "other + two_wheeler_detected + two_wheeler_sidewalk_candidate",
+      "final_tags": [
+        "other",
+        "two_wheeler_detected",
+        "two_wheeler_sidewalk_candidate"
+      ],
+      "action_label": "other",
+      "fight_label": "not_fight",
+      "stalking_label": "not_stalking",
+      "riding_label": "two_wheeler_sidewalk_candidate",
+      "helmet_label": "helmet_model_not_connected",
+      "fight": {
+        "fight_score": 0.0676,
+        "is_fight": false,
+        "best_fight_window": {
+          "start_time": 15.0,
+          "end_time": 20.0,
+          "score": 0.0676,
+          "multi_ratio": 0.0,
+          "close_ratio": 0.0,
+          "overlap_ratio": 0.0,
+          "pose_score": 0.6364,
+          "flow_score": 0.0377,
+          "aggressive_ratio": 0.0,
+          "reversal_ratio": 0.0
+        }
+      },
+      "stalking": {
+        "stalking_score": 0.0,
+        "is_stalking": false,
+        "follow_events": 0,
+        "total_pair_events": 0,
+        "stable_events": 0,
+        "long_track_bonus": 0,
+        "best_pair": null
+      },
+      "riding": {
+        "riding_label": "two_wheeler_sidewalk_candidate",
+        "two_wheeler_detected": true,
+        "two_wheeler_ratio": 1.0,
+        "rider_ratio": 0.0,
+        "detection_score": 0.842,
+        "sidewalk_score": 0.2124,
+        "sidewalk_mean": 0.0204,
+        "sidewalk_peak": 0.7904,
+        "sidewalk_band_mean": 0.0187,
+        "road_mean": 0.0963,
+        "road_band_mean": 0.094,
+        "segformer_frame_count": 93,
+        "base_two_wheeler_object_count": 410,
+        "world_two_wheeler_object_count": 16
+      },
+      "helmet": {
+        "helmet_label": "helmet_model_not_connected",
+        "is_no_helmet": false,
+        "helmet_backend": "none",
+        "rider_pair_frames": 0,
+        "helmet_checked_frames": 0,
+        "no_helmet_hits": 0,
+        "helmet_hits": 0,
+        "unknown_hits": 0,
+        "no_helmet_ratio": 0.0,
+        "helmet_ratio": 0.0
+      },
+      "helmet_evidence": [],
+      "track_summary": {},
+      "model_status": {
+        "aio_version": "tog_world_tracker_helmet_safe_v1",
+        "device": "cuda",
+        "base_yolo": "yolov8n.pt",
+        "pose_model": "yolo11n-pose.pt",
+        "world_model": "yolov8s-world.pt",
+        "world_model_active": true,
+        "world_classes": [
+          "person",
+          "bicycle",
+          "motorcycle",
+          "motorbike",
+          "scooter",
+          "electric scooter",
+          "kickboard",
+          "moped",
+          "helmet",
+          "no helmet",
+          "road",
+          "sidewalk",
+          "crosswalk"
+        ],
+        "world_set_classes_error": null,
+        "clip_status": {
+          "git_found": true,
+          "clip_import": true,
+          "error": null
+        },
+        "segformer": "nvidia/segformer-b5-finetuned-cityscapes-1024-1024",
+        "tracker": "bytetrack.yaml",
+        "lap_status": {
+          "lap_import": true,
+          "error": null
+        },
+        "helmet_backend": "none",
+        "helmet_model": null,
+        "roboflow_model_id": null
+      },
+      "feature_json": "C:\\Users\\우성한\\outputs\\prediction\\tog\\aio_features\\스토킹__특정 인물을 뒤따라가며 배회__fp_e1520__fp_e1520_c2.json"
+    },
+    {
+      "video_name": "ph_e2063_c1.mp4",
+      "video_path": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터\\싸움\\신체적 충돌을 동반한 싸움\\ph_e2063\\ph_e2063_c1.mp4",
+      "relative_video_path": "싸움\\신체적 충돌을 동반한 싸움\\ph_e2063\\ph_e2063_c1.mp4",
+      "final_label": "other + two_wheeler_detected + two_wheeler_rider_like",
+      "final_tags": [
+        "other",
+        "two_wheeler_detected",
+        "two_wheeler_rider_like"
+      ],
+      "action_label": "other",
+      "fight_label": "not_fight",
+      "stalking_label": "not_stalking",
+      "riding_label": "two_wheeler_rider_like",
+      "helmet_label": "helmet_model_not_connected",
+      "fight": {
+        "fight_score": 0.0654,
+        "is_fight": false,
+        "best_fight_window": {
+          "start_time": 9.0,
+          "end_time": 14.0,
+          "score": 0.0654,
+          "multi_ratio": 0.0,
+          "close_ratio": 0.0,
+          "overlap_ratio": 0.0,
+          "pose_score": 0.6451,
+          "flow_score": 0.0125,
+          "aggressive_ratio": 0.0,
+          "reversal_ratio": 0.0
+        }
+      },
+      "stalking": {
+        "stalking_score": 0.0,
+        "is_stalking": false,
+        "follow_events": 0,
+        "total_pair_events": 0,
+        "stable_events": 0,
+        "long_track_bonus": 0,
+        "best_pair": null
+      },
+      "riding": {
+        "riding_label": "two_wheeler_rider_like",
+        "two_wheeler_detected": true,
+        "two_wheeler_ratio": 1.0,
+        "rider_ratio": 0.0,
+        "detection_score": 0.9,
+        "sidewalk_score": 0.0142,
+        "sidewalk_mean": 0.0002,
+        "sidewalk_peak": 0.0562,
+        "sidewalk_band_mean": 0.0002,
+        "road_mean": 0.92,
+        "road_band_mean": 0.5609,
+        "segformer_frame_count": 94,
+        "base_two_wheeler_object_count": 122,
+        "world_two_wheeler_object_count": 111
+      },
+      "helmet": {
+        "helmet_label": "helmet_model_not_connected",
+        "is_no_helmet": false,
+        "helmet_backend": "none",
+        "rider_pair_frames": 0,
+        "helmet_checked_frames": 0,
+        "no_helmet_hits": 0,
+        "helmet_hits": 0,
+        "unknown_hits": 0,
+        "no_helmet_ratio": 0.0,
+        "helmet_ratio": 0.0
+      },
+      "helmet_evidence": [],
+      "track_summary": {},
+      "model_status": {
+        "aio_version": "tog_world_tracker_helmet_safe_v1",
+        "device": "cuda",
+        "base_yolo": "yolov8n.pt",
+        "pose_model": "yolo11n-pose.pt",
+        "world_model": "yolov8s-world.pt",
+        "world_model_active": true,
+        "world_classes": [
+          "person",
+          "bicycle",
+          "motorcycle",
+          "motorbike",
+          "scooter",
+          "electric scooter",
+          "kickboard",
+          "moped",
+          "helmet",
+          "no helmet",
+          "road",
+          "sidewalk",
+          "crosswalk"
+        ],
+        "world_set_classes_error": null,
+        "clip_status": {
+          "git_found": true,
+          "clip_import": true,
+          "error": null
+        },
+        "segformer": "nvidia/segformer-b5-finetuned-cityscapes-1024-1024",
+        "tracker": "bytetrack.yaml",
+        "lap_status": {
+          "lap_import": true,
+          "error": null
+        },
+        "helmet_backend": "none",
+        "helmet_model": null,
+        "roboflow_model_id": null
+      },
+      "feature_json": "C:\\Users\\우성한\\outputs\\prediction\\tog\\aio_features\\싸움__신체적 충돌을 동반한 싸움__ph_e2063__ph_e2063_c1.json"
+    },
+    {
+      "video_name": "ph_e2063_c2.mp4",
+      "video_path": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터\\싸움\\신체적 충돌을 동반한 싸움\\ph_e2063\\ph_e2063_c2.mp4",
+      "relative_video_path": "싸움\\신체적 충돌을 동반한 싸움\\ph_e2063\\ph_e2063_c2.mp4",
+      "final_label": "other + two_wheeler_detected + two_wheeler_rider_like",
+      "final_tags": [
+        "other",
+        "two_wheeler_detected",
+        "two_wheeler_rider_like"
+      ],
+      "action_label": "other",
+      "fight_label": "not_fight",
+      "stalking_label": "not_stalking",
+      "riding_label": "two_wheeler_rider_like",
+      "helmet_label": "helmet_model_not_connected",
+      "fight": {
+        "fight_score": 0.0015,
+        "is_fight": false,
+        "best_fight_window": {
+          "start_time": 6.0,
+          "end_time": 11.0,
+          "score": 0.0015,
+          "multi_ratio": 0.0,
+          "close_ratio": 0.0,
+          "overlap_ratio": 0.0,
+          "pose_score": 0.0,
+          "flow_score": 0.0121,
+          "aggressive_ratio": 0.0,
+          "reversal_ratio": 0.0
+        }
+      },
+      "stalking": {
+        "stalking_score": 0.0,
+        "is_stalking": false,
+        "follow_events": 0,
+        "total_pair_events": 0,
+        "stable_events": 0,
+        "long_track_bonus": 0,
+        "best_pair": null
+      },
+      "riding": {
+        "riding_label": "two_wheeler_rider_like",
+        "two_wheeler_detected": true,
+        "two_wheeler_ratio": 1.0,
+        "rider_ratio": 0.0,
+        "detection_score": 0.9,
+        "sidewalk_score": 0.0,
+        "sidewalk_mean": 0.0,
+        "sidewalk_peak": 0.0,
+        "sidewalk_band_mean": 0.0,
+        "road_mean": 0.6721,
+        "road_band_mean": 0.5221,
+        "segformer_frame_count": 93,
+        "base_two_wheeler_object_count": 419,
+        "world_two_wheeler_object_count": 137
+      },
+      "helmet": {
+        "helmet_label": "helmet_model_not_connected",
+        "is_no_helmet": false,
+        "helmet_backend": "none",
+        "rider_pair_frames": 0,
+        "helmet_checked_frames": 0,
+        "no_helmet_hits": 0,
+        "helmet_hits": 0,
+        "unknown_hits": 0,
+        "no_helmet_ratio": 0.0,
+        "helmet_ratio": 0.0
+      },
+      "helmet_evidence": [],
+      "track_summary": {},
+      "model_status": {
+        "aio_version": "tog_world_tracker_helmet_safe_v1",
+        "device": "cuda",
+        "base_yolo": "yolov8n.pt",
+        "pose_model": "yolo11n-pose.pt",
+        "world_model": "yolov8s-world.pt",
+        "world_model_active": true,
+        "world_classes": [
+          "person",
+          "bicycle",
+          "motorcycle",
+          "motorbike",
+          "scooter",
+          "electric scooter",
+          "kickboard",
+          "moped",
+          "helmet",
+          "no helmet",
+          "road",
+          "sidewalk",
+          "crosswalk"
+        ],
+        "world_set_classes_error": null,
+        "clip_status": {
+          "git_found": true,
+          "clip_import": true,
+          "error": null
+        },
+        "segformer": "nvidia/segformer-b5-finetuned-cityscapes-1024-1024",
+        "tracker": "bytetrack.yaml",
+        "lap_status": {
+          "lap_import": true,
+          "error": null
+        },
+        "helmet_backend": "none",
+        "helmet_model": null,
+        "roboflow_model_id": null
+      },
+      "feature_json": "C:\\Users\\우성한\\outputs\\prediction\\tog\\aio_features\\싸움__신체적 충돌을 동반한 싸움__ph_e2063__ph_e2063_c2.json"
+    },
+    {
+      "video_name": "ms_e3500_c1.mp4",
+      "video_path": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터\\이륜 이동수단 인도 주행\\오토바이 인도 주행\\ms_e3500\\ms_e3500_c1.mp4",
+      "relative_video_path": "이륜 이동수단 인도 주행\\오토바이 인도 주행\\ms_e3500\\ms_e3500_c1.mp4",
+      "final_label": "other + two_wheeler_detected + two_wheeler_rider_like",
+      "final_tags": [
+        "other",
+        "two_wheeler_detected",
+        "two_wheeler_rider_like"
+      ],
+      "action_label": "other",
+      "fight_label": "not_fight",
+      "stalking_label": "not_stalking",
+      "riding_label": "two_wheeler_rider_like",
+      "helmet_label": "helmet_model_not_connected",
+      "fight": {
+        "fight_score": 0.1009,
+        "is_fight": false,
+        "best_fight_window": {
+          "start_time": 30.0,
+          "end_time": 35.0,
+          "score": 0.1009,
+          "multi_ratio": 0.0,
+          "close_ratio": 0.0,
+          "overlap_ratio": 0.0,
+          "pose_score": 0.0,
+          "flow_score": 0.3796,
+          "aggressive_ratio": 1.0,
+          "reversal_ratio": 0.0
+        }
+      },
+      "stalking": {
+        "stalking_score": 0.0,
+        "is_stalking": false,
+        "follow_events": 0,
+        "total_pair_events": 0,
+        "stable_events": 0,
+        "long_track_bonus": 0,
+        "best_pair": null
+      },
+      "riding": {
+        "riding_label": "two_wheeler_rider_like",
+        "two_wheeler_detected": true,
+        "two_wheeler_ratio": 0.8854,
+        "rider_ratio": 0.0,
+        "detection_score": 0.5755,
+        "sidewalk_score": 0.0,
+        "sidewalk_mean": 0.0,
+        "sidewalk_peak": 0.0,
+        "sidewalk_band_mean": 0.0,
+        "road_mean": 0.9553,
+        "road_band_mean": 0.9486,
+        "segformer_frame_count": 96,
+        "base_two_wheeler_object_count": 103,
+        "world_two_wheeler_object_count": 0
+      },
+      "helmet": {
+        "helmet_label": "helmet_model_not_connected",
+        "is_no_helmet": false,
+        "helmet_backend": "none",
+        "rider_pair_frames": 0,
+        "helmet_checked_frames": 0,
+        "no_helmet_hits": 0,
+        "helmet_hits": 0,
+        "unknown_hits": 0,
+        "no_helmet_ratio": 0.0,
+        "helmet_ratio": 0.0
+      },
+      "helmet_evidence": [],
+      "track_summary": {},
+      "model_status": {
+        "aio_version": "tog_world_tracker_helmet_safe_v1",
+        "device": "cuda",
+        "base_yolo": "yolov8n.pt",
+        "pose_model": "yolo11n-pose.pt",
+        "world_model": "yolov8s-world.pt",
+        "world_model_active": true,
+        "world_classes": [
+          "person",
+          "bicycle",
+          "motorcycle",
+          "motorbike",
+          "scooter",
+          "electric scooter",
+          "kickboard",
+          "moped",
+          "helmet",
+          "no helmet",
+          "road",
+          "sidewalk",
+          "crosswalk"
+        ],
+        "world_set_classes_error": null,
+        "clip_status": {
+          "git_found": true,
+          "clip_import": true,
+          "error": null
+        },
+        "segformer": "nvidia/segformer-b5-finetuned-cityscapes-1024-1024",
+        "tracker": "bytetrack.yaml",
+        "lap_status": {
+          "lap_import": true,
+          "error": null
+        },
+        "helmet_backend": "none",
+        "helmet_model": null,
+        "roboflow_model_id": null
+      },
+      "feature_json": "C:\\Users\\우성한\\outputs\\prediction\\tog\\aio_features\\이륜 이동수단 인도 주행__오토바이 인도 주행__ms_e3500__ms_e3500_c1.json"
+    },
+    {
+      "video_name": "ms_e3500_c2.mp4",
+      "video_path": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터\\이륜 이동수단 인도 주행\\오토바이 인도 주행\\ms_e3500\\ms_e3500_c2.mp4",
+      "relative_video_path": "이륜 이동수단 인도 주행\\오토바이 인도 주행\\ms_e3500\\ms_e3500_c2.mp4",
+      "final_label": "other + two_wheeler_detected + two_wheeler_rider_like",
+      "final_tags": [
+        "other",
+        "two_wheeler_detected",
+        "two_wheeler_rider_like"
+      ],
+      "action_label": "other",
+      "fight_label": "not_fight",
+      "stalking_label": "not_stalking",
+      "riding_label": "two_wheeler_rider_like",
+      "helmet_label": "helmet_model_not_connected",
+      "fight": {
+        "fight_score": 0.176,
+        "is_fight": false,
+        "best_fight_window": {
+          "start_time": 30.0,
+          "end_time": 35.0,
+          "score": 0.176,
+          "multi_ratio": 0.0,
+          "close_ratio": 0.0,
+          "overlap_ratio": 0.0,
+          "pose_score": 0.0,
+          "flow_score": 1.0,
+          "aggressive_ratio": 1.0,
+          "reversal_ratio": 0.0
+        }
+      },
+      "stalking": {
+        "stalking_score": 0.0,
+        "is_stalking": false,
+        "follow_events": 0,
+        "total_pair_events": 0,
+        "stable_events": 0,
+        "long_track_bonus": 0,
+        "best_pair": null
+      },
+      "riding": {
+        "riding_label": "two_wheeler_rider_like",
+        "two_wheeler_detected": true,
+        "two_wheeler_ratio": 0.6264,
+        "rider_ratio": 0.0,
+        "detection_score": 0.6571,
+        "sidewalk_score": 0.0,
+        "sidewalk_mean": 0.0,
+        "sidewalk_peak": 0.0,
+        "sidewalk_band_mean": 0.0001,
+        "road_mean": 0.0,
+        "road_band_mean": 0.0,
+        "segformer_frame_count": 91,
+        "base_two_wheeler_object_count": 4,
+        "world_two_wheeler_object_count": 56
+      },
+      "helmet": {
+        "helmet_label": "helmet_model_not_connected",
+        "is_no_helmet": false,
+        "helmet_backend": "none",
+        "rider_pair_frames": 0,
+        "helmet_checked_frames": 0,
+        "no_helmet_hits": 0,
+        "helmet_hits": 0,
+        "unknown_hits": 0,
+        "no_helmet_ratio": 0.0,
+        "helmet_ratio": 0.0
+      },
+      "helmet_evidence": [],
+      "track_summary": {},
+      "model_status": {
+        "aio_version": "tog_world_tracker_helmet_safe_v1",
+        "device": "cuda",
+        "base_yolo": "yolov8n.pt",
+        "pose_model": "yolo11n-pose.pt",
+        "world_model": "yolov8s-world.pt",
+        "world_model_active": true,
+        "world_classes": [
+          "person",
+          "bicycle",
+          "motorcycle",
+          "motorbike",
+          "scooter",
+          "electric scooter",
+          "kickboard",
+          "moped",
+          "helmet",
+          "no helmet",
+          "road",
+          "sidewalk",
+          "crosswalk"
+        ],
+        "world_set_classes_error": null,
+        "clip_status": {
+          "git_found": true,
+          "clip_import": true,
+          "error": null
+        },
+        "segformer": "nvidia/segformer-b5-finetuned-cityscapes-1024-1024",
+        "tracker": "bytetrack.yaml",
+        "lap_status": {
+          "lap_import": true,
+          "error": null
+        },
+        "helmet_backend": "none",
+        "helmet_model": null,
+        "roboflow_model_id": null
+      },
+      "feature_json": "C:\\Users\\우성한\\outputs\\prediction\\tog\\aio_features\\이륜 이동수단 인도 주행__오토바이 인도 주행__ms_e3500__ms_e3500_c2.json"
+    },
+    {
+      "video_name": "bs_e4387_c1.mp4",
+      "video_path": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터\\이륜 이동수단 인도 주행\\자전거 인도 주행\\bs_e4387\\bs_e4387_c1.mp4",
+      "relative_video_path": "이륜 이동수단 인도 주행\\자전거 인도 주행\\bs_e4387\\bs_e4387_c1.mp4",
+      "final_label": "other + two_wheeler_detected + two_wheeler_sidewalk_riding",
+      "final_tags": [
+        "other",
+        "two_wheeler_detected",
+        "two_wheeler_sidewalk_riding"
+      ],
+      "action_label": "other",
+      "fight_label": "not_fight",
+      "stalking_label": "not_stalking",
+      "riding_label": "two_wheeler_sidewalk_riding",
+      "helmet_label": "helmet_model_not_connected",
+      "fight": {
+        "fight_score": 0.1674,
+        "is_fight": false,
+        "best_fight_window": {
+          "start_time": 4.5,
+          "end_time": 9.5,
+          "score": 0.1674,
+          "multi_ratio": 0.0667,
+          "close_ratio": 0.2,
+          "overlap_ratio": 0.2,
+          "pose_score": 0.4728,
+          "flow_score": 0.0165,
+          "aggressive_ratio": 0.0,
+          "reversal_ratio": 0.0
+        }
+      },
+      "stalking": {
+        "stalking_score": 0.08,
+        "is_stalking": false,
+        "follow_events": 0,
+        "total_pair_events": 0,
+        "stable_events": 0,
+        "long_track_bonus": 2,
+        "best_pair": null
+      },
+      "riding": {
+        "riding_label": "two_wheeler_sidewalk_riding",
+        "two_wheeler_detected": true,
+        "two_wheeler_ratio": 0.3516,
+        "rider_ratio": 0.1978,
+        "detection_score": 0.4094,
+        "sidewalk_score": 0.4685,
+        "sidewalk_mean": 0.3102,
+        "sidewalk_peak": 1.0,
+        "sidewalk_band_mean": 0.2631,
+        "road_mean": 0.417,
+        "road_band_mean": 0.391,
+        "segformer_frame_count": 91,
+        "base_two_wheeler_object_count": 75,
+        "world_two_wheeler_object_count": 6
+      },
+      "helmet": {
+        "helmet_label": "helmet_model_not_connected",
+        "is_no_helmet": false,
+        "helmet_backend": "none",
+        "rider_pair_frames": 18,
+        "helmet_checked_frames": 0,
+        "no_helmet_hits": 0,
+        "helmet_hits": 0,
+        "unknown_hits": 0,
+        "no_helmet_ratio": 0.0,
+        "helmet_ratio": 0.0
+      },
+      "helmet_evidence": [],
+      "track_summary": {
+        "10": {
+          "length": 1,
+          "distance": 0,
+          "displacement": 0,
+          "direction_changes": 0,
+          "mean_speed": 0,
+          "first_time": 3.0,
+          "last_time": 3.0
+        },
+        "19": {
+          "length": 1,
+          "distance": 0,
+          "displacement": 0,
+          "direction_changes": 0,
+          "mean_speed": 0,
+          "first_time": 4.333,
+          "last_time": 4.333
+        },
+        "20": {
+          "length": 10,
+          "distance": 194.365,
+          "displacement": 188.956,
+          "direction_changes": 0,
+          "mean_speed": 64.788,
+          "source": "yolo_tracker",
+          "first_time": 4.667,
+          "last_time": 7.667
+        },
+        "22": {
+          "length": 1,
+          "distance": 0,
+          "displacement": 0,
+          "direction_changes": 0,
+          "mean_speed": 0,
+          "first_time": 8.0,
+          "last_time": 8.0
+        },
+        "23": {
+          "length": 1,
+          "distance": 0,
+          "displacement": 0,
+          "direction_changes": 0,
+          "mean_speed": 0,
+          "first_time": 10.0,
+          "last_time": 10.0
+        },
+        "26": {
+          "length": 1,
+          "distance": 0,
+          "displacement": 0,
+          "direction_changes": 0,
+          "mean_speed": 0,
+          "first_time": 10.667,
+          "last_time": 10.667
+        },
+        "27": {
+          "length": 6,
+          "distance": 81.006,
+          "displacement": 80.219,
+          "direction_changes": 0,
+          "mean_speed": 48.594,
+          "source": "yolo_tracker",
+          "first_time": 11.0,
+          "last_time": 12.667
+        },
+        "32": {
+          "length": 1,
+          "distance": 0,
+          "displacement": 0,
+          "direction_changes": 0,
+          "mean_speed": 0,
+          "first_time": 14.667,
+          "last_time": 14.667
+        }
+      },
+      "model_status": {
+        "aio_version": "tog_world_tracker_helmet_safe_v1",
+        "device": "cuda",
+        "base_yolo": "yolov8n.pt",
+        "pose_model": "yolo11n-pose.pt",
+        "world_model": "yolov8s-world.pt",
+        "world_model_active": true,
+        "world_classes": [
+          "person",
+          "bicycle",
+          "motorcycle",
+          "motorbike",
+          "scooter",
+          "electric scooter",
+          "kickboard",
+          "moped",
+          "helmet",
+          "no helmet",
+          "road",
+          "sidewalk",
+          "crosswalk"
+        ],
+        "world_set_classes_error": null,
+        "clip_status": {
+          "git_found": true,
+          "clip_import": true,
+          "error": null
+        },
+        "segformer": "nvidia/segformer-b5-finetuned-cityscapes-1024-1024",
+        "tracker": "bytetrack.yaml",
+        "lap_status": {
+          "lap_import": true,
+          "error": null
+        },
+        "helmet_backend": "none",
+        "helmet_model": null,
+        "roboflow_model_id": null
+      },
+      "feature_json": "C:\\Users\\우성한\\outputs\\prediction\\tog\\aio_features\\이륜 이동수단 인도 주행__자전거 인도 주행__bs_e4387__bs_e4387_c1.json"
+    },
+    {
+      "video_name": "bs_e4387_c2.mp4",
+      "video_path": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터\\이륜 이동수단 인도 주행\\자전거 인도 주행\\bs_e4387\\bs_e4387_c2.mp4",
+      "relative_video_path": "이륜 이동수단 인도 주행\\자전거 인도 주행\\bs_e4387\\bs_e4387_c2.mp4",
+      "final_label": "other + two_wheeler_detected + two_wheeler_rider_like",
+      "final_tags": [
+        "other",
+        "two_wheeler_detected",
+        "two_wheeler_rider_like"
+      ],
+      "action_label": "other",
+      "fight_label": "not_fight",
+      "stalking_label": "not_stalking",
+      "riding_label": "two_wheeler_rider_like",
+      "helmet_label": "helmet_model_not_connected",
+      "fight": {
+        "fight_score": 0.0924,
+        "is_fight": false,
+        "best_fight_window": {
+          "start_time": 13.5,
+          "end_time": 18.5,
+          "score": 0.0924,
+          "multi_ratio": 0.1333,
+          "close_ratio": 0.0,
+          "overlap_ratio": 0.0,
+          "pose_score": 0.1817,
+          "flow_score": 0.3725,
+          "aggressive_ratio": 0.4,
+          "reversal_ratio": 0.0
+        }
+      },
+      "stalking": {
+        "stalking_score": 0.0,
+        "is_stalking": false,
+        "follow_events": 0,
+        "total_pair_events": 0,
+        "stable_events": 0,
+        "long_track_bonus": 0,
+        "best_pair": null
+      },
+      "riding": {
+        "riding_label": "two_wheeler_rider_like",
+        "two_wheeler_detected": true,
+        "two_wheeler_ratio": 0.1,
+        "rider_ratio": 0.0111,
+        "detection_score": 0.1431,
+        "sidewalk_score": 0.0257,
+        "sidewalk_mean": 0.0056,
+        "sidewalk_peak": 0.082,
+        "sidewalk_band_mean": 0.009,
+        "road_mean": 0.1751,
+        "road_band_mean": 0.1696,
+        "segformer_frame_count": 90,
+        "base_two_wheeler_object_count": 31,
+        "world_two_wheeler_object_count": 6
+      },
+      "helmet": {
+        "helmet_label": "helmet_model_not_connected",
+        "is_no_helmet": false,
+        "helmet_backend": "none",
+        "rider_pair_frames": 1,
+        "helmet_checked_frames": 0,
+        "no_helmet_hits": 0,
+        "helmet_hits": 0,
+        "unknown_hits": 0,
+        "no_helmet_ratio": 0.0,
+        "helmet_ratio": 0.0
+      },
+      "helmet_evidence": [],
+      "track_summary": {
+        "1": {
+          "length": 5,
+          "distance": 10.788,
+          "displacement": 7.224,
+          "direction_changes": 0,
+          "mean_speed": 5.394,
+          "source": "custom_greedy",
+          "first_time": 0.0,
+          "last_time": 2.0
+        },
+        "2": {
+          "length": 6,
+          "distance": 14.383,
+          "displacement": 4.751,
+          "direction_changes": 0,
+          "mean_speed": 8.628,
+          "source": "custom_greedy",
+          "first_time": 1.0,
+          "last_time": 2.667
+        },
+        "3": {
+          "length": 14,
+          "distance": 47.118,
+          "displacement": 8.054,
+          "direction_changes": 0,
+          "mean_speed": 8.316,
+          "source": "custom_greedy",
+          "first_time": 3.667,
+          "last_time": 9.333
+        },
+        "4": {
+          "length": 2,
+          "distance": 1.522,
+          "displacement": 1.522,
+          "direction_changes": 0,
+          "mean_speed": 2.281,
+          "source": "custom_greedy",
+          "first_time": 4.0,
+          "last_time": 4.667
+        },
+        "5": {
+          "length": 1,
+          "distance": 0,
+          "displacement": 0,
+          "direction_changes": 0,
+          "mean_speed": 0,
+          "first_time": 10.0,
+          "last_time": 10.0
+        },
+        "6": {
+          "length": 3,
+          "distance": 44.456,
+          "displacement": 44.454,
+          "direction_changes": 0,
+          "mean_speed": 33.325,
+          "source": "custom_greedy",
+          "first_time": 13.333,
+          "last_time": 14.667
+        },
+        "7": {
+          "length": 1,
+          "distance": 0,
+          "displacement": 0,
+          "direction_changes": 0,
+          "mean_speed": 0,
+          "first_time": 13.667,
+          "last_time": 13.667
+        },
+        "8": {
+          "length": 3,
+          "distance": 7.86,
+          "displacement": 2.27,
+          "direction_changes": 0,
+          "mean_speed": 7.86,
+          "source": "custom_greedy",
+          "first_time": 13.667,
+          "last_time": 14.667
+        },
+        "9": {
+          "length": 1,
+          "distance": 0,
+          "displacement": 0,
+          "direction_changes": 0,
+          "mean_speed": 0,
+          "first_time": 21.667,
+          "last_time": 21.667
+        },
+        "10": {
+          "length": 1,
+          "distance": 0,
+          "displacement": 0,
+          "direction_changes": 0,
+          "mean_speed": 0,
+          "first_time": 24.333,
+          "last_time": 24.333
+        },
+        "11": {
+          "length": 2,
+          "distance": 1.635,
+          "displacement": 1.635,
+          "direction_changes": 0,
+          "mean_speed": 4.91,
+          "source": "custom_greedy",
+          "first_time": 28.0,
+          "last_time": 28.333
+        }
+      },
+      "model_status": {
+        "aio_version": "tog_world_tracker_helmet_safe_v1",
+        "device": "cuda",
+        "base_yolo": "yolov8n.pt",
+        "pose_model": "yolo11n-pose.pt",
+        "world_model": "yolov8s-world.pt",
+        "world_model_active": true,
+        "world_classes": [
+          "person",
+          "bicycle",
+          "motorcycle",
+          "motorbike",
+          "scooter",
+          "electric scooter",
+          "kickboard",
+          "moped",
+          "helmet",
+          "no helmet",
+          "road",
+          "sidewalk",
+          "crosswalk"
+        ],
+        "world_set_classes_error": null,
+        "clip_status": {
+          "git_found": true,
+          "clip_import": true,
+          "error": null
+        },
+        "segformer": "nvidia/segformer-b5-finetuned-cityscapes-1024-1024",
+        "tracker": "bytetrack.yaml",
+        "lap_status": {
+          "lap_import": true,
+          "error": null
+        },
+        "helmet_backend": "none",
+        "helmet_model": null,
+        "roboflow_model_id": null
+      },
+      "feature_json": "C:\\Users\\우성한\\outputs\\prediction\\tog\\aio_features\\이륜 이동수단 인도 주행__자전거 인도 주행__bs_e4387__bs_e4387_c2.json"
+    },
+    {
+      "video_name": "es_e3768_c1.mp4",
+      "video_path": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터\\이륜 이동수단 인도 주행\\전동킥보드 인도 주행\\es_e3768\\es_e3768_c1.mp4",
+      "relative_video_path": "이륜 이동수단 인도 주행\\전동킥보드 인도 주행\\es_e3768\\es_e3768_c1.mp4",
+      "final_label": "other + two_wheeler_detected + two_wheeler_rider_like",
+      "final_tags": [
+        "other",
+        "two_wheeler_detected",
+        "two_wheeler_rider_like"
+      ],
+      "action_label": "other",
+      "fight_label": "not_fight",
+      "stalking_label": "not_stalking",
+      "riding_label": "two_wheeler_rider_like",
+      "helmet_label": "helmet_model_not_connected",
+      "fight": {
+        "fight_score": 0.1106,
+        "is_fight": false,
+        "best_fight_window": {
+          "start_time": 18.0,
+          "end_time": 23.0,
+          "score": 0.1106,
+          "multi_ratio": 0.0,
+          "close_ratio": 0.0,
+          "overlap_ratio": 0.0,
+          "pose_score": 0.0771,
+          "flow_score": 0.6688,
+          "aggressive_ratio": 0.4,
+          "reversal_ratio": 0.0
+        }
+      },
+      "stalking": {
+        "stalking_score": 0.0,
+        "is_stalking": false,
+        "follow_events": 0,
+        "total_pair_events": 0,
+        "stable_events": 0,
+        "long_track_bonus": 0,
+        "best_pair": null
+      },
+      "riding": {
+        "riding_label": "two_wheeler_rider_like",
+        "two_wheeler_detected": true,
+        "two_wheeler_ratio": 0.4176,
+        "rider_ratio": 0.0,
+        "detection_score": 0.4514,
+        "sidewalk_score": 0.0001,
+        "sidewalk_mean": 0.0,
+        "sidewalk_peak": 0.0,
+        "sidewalk_band_mean": 0.0002,
+        "road_mean": 0.4131,
+        "road_band_mean": 0.3373,
+        "segformer_frame_count": 91,
+        "base_two_wheeler_object_count": 74,
+        "world_two_wheeler_object_count": 15
+      },
+      "helmet": {
+        "helmet_label": "helmet_model_not_connected",
+        "is_no_helmet": false,
+        "helmet_backend": "none",
+        "rider_pair_frames": 0,
+        "helmet_checked_frames": 0,
+        "no_helmet_hits": 0,
+        "helmet_hits": 0,
+        "unknown_hits": 0,
+        "no_helmet_ratio": 0.0,
+        "helmet_ratio": 0.0
+      },
+      "helmet_evidence": [],
+      "track_summary": {},
+      "model_status": {
+        "aio_version": "tog_world_tracker_helmet_safe_v1",
+        "device": "cuda",
+        "base_yolo": "yolov8n.pt",
+        "pose_model": "yolo11n-pose.pt",
+        "world_model": "yolov8s-world.pt",
+        "world_model_active": true,
+        "world_classes": [
+          "person",
+          "bicycle",
+          "motorcycle",
+          "motorbike",
+          "scooter",
+          "electric scooter",
+          "kickboard",
+          "moped",
+          "helmet",
+          "no helmet",
+          "road",
+          "sidewalk",
+          "crosswalk"
+        ],
+        "world_set_classes_error": null,
+        "clip_status": {
+          "git_found": true,
+          "clip_import": true,
+          "error": null
+        },
+        "segformer": "nvidia/segformer-b5-finetuned-cityscapes-1024-1024",
+        "tracker": "bytetrack.yaml",
+        "lap_status": {
+          "lap_import": true,
+          "error": null
+        },
+        "helmet_backend": "none",
+        "helmet_model": null,
+        "roboflow_model_id": null
+      },
+      "feature_json": "C:\\Users\\우성한\\outputs\\prediction\\tog\\aio_features\\이륜 이동수단 인도 주행__전동킥보드 인도 주행__es_e3768__es_e3768_c1.json"
+    },
+    {
+      "video_name": "es_e3768_c2.mp4",
+      "video_path": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터\\이륜 이동수단 인도 주행\\전동킥보드 인도 주행\\es_e3768\\es_e3768_c2.mp4",
+      "relative_video_path": "이륜 이동수단 인도 주행\\전동킥보드 인도 주행\\es_e3768\\es_e3768_c2.mp4",
+      "final_label": "other + two_wheeler_detected + two_wheeler_sidewalk_candidate",
+      "final_tags": [
+        "other",
+        "two_wheeler_detected",
+        "two_wheeler_sidewalk_candidate"
+      ],
+      "action_label": "other",
+      "fight_label": "not_fight",
+      "stalking_label": "not_stalking",
+      "riding_label": "two_wheeler_sidewalk_candidate",
+      "helmet_label": "helmet_model_not_connected",
+      "fight": {
+        "fight_score": 0.2053,
+        "is_fight": false,
+        "best_fight_window": {
+          "start_time": 24.0,
+          "end_time": 29.0,
+          "score": 0.2053,
+          "multi_ratio": 0.0,
+          "close_ratio": 0.0,
+          "overlap_ratio": 0.0,
+          "pose_score": 0.6376,
+          "flow_score": 0.8114,
+          "aggressive_ratio": 0.8,
+          "reversal_ratio": 0.0
+        }
+      },
+      "stalking": {
+        "stalking_score": 0.0462,
+        "is_stalking": false,
+        "follow_events": 0,
+        "total_pair_events": 1,
+        "stable_events": 0,
+        "long_track_bonus": 1,
+        "best_pair": {
+          "pair": [
+            277,
+            278
+          ],
+          "events": 1,
+          "follow": 0,
+          "stable": 0,
+          "dist_mean": 212.102,
+          "dist_std": 0.0,
+          "score": 0.0062
+        }
+      },
+      "riding": {
+        "riding_label": "two_wheeler_sidewalk_candidate",
+        "two_wheeler_detected": true,
+        "two_wheeler_ratio": 0.9674,
+        "rider_ratio": 0.2935,
+        "detection_score": 1.0,
+        "sidewalk_score": 0.2485,
+        "sidewalk_mean": 0.1109,
+        "sidewalk_peak": 0.7271,
+        "sidewalk_band_mean": 0.056,
+        "road_mean": 0.1796,
+        "road_band_mean": 0.1417,
+        "segformer_frame_count": 92,
+        "base_two_wheeler_object_count": 324,
+        "world_two_wheeler_object_count": 162
+      },
+      "helmet": {
+        "helmet_label": "helmet_model_not_connected",
+        "is_no_helmet": false,
+        "helmet_backend": "none",
+        "rider_pair_frames": 27,
+        "helmet_checked_frames": 0,
+        "no_helmet_hits": 0,
+        "helmet_hits": 0,
+        "unknown_hits": 0,
+        "no_helmet_ratio": 0.0,
+        "helmet_ratio": 0.0
+      },
+      "helmet_evidence": [],
+      "track_summary": {
+        "277": {
+          "length": 1,
+          "distance": 0,
+          "displacement": 0,
+          "direction_changes": 0,
+          "mean_speed": 0,
+          "first_time": 19.667,
+          "last_time": 19.667
+        },
+        "278": {
+          "length": 28,
+          "distance": 615.452,
+          "displacement": 521.696,
+          "direction_changes": 1,
+          "mean_speed": 59.562,
+          "source": "yolo_tracker",
+          "first_time": 19.667,
+          "last_time": 30.0
+        }
+      },
+      "model_status": {
+        "aio_version": "tog_world_tracker_helmet_safe_v1",
+        "device": "cuda",
+        "base_yolo": "yolov8n.pt",
+        "pose_model": "yolo11n-pose.pt",
+        "world_model": "yolov8s-world.pt",
+        "world_model_active": true,
+        "world_classes": [
+          "person",
+          "bicycle",
+          "motorcycle",
+          "motorbike",
+          "scooter",
+          "electric scooter",
+          "kickboard",
+          "moped",
+          "helmet",
+          "no helmet",
+          "road",
+          "sidewalk",
+          "crosswalk"
+        ],
+        "world_set_classes_error": null,
+        "clip_status": {
+          "git_found": true,
+          "clip_import": true,
+          "error": null
+        },
+        "segformer": "nvidia/segformer-b5-finetuned-cityscapes-1024-1024",
+        "tracker": "bytetrack.yaml",
+        "lap_status": {
+          "lap_import": true,
+          "error": null
+        },
+        "helmet_backend": "none",
+        "helmet_model": null,
+        "roboflow_model_id": null
+      },
+      "feature_json": "C:\\Users\\우성한\\outputs\\prediction\\tog\\aio_features\\이륜 이동수단 인도 주행__전동킥보드 인도 주행__es_e3768__es_e3768_c2.json"
+    },
+    {
+      "video_name": "md_e2122_c1.mp4",
+      "video_path": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터\\이륜 이동수단 헬멧 미착용\\이륜 이동수단 운전자 1인 헬멧 미착용\\md_e2122\\md_e2122_c1.mp4",
+      "relative_video_path": "이륜 이동수단 헬멧 미착용\\이륜 이동수단 운전자 1인 헬멧 미착용\\md_e2122\\md_e2122_c1.mp4",
+      "final_label": "stalking + fight + two_wheeler_detected + two_wheeler_rider_like",
+      "final_tags": [
+        "stalking",
+        "fight",
+        "two_wheeler_detected",
+        "two_wheeler_rider_like"
+      ],
+      "action_label": "stalking",
+      "fight_label": "fight",
+      "stalking_label": "stalking",
+      "riding_label": "two_wheeler_rider_like",
+      "helmet_label": "helmet_model_not_connected",
+      "fight": {
+        "fight_score": 0.5668,
+        "is_fight": true,
+        "best_fight_window": {
+          "start_time": 6.0,
+          "end_time": 11.0,
+          "score": 0.5668,
+          "multi_ratio": 1.0,
+          "close_ratio": 1.0,
+          "overlap_ratio": 1.0,
+          "pose_score": 0.5619,
+          "flow_score": 0.0255,
+          "aggressive_ratio": 0.0,
+          "reversal_ratio": 0.0
+        }
+      },
+      "stalking": {
+        "stalking_score": 0.7438,
+        "is_stalking": true,
+        "follow_events": 13,
+        "total_pair_events": 52,
+        "stable_events": 52,
+        "long_track_bonus": 2,
+        "best_pair": {
+          "pair": [
+            1,
+            2
+          ],
+          "events": 44,
+          "follow": 12,
+          "stable": 44,
+          "dist_mean": 60.414,
+          "dist_std": 12.576,
+          "score": 0.5138
+        }
+      },
+      "riding": {
+        "riding_label": "two_wheeler_rider_like",
+        "two_wheeler_detected": true,
+        "two_wheeler_ratio": 1.0,
+        "rider_ratio": 0.6667,
+        "detection_score": 1.0,
+        "sidewalk_score": 0.0004,
+        "sidewalk_mean": 0.0,
+        "sidewalk_peak": 0.0015,
+        "sidewalk_band_mean": 0.0,
+        "road_mean": 0.3572,
+        "road_band_mean": 0.3161,
+        "segformer_frame_count": 93,
+        "base_two_wheeler_object_count": 525,
+        "world_two_wheeler_object_count": 320
+      },
+      "helmet": {
+        "helmet_label": "helmet_model_not_connected",
+        "is_no_helmet": false,
+        "helmet_backend": "none",
+        "rider_pair_frames": 62,
+        "helmet_checked_frames": 0,
+        "no_helmet_hits": 0,
+        "helmet_hits": 0,
+        "unknown_hits": 0,
+        "no_helmet_ratio": 0.0,
+        "helmet_ratio": 0.0
+      },
+      "helmet_evidence": [],
+      "track_summary": {
+        "1": {
+          "length": 62,
+          "distance": 405.592,
+          "displacement": 270.554,
+          "direction_changes": 0,
+          "mean_speed": 19.012,
+          "source": "yolo_tracker",
+          "first_time": 0.0,
+          "last_time": 21.333
+        },
+        "2": {
+          "length": 44,
+          "distance": 297.515,
+          "displacement": 203.919,
+          "direction_changes": 1,
+          "mean_speed": 19.404,
+          "source": "yolo_tracker",
+          "first_time": 0.0,
+          "last_time": 15.333
+        },
+        "5": {
+          "length": 4,
+          "distance": 19.66,
+          "displacement": 11.678,
+          "direction_changes": 0,
+          "mean_speed": 19.66,
+          "source": "yolo_tracker",
+          "first_time": 0.0,
+          "last_time": 1.0
+        }
+      },
+      "model_status": {
+        "aio_version": "tog_world_tracker_helmet_safe_v1",
+        "device": "cuda",
+        "base_yolo": "yolov8n.pt",
+        "pose_model": "yolo11n-pose.pt",
+        "world_model": "yolov8s-world.pt",
+        "world_model_active": true,
+        "world_classes": [
+          "person",
+          "bicycle",
+          "motorcycle",
+          "motorbike",
+          "scooter",
+          "electric scooter",
+          "kickboard",
+          "moped",
+          "helmet",
+          "no helmet",
+          "road",
+          "sidewalk",
+          "crosswalk"
+        ],
+        "world_set_classes_error": null,
+        "clip_status": {
+          "git_found": true,
+          "clip_import": true,
+          "error": null
+        },
+        "segformer": "nvidia/segformer-b5-finetuned-cityscapes-1024-1024",
+        "tracker": "bytetrack.yaml",
+        "lap_status": {
+          "lap_import": true,
+          "error": null
+        },
+        "helmet_backend": "none",
+        "helmet_model": null,
+        "roboflow_model_id": null
+      },
+      "feature_json": "C:\\Users\\우성한\\outputs\\prediction\\tog\\aio_features\\이륜 이동수단 헬멧 미착용__이륜 이동수단 운전자 1인 헬멧 미착용__md_e2122__md_e2122_c1.json"
+    },
+    {
+      "video_name": "md_e2122_c2.mp4",
+      "video_path": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터\\이륜 이동수단 헬멧 미착용\\이륜 이동수단 운전자 1인 헬멧 미착용\\md_e2122\\md_e2122_c2.mp4",
+      "relative_video_path": "이륜 이동수단 헬멧 미착용\\이륜 이동수단 운전자 1인 헬멧 미착용\\md_e2122\\md_e2122_c2.mp4",
+      "final_label": "other + two_wheeler_detected + two_wheeler_rider_like",
+      "final_tags": [
+        "other",
+        "two_wheeler_detected",
+        "two_wheeler_rider_like"
+      ],
+      "action_label": "other",
+      "fight_label": "not_fight",
+      "stalking_label": "not_stalking",
+      "riding_label": "two_wheeler_rider_like",
+      "helmet_label": "helmet_model_not_connected",
+      "fight": {
+        "fight_score": 0.0693,
+        "is_fight": false,
+        "best_fight_window": {
+          "start_time": 10.5,
+          "end_time": 15.5,
+          "score": 0.0693,
+          "multi_ratio": 0.0,
+          "close_ratio": 0.0,
+          "overlap_ratio": 0.0,
+          "pose_score": 0.5026,
+          "flow_score": 0.0705,
+          "aggressive_ratio": 0.2,
+          "reversal_ratio": 0.0
+        }
+      },
+      "stalking": {
+        "stalking_score": 0.0,
+        "is_stalking": false,
+        "follow_events": 0,
+        "total_pair_events": 0,
+        "stable_events": 0,
+        "long_track_bonus": 0,
+        "best_pair": null
+      },
+      "riding": {
+        "riding_label": "two_wheeler_rider_like",
+        "two_wheeler_detected": true,
+        "two_wheeler_ratio": 0.337,
+        "rider_ratio": 0.0,
+        "detection_score": 0.399,
+        "sidewalk_score": 0.0001,
+        "sidewalk_mean": 0.0,
+        "sidewalk_peak": 0.0,
+        "sidewalk_band_mean": 0.0003,
+        "road_mean": 0.228,
+        "road_band_mean": 0.2335,
+        "segformer_frame_count": 92,
+        "base_two_wheeler_object_count": 50,
+        "world_two_wheeler_object_count": 15
+      },
+      "helmet": {
+        "helmet_label": "helmet_model_not_connected",
+        "is_no_helmet": false,
+        "helmet_backend": "none",
+        "rider_pair_frames": 0,
+        "helmet_checked_frames": 0,
+        "no_helmet_hits": 0,
+        "helmet_hits": 0,
+        "unknown_hits": 0,
+        "no_helmet_ratio": 0.0,
+        "helmet_ratio": 0.0
+      },
+      "helmet_evidence": [],
+      "track_summary": {
+        "9": {
+          "length": 2,
+          "distance": 4.307,
+          "displacement": 4.307,
+          "direction_changes": 0,
+          "mean_speed": 4.307,
+          "source": "yolo_tracker",
+          "first_time": 0.0,
+          "last_time": 1.0
+        }
+      },
+      "model_status": {
+        "aio_version": "tog_world_tracker_helmet_safe_v1",
+        "device": "cuda",
+        "base_yolo": "yolov8n.pt",
+        "pose_model": "yolo11n-pose.pt",
+        "world_model": "yolov8s-world.pt",
+        "world_model_active": true,
+        "world_classes": [
+          "person",
+          "bicycle",
+          "motorcycle",
+          "motorbike",
+          "scooter",
+          "electric scooter",
+          "kickboard",
+          "moped",
+          "helmet",
+          "no helmet",
+          "road",
+          "sidewalk",
+          "crosswalk"
+        ],
+        "world_set_classes_error": null,
+        "clip_status": {
+          "git_found": true,
+          "clip_import": true,
+          "error": null
+        },
+        "segformer": "nvidia/segformer-b5-finetuned-cityscapes-1024-1024",
+        "tracker": "bytetrack.yaml",
+        "lap_status": {
+          "lap_import": true,
+          "error": null
+        },
+        "helmet_backend": "none",
+        "helmet_model": null,
+        "roboflow_model_id": null
+      },
+      "feature_json": "C:\\Users\\우성한\\outputs\\prediction\\tog\\aio_features\\이륜 이동수단 헬멧 미착용__이륜 이동수단 운전자 1인 헬멧 미착용__md_e2122__md_e2122_c2.json"
+    },
+    {
+      "video_name": "mp_e2730_c1.mp4",
+      "video_path": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터\\이륜 이동수단 헬멧 미착용\\이륜 이동수단 탑승자 일부 또는 전체 헬멧 미착용\\mp_e2730\\mp_e2730_c1.mp4",
+      "relative_video_path": "이륜 이동수단 헬멧 미착용\\이륜 이동수단 탑승자 일부 또는 전체 헬멧 미착용\\mp_e2730\\mp_e2730_c1.mp4",
+      "final_label": "other + two_wheeler_detected + two_wheeler_rider_like",
+      "final_tags": [
+        "other",
+        "two_wheeler_detected",
+        "two_wheeler_rider_like"
+      ],
+      "action_label": "other",
+      "fight_label": "not_fight",
+      "stalking_label": "not_stalking",
+      "riding_label": "two_wheeler_rider_like",
+      "helmet_label": "helmet_model_not_connected",
+      "fight": {
+        "fight_score": 0.1411,
+        "is_fight": false,
+        "best_fight_window": {
+          "start_time": 13.5,
+          "end_time": 18.5,
+          "score": 0.1411,
+          "multi_ratio": 0.0,
+          "close_ratio": 0.0,
+          "overlap_ratio": 0.0,
+          "pose_score": 0.5241,
+          "flow_score": 0.4039,
+          "aggressive_ratio": 0.7333,
+          "reversal_ratio": 0.0
+        }
+      },
+      "stalking": {
+        "stalking_score": 0.0,
+        "is_stalking": false,
+        "follow_events": 0,
+        "total_pair_events": 0,
+        "stable_events": 0,
+        "long_track_bonus": 0,
+        "best_pair": null
+      },
+      "riding": {
+        "riding_label": "two_wheeler_rider_like",
+        "two_wheeler_detected": true,
+        "two_wheeler_ratio": 0.9462,
+        "rider_ratio": 0.0,
+        "detection_score": 0.8651,
+        "sidewalk_score": 0.0,
+        "sidewalk_mean": 0.0,
+        "sidewalk_peak": 0.0,
+        "sidewalk_band_mean": 0.0,
+        "road_mean": 0.1615,
+        "road_band_mean": 0.1414,
+        "segformer_frame_count": 93,
+        "base_two_wheeler_object_count": 224,
+        "world_two_wheeler_object_count": 156
+      },
+      "helmet": {
+        "helmet_label": "helmet_model_not_connected",
+        "is_no_helmet": false,
+        "helmet_backend": "none",
+        "rider_pair_frames": 0,
+        "helmet_checked_frames": 0,
+        "no_helmet_hits": 0,
+        "helmet_hits": 0,
+        "unknown_hits": 0,
+        "no_helmet_ratio": 0.0,
+        "helmet_ratio": 0.0
+      },
+      "helmet_evidence": [],
+      "track_summary": {},
+      "model_status": {
+        "aio_version": "tog_world_tracker_helmet_safe_v1",
+        "device": "cuda",
+        "base_yolo": "yolov8n.pt",
+        "pose_model": "yolo11n-pose.pt",
+        "world_model": "yolov8s-world.pt",
+        "world_model_active": true,
+        "world_classes": [
+          "person",
+          "bicycle",
+          "motorcycle",
+          "motorbike",
+          "scooter",
+          "electric scooter",
+          "kickboard",
+          "moped",
+          "helmet",
+          "no helmet",
+          "road",
+          "sidewalk",
+          "crosswalk"
+        ],
+        "world_set_classes_error": null,
+        "clip_status": {
+          "git_found": true,
+          "clip_import": true,
+          "error": null
+        },
+        "segformer": "nvidia/segformer-b5-finetuned-cityscapes-1024-1024",
+        "tracker": "bytetrack.yaml",
+        "lap_status": {
+          "lap_import": true,
+          "error": null
+        },
+        "helmet_backend": "none",
+        "helmet_model": null,
+        "roboflow_model_id": null
+      },
+      "feature_json": "C:\\Users\\우성한\\outputs\\prediction\\tog\\aio_features\\이륜 이동수단 헬멧 미착용__이륜 이동수단 탑승자 일부 또는 전체 헬멧 미착용__mp_e2730__mp_e2730_c1.json"
+    },
+    {
+      "video_name": "mp_e2730_c2.mp4",
+      "video_path": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터\\이륜 이동수단 헬멧 미착용\\이륜 이동수단 탑승자 일부 또는 전체 헬멧 미착용\\mp_e2730\\mp_e2730_c2.mp4",
+      "relative_video_path": "이륜 이동수단 헬멧 미착용\\이륜 이동수단 탑승자 일부 또는 전체 헬멧 미착용\\mp_e2730\\mp_e2730_c2.mp4",
+      "final_label": "other + two_wheeler_detected + two_wheeler_rider_like",
+      "final_tags": [
+        "other",
+        "two_wheeler_detected",
+        "two_wheeler_rider_like"
+      ],
+      "action_label": "other",
+      "fight_label": "not_fight",
+      "stalking_label": "not_stalking",
+      "riding_label": "two_wheeler_rider_like",
+      "helmet_label": "helmet_model_not_connected",
+      "fight": {
+        "fight_score": 0.0441,
+        "is_fight": false,
+        "best_fight_window": {
+          "start_time": 13.5,
+          "end_time": 18.5,
+          "score": 0.0441,
+          "multi_ratio": 0.0,
+          "close_ratio": 0.0,
+          "overlap_ratio": 0.0,
+          "pose_score": 0.1159,
+          "flow_score": 0.1183,
+          "aggressive_ratio": 0.3333,
+          "reversal_ratio": 0.0
+        }
+      },
+      "stalking": {
+        "stalking_score": 0.0,
+        "is_stalking": false,
+        "follow_events": 0,
+        "total_pair_events": 0,
+        "stable_events": 0,
+        "long_track_bonus": 0,
+        "best_pair": null
+      },
+      "riding": {
+        "riding_label": "two_wheeler_rider_like",
+        "two_wheeler_detected": true,
+        "two_wheeler_ratio": 1.0,
+        "rider_ratio": 0.0,
+        "detection_score": 0.9,
+        "sidewalk_score": 0.0002,
+        "sidewalk_mean": 0.0,
+        "sidewalk_peak": 0.0007,
+        "sidewalk_band_mean": 0.0002,
+        "road_mean": 0.285,
+        "road_band_mean": 0.2641,
+        "segformer_frame_count": 91,
+        "base_two_wheeler_object_count": 214,
+        "world_two_wheeler_object_count": 264
+      },
+      "helmet": {
+        "helmet_label": "helmet_model_not_connected",
+        "is_no_helmet": false,
+        "helmet_backend": "none",
+        "rider_pair_frames": 0,
+        "helmet_checked_frames": 0,
+        "no_helmet_hits": 0,
+        "helmet_hits": 0,
+        "unknown_hits": 0,
+        "no_helmet_ratio": 0.0,
+        "helmet_ratio": 0.0
+      },
+      "helmet_evidence": [],
+      "track_summary": {},
+      "model_status": {
+        "aio_version": "tog_world_tracker_helmet_safe_v1",
+        "device": "cuda",
+        "base_yolo": "yolov8n.pt",
+        "pose_model": "yolo11n-pose.pt",
+        "world_model": "yolov8s-world.pt",
+        "world_model_active": true,
+        "world_classes": [
+          "person",
+          "bicycle",
+          "motorcycle",
+          "motorbike",
+          "scooter",
+          "electric scooter",
+          "kickboard",
+          "moped",
+          "helmet",
+          "no helmet",
+          "road",
+          "sidewalk",
+          "crosswalk"
+        ],
+        "world_set_classes_error": null,
+        "clip_status": {
+          "git_found": true,
+          "clip_import": true,
+          "error": null
+        },
+        "segformer": "nvidia/segformer-b5-finetuned-cityscapes-1024-1024",
+        "tracker": "bytetrack.yaml",
+        "lap_status": {
+          "lap_import": true,
+          "error": null
+        },
+        "helmet_backend": "none",
+        "helmet_model": null,
+        "roboflow_model_id": null
+      },
+      "feature_json": "C:\\Users\\우성한\\outputs\\prediction\\tog\\aio_features\\이륜 이동수단 헬멧 미착용__이륜 이동수단 탑승자 일부 또는 전체 헬멧 미착용__mp_e2730__mp_e2730_c2.json"
+    },
+    {
+      "video_name": "st_e4803_c1.mp4",
+      "video_path": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터\\전동킥보드 2인 이상 주행\\전동킥보드 앞뒤 2인 탑승\\st_e4803\\st_e4803_c1.mp4",
+      "relative_video_path": "전동킥보드 2인 이상 주행\\전동킥보드 앞뒤 2인 탑승\\st_e4803\\st_e4803_c1.mp4",
+      "final_label": "other + two_wheeler_detected + two_wheeler_rider_like",
+      "final_tags": [
+        "other",
+        "two_wheeler_detected",
+        "two_wheeler_rider_like"
+      ],
+      "action_label": "other",
+      "fight_label": "not_fight",
+      "stalking_label": "not_stalking",
+      "riding_label": "two_wheeler_rider_like",
+      "helmet_label": "helmet_model_not_connected",
+      "fight": {
+        "fight_score": 0.0156,
+        "is_fight": false,
+        "best_fight_window": {
+          "start_time": 1.5,
+          "end_time": 6.5,
+          "score": 0.0156,
+          "multi_ratio": 0.0,
+          "close_ratio": 0.0,
+          "overlap_ratio": 0.0,
+          "pose_score": 0.1329,
+          "flow_score": 0.0201,
+          "aggressive_ratio": 0.0,
+          "reversal_ratio": 0.0
+        }
+      },
+      "stalking": {
+        "stalking_score": 0.0,
+        "is_stalking": false,
+        "follow_events": 0,
+        "total_pair_events": 0,
+        "stable_events": 0,
+        "long_track_bonus": 0,
+        "best_pair": null
+      },
+      "riding": {
+        "riding_label": "two_wheeler_rider_like",
+        "two_wheeler_detected": true,
+        "two_wheeler_ratio": 0.8172,
+        "rider_ratio": 0.0,
+        "detection_score": 0.7812,
+        "sidewalk_score": 0.0,
+        "sidewalk_mean": 0.0,
+        "sidewalk_peak": 0.0,
+        "sidewalk_band_mean": 0.0,
+        "road_mean": 0.5131,
+        "road_band_mean": 0.398,
+        "segformer_frame_count": 93,
+        "base_two_wheeler_object_count": 29,
+        "world_two_wheeler_object_count": 84
+      },
+      "helmet": {
+        "helmet_label": "helmet_model_not_connected",
+        "is_no_helmet": false,
+        "helmet_backend": "none",
+        "rider_pair_frames": 0,
+        "helmet_checked_frames": 0,
+        "no_helmet_hits": 0,
+        "helmet_hits": 0,
+        "unknown_hits": 0,
+        "no_helmet_ratio": 0.0,
+        "helmet_ratio": 0.0
+      },
+      "helmet_evidence": [],
+      "track_summary": {
+        "6": {
+          "length": 2,
+          "distance": 0.602,
+          "displacement": 0.602,
+          "direction_changes": 0,
+          "mean_speed": 1.808,
+          "source": "yolo_tracker",
+          "first_time": 0.0,
+          "last_time": 0.333
+        }
+      },
+      "model_status": {
+        "aio_version": "tog_world_tracker_helmet_safe_v1",
+        "device": "cuda",
+        "base_yolo": "yolov8n.pt",
+        "pose_model": "yolo11n-pose.pt",
+        "world_model": "yolov8s-world.pt",
+        "world_model_active": true,
+        "world_classes": [
+          "person",
+          "bicycle",
+          "motorcycle",
+          "motorbike",
+          "scooter",
+          "electric scooter",
+          "kickboard",
+          "moped",
+          "helmet",
+          "no helmet",
+          "road",
+          "sidewalk",
+          "crosswalk"
+        ],
+        "world_set_classes_error": null,
+        "clip_status": {
+          "git_found": true,
+          "clip_import": true,
+          "error": null
+        },
+        "segformer": "nvidia/segformer-b5-finetuned-cityscapes-1024-1024",
+        "tracker": "bytetrack.yaml",
+        "lap_status": {
+          "lap_import": true,
+          "error": null
+        },
+        "helmet_backend": "none",
+        "helmet_model": null,
+        "roboflow_model_id": null
+      },
+      "feature_json": "C:\\Users\\우성한\\outputs\\prediction\\tog\\aio_features\\전동킥보드 2인 이상 주행__전동킥보드 앞뒤 2인 탑승__st_e4803__st_e4803_c1.json"
+    },
+    {
+      "video_name": "st_e4803_c2.mp4",
+      "video_path": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터\\전동킥보드 2인 이상 주행\\전동킥보드 앞뒤 2인 탑승\\st_e4803\\st_e4803_c2.mp4",
+      "relative_video_path": "전동킥보드 2인 이상 주행\\전동킥보드 앞뒤 2인 탑승\\st_e4803\\st_e4803_c2.mp4",
+      "final_label": "other + two_wheeler_detected + two_wheeler_rider_like",
+      "final_tags": [
+        "other",
+        "two_wheeler_detected",
+        "two_wheeler_rider_like"
+      ],
+      "action_label": "other",
+      "fight_label": "not_fight",
+      "stalking_label": "not_stalking",
+      "riding_label": "two_wheeler_rider_like",
+      "helmet_label": "helmet_model_not_connected",
+      "fight": {
+        "fight_score": 0.0056,
+        "is_fight": false,
+        "best_fight_window": {
+          "start_time": 7.5,
+          "end_time": 12.5,
+          "score": 0.0056,
+          "multi_ratio": 0.0,
+          "close_ratio": 0.0,
+          "overlap_ratio": 0.0,
+          "pose_score": 0.0459,
+          "flow_score": 0.0083,
+          "aggressive_ratio": 0.0,
+          "reversal_ratio": 0.0
+        }
+      },
+      "stalking": {
+        "stalking_score": 0.0,
+        "is_stalking": false,
+        "follow_events": 0,
+        "total_pair_events": 0,
+        "stable_events": 0,
+        "long_track_bonus": 0,
+        "best_pair": null
+      },
+      "riding": {
+        "riding_label": "two_wheeler_rider_like",
+        "two_wheeler_detected": true,
+        "two_wheeler_ratio": 1.0,
+        "rider_ratio": 0.0,
+        "detection_score": 0.9,
+        "sidewalk_score": 0.0,
+        "sidewalk_mean": 0.0,
+        "sidewalk_peak": 0.0,
+        "sidewalk_band_mean": 0.0,
+        "road_mean": 0.1117,
+        "road_band_mean": 0.122,
+        "segformer_frame_count": 90,
+        "base_two_wheeler_object_count": 830,
+        "world_two_wheeler_object_count": 100
+      },
+      "helmet": {
+        "helmet_label": "helmet_model_not_connected",
+        "is_no_helmet": false,
+        "helmet_backend": "none",
+        "rider_pair_frames": 0,
+        "helmet_checked_frames": 0,
+        "no_helmet_hits": 0,
+        "helmet_hits": 0,
+        "unknown_hits": 0,
+        "no_helmet_ratio": 0.0,
+        "helmet_ratio": 0.0
+      },
+      "helmet_evidence": [],
+      "track_summary": {},
+      "model_status": {
+        "aio_version": "tog_world_tracker_helmet_safe_v1",
+        "device": "cuda",
+        "base_yolo": "yolov8n.pt",
+        "pose_model": "yolo11n-pose.pt",
+        "world_model": "yolov8s-world.pt",
+        "world_model_active": true,
+        "world_classes": [
+          "person",
+          "bicycle",
+          "motorcycle",
+          "motorbike",
+          "scooter",
+          "electric scooter",
+          "kickboard",
+          "moped",
+          "helmet",
+          "no helmet",
+          "road",
+          "sidewalk",
+          "crosswalk"
+        ],
+        "world_set_classes_error": null,
+        "clip_status": {
+          "git_found": true,
+          "clip_import": true,
+          "error": null
+        },
+        "segformer": "nvidia/segformer-b5-finetuned-cityscapes-1024-1024",
+        "tracker": "bytetrack.yaml",
+        "lap_status": {
+          "lap_import": true,
+          "error": null
+        },
+        "helmet_backend": "none",
+        "helmet_model": null,
+        "roboflow_model_id": null
+      },
+      "feature_json": "C:\\Users\\우성한\\outputs\\prediction\\tog\\aio_features\\전동킥보드 2인 이상 주행__전동킥보드 앞뒤 2인 탑승__st_e4803__st_e4803_c2.json"
+    },
+    {
+      "video_name": "bl_e0272_c1.mp4",
+      "video_path": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터\\침입\\경계선을 통한 침입\\bl_e0272\\bl_e0272_c1.mp4",
+      "relative_video_path": "침입\\경계선을 통한 침입\\bl_e0272\\bl_e0272_c1.mp4",
+      "final_label": "other + two_wheeler_detected + two_wheeler_sidewalk_riding",
+      "final_tags": [
+        "other",
+        "two_wheeler_detected",
+        "two_wheeler_sidewalk_riding"
+      ],
+      "action_label": "other",
+      "fight_label": "not_fight",
+      "stalking_label": "not_stalking",
+      "riding_label": "two_wheeler_sidewalk_riding",
+      "helmet_label": "helmet_model_not_connected",
+      "fight": {
+        "fight_score": 0.0923,
+        "is_fight": false,
+        "best_fight_window": {
+          "start_time": 18.0,
+          "end_time": 23.0,
+          "score": 0.0923,
+          "multi_ratio": 0.6667,
+          "close_ratio": 0.0,
+          "overlap_ratio": 0.0,
+          "pose_score": 0.5471,
+          "flow_score": 0.0125,
+          "aggressive_ratio": 0.0,
+          "reversal_ratio": 0.0
+        }
+      },
+      "stalking": {
+        "stalking_score": 0.3375,
+        "is_stalking": false,
+        "follow_events": 0,
+        "total_pair_events": 6,
+        "stable_events": 6,
+        "long_track_bonus": 0,
+        "best_pair": {
+          "pair": [
+            62,
+            63
+          ],
+          "events": 6,
+          "follow": 0,
+          "stable": 6,
+          "dist_mean": 379.912,
+          "dist_std": 39.24,
+          "score": 0.2375
+        }
+      },
+      "riding": {
+        "riding_label": "two_wheeler_sidewalk_riding",
+        "two_wheeler_detected": true,
+        "two_wheeler_ratio": 1.0,
+        "rider_ratio": 0.4105,
+        "detection_score": 0.9598,
+        "sidewalk_score": 0.3824,
+        "sidewalk_mean": 0.2415,
+        "sidewalk_peak": 1.0,
+        "sidewalk_band_mean": 0.0791,
+        "road_mean": 0.1514,
+        "road_band_mean": 0.1507,
+        "segformer_frame_count": 95,
+        "base_two_wheeler_object_count": 934,
+        "world_two_wheeler_object_count": 7
+      },
+      "helmet": {
+        "helmet_label": "helmet_model_not_connected",
+        "is_no_helmet": false,
+        "helmet_backend": "none",
+        "rider_pair_frames": 39,
+        "helmet_checked_frames": 0,
+        "no_helmet_hits": 0,
+        "helmet_hits": 0,
+        "unknown_hits": 0,
+        "no_helmet_ratio": 0.0,
+        "helmet_ratio": 0.0
+      },
+      "helmet_evidence": [],
+      "track_summary": {
+        "62": {
+          "length": 10,
+          "distance": 449.939,
+          "displacement": 17.519,
+          "direction_changes": 1,
+          "mean_speed": 149.98,
+          "source": "yolo_tracker",
+          "first_time": 18.0,
+          "last_time": 21.0
+        },
+        "63": {
+          "length": 26,
+          "distance": 41.872,
+          "displacement": 1.676,
+          "direction_changes": 0,
+          "mean_speed": 5.025,
+          "source": "yolo_tracker",
+          "first_time": 18.0,
+          "last_time": 26.333
+        },
+        "95": {
+          "length": 2,
+          "distance": 81.532,
+          "displacement": 81.532,
+          "direction_changes": 0,
+          "mean_speed": 244.84,
+          "source": "yolo_tracker",
+          "first_time": 26.667,
+          "last_time": 27.0
+        },
+        "97": {
+          "length": 1,
+          "distance": 0,
+          "displacement": 0,
+          "direction_changes": 0,
+          "mean_speed": 0,
+          "first_time": 27.333,
+          "last_time": 27.333
+        },
+        "103": {
+          "length": 11,
+          "distance": 8.096,
+          "displacement": 3.018,
+          "direction_changes": 0,
+          "mean_speed": 2.429,
+          "source": "yolo_tracker",
+          "first_time": 28.0,
+          "last_time": 31.333
+        },
+        "104": {
+          "length": 1,
+          "distance": 0,
+          "displacement": 0,
+          "direction_changes": 0,
+          "mean_speed": 0,
+          "first_time": 28.0,
+          "last_time": 28.0
+        }
+      },
+      "model_status": {
+        "aio_version": "tog_world_tracker_helmet_safe_v1",
+        "device": "cuda",
+        "base_yolo": "yolov8n.pt",
+        "pose_model": "yolo11n-pose.pt",
+        "world_model": "yolov8s-world.pt",
+        "world_model_active": true,
+        "world_classes": [
+          "person",
+          "bicycle",
+          "motorcycle",
+          "motorbike",
+          "scooter",
+          "electric scooter",
+          "kickboard",
+          "moped",
+          "helmet",
+          "no helmet",
+          "road",
+          "sidewalk",
+          "crosswalk"
+        ],
+        "world_set_classes_error": null,
+        "clip_status": {
+          "git_found": true,
+          "clip_import": true,
+          "error": null
+        },
+        "segformer": "nvidia/segformer-b5-finetuned-cityscapes-1024-1024",
+        "tracker": "bytetrack.yaml",
+        "lap_status": {
+          "lap_import": true,
+          "error": null
+        },
+        "helmet_backend": "none",
+        "helmet_model": null,
+        "roboflow_model_id": null
+      },
+      "feature_json": "C:\\Users\\우성한\\outputs\\prediction\\tog\\aio_features\\침입__경계선을 통한 침입__bl_e0272__bl_e0272_c1.json"
+    },
+    {
+      "video_name": "bl_e0272_c2.mp4",
+      "video_path": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터\\침입\\경계선을 통한 침입\\bl_e0272\\bl_e0272_c2.mp4",
+      "relative_video_path": "침입\\경계선을 통한 침입\\bl_e0272\\bl_e0272_c2.mp4",
+      "final_label": "other + two_wheeler_detected + two_wheeler_sidewalk_riding",
+      "final_tags": [
+        "other",
+        "two_wheeler_detected",
+        "two_wheeler_sidewalk_riding"
+      ],
+      "action_label": "other",
+      "fight_label": "not_fight",
+      "stalking_label": "not_stalking",
+      "riding_label": "two_wheeler_sidewalk_riding",
+      "helmet_label": "helmet_model_not_connected",
+      "fight": {
+        "fight_score": 0.0594,
+        "is_fight": false,
+        "best_fight_window": {
+          "start_time": 22.5,
+          "end_time": 27.5,
+          "score": 0.0594,
+          "multi_ratio": 0.0,
+          "close_ratio": 0.0,
+          "overlap_ratio": 0.0,
+          "pose_score": 0.5778,
+          "flow_score": 0.0178,
+          "aggressive_ratio": 0.0,
+          "reversal_ratio": 0.0
+        }
+      },
+      "stalking": {
+        "stalking_score": 0.0,
+        "is_stalking": false,
+        "follow_events": 0,
+        "total_pair_events": 0,
+        "stable_events": 0,
+        "long_track_bonus": 0,
+        "best_pair": null
+      },
+      "riding": {
+        "riding_label": "two_wheeler_sidewalk_riding",
+        "two_wheeler_detected": true,
+        "two_wheeler_ratio": 1.0,
+        "rider_ratio": 0.0,
+        "detection_score": 0.9,
+        "sidewalk_score": 0.5247,
+        "sidewalk_mean": 0.4878,
+        "sidewalk_peak": 0.9503,
+        "sidewalk_band_mean": 0.2253,
+        "road_mean": 0.0711,
+        "road_band_mean": 0.0616,
+        "segformer_frame_count": 96,
+        "base_two_wheeler_object_count": 624,
+        "world_two_wheeler_object_count": 95
+      },
+      "helmet": {
+        "helmet_label": "helmet_model_not_connected",
+        "is_no_helmet": false,
+        "helmet_backend": "none",
+        "rider_pair_frames": 0,
+        "helmet_checked_frames": 0,
+        "no_helmet_hits": 0,
+        "helmet_hits": 0,
+        "unknown_hits": 0,
+        "no_helmet_ratio": 0.0,
+        "helmet_ratio": 0.0
+      },
+      "helmet_evidence": [],
+      "track_summary": {},
+      "model_status": {
+        "aio_version": "tog_world_tracker_helmet_safe_v1",
+        "device": "cuda",
+        "base_yolo": "yolov8n.pt",
+        "pose_model": "yolo11n-pose.pt",
+        "world_model": "yolov8s-world.pt",
+        "world_model_active": true,
+        "world_classes": [
+          "person",
+          "bicycle",
+          "motorcycle",
+          "motorbike",
+          "scooter",
+          "electric scooter",
+          "kickboard",
+          "moped",
+          "helmet",
+          "no helmet",
+          "road",
+          "sidewalk",
+          "crosswalk"
+        ],
+        "world_set_classes_error": null,
+        "clip_status": {
+          "git_found": true,
+          "clip_import": true,
+          "error": null
+        },
+        "segformer": "nvidia/segformer-b5-finetuned-cityscapes-1024-1024",
+        "tracker": "bytetrack.yaml",
+        "lap_status": {
+          "lap_import": true,
+          "error": null
+        },
+        "helmet_backend": "none",
+        "helmet_model": null,
+        "roboflow_model_id": null
+      },
+      "feature_json": "C:\\Users\\우성한\\outputs\\prediction\\tog\\aio_features\\침입__경계선을 통한 침입__bl_e0272__bl_e0272_c2.json"
+    },
+    {
+      "video_name": "ab_e0457_c1.mp4",
+      "video_path": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터\\침입\\비정상적인 경로로의 침범\\ab_e0457\\ab_e0457_c1.mp4",
+      "relative_video_path": "침입\\비정상적인 경로로의 침범\\ab_e0457\\ab_e0457_c1.mp4",
+      "final_label": "other + two_wheeler_detected + two_wheeler_sidewalk_candidate",
+      "final_tags": [
+        "other",
+        "two_wheeler_detected",
+        "two_wheeler_sidewalk_candidate"
+      ],
+      "action_label": "other",
+      "fight_label": "not_fight",
+      "stalking_label": "not_stalking",
+      "riding_label": "two_wheeler_sidewalk_candidate",
+      "helmet_label": "helmet_model_not_connected",
+      "fight": {
+        "fight_score": 0.0584,
+        "is_fight": false,
+        "best_fight_window": {
+          "start_time": 12.0,
+          "end_time": 17.0,
+          "score": 0.0584,
+          "multi_ratio": 0.0,
+          "close_ratio": 0.0,
+          "overlap_ratio": 0.0,
+          "pose_score": 0.5177,
+          "flow_score": 0.0593,
+          "aggressive_ratio": 0.0,
+          "reversal_ratio": 0.0
+        }
+      },
+      "stalking": {
+        "stalking_score": 0.0903,
+        "is_stalking": false,
+        "follow_events": 0,
+        "total_pair_events": 1,
+        "stable_events": 0,
+        "long_track_bonus": 2,
+        "best_pair": {
+          "pair": [
+            134,
+            135
+          ],
+          "events": 1,
+          "follow": 0,
+          "stable": 0,
+          "dist_mean": 311.729,
+          "dist_std": 0.0,
+          "score": 0.0103
+        }
+      },
+      "riding": {
+        "riding_label": "two_wheeler_sidewalk_candidate",
+        "two_wheeler_detected": true,
+        "two_wheeler_ratio": 0.6444,
+        "rider_ratio": 0.1222,
+        "detection_score": 0.5221,
+        "sidewalk_score": 0.2488,
+        "sidewalk_mean": 0.0552,
+        "sidewalk_peak": 0.8356,
+        "sidewalk_band_mean": 0.0501,
+        "road_mean": 0.4052,
+        "road_band_mean": 0.272,
+        "segformer_frame_count": 90,
+        "base_two_wheeler_object_count": 106,
+        "world_two_wheeler_object_count": 3
+      },
+      "helmet": {
+        "helmet_label": "helmet_model_not_connected",
+        "is_no_helmet": false,
+        "helmet_backend": "none",
+        "rider_pair_frames": 11,
+        "helmet_checked_frames": 0,
+        "no_helmet_hits": 0,
+        "helmet_hits": 0,
+        "unknown_hits": 0,
+        "no_helmet_ratio": 0.0,
+        "helmet_ratio": 0.0
+      },
+      "helmet_evidence": [],
+      "track_summary": {
+        "129": {
+          "length": 2,
+          "distance": 25.853,
+          "displacement": 25.853,
+          "direction_changes": 0,
+          "mean_speed": 77.636,
+          "source": "yolo_tracker",
+          "first_time": 10.0,
+          "last_time": 10.333
+        },
+        "130": {
+          "length": 2,
+          "distance": 30.744,
+          "displacement": 30.744,
+          "direction_changes": 0,
+          "mean_speed": 92.325,
+          "source": "yolo_tracker",
+          "first_time": 11.0,
+          "last_time": 11.333
+        },
+        "134": {
+          "length": 1,
+          "distance": 0,
+          "displacement": 0,
+          "direction_changes": 0,
+          "mean_speed": 0,
+          "first_time": 11.667,
+          "last_time": 11.667
+        },
+        "135": {
+          "length": 1,
+          "distance": 0,
+          "displacement": 0,
+          "direction_changes": 0,
+          "mean_speed": 0,
+          "first_time": 11.667,
+          "last_time": 11.667
+        },
+        "136": {
+          "length": 6,
+          "distance": 249.071,
+          "displacement": 243.086,
+          "direction_changes": 0,
+          "mean_speed": 149.413,
+          "source": "yolo_tracker",
+          "first_time": 12.0,
+          "last_time": 13.667
+        },
+        "148": {
+          "length": 6,
+          "distance": 171.408,
+          "displacement": 97.24,
+          "direction_changes": 3,
+          "mean_speed": 85.704,
+          "source": "yolo_tracker",
+          "first_time": 15.0,
+          "last_time": 17.0
+        }
+      },
+      "model_status": {
+        "aio_version": "tog_world_tracker_helmet_safe_v1",
+        "device": "cuda",
+        "base_yolo": "yolov8n.pt",
+        "pose_model": "yolo11n-pose.pt",
+        "world_model": "yolov8s-world.pt",
+        "world_model_active": true,
+        "world_classes": [
+          "person",
+          "bicycle",
+          "motorcycle",
+          "motorbike",
+          "scooter",
+          "electric scooter",
+          "kickboard",
+          "moped",
+          "helmet",
+          "no helmet",
+          "road",
+          "sidewalk",
+          "crosswalk"
+        ],
+        "world_set_classes_error": null,
+        "clip_status": {
+          "git_found": true,
+          "clip_import": true,
+          "error": null
+        },
+        "segformer": "nvidia/segformer-b5-finetuned-cityscapes-1024-1024",
+        "tracker": "bytetrack.yaml",
+        "lap_status": {
+          "lap_import": true,
+          "error": null
+        },
+        "helmet_backend": "none",
+        "helmet_model": null,
+        "roboflow_model_id": null
+      },
+      "feature_json": "C:\\Users\\우성한\\outputs\\prediction\\tog\\aio_features\\침입__비정상적인 경로로의 침범__ab_e0457__ab_e0457_c1.json"
+    },
+    {
+      "video_name": "ab_e0457_c2.mp4",
+      "video_path": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터\\침입\\비정상적인 경로로의 침범\\ab_e0457\\ab_e0457_c2.mp4",
+      "relative_video_path": "침입\\비정상적인 경로로의 침범\\ab_e0457\\ab_e0457_c2.mp4",
+      "final_label": "other + two_wheeler_detected + two_wheeler_rider_like",
+      "final_tags": [
+        "other",
+        "two_wheeler_detected",
+        "two_wheeler_rider_like"
+      ],
+      "action_label": "other",
+      "fight_label": "not_fight",
+      "stalking_label": "not_stalking",
+      "riding_label": "two_wheeler_rider_like",
+      "helmet_label": "helmet_model_not_connected",
+      "fight": {
+        "fight_score": 0.0609,
+        "is_fight": false,
+        "best_fight_window": {
+          "start_time": 6.0,
+          "end_time": 11.0,
+          "score": 0.0609,
+          "multi_ratio": 0.0,
+          "close_ratio": 0.0,
+          "overlap_ratio": 0.0,
+          "pose_score": 0.5819,
+          "flow_score": 0.0271,
+          "aggressive_ratio": 0.0,
+          "reversal_ratio": 0.0
+        }
+      },
+      "stalking": {
+        "stalking_score": 0.0,
+        "is_stalking": false,
+        "follow_events": 0,
+        "total_pair_events": 0,
+        "stable_events": 0,
+        "long_track_bonus": 0,
+        "best_pair": null
+      },
+      "riding": {
+        "riding_label": "two_wheeler_rider_like",
+        "two_wheeler_detected": true,
+        "two_wheeler_ratio": 1.0,
+        "rider_ratio": 0.0,
+        "detection_score": 0.9,
+        "sidewalk_score": 0.0078,
+        "sidewalk_mean": 0.0002,
+        "sidewalk_peak": 0.0307,
+        "sidewalk_band_mean": 0.0002,
+        "road_mean": 0.1419,
+        "road_band_mean": 0.1714,
+        "segformer_frame_count": 90,
+        "base_two_wheeler_object_count": 111,
+        "world_two_wheeler_object_count": 98
+      },
+      "helmet": {
+        "helmet_label": "helmet_model_not_connected",
+        "is_no_helmet": false,
+        "helmet_backend": "none",
+        "rider_pair_frames": 0,
+        "helmet_checked_frames": 0,
+        "no_helmet_hits": 0,
+        "helmet_hits": 0,
+        "unknown_hits": 0,
+        "no_helmet_ratio": 0.0,
+        "helmet_ratio": 0.0
+      },
+      "helmet_evidence": [],
+      "track_summary": {},
+      "model_status": {
+        "aio_version": "tog_world_tracker_helmet_safe_v1",
+        "device": "cuda",
+        "base_yolo": "yolov8n.pt",
+        "pose_model": "yolo11n-pose.pt",
+        "world_model": "yolov8s-world.pt",
+        "world_model_active": true,
+        "world_classes": [
+          "person",
+          "bicycle",
+          "motorcycle",
+          "motorbike",
+          "scooter",
+          "electric scooter",
+          "kickboard",
+          "moped",
+          "helmet",
+          "no helmet",
+          "road",
+          "sidewalk",
+          "crosswalk"
+        ],
+        "world_set_classes_error": null,
+        "clip_status": {
+          "git_found": true,
+          "clip_import": true,
+          "error": null
+        },
+        "segformer": "nvidia/segformer-b5-finetuned-cityscapes-1024-1024",
+        "tracker": "bytetrack.yaml",
+        "lap_status": {
+          "lap_import": true,
+          "error": null
+        },
+        "helmet_backend": "none",
+        "helmet_model": null,
+        "roboflow_model_id": null
+      },
+      "feature_json": "C:\\Users\\우성한\\outputs\\prediction\\tog\\aio_features\\침입__비정상적인 경로로의 침범__ab_e0457__ab_e0457_c2.json"
+    }
+  ],
+  "failed": []
+}

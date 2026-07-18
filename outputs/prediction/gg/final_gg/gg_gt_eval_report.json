@@ -1,0 +1,1913 @@
+{
+  "task": "gg_ground_truth_evaluation",
+  "gt_json_root": "C:\\Users\\우성한\\Sample (1)\\Sample\\02.라벨링데이터",
+  "pred_summary_path": "C:\\Users\\우성한\\outputs\\prediction\\gg\\final_gg\\ee_final_summary.json",
+  "gt_json_count": 11,
+  "gt_label_count": {
+    "stalking": 2,
+    "fight": 1,
+    "sidewalk_riding": 3,
+    "no_helmet": 2,
+    "electric_kickboard": 1,
+    "intrusion": 2
+  },
+  "pred_result_count": 22,
+  "matched_count": 22,
+  "unmatched_prediction_count": 0,
+  "accuracy": 0.2727,
+  "candidate_hit_rate": 0.3636,
+  "class_metrics": [
+    {
+      "label": "fight",
+      "support": 2,
+      "tp": 1,
+      "fp": 2,
+      "fn": 1,
+      "precision": 0.3333,
+      "recall": 0.5,
+      "f1": 0.4,
+      "candidate_recall": 0.5
+    },
+    {
+      "label": "stalking",
+      "support": 4,
+      "tp": 1,
+      "fp": 0,
+      "fn": 3,
+      "precision": 1.0,
+      "recall": 0.25,
+      "f1": 0.4,
+      "candidate_recall": 0.25
+    },
+    {
+      "label": "sidewalk_riding",
+      "support": 6,
+      "tp": 1,
+      "fp": 0,
+      "fn": 5,
+      "precision": 1.0,
+      "recall": 0.1667,
+      "f1": 0.2857,
+      "candidate_recall": 0.5
+    },
+    {
+      "label": "no_helmet",
+      "support": 4,
+      "tp": 0,
+      "fp": 0,
+      "fn": 4,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "candidate_recall": 0.0
+    },
+    {
+      "label": "electric_kickboard",
+      "support": 2,
+      "tp": 2,
+      "fp": 7,
+      "fn": 0,
+      "precision": 0.2222,
+      "recall": 1.0,
+      "f1": 0.3636,
+      "candidate_recall": 1.0
+    },
+    {
+      "label": "intrusion",
+      "support": 4,
+      "tp": 1,
+      "fp": 1,
+      "fn": 3,
+      "precision": 0.5,
+      "recall": 0.25,
+      "f1": 0.3333,
+      "candidate_recall": 0.25
+    },
+    {
+      "label": "other",
+      "support": 0,
+      "tp": 0,
+      "fp": 6,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "candidate_recall": 0.0
+    }
+  ],
+  "confusion_matrix": {
+    "fight": {
+      "fight": 1,
+      "stalking": 0,
+      "sidewalk_riding": 0,
+      "no_helmet": 0,
+      "electric_kickboard": 0,
+      "intrusion": 0,
+      "other": 1
+    },
+    "stalking": {
+      "fight": 0,
+      "stalking": 1,
+      "sidewalk_riding": 0,
+      "no_helmet": 0,
+      "electric_kickboard": 1,
+      "intrusion": 0,
+      "other": 2
+    },
+    "sidewalk_riding": {
+      "fight": 0,
+      "stalking": 0,
+      "sidewalk_riding": 1,
+      "no_helmet": 0,
+      "electric_kickboard": 3,
+      "intrusion": 0,
+      "other": 2
+    },
+    "no_helmet": {
+      "fight": 2,
+      "stalking": 0,
+      "sidewalk_riding": 0,
+      "no_helmet": 0,
+      "electric_kickboard": 1,
+      "intrusion": 1,
+      "other": 0
+    },
+    "electric_kickboard": {
+      "fight": 0,
+      "stalking": 0,
+      "sidewalk_riding": 0,
+      "no_helmet": 0,
+      "electric_kickboard": 2,
+      "intrusion": 0,
+      "other": 0
+    },
+    "intrusion": {
+      "fight": 0,
+      "stalking": 0,
+      "sidewalk_riding": 0,
+      "no_helmet": 0,
+      "electric_kickboard": 2,
+      "intrusion": 1,
+      "other": 1
+    },
+    "other": {
+      "fight": 0,
+      "stalking": 0,
+      "sidewalk_riding": 0,
+      "no_helmet": 0,
+      "electric_kickboard": 0,
+      "intrusion": 0,
+      "other": 0
+    }
+  },
+  "rows": [
+    {
+      "video_name": "lo_e1281_c1.mp4",
+      "gt_label": "stalking",
+      "pred_label": "stalking",
+      "correct": true,
+      "candidate_hit": true,
+      "candidate_labels": "stalking,electric_kickboard",
+      "match_type": "exact_video_key",
+      "gt_json": "C:\\Users\\우성한\\Sample (1)\\Sample\\02.라벨링데이터\\스토킹\\특정 구역 내 지속 배회\\lo_e1281\\lo_e1281.json",
+      "event_text": "특정 구역 내 지속 배회 | 스토킹\\특정 구역 내 지속 배회\\lo_e1281\\lo_e1281.json",
+      "final_confidence": null,
+      "final_primary_event": {
+        "event_type": "abnormal_action",
+        "event_subtype": "stalking",
+        "label": "stalking",
+        "score": 0.7019,
+        "confidence": 0.7019,
+        "evidence": {
+          "pair": [
+            1,
+            4
+          ],
+          "start_sec": 24.0,
+          "end_sec": 28.5,
+          "common_frames": 5,
+          "frame_count": 17,
+          "score": 0.7213,
+          "follow_ratio": 0.75,
+          "same_direction_ratio": 0.75,
+          "distance_mean": 417.116,
+          "distance_std": 14.378,
+          "stable_score": 0.8935,
+          "contact_ratio": 0.0,
+          "duration_sec": 1.067,
+          "evidence_frames": [
+            {
+              "frame_id": 736,
+              "time_sec": 24.533,
+              "distance": 414.53,
+              "same_direction_cos": 0.9204,
+              "behind_projection_abs": 288.45
+            },
+            {
+              "frame_id": 744,
+              "time_sec": 24.8,
+              "distance": 428.16,
+              "same_direction_cos": 0.9714,
+              "behind_projection_abs": 296.39
+            },
+            {
+              "frame_id": 752,
+              "time_sec": 25.067,
+              "distance": 437.27,
+              "same_direction_cos": 0.585,
+              "behind_projection_abs": 355.37
+            }
+          ],
+          "pair_boxes": [
+            {
+              "frame_id": 720,
+              "time_sec": 24.0,
+              "bbox": [
+                615,
+                458,
+                744,
+                1080
+              ],
+              "distance": 396.12
+            },
+            {
+              "frame_id": 728,
+              "time_sec": 24.267,
+              "bbox": [
+                614,
+                462,
+                773,
+                1080
+              ],
+              "distance": 409.5
+            },
+            {
+              "frame_id": 736,
+              "time_sec": 24.533,
+              "bbox": [
+                623,
+                471,
+                797,
+                1080
+              ],
+              "distance": 414.53
+            },
+            {
+              "frame_id": 744,
+              "time_sec": 24.8,
+              "bbox": [
+                633,
+                475,
+                830,
+                1080
+              ],
+              "distance": 428.16
+            },
+            {
+              "frame_id": 752,
+              "time_sec": 25.067,
+              "bbox": [
+                635,
+                486,
+                864,
+                1080
+              ],
+              "distance": 437.27
+            }
+          ],
+          "cos_mean": 0.7031,
+          "behind_mean_abs": 306.216
+        },
+        "reason": "track-pair window에서 같은 방향 이동, 일정 거리 유지, 뒤따름 구조가 비접촉 상태로 지속됩니다."
+      }
+    },
+    {
+      "video_name": "lo_e1281_c2.mp4",
+      "gt_label": "stalking",
+      "pred_label": "electric_kickboard",
+      "correct": false,
+      "candidate_hit": false,
+      "candidate_labels": "electric_kickboard,intrusion,sidewalk_riding",
+      "match_type": "exact_video_key",
+      "gt_json": "C:\\Users\\우성한\\Sample (1)\\Sample\\02.라벨링데이터\\스토킹\\특정 구역 내 지속 배회\\lo_e1281\\lo_e1281.json",
+      "event_text": "특정 구역 내 지속 배회 | 스토킹\\특정 구역 내 지속 배회\\lo_e1281\\lo_e1281.json",
+      "final_confidence": null,
+      "final_primary_event": {
+        "event_type": "traffic_object",
+        "event_subtype": "electric_kickboard",
+        "label": "electric_kickboard",
+        "score": 0.6978,
+        "confidence": 0.6001,
+        "evidence": [
+          {
+            "frame_id": 0,
+            "time_sec": 0.0,
+            "class": "moped",
+            "confidence": 0.091,
+            "bbox": [
+              1071,
+              462,
+              1121,
+              535
+            ],
+            "has_rider_pair": false
+          },
+          {
+            "frame_id": 8,
+            "time_sec": 0.267,
+            "class": "moped",
+            "confidence": 0.1092,
+            "bbox": [
+              1072,
+              463,
+              1121,
+              534
+            ],
+            "has_rider_pair": false
+          },
+          {
+            "frame_id": 16,
+            "time_sec": 0.533,
+            "class": "moped",
+            "confidence": 0.135,
+            "bbox": [
+              1073,
+              463,
+              1121,
+              534
+            ],
+            "has_rider_pair": false
+          },
+          {
+            "frame_id": 24,
+            "time_sec": 0.8,
+            "class": "moped",
+            "confidence": 0.1613,
+            "bbox": [
+              1074,
+              463,
+              1121,
+              534
+            ],
+            "has_rider_pair": false
+          },
+          {
+            "frame_id": 32,
+            "time_sec": 1.067,
+            "class": "moped",
+            "confidence": 0.0915,
+            "bbox": [
+              1077,
+              465,
+              1121,
+              535
+            ],
+            "has_rider_pair": false
+          }
+        ],
+        "reason": "전동킥보드/스쿠터류 객체가 여러 frame에서 확인됩니다."
+      }
+    },
+    {
+      "video_name": "fp_e1520_c1.mp4",
+      "gt_label": "stalking",
+      "pred_label": "other",
+      "correct": false,
+      "candidate_hit": false,
+      "candidate_labels": "electric_kickboard",
+      "match_type": "exact_video_key",
+      "gt_json": "C:\\Users\\우성한\\Sample (1)\\Sample\\02.라벨링데이터\\스토킹\\특정 인물을 뒤따라가며 배회\\fp_e1520\\fp_e1520.json",
+      "event_text": "특정 인물을 뒤따라가며 배회 | 스토킹\\특정 인물을 뒤따라가며 배회\\fp_e1520\\fp_e1520.json",
+      "final_confidence": null,
+      "final_primary_event": null
+    },
+    {
+      "video_name": "fp_e1520_c2.mp4",
+      "gt_label": "stalking",
+      "pred_label": "other",
+      "correct": false,
+      "candidate_hit": false,
+      "candidate_labels": "",
+      "match_type": "exact_video_key",
+      "gt_json": "C:\\Users\\우성한\\Sample (1)\\Sample\\02.라벨링데이터\\스토킹\\특정 인물을 뒤따라가며 배회\\fp_e1520\\fp_e1520.json",
+      "event_text": "특정 인물을 뒤따라가며 배회 | 스토킹\\특정 인물을 뒤따라가며 배회\\fp_e1520\\fp_e1520.json",
+      "final_confidence": null,
+      "final_primary_event": null
+    },
+    {
+      "video_name": "ph_e2063_c1.mp4",
+      "gt_label": "fight",
+      "pred_label": "other",
+      "correct": false,
+      "candidate_hit": false,
+      "candidate_labels": "",
+      "match_type": "exact_video_key",
+      "gt_json": "C:\\Users\\우성한\\Sample (1)\\Sample\\02.라벨링데이터\\싸움\\신체적 충돌을 동반한 싸움\\ph_e2063\\ph_e2063.json",
+      "event_text": "신체적 충돌을 동반한 싸움 | 싸움\\신체적 충돌을 동반한 싸움\\ph_e2063\\ph_e2063.json",
+      "final_confidence": null,
+      "final_primary_event": null
+    },
+    {
+      "video_name": "ph_e2063_c2.mp4",
+      "gt_label": "fight",
+      "pred_label": "fight",
+      "correct": true,
+      "candidate_hit": true,
+      "candidate_labels": "fight,sidewalk_riding,electric_kickboard",
+      "match_type": "exact_video_key",
+      "gt_json": "C:\\Users\\우성한\\Sample (1)\\Sample\\02.라벨링데이터\\싸움\\신체적 충돌을 동반한 싸움\\ph_e2063\\ph_e2063.json",
+      "event_text": "신체적 충돌을 동반한 싸움 | 싸움\\신체적 충돌을 동반한 싸움\\ph_e2063\\ph_e2063.json",
+      "final_confidence": null,
+      "final_primary_event": {
+        "event_type": "abnormal_action",
+        "event_subtype": "fight",
+        "label": "fight",
+        "score": 0.8642,
+        "confidence": 0.9333,
+        "evidence": {
+          "pair": [
+            50,
+            100
+          ],
+          "start_sec": 21.0,
+          "end_sec": 25.0,
+          "frame_count": 15,
+          "common_frames": 13,
+          "window_score": 0.841,
+          "close_score": 1.0,
+          "contact_score": 1.0,
+          "abrupt_score": 1.0,
+          "speed_score": 0.2362,
+          "flow_score": 0.0106,
+          "pose_score": 0.0572,
+          "distance_mean": 60.605,
+          "norm_distance_mean": 0.4705,
+          "overlap_max": 0.55357,
+          "close_ratio": 1.0,
+          "very_close_ratio": 1.0,
+          "contact_ratio": 0.7692,
+          "mean_relative_speed": 42.7991,
+          "mean_speed": 28.3423,
+          "direction_changes": 5,
+          "pair_boxes": [
+            {
+              "frame_id": 632,
+              "time_sec": 21.067,
+              "bbox": [
+                831,
+                504,
+                938,
+                657
+              ],
+              "distance": 48.23,
+              "norm_distance": 0.3828,
+              "overlap": 0.2623
+            },
+            {
+              "frame_id": 640,
+              "time_sec": 21.333,
+              "bbox": [
+                831,
+                507,
+                935,
+                657
+              ],
+              "distance": 48.23,
+              "norm_distance": 0.3953,
+              "overlap": 0.22807
+            },
+            {
+              "frame_id": 648,
+              "time_sec": 21.6,
+              "bbox": [
+                833,
+                508,
+                932,
+                658
+              ],
+              "distance": 43.83,
+              "norm_distance": 0.3608,
+              "overlap": 0.30357
+            },
+            {
+              "frame_id": 656,
+              "time_sec": 21.867,
+              "bbox": [
+                835,
+                509,
+                931,
+                658
+              ],
+              "distance": 38.12,
+              "norm_distance": 0.3026,
+              "overlap": 0.38333
+            },
+            {
+              "frame_id": 664,
+              "time_sec": 22.133,
+              "bbox": [
+                838,
+                507,
+                928,
+                658
+              ],
+              "distance": 33.24,
+              "norm_distance": 0.2597,
+              "overlap": 0.46667
+            },
+            {
+              "frame_id": 680,
+              "time_sec": 22.667,
+              "bbox": [
+                844,
+                511,
+                925,
+                657
+              ],
+              "distance": 26.74,
+              "norm_distance": 0.2131,
+              "overlap": 0.55357
+            },
+            {
+              "frame_id": 688,
+              "time_sec": 22.933,
+              "bbox": [
+                831,
+                507,
+                931,
+                658
+              ],
+              "distance": 44.87,
+              "norm_distance": 0.3505,
+              "overlap": 0.23214
+            },
+            {
+              "frame_id": 696,
+              "time_sec": 23.2,
+              "bbox": [
+                824,
+                505,
+                937,
+                658
+              ],
+              "distance": 57.66,
+              "norm_distance": 0.4522,
+              "overlap": 0.0
+            },
+            {
+              "frame_id": 704,
+              "time_sec": 23.467,
+              "bbox": [
+                816,
+                516,
+                934,
+                656
+              ],
+              "distance": 59.84,
+              "norm_distance": 0.4603,
+              "overlap": 0.0
+            },
+            {
+              "frame_id": 712,
+              "time_sec": 23.733,
+              "bbox": [
+                814,
+                500,
+                948,
+                654
+              ],
+              "distance": 67.72,
+              "norm_distance": 0.4561,
+              "overlap": 0.0
+            }
+          ]
+        },
+        "reason": "track-pair window에서 근접/접촉/급격한 상대 움직임이 동시에 나타났습니다."
+      }
+    },
+    {
+      "video_name": "ms_e3500_c1.mp4",
+      "gt_label": "sidewalk_riding",
+      "pred_label": "electric_kickboard",
+      "correct": false,
+      "candidate_hit": false,
+      "candidate_labels": "electric_kickboard",
+      "match_type": "exact_video_key",
+      "gt_json": "C:\\Users\\우성한\\Sample (1)\\Sample\\02.라벨링데이터\\이륜 이동수단 인도 주행\\오토바이 인도 주행\\ms_e3500\\ms_e3500.json",
+      "event_text": "오토바이 인도 주행 | 이륜 이동수단 인도 주행\\오토바이 인도 주행\\ms_e3500\\ms_e3500.json",
+      "final_confidence": null,
+      "final_primary_event": {
+        "event_type": "traffic_object",
+        "event_subtype": "electric_kickboard",
+        "label": "electric_kickboard",
+        "score": 0.5237,
+        "confidence": 0.4504,
+        "evidence": [
+          {
+            "frame_id": 64,
+            "time_sec": 2.133,
+            "class": "moped",
+            "confidence": 0.1018,
+            "bbox": [
+              1038,
+              61,
+              1075,
+              86
+            ],
+            "has_rider_pair": false
+          },
+          {
+            "frame_id": 72,
+            "time_sec": 2.4,
+            "class": "moped",
+            "confidence": 0.129,
+            "bbox": [
+              1039,
+              61,
+              1075,
+              86
+            ],
+            "has_rider_pair": false
+          },
+          {
+            "frame_id": 80,
+            "time_sec": 2.667,
+            "class": "moped",
+            "confidence": 0.1397,
+            "bbox": [
+              1039,
+              61,
+              1075,
+              86
+            ],
+            "has_rider_pair": false
+          },
+          {
+            "frame_id": 88,
+            "time_sec": 2.933,
+            "class": "moped",
+            "confidence": 0.1319,
+            "bbox": [
+              1039,
+              61,
+              1075,
+              86
+            ],
+            "has_rider_pair": false
+          },
+          {
+            "frame_id": 96,
+            "time_sec": 3.2,
+            "class": "moped",
+            "confidence": 0.1097,
+            "bbox": [
+              1038,
+              61,
+              1076,
+              86
+            ],
+            "has_rider_pair": false
+          }
+        ],
+        "reason": "전동킥보드/스쿠터류 객체가 여러 frame에서 확인됩니다."
+      }
+    },
+    {
+      "video_name": "ms_e3500_c2.mp4",
+      "gt_label": "sidewalk_riding",
+      "pred_label": "other",
+      "correct": false,
+      "candidate_hit": false,
+      "candidate_labels": "",
+      "match_type": "exact_video_key",
+      "gt_json": "C:\\Users\\우성한\\Sample (1)\\Sample\\02.라벨링데이터\\이륜 이동수단 인도 주행\\오토바이 인도 주행\\ms_e3500\\ms_e3500.json",
+      "event_text": "오토바이 인도 주행 | 이륜 이동수단 인도 주행\\오토바이 인도 주행\\ms_e3500\\ms_e3500.json",
+      "final_confidence": null,
+      "final_primary_event": null
+    },
+    {
+      "video_name": "bs_e4387_c1.mp4",
+      "gt_label": "sidewalk_riding",
+      "pred_label": "sidewalk_riding",
+      "correct": true,
+      "candidate_hit": true,
+      "candidate_labels": "sidewalk_riding,intrusion,electric_kickboard",
+      "match_type": "exact_video_key",
+      "gt_json": "C:\\Users\\우성한\\Sample (1)\\Sample\\02.라벨링데이터\\이륜 이동수단 인도 주행\\자전거 인도 주행\\bs_e4387\\bs_e4387.json",
+      "event_text": "자전거 인도 주행 | 이륜 이동수단 인도 주행\\자전거 인도 주행\\bs_e4387\\bs_e4387.json",
+      "final_confidence": null,
+      "final_primary_event": {
+        "event_type": "traffic_violation",
+        "event_subtype": "sidewalk_riding",
+        "label": "sidewalk_riding",
+        "score": 0.5541,
+        "confidence": 0.5652,
+        "evidence": [
+          {
+            "frame_id": 160,
+            "time_sec": 5.333,
+            "status": "sidewalk",
+            "score": 0.91,
+            "has_rider_pair": true,
+            "best_rider_pair_score": 1.0,
+            "bbox": [
+              1392,
+              428,
+              1494,
+              655
+            ],
+            "two_wheeler_class": "electric bike",
+            "seg_sidewalk_ratio": 1.0,
+            "band_sidewalk_ratio": 1.0,
+            "world_sidewalk_bbox_score": 0.25,
+            "road_score": 0.225
+          },
+          {
+            "frame_id": 168,
+            "time_sec": 5.6,
+            "status": "sidewalk",
+            "score": 0.91,
+            "has_rider_pair": true,
+            "best_rider_pair_score": 1.0,
+            "bbox": [
+              1395,
+              411,
+              1487,
+              632
+            ],
+            "two_wheeler_class": "electric bike",
+            "seg_sidewalk_ratio": 1.0,
+            "band_sidewalk_ratio": 1.0,
+            "world_sidewalk_bbox_score": 0.25,
+            "road_score": 0.2375
+          },
+          {
+            "frame_id": 168,
+            "time_sec": 5.6,
+            "status": "sidewalk",
+            "score": 0.9084,
+            "has_rider_pair": true,
+            "best_rider_pair_score": 0.9899,
+            "bbox": [
+              1402,
+              503,
+              1476,
+              633
+            ],
+            "two_wheeler_class": "electric bike",
+            "seg_sidewalk_ratio": 1.0,
+            "band_sidewalk_ratio": 1.0,
+            "world_sidewalk_bbox_score": 0.25,
+            "road_score": 0.2375
+          },
+          {
+            "frame_id": 160,
+            "time_sec": 5.333,
+            "status": "sidewalk",
+            "score": 0.906,
+            "has_rider_pair": true,
+            "best_rider_pair_score": 0.9747,
+            "bbox": [
+              1433,
+              533,
+              1482,
+              656
+            ],
+            "two_wheeler_class": "bike",
+            "seg_sidewalk_ratio": 1.0,
+            "band_sidewalk_ratio": 1.0,
+            "world_sidewalk_bbox_score": 0.25,
+            "road_score": 0.225
+          },
+          {
+            "frame_id": 144,
+            "time_sec": 4.8,
+            "status": "sidewalk",
+            "score": 0.8266,
+            "has_rider_pair": true,
+            "best_rider_pair_score": 0.9381,
+            "bbox": [
+              1478,
+              580,
+              1507,
+              637
+            ],
+            "two_wheeler_class": "bike",
+            "seg_sidewalk_ratio": 0.6222,
+            "band_sidewalk_ratio": 0.902,
+            "world_sidewalk_bbox_score": 0.25,
+            "road_score": 0.225
+          }
+        ],
+        "reason": "이륜차 기준점 또는 하단 band가 인도 영역에 반복적으로 위치했습니다."
+      }
+    },
+    {
+      "video_name": "bs_e4387_c2.mp4",
+      "gt_label": "sidewalk_riding",
+      "pred_label": "other",
+      "correct": false,
+      "candidate_hit": false,
+      "candidate_labels": "electric_kickboard",
+      "match_type": "exact_video_key",
+      "gt_json": "C:\\Users\\우성한\\Sample (1)\\Sample\\02.라벨링데이터\\이륜 이동수단 인도 주행\\자전거 인도 주행\\bs_e4387\\bs_e4387.json",
+      "event_text": "자전거 인도 주행 | 이륜 이동수단 인도 주행\\자전거 인도 주행\\bs_e4387\\bs_e4387.json",
+      "final_confidence": null,
+      "final_primary_event": null
+    },
+    {
+      "video_name": "es_e3768_c1.mp4",
+      "gt_label": "sidewalk_riding",
+      "pred_label": "electric_kickboard",
+      "correct": false,
+      "candidate_hit": true,
+      "candidate_labels": "electric_kickboard,intrusion,sidewalk_riding",
+      "match_type": "exact_video_key",
+      "gt_json": "C:\\Users\\우성한\\Sample (1)\\Sample\\02.라벨링데이터\\이륜 이동수단 인도 주행\\전동킥보드 인도 주행\\es_e3768\\es_e3768.json",
+      "event_text": "전동킥보드 인도 주행 | 이륜 이동수단 인도 주행\\전동킥보드 인도 주행\\es_e3768\\es_e3768.json",
+      "final_confidence": null,
+      "final_primary_event": {
+        "event_type": "traffic_object",
+        "event_subtype": "electric_kickboard",
+        "label": "electric_kickboard",
+        "score": 0.8218,
+        "confidence": 0.7067,
+        "evidence": [
+          {
+            "frame_id": 0,
+            "time_sec": 0.0,
+            "class": "moped",
+            "confidence": 0.0716,
+            "bbox": [
+              995,
+              523,
+              1239,
+              805
+            ],
+            "has_rider_pair": false
+          },
+          {
+            "frame_id": 8,
+            "time_sec": 0.267,
+            "class": "moped",
+            "confidence": 0.0722,
+            "bbox": [
+              998,
+              524,
+              1238,
+              804
+            ],
+            "has_rider_pair": false
+          },
+          {
+            "frame_id": 16,
+            "time_sec": 0.533,
+            "class": "moped",
+            "confidence": 0.0769,
+            "bbox": [
+              998,
+              523,
+              1239,
+              804
+            ],
+            "has_rider_pair": false
+          },
+          {
+            "frame_id": 24,
+            "time_sec": 0.8,
+            "class": "moped",
+            "confidence": 0.0865,
+            "bbox": [
+              1001,
+              524,
+              1239,
+              807
+            ],
+            "has_rider_pair": false
+          },
+          {
+            "frame_id": 32,
+            "time_sec": 1.067,
+            "class": "moped",
+            "confidence": 0.0915,
+            "bbox": [
+              1003,
+              525,
+              1237,
+              804
+            ],
+            "has_rider_pair": false
+          }
+        ],
+        "reason": "전동킥보드/스쿠터류 객체가 여러 frame에서 확인됩니다."
+      }
+    },
+    {
+      "video_name": "es_e3768_c2.mp4",
+      "gt_label": "sidewalk_riding",
+      "pred_label": "electric_kickboard",
+      "correct": false,
+      "candidate_hit": true,
+      "candidate_labels": "electric_kickboard,sidewalk_riding",
+      "match_type": "exact_video_key",
+      "gt_json": "C:\\Users\\우성한\\Sample (1)\\Sample\\02.라벨링데이터\\이륜 이동수단 인도 주행\\전동킥보드 인도 주행\\es_e3768\\es_e3768.json",
+      "event_text": "전동킥보드 인도 주행 | 이륜 이동수단 인도 주행\\전동킥보드 인도 주행\\es_e3768\\es_e3768.json",
+      "final_confidence": null,
+      "final_primary_event": {
+        "event_type": "traffic_object",
+        "event_subtype": "electric_kickboard",
+        "label": "electric_kickboard",
+        "score": 0.8386,
+        "confidence": 0.7212,
+        "evidence": [
+          {
+            "frame_id": 0,
+            "time_sec": 0.0,
+            "class": "moped",
+            "confidence": 0.056,
+            "bbox": [
+              1153,
+              436,
+              1375,
+              596
+            ],
+            "has_rider_pair": false
+          },
+          {
+            "frame_id": 8,
+            "time_sec": 0.267,
+            "class": "moped",
+            "confidence": 0.0558,
+            "bbox": [
+              1153,
+              436,
+              1375,
+              596
+            ],
+            "has_rider_pair": false
+          },
+          {
+            "frame_id": 16,
+            "time_sec": 0.533,
+            "class": "moped",
+            "confidence": 0.055,
+            "bbox": [
+              1153,
+              436,
+              1375,
+              596
+            ],
+            "has_rider_pair": false
+          },
+          {
+            "frame_id": 24,
+            "time_sec": 0.8,
+            "class": "moped",
+            "confidence": 0.058,
+            "bbox": [
+              1153,
+              436,
+              1375,
+              596
+            ],
+            "has_rider_pair": false
+          },
+          {
+            "frame_id": 32,
+            "time_sec": 1.067,
+            "class": "moped",
+            "confidence": 0.0557,
+            "bbox": [
+              1153,
+              436,
+              1374,
+              597
+            ],
+            "has_rider_pair": false
+          }
+        ],
+        "reason": "전동킥보드/스쿠터류 객체가 여러 frame에서 확인됩니다."
+      }
+    },
+    {
+      "video_name": "md_e2122_c1.mp4",
+      "gt_label": "no_helmet",
+      "pred_label": "fight",
+      "correct": false,
+      "candidate_hit": false,
+      "candidate_labels": "fight,electric_kickboard,sidewalk_riding",
+      "match_type": "exact_video_key",
+      "gt_json": "C:\\Users\\우성한\\Sample (1)\\Sample\\02.라벨링데이터\\이륜 이동수단 헬멧 미착용\\이륜 이동수단 운전자 1인 헬멧 미착용\\md_e2122\\md_e2122.json",
+      "event_text": "이륜 이동수단 운전자 1인 헬멧 미착용 | 이륜 이동수단 헬멧 미착용\\이륜 이동수단 운전자 1인 헬멧 미착용\\md_e2122\\md_e2122.json",
+      "final_confidence": null,
+      "final_primary_event": {
+        "event_type": "abnormal_action",
+        "event_subtype": "fight",
+        "label": "fight",
+        "score": 0.7859,
+        "confidence": 0.8488,
+        "evidence": {
+          "pair": [
+            1,
+            2
+          ],
+          "start_sec": 15.0,
+          "end_sec": 19.0,
+          "frame_count": 15,
+          "common_frames": 15,
+          "window_score": 0.7744,
+          "close_score": 1.0,
+          "contact_score": 1.0,
+          "abrupt_score": 0.6572,
+          "speed_score": 0.2088,
+          "flow_score": 0.0476,
+          "pose_score": 0.0646,
+          "distance_mean": 44.606,
+          "norm_distance_mean": 0.326,
+          "overlap_max": 0.34021,
+          "close_ratio": 1.0,
+          "very_close_ratio": 1.0,
+          "contact_ratio": 1.0,
+          "mean_relative_speed": 30.7694,
+          "mean_speed": 25.0586,
+          "direction_changes": 2,
+          "pair_boxes": [
+            {
+              "frame_id": 456,
+              "time_sec": 15.2,
+              "bbox": [
+                960,
+                501,
+                1065,
+                657
+              ],
+              "distance": 51.7,
+              "norm_distance": 0.3505,
+              "overlap": 0.06205
+            },
+            {
+              "frame_id": 464,
+              "time_sec": 15.467,
+              "bbox": [
+                962,
+                498,
+                1070,
+                655
+              ],
+              "distance": 55.16,
+              "norm_distance": 0.3714,
+              "overlap": 0.0
+            },
+            {
+              "frame_id": 472,
+              "time_sec": 15.733,
+              "bbox": [
+                966,
+                499,
+                1073,
+                654
+              ],
+              "distance": 55.01,
+              "norm_distance": 0.3807,
+              "overlap": 0.0
+            },
+            {
+              "frame_id": 480,
+              "time_sec": 16.0,
+              "bbox": [
+                982,
+                497,
+                1075,
+                651
+              ],
+              "distance": 42.2,
+              "norm_distance": 0.2931,
+              "overlap": 0.22092
+            },
+            {
+              "frame_id": 488,
+              "time_sec": 16.267,
+              "bbox": [
+                990,
+                498,
+                1076,
+                649
+              ],
+              "distance": 36.27,
+              "norm_distance": 0.2563,
+              "overlap": 0.33041
+            },
+            {
+              "frame_id": 496,
+              "time_sec": 16.533,
+              "bbox": [
+                997,
+                495,
+                1081,
+                647
+              ],
+              "distance": 35.17,
+              "norm_distance": 0.246,
+              "overlap": 0.34021
+            },
+            {
+              "frame_id": 504,
+              "time_sec": 16.8,
+              "bbox": [
+                1001,
+                495,
+                1088,
+                647
+              ],
+              "distance": 38.94,
+              "norm_distance": 0.2752,
+              "overlap": 0.25128
+            },
+            {
+              "frame_id": 512,
+              "time_sec": 17.067,
+              "bbox": [
+                1004,
+                493,
+                1091,
+                639
+              ],
+              "distance": 40.5,
+              "norm_distance": 0.3057,
+              "overlap": 0.14634
+            },
+            {
+              "frame_id": 520,
+              "time_sec": 17.333,
+              "bbox": [
+                1006,
+                494,
+                1095,
+                640
+              ],
+              "distance": 40.94,
+              "norm_distance": 0.2967,
+              "overlap": 0.18182
+            },
+            {
+              "frame_id": 528,
+              "time_sec": 17.6,
+              "bbox": [
+                1010,
+                491,
+                1100,
+                640
+              ],
+              "distance": 42.09,
+              "norm_distance": 0.3017,
+              "overlap": 0.17377
+            }
+          ]
+        },
+        "reason": "track-pair window에서 근접/접촉/급격한 상대 움직임이 동시에 나타났습니다."
+      }
+    },
+    {
+      "video_name": "md_e2122_c2.mp4",
+      "gt_label": "no_helmet",
+      "pred_label": "fight",
+      "correct": false,
+      "candidate_hit": false,
+      "candidate_labels": "fight,intrusion,electric_kickboard",
+      "match_type": "exact_video_key",
+      "gt_json": "C:\\Users\\우성한\\Sample (1)\\Sample\\02.라벨링데이터\\이륜 이동수단 헬멧 미착용\\이륜 이동수단 운전자 1인 헬멧 미착용\\md_e2122\\md_e2122.json",
+      "event_text": "이륜 이동수단 운전자 1인 헬멧 미착용 | 이륜 이동수단 헬멧 미착용\\이륜 이동수단 운전자 1인 헬멧 미착용\\md_e2122\\md_e2122.json",
+      "final_confidence": null,
+      "final_primary_event": {
+        "event_type": "abnormal_action",
+        "event_subtype": "fight",
+        "label": "fight",
+        "score": 0.8252,
+        "confidence": 0.8912,
+        "evidence": {
+          "pair": [
+            72,
+            106
+          ],
+          "start_sec": 30.0,
+          "end_sec": 34.0,
+          "frame_count": 2,
+          "common_frames": 2,
+          "window_score": 0.8031,
+          "close_score": 1.0,
+          "contact_score": 1.0,
+          "abrupt_score": 0.7317,
+          "speed_score": 0.344,
+          "flow_score": 0.0255,
+          "pose_score": 0.0713,
+          "distance_mean": 88.926,
+          "norm_distance_mean": 0.4176,
+          "overlap_max": 0.0,
+          "close_ratio": 1.0,
+          "very_close_ratio": 1.0,
+          "contact_ratio": 1.0,
+          "mean_relative_speed": 69.5158,
+          "mean_speed": 41.2786,
+          "direction_changes": 0,
+          "pair_boxes": [
+            {
+              "frame_id": 904,
+              "time_sec": 30.133,
+              "bbox": [
+                464,
+                432,
+                620,
+                659
+              ],
+              "distance": 83.6,
+              "norm_distance": 0.4019,
+              "overlap": 0.0
+            },
+            {
+              "frame_id": 912,
+              "time_sec": 30.4,
+              "bbox": [
+                466,
+                439,
+                635,
+                686
+              ],
+              "distance": 94.26,
+              "norm_distance": 0.4334,
+              "overlap": 0.0
+            }
+          ]
+        },
+        "reason": "track-pair window에서 근접/접촉/급격한 상대 움직임이 동시에 나타났습니다."
+      }
+    },
+    {
+      "video_name": "mp_e2730_c1.mp4",
+      "gt_label": "no_helmet",
+      "pred_label": "intrusion",
+      "correct": false,
+      "candidate_hit": false,
+      "candidate_labels": "intrusion,electric_kickboard",
+      "match_type": "exact_video_key",
+      "gt_json": "C:\\Users\\우성한\\Sample (1)\\Sample\\02.라벨링데이터\\이륜 이동수단 헬멧 미착용\\이륜 이동수단 탑승자 일부 또는 전체 헬멧 미착용\\mp_e2730\\mp_e2730.json",
+      "event_text": "이륜 이동수단 탑승자 일부 또는 전체 헬멧 미착용 | 이륜 이동수단 헬멧 미착용\\이륜 이동수단 탑승자 일부 또는 전체 헬멧 미착용\\mp_e2730\\mp_e2730.json",
+      "final_confidence": null,
+      "final_primary_event": {
+        "event_type": "abnormal_path_intrusion",
+        "event_subtype": "intrusion",
+        "label": "intrusion",
+        "score": 0.7878,
+        "confidence": 0.5408,
+        "evidence": {
+          "type": "same_track_crossing",
+          "before": {
+            "source": "base_track",
+            "class_id": 0,
+            "class": "person",
+            "confidence": 0.8961,
+            "bbox": [
+              770,
+              426,
+              900,
+              604
+            ],
+            "center": [
+              835.0,
+              515.0
+            ],
+            "bottom_center": [
+              835.0,
+              604.0
+            ],
+            "area": 23140.0,
+            "track_id": 12,
+            "obj_label": "person",
+            "frame_id": 408,
+            "time_sec": 13.6,
+            "track_source": "yolo_bytetrack",
+            "intrusion_point": [
+              835.0,
+              604.0
+            ],
+            "point": [
+              835.0,
+              604.0
+            ],
+            "line_side_value": 35568.0,
+            "line_side": 1
+          },
+          "after": {
+            "source": "base_track",
+            "class_id": 0,
+            "class": "person",
+            "confidence": 0.7667,
+            "bbox": [
+              779,
+              742,
+              951,
+              1069
+            ],
+            "center": [
+              865.0,
+              905.5
+            ],
+            "bottom_center": [
+              865.0,
+              1069.0
+            ],
+            "area": 56244.0,
+            "track_id": 12,
+            "obj_label": "person",
+            "frame_id": 560,
+            "time_sec": 18.667,
+            "track_source": "yolo_bytetrack",
+            "intrusion_point": [
+              865.0,
+              1069.0
+            ],
+            "point": [
+              865.0,
+              1069.0
+            ],
+            "line_side_value": -250362.0,
+            "line_side": -1
+          },
+          "side_transition": "1_to_-1",
+          "frame_gap": 152,
+          "duration_sec": 5.067,
+          "movement_px": 465.97,
+          "before_streak": 3,
+          "after_streak": 3,
+          "direction_cos": 1.0,
+          "cross_midpoint": [
+            850.0,
+            836.5
+          ],
+          "cross_midpoint_distance_to_structure": 88.0,
+          "track_id": "12",
+          "center_ratio": 0.52
+        },
+        "reason": "gate/fence/wall/barrier 구조물 근처에서 사람 foot_point track이 boundary line을 통과했습니다."
+      }
+    },
+    {
+      "video_name": "mp_e2730_c2.mp4",
+      "gt_label": "no_helmet",
+      "pred_label": "electric_kickboard",
+      "correct": false,
+      "candidate_hit": false,
+      "candidate_labels": "electric_kickboard",
+      "match_type": "exact_video_key",
+      "gt_json": "C:\\Users\\우성한\\Sample (1)\\Sample\\02.라벨링데이터\\이륜 이동수단 헬멧 미착용\\이륜 이동수단 탑승자 일부 또는 전체 헬멧 미착용\\mp_e2730\\mp_e2730.json",
+      "event_text": "이륜 이동수단 탑승자 일부 또는 전체 헬멧 미착용 | 이륜 이동수단 헬멧 미착용\\이륜 이동수단 탑승자 일부 또는 전체 헬멧 미착용\\mp_e2730\\mp_e2730.json",
+      "final_confidence": null,
+      "final_primary_event": {
+        "event_type": "traffic_object",
+        "event_subtype": "electric_kickboard",
+        "label": "electric_kickboard",
+        "score": 0.6454,
+        "confidence": 0.555,
+        "evidence": [
+          {
+            "frame_id": 0,
+            "time_sec": 0.0,
+            "class": "moped",
+            "confidence": 0.0409,
+            "bbox": [
+              99,
+              623,
+              560,
+              1053
+            ],
+            "has_rider_pair": false
+          },
+          {
+            "frame_id": 8,
+            "time_sec": 0.267,
+            "class": "moped",
+            "confidence": 0.036,
+            "bbox": [
+              99,
+              622,
+              561,
+              1053
+            ],
+            "has_rider_pair": false
+          },
+          {
+            "frame_id": 32,
+            "time_sec": 1.067,
+            "class": "moped",
+            "confidence": 0.0363,
+            "bbox": [
+              724,
+              271,
+              833,
+              434
+            ],
+            "has_rider_pair": false
+          },
+          {
+            "frame_id": 48,
+            "time_sec": 1.6,
+            "class": "electric scooter",
+            "confidence": 0.0415,
+            "bbox": [
+              1160,
+              425,
+              1255,
+              774
+            ],
+            "has_rider_pair": false
+          },
+          {
+            "frame_id": 56,
+            "time_sec": 1.867,
+            "class": "moped",
+            "confidence": 0.0441,
+            "bbox": [
+              726,
+              271,
+              834,
+              432
+            ],
+            "has_rider_pair": false
+          }
+        ],
+        "reason": "전동킥보드/스쿠터류 객체가 여러 frame에서 확인됩니다."
+      }
+    },
+    {
+      "video_name": "st_e4803_c1.mp4",
+      "gt_label": "electric_kickboard",
+      "pred_label": "electric_kickboard",
+      "correct": true,
+      "candidate_hit": true,
+      "candidate_labels": "electric_kickboard",
+      "match_type": "exact_video_key",
+      "gt_json": "C:\\Users\\우성한\\Sample (1)\\Sample\\02.라벨링데이터\\전동킥보드 2인 이상 주행\\전동킥보드 앞뒤 2인 탑승\\st_e4803\\st_e4803.json",
+      "event_text": "전동킥보드 앞뒤 2인 탑승 | 전동킥보드 2인 이상 주행\\전동킥보드 앞뒤 2인 탑승\\st_e4803\\st_e4803.json",
+      "final_confidence": null,
+      "final_primary_event": {
+        "event_type": "traffic_object",
+        "event_subtype": "electric_kickboard",
+        "label": "electric_kickboard",
+        "score": 0.6831,
+        "confidence": 0.5875,
+        "evidence": [
+          {
+            "frame_id": 0,
+            "time_sec": 0.0,
+            "class": "moped",
+            "confidence": 0.0362,
+            "bbox": [
+              1062,
+              275,
+              1188,
+              396
+            ],
+            "has_rider_pair": false
+          },
+          {
+            "frame_id": 8,
+            "time_sec": 0.267,
+            "class": "moped",
+            "confidence": 0.0469,
+            "bbox": [
+              1062,
+              275,
+              1188,
+              395
+            ],
+            "has_rider_pair": false
+          },
+          {
+            "frame_id": 16,
+            "time_sec": 0.533,
+            "class": "moped",
+            "confidence": 0.0595,
+            "bbox": [
+              1062,
+              274,
+              1188,
+              395
+            ],
+            "has_rider_pair": false
+          },
+          {
+            "frame_id": 24,
+            "time_sec": 0.8,
+            "class": "moped",
+            "confidence": 0.0811,
+            "bbox": [
+              1062,
+              273,
+              1188,
+              394
+            ],
+            "has_rider_pair": false
+          },
+          {
+            "frame_id": 40,
+            "time_sec": 1.333,
+            "class": "moped",
+            "confidence": 0.0385,
+            "bbox": [
+              1063,
+              274,
+              1188,
+              395
+            ],
+            "has_rider_pair": false
+          }
+        ],
+        "reason": "전동킥보드/스쿠터류 객체가 여러 frame에서 확인됩니다."
+      }
+    },
+    {
+      "video_name": "st_e4803_c2.mp4",
+      "gt_label": "electric_kickboard",
+      "pred_label": "electric_kickboard",
+      "correct": true,
+      "candidate_hit": true,
+      "candidate_labels": "electric_kickboard",
+      "match_type": "exact_video_key",
+      "gt_json": "C:\\Users\\우성한\\Sample (1)\\Sample\\02.라벨링데이터\\전동킥보드 2인 이상 주행\\전동킥보드 앞뒤 2인 탑승\\st_e4803\\st_e4803.json",
+      "event_text": "전동킥보드 앞뒤 2인 탑승 | 전동킥보드 2인 이상 주행\\전동킥보드 앞뒤 2인 탑승\\st_e4803\\st_e4803.json",
+      "final_confidence": null,
+      "final_primary_event": {
+        "event_type": "traffic_object",
+        "event_subtype": "electric_kickboard",
+        "label": "electric_kickboard",
+        "score": 0.6179,
+        "confidence": 0.5314,
+        "evidence": [
+          {
+            "frame_id": 0,
+            "time_sec": 0.0,
+            "class": "moped",
+            "confidence": 0.1938,
+            "bbox": [
+              264,
+              622,
+              624,
+              1054
+            ],
+            "has_rider_pair": false
+          },
+          {
+            "frame_id": 8,
+            "time_sec": 0.267,
+            "class": "moped",
+            "confidence": 0.249,
+            "bbox": [
+              264,
+              620,
+              625,
+              1054
+            ],
+            "has_rider_pair": false
+          },
+          {
+            "frame_id": 16,
+            "time_sec": 0.533,
+            "class": "moped",
+            "confidence": 0.2624,
+            "bbox": [
+              264,
+              620,
+              625,
+              1054
+            ],
+            "has_rider_pair": false
+          },
+          {
+            "frame_id": 24,
+            "time_sec": 0.8,
+            "class": "moped",
+            "confidence": 0.2924,
+            "bbox": [
+              265,
+              620,
+              625,
+              1054
+            ],
+            "has_rider_pair": false
+          },
+          {
+            "frame_id": 32,
+            "time_sec": 1.067,
+            "class": "moped",
+            "confidence": 0.2976,
+            "bbox": [
+              265,
+              620,
+              625,
+              1054
+            ],
+            "has_rider_pair": false
+          }
+        ],
+        "reason": "전동킥보드/스쿠터류 객체가 여러 frame에서 확인됩니다."
+      }
+    },
+    {
+      "video_name": "bl_e0272_c1.mp4",
+      "gt_label": "intrusion",
+      "pred_label": "electric_kickboard",
+      "correct": false,
+      "candidate_hit": false,
+      "candidate_labels": "electric_kickboard",
+      "match_type": "exact_video_key",
+      "gt_json": "C:\\Users\\우성한\\Sample (1)\\Sample\\02.라벨링데이터\\침입\\경계선을 통한 침입\\bl_e0272\\bl_e0272.json",
+      "event_text": "경계선을 통한 침입 | 침입\\경계선을 통한 침입\\bl_e0272\\bl_e0272.json",
+      "final_confidence": null,
+      "final_primary_event": {
+        "event_type": "traffic_object",
+        "event_subtype": "electric_kickboard",
+        "label": "electric_kickboard",
+        "score": 0.5927,
+        "confidence": 0.5097,
+        "evidence": [
+          {
+            "frame_id": 0,
+            "time_sec": 0.0,
+            "class": "kickboard",
+            "confidence": 0.1355,
+            "bbox": [
+              694,
+              508,
+              745,
+              616
+            ],
+            "has_rider_pair": false
+          },
+          {
+            "frame_id": 8,
+            "time_sec": 0.267,
+            "class": "kickboard",
+            "confidence": 0.1381,
+            "bbox": [
+              694,
+              508,
+              745,
+              616
+            ],
+            "has_rider_pair": false
+          },
+          {
+            "frame_id": 16,
+            "time_sec": 0.533,
+            "class": "kickboard",
+            "confidence": 0.1279,
+            "bbox": [
+              694,
+              508,
+              745,
+              616
+            ],
+            "has_rider_pair": false
+          },
+          {
+            "frame_id": 24,
+            "time_sec": 0.8,
+            "class": "kickboard",
+            "confidence": 0.1345,
+            "bbox": [
+              694,
+              508,
+              745,
+              616
+            ],
+            "has_rider_pair": false
+          },
+          {
+            "frame_id": 32,
+            "time_sec": 1.067,
+            "class": "kickboard",
+            "confidence": 0.1555,
+            "bbox": [
+              694,
+              508,
+              745,
+              616
+            ],
+            "has_rider_pair": false
+          }
+        ],
+        "reason": "전동킥보드/스쿠터류 객체가 여러 frame에서 확인됩니다."
+      }
+    },
+    {
+      "video_name": "bl_e0272_c2.mp4",
+      "gt_label": "intrusion",
+      "pred_label": "other",
+      "correct": false,
+      "candidate_hit": false,
+      "candidate_labels": "",
+      "match_type": "exact_video_key",
+      "gt_json": "C:\\Users\\우성한\\Sample (1)\\Sample\\02.라벨링데이터\\침입\\경계선을 통한 침입\\bl_e0272\\bl_e0272.json",
+      "event_text": "경계선을 통한 침입 | 침입\\경계선을 통한 침입\\bl_e0272\\bl_e0272.json",
+      "final_confidence": null,
+      "final_primary_event": null
+    },
+    {
+      "video_name": "ab_e0457_c1.mp4",
+      "gt_label": "intrusion",
+      "pred_label": "intrusion",
+      "correct": true,
+      "candidate_hit": true,
+      "candidate_labels": "intrusion,sidewalk_riding,electric_kickboard",
+      "match_type": "exact_video_key",
+      "gt_json": "C:\\Users\\우성한\\Sample (1)\\Sample\\02.라벨링데이터\\침입\\비정상적인 경로로의 침범\\ab_e0457\\ab_e0457.json",
+      "event_text": "비정상적인 경로로의 침범 | 침입\\비정상적인 경로로의 침범\\ab_e0457\\ab_e0457.json",
+      "final_confidence": null,
+      "final_primary_event": {
+        "event_type": "abnormal_path_intrusion",
+        "event_subtype": "intrusion",
+        "label": "intrusion",
+        "score": 0.9438,
+        "confidence": 0.5772,
+        "evidence": {
+          "type": "same_track_crossing",
+          "before": {
+            "source": "base_track",
+            "class_id": 0,
+            "class": "person",
+            "confidence": 0.703,
+            "bbox": [
+              1190,
+              375,
+              1261,
+              586
+            ],
+            "center": [
+              1225.5,
+              480.5
+            ],
+            "bottom_center": [
+              1225.5,
+              586.0
+            ],
+            "area": 14981.0,
+            "track_id": 9,
+            "obj_label": "person",
+            "frame_id": 352,
+            "time_sec": 11.733,
+            "track_source": "yolo_bytetrack",
+            "intrusion_point": [
+              1225.5,
+              586.0
+            ],
+            "point": [
+              1225.5,
+              586.0
+            ],
+            "line_side_value": 182434.5,
+            "line_side": 1
+          },
+          "after": {
+            "source": "base_track",
+            "class_id": 0,
+            "class": "person",
+            "confidence": 0.8884,
+            "bbox": [
+              739,
+              361,
+              842,
+              592
+            ],
+            "center": [
+              790.5,
+              476.5
+            ],
+            "bottom_center": [
+              790.5,
+              592.0
+            ],
+            "area": 23793.0,
+            "track_id": 9,
+            "obj_label": "person",
+            "frame_id": 496,
+            "time_sec": 16.533,
+            "track_source": "yolo_bytetrack",
+            "intrusion_point": [
+              782.0,
+              592.0
+            ],
+            "point": [
+              782.0,
+              592.0
+            ],
+            "line_side_value": -62775.0,
+            "line_side": -1
+          },
+          "side_transition": "1_to_-1",
+          "frame_gap": 144,
+          "duration_sec": 4.8,
+          "movement_px": 443.54,
+          "before_streak": 3,
+          "after_streak": 5,
+          "direction_cos": 0.9999,
+          "cross_midpoint": [
+            1003.75,
+            589.0
+          ],
+          "cross_midpoint_distance_to_structure": 0.0,
+          "track_id": "9",
+          "center_ratio": 0.32
+        },
+        "reason": "gate/fence/wall/barrier 구조물 근처에서 사람 foot_point track이 boundary line을 통과했습니다."
+      }
+    },
+    {
+      "video_name": "ab_e0457_c2.mp4",
+      "gt_label": "intrusion",
+      "pred_label": "electric_kickboard",
+      "correct": false,
+      "candidate_hit": false,
+      "candidate_labels": "electric_kickboard",
+      "match_type": "exact_video_key",
+      "gt_json": "C:\\Users\\우성한\\Sample (1)\\Sample\\02.라벨링데이터\\침입\\비정상적인 경로로의 침범\\ab_e0457\\ab_e0457.json",
+      "event_text": "비정상적인 경로로의 침범 | 침입\\비정상적인 경로로의 침범\\ab_e0457\\ab_e0457.json",
+      "final_confidence": null,
+      "final_primary_event": {
+        "event_type": "traffic_object",
+        "event_subtype": "electric_kickboard",
+        "label": "electric_kickboard",
+        "score": 0.5365,
+        "confidence": 0.4614,
+        "evidence": [
+          {
+            "frame_id": 0,
+            "time_sec": 0.0,
+            "class": "moped",
+            "confidence": 0.0529,
+            "bbox": [
+              863,
+              697,
+              1235,
+              1080
+            ],
+            "has_rider_pair": false
+          },
+          {
+            "frame_id": 8,
+            "time_sec": 0.267,
+            "class": "moped",
+            "confidence": 0.0597,
+            "bbox": [
+              860,
+              698,
+              1235,
+              1080
+            ],
+            "has_rider_pair": false
+          },
+          {
+            "frame_id": 16,
+            "time_sec": 0.533,
+            "class": "moped",
+            "confidence": 0.0702,
+            "bbox": [
+              862,
+              697,
+              1236,
+              1080
+            ],
+            "has_rider_pair": false
+          },
+          {
+            "frame_id": 24,
+            "time_sec": 0.8,
+            "class": "moped",
+            "confidence": 0.0668,
+            "bbox": [
+              860,
+              697,
+              1236,
+              1080
+            ],
+            "has_rider_pair": false
+          },
+          {
+            "frame_id": 32,
+            "time_sec": 1.067,
+            "class": "moped",
+            "confidence": 0.0563,
+            "bbox": [
+              862,
+              697,
+              1235,
+              1080
+            ],
+            "has_rider_pair": false
+          }
+        ],
+        "reason": "전동킥보드/스쿠터류 객체가 여러 frame에서 확인됩니다."
+      }
+    }
+  ],
+  "unmatched_predictions": [],
+  "gt_conflicts": []
+}

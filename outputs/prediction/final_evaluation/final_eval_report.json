@@ -1,0 +1,96 @@
+{
+  "summary_metrics": {
+    "total_expected_videos": 22,
+    "prediction_records": 22,
+    "missing_prediction_count": 0,
+    "correct_count": 4,
+    "accuracy": 0.1818,
+    "balanced_accuracy": 0.225,
+    "macro_precision": 0.5667,
+    "macro_recall": 0.225,
+    "macro_f1": 0.2711,
+    "weighted_precision": 0.6667,
+    "weighted_recall": 0.1818,
+    "weighted_f1": 0.2505,
+    "candidate_hit_rate": 0.1818
+  },
+  "event_metrics": {
+    "total_events": 11,
+    "any_camera_accuracy": 0.3636,
+    "all_camera_accuracy": 0.0,
+    "any_camera_candidate_hit_rate": 0.3636
+  },
+  "class_metrics": [
+    {
+      "label": "fight",
+      "support": 2,
+      "tp": 1,
+      "fp": 2,
+      "fn": 1,
+      "precision": 0.3333,
+      "recall": 0.5,
+      "f1": 0.4,
+      "candidate_recall": 0.5
+    },
+    {
+      "label": "stalking",
+      "support": 4,
+      "tp": 1,
+      "fp": 0,
+      "fn": 3,
+      "precision": 1.0,
+      "recall": 0.25,
+      "f1": 0.4,
+      "candidate_recall": 0.25
+    },
+    {
+      "label": "two_wheeler_sidewalk",
+      "support": 8,
+      "tp": 1,
+      "fp": 0,
+      "fn": 7,
+      "precision": 1.0,
+      "recall": 0.125,
+      "f1": 0.2222,
+      "candidate_recall": 0.125
+    },
+    {
+      "label": "two_wheeler_helmet",
+      "support": 4,
+      "tp": 0,
+      "fp": 0,
+      "fn": 4,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "candidate_recall": 0.0
+    },
+    {
+      "label": "intrusion",
+      "support": 4,
+      "tp": 1,
+      "fp": 1,
+      "fn": 3,
+      "precision": 0.5,
+      "recall": 0.25,
+      "f1": 0.3333,
+      "candidate_recall": 0.25
+    }
+  ],
+  "class_order": [
+    "fight",
+    "stalking",
+    "two_wheeler_sidewalk",
+    "two_wheeler_helmet",
+    "intrusion"
+  ],
+  "confusion_labels": [
+    "fight",
+    "stalking",
+    "two_wheeler_sidewalk",
+    "two_wheeler_helmet",
+    "intrusion",
+    "other",
+    "missing_prediction"
+  ]
+}

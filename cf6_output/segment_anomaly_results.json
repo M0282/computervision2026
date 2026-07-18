@@ -1,0 +1,156 @@
+{
+  "meta": {
+    "input_cf2_dir": "C:\\Users\\우성한\\cf2",
+    "video_root": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터",
+    "device": "cuda",
+    "seg_model_id": "nvidia/segformer-b5-finetuned-cityscapes-1024-1024",
+    "helmet_backend": "none",
+    "helmet_model_path": null,
+    "roboflow_model_id": null,
+    "road_id": 0,
+    "sidewalk_id": 1,
+    "mask_patch_radius": 16,
+    "sidewalk_judge_version": "v2_vehicle_union_bbox",
+    "sidewalk_gt_prefixes": [
+      "ms_",
+      "bs_",
+      "es_"
+    ],
+    "helmet_gt_prefixes": [
+      "md_"
+    ],
+    "dilate_kernel_size": 9,
+    "sidewalk_score_threshold": 0.18,
+    "road_score_threshold": 0.18
+  },
+  "segments": [
+    {
+      "video_name": "bs_e4387_c1.mp4",
+      "start_frame": 155,
+      "end_frame": 155,
+      "count": 1,
+      "event_type": "sidewalk_riding",
+      "description": "인도 주행 또는 인도 주행 후보 구간"
+    },
+    {
+      "video_name": "bs_e4387_c1.mp4",
+      "start_frame": 235,
+      "end_frame": 280,
+      "count": 10,
+      "event_type": "sidewalk_riding",
+      "description": "인도 주행 또는 인도 주행 후보 구간"
+    },
+    {
+      "video_name": "bs_e4387_c2.mp4",
+      "start_frame": 655,
+      "end_frame": 655,
+      "count": 1,
+      "event_type": "sidewalk_riding",
+      "description": "인도 주행 또는 인도 주행 후보 구간"
+    },
+    {
+      "video_name": "es_e3768_c1.mp4",
+      "start_frame": 635,
+      "end_frame": 635,
+      "count": 1,
+      "event_type": "sidewalk_riding",
+      "description": "인도 주행 또는 인도 주행 후보 구간"
+    },
+    {
+      "video_name": "es_e3768_c2.mp4",
+      "start_frame": 205,
+      "end_frame": 230,
+      "count": 6,
+      "event_type": "sidewalk_riding",
+      "description": "인도 주행 또는 인도 주행 후보 구간"
+    },
+    {
+      "video_name": "es_e3768_c2.mp4",
+      "start_frame": 330,
+      "end_frame": 360,
+      "count": 7,
+      "event_type": "sidewalk_riding",
+      "description": "인도 주행 또는 인도 주행 후보 구간"
+    },
+    {
+      "video_name": "es_e3768_c2.mp4",
+      "start_frame": 375,
+      "end_frame": 375,
+      "count": 1,
+      "event_type": "sidewalk_riding",
+      "description": "인도 주행 또는 인도 주행 후보 구간"
+    },
+    {
+      "video_name": "es_e3768_c2.mp4",
+      "start_frame": 390,
+      "end_frame": 445,
+      "count": 12,
+      "event_type": "sidewalk_riding",
+      "description": "인도 주행 또는 인도 주행 후보 구간"
+    },
+    {
+      "video_name": "es_e3768_c2.mp4",
+      "start_frame": 460,
+      "end_frame": 560,
+      "count": 20,
+      "event_type": "sidewalk_riding",
+      "description": "인도 주행 또는 인도 주행 후보 구간"
+    },
+    {
+      "video_name": "es_e3768_c2.mp4",
+      "start_frame": 585,
+      "end_frame": 625,
+      "count": 9,
+      "event_type": "sidewalk_riding",
+      "description": "인도 주행 또는 인도 주행 후보 구간"
+    },
+    {
+      "video_name": "es_e3768_c2.mp4",
+      "start_frame": 650,
+      "end_frame": 710,
+      "count": 13,
+      "event_type": "sidewalk_riding",
+      "description": "인도 주행 또는 인도 주행 후보 구간"
+    },
+    {
+      "video_name": "es_e3768_c2.mp4",
+      "start_frame": 735,
+      "end_frame": 740,
+      "count": 2,
+      "event_type": "sidewalk_riding",
+      "description": "인도 주행 또는 인도 주행 후보 구간"
+    },
+    {
+      "video_name": "es_e3768_c2.mp4",
+      "start_frame": 755,
+      "end_frame": 760,
+      "count": 2,
+      "event_type": "sidewalk_riding",
+      "description": "인도 주행 또는 인도 주행 후보 구간"
+    },
+    {
+      "video_name": "es_e3768_c2.mp4",
+      "start_frame": 795,
+      "end_frame": 795,
+      "count": 1,
+      "event_type": "sidewalk_riding",
+      "description": "인도 주행 또는 인도 주행 후보 구간"
+    },
+    {
+      "video_name": "es_e3768_c2.mp4",
+      "start_frame": 840,
+      "end_frame": 910,
+      "count": 14,
+      "event_type": "sidewalk_riding",
+      "description": "인도 주행 또는 인도 주행 후보 구간"
+    },
+    {
+      "video_name": "mp_e2730_c2.mp4",
+      "start_frame": 595,
+      "end_frame": 595,
+      "count": 1,
+      "event_type": "sidewalk_riding",
+      "description": "인도 주행 또는 인도 주행 후보 구간"
+    }
+  ]
+}

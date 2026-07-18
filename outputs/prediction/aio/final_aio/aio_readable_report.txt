@@ -1,0 +1,9 @@
+AIO readable report
+================================================================================
+AIO_VERSION: aio_improved_world_tracker_helmet_v1
+final_label_count: {"stalking + two_wheeler_detected + two_wheeler_rider_like": 1}
+action_label_count: {"stalking": 1}
+riding_label_count: {"two_wheeler_rider_like": 1}
+helmet_label_count: {"helmet_model_not_connected": 1}
+
+{"video_name": "lo_e1281_c1.mp4", "final_label": "stalking + two_wheeler_detected + two_wheeler_rider_like", "fight_score": 0.0913, "stalking_score": 0.6675, "riding_label": "two_wheeler_rider_like", "sidewalk_score": 0.0, "helmet_label": "helmet_model_not_connected", "no_helmet_hits": 0}

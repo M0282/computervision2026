@@ -1,0 +1,11 @@
+{
+  "scene": "PARTIAL_RIDING",
+  "feature": {
+    "vehicle_frames": 155,
+    "riding_frames": 81,
+    "riding_ratio": 0.523,
+    "total_pairs": 209,
+    "max_riding_streak": 21,
+    "avg_distance": 281.9
+  }
+}

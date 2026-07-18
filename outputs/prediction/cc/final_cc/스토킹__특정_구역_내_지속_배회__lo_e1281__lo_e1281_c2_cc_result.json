@@ -1,0 +1,1115 @@
+{
+  "video_name": "lo_e1281_c2.mp4",
+  "video_path": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터\\스토킹\\특정 구역 내 지속 배회\\lo_e1281\\lo_e1281_c2.mp4",
+  "relative_video_path": "스토킹\\특정 구역 내 지속 배회\\lo_e1281\\lo_e1281_c2.mp4",
+  "final_label": "sidewalk_two_wheeler",
+  "final_primary_event": {
+    "event_type": "traffic_violation",
+    "event_subtype": "sidewalk_two_wheeler",
+    "label": "sidewalk_riding",
+    "score": 0.3847,
+    "confidence": 0.3847,
+    "evidence": [
+      {
+        "frame_id": 160,
+        "time_sec": 5.333,
+        "status": "sidewalk_candidate",
+        "score": 0.385,
+        "has_rider_pair": true,
+        "best_rider_pair_score": 1.0,
+        "bbox": [
+          1142,
+          480,
+          1163,
+          518
+        ],
+        "two_wheeler_class": "bicycle",
+        "seg_sidewalk_ratio": 0.0,
+        "band_sidewalk_ratio": 0.0,
+        "world_sidewalk_bbox_score": 0.25,
+        "road_score": 0.4487
+      },
+      {
+        "frame_id": 160,
+        "time_sec": 5.333,
+        "status": "sidewalk_candidate",
+        "score": 0.385,
+        "has_rider_pair": true,
+        "best_rider_pair_score": 1.0,
+        "bbox": [
+          1138,
+          448,
+          1170,
+          518
+        ],
+        "two_wheeler_class": "motorcycle",
+        "seg_sidewalk_ratio": 0.0,
+        "band_sidewalk_ratio": 0.0,
+        "world_sidewalk_bbox_score": 0.25,
+        "road_score": 0.4536
+      },
+      {
+        "frame_id": 168,
+        "time_sec": 5.6,
+        "status": "sidewalk_candidate",
+        "score": 0.385,
+        "has_rider_pair": true,
+        "best_rider_pair_score": 1.0,
+        "bbox": [
+          1141,
+          471,
+          1165,
+          520
+        ],
+        "two_wheeler_class": "bike",
+        "seg_sidewalk_ratio": 0.0,
+        "band_sidewalk_ratio": 0.0,
+        "world_sidewalk_bbox_score": 0.25,
+        "road_score": 0.4463
+      },
+      {
+        "frame_id": 168,
+        "time_sec": 5.6,
+        "status": "sidewalk_candidate",
+        "score": 0.385,
+        "has_rider_pair": true,
+        "best_rider_pair_score": 1.0,
+        "bbox": [
+          1134,
+          451,
+          1169,
+          521
+        ],
+        "two_wheeler_class": "motorcycle",
+        "seg_sidewalk_ratio": 0.0,
+        "band_sidewalk_ratio": 0.0,
+        "world_sidewalk_bbox_score": 0.25,
+        "road_score": 0.4544
+      },
+      {
+        "frame_id": 176,
+        "time_sec": 5.867,
+        "status": "sidewalk_candidate",
+        "score": 0.385,
+        "has_rider_pair": true,
+        "best_rider_pair_score": 1.0,
+        "bbox": [
+          1142,
+          480,
+          1169,
+          520
+        ],
+        "two_wheeler_class": "bicycle",
+        "seg_sidewalk_ratio": 0.0,
+        "band_sidewalk_ratio": 0.0,
+        "world_sidewalk_bbox_score": 0.25,
+        "road_score": 0.4677
+      }
+    ],
+    "reason": "이륜차 기준점 또는 하단 band가 인도 영역에 반복적으로 위치했습니다."
+  },
+  "candidate_events": [
+    {
+      "event_type": "traffic_violation",
+      "event_subtype": "sidewalk_two_wheeler",
+      "label": "sidewalk_riding",
+      "score": 0.3847,
+      "confidence": 0.3847,
+      "evidence": [
+        {
+          "frame_id": 160,
+          "time_sec": 5.333,
+          "status": "sidewalk_candidate",
+          "score": 0.385,
+          "has_rider_pair": true,
+          "best_rider_pair_score": 1.0,
+          "bbox": [
+            1142,
+            480,
+            1163,
+            518
+          ],
+          "two_wheeler_class": "bicycle",
+          "seg_sidewalk_ratio": 0.0,
+          "band_sidewalk_ratio": 0.0,
+          "world_sidewalk_bbox_score": 0.25,
+          "road_score": 0.4487
+        },
+        {
+          "frame_id": 160,
+          "time_sec": 5.333,
+          "status": "sidewalk_candidate",
+          "score": 0.385,
+          "has_rider_pair": true,
+          "best_rider_pair_score": 1.0,
+          "bbox": [
+            1138,
+            448,
+            1170,
+            518
+          ],
+          "two_wheeler_class": "motorcycle",
+          "seg_sidewalk_ratio": 0.0,
+          "band_sidewalk_ratio": 0.0,
+          "world_sidewalk_bbox_score": 0.25,
+          "road_score": 0.4536
+        },
+        {
+          "frame_id": 168,
+          "time_sec": 5.6,
+          "status": "sidewalk_candidate",
+          "score": 0.385,
+          "has_rider_pair": true,
+          "best_rider_pair_score": 1.0,
+          "bbox": [
+            1141,
+            471,
+            1165,
+            520
+          ],
+          "two_wheeler_class": "bike",
+          "seg_sidewalk_ratio": 0.0,
+          "band_sidewalk_ratio": 0.0,
+          "world_sidewalk_bbox_score": 0.25,
+          "road_score": 0.4463
+        },
+        {
+          "frame_id": 168,
+          "time_sec": 5.6,
+          "status": "sidewalk_candidate",
+          "score": 0.385,
+          "has_rider_pair": true,
+          "best_rider_pair_score": 1.0,
+          "bbox": [
+            1134,
+            451,
+            1169,
+            521
+          ],
+          "two_wheeler_class": "motorcycle",
+          "seg_sidewalk_ratio": 0.0,
+          "band_sidewalk_ratio": 0.0,
+          "world_sidewalk_bbox_score": 0.25,
+          "road_score": 0.4544
+        },
+        {
+          "frame_id": 176,
+          "time_sec": 5.867,
+          "status": "sidewalk_candidate",
+          "score": 0.385,
+          "has_rider_pair": true,
+          "best_rider_pair_score": 1.0,
+          "bbox": [
+            1142,
+            480,
+            1169,
+            520
+          ],
+          "two_wheeler_class": "bicycle",
+          "seg_sidewalk_ratio": 0.0,
+          "band_sidewalk_ratio": 0.0,
+          "world_sidewalk_bbox_score": 0.25,
+          "road_score": 0.4677
+        }
+      ],
+      "reason": "이륜차 기준점 또는 하단 band가 인도 영역에 반복적으로 위치했습니다."
+    }
+  ],
+  "action_label": "other",
+  "fight_label": "not_fight",
+  "stalking_label": "not_stalking",
+  "riding_label": "sidewalk_riding",
+  "helmet_label": "helmet_unknown",
+  "fight": {
+    "fight_label": "not_fight",
+    "fight_score": 0.0194,
+    "is_fight": false,
+    "best_fight_window": {
+      "window_score": 0.0249,
+      "close_pairs": 0,
+      "near_pairs": 0,
+      "overlap_pairs": 0,
+      "multi_person_frames": 0,
+      "mean_person_count": 1.0,
+      "flow_score": 0.0679,
+      "pose_score": 0.1461,
+      "abrupt_score": 0.0,
+      "start_sec": 28.5,
+      "end_sec": 33.5,
+      "frame_count": 9
+    },
+    "high_window_count": 0,
+    "window_count": 21,
+    "reason": "싸움 조건을 만족하는 window가 없습니다."
+  },
+  "stalking": {
+    "stalking_label": "not_stalking",
+    "stalking_score": 0.0,
+    "is_stalking": false,
+    "best_pair": null,
+    "candidate_pairs": [],
+    "reason": "스토킹 조건을 비교할 만큼 긴 사람 track pair가 없습니다."
+  },
+  "riding": {
+    "riding_label": "sidewalk_riding",
+    "sidewalk_riding_score": 0.3847,
+    "is_sidewalk_riding": true,
+    "tw_frame_count": 116,
+    "rider_frame_count": 88,
+    "sidewalk_hits": 0,
+    "sidewalk_candidate_hits": 78,
+    "road_hits": 211,
+    "sidewalk_ratio": 0.0,
+    "candidate_ratio": 0.2626,
+    "mean_evidence_score": 0.1306,
+    "max_evidence_score": 0.385,
+    "best_evidence": [
+      {
+        "frame_id": 160,
+        "time_sec": 5.333,
+        "status": "sidewalk_candidate",
+        "score": 0.385,
+        "has_rider_pair": true,
+        "best_rider_pair_score": 1.0,
+        "bbox": [
+          1142,
+          480,
+          1163,
+          518
+        ],
+        "two_wheeler_class": "bicycle",
+        "seg_sidewalk_ratio": 0.0,
+        "band_sidewalk_ratio": 0.0,
+        "world_sidewalk_bbox_score": 0.25,
+        "road_score": 0.4487
+      },
+      {
+        "frame_id": 160,
+        "time_sec": 5.333,
+        "status": "sidewalk_candidate",
+        "score": 0.385,
+        "has_rider_pair": true,
+        "best_rider_pair_score": 1.0,
+        "bbox": [
+          1138,
+          448,
+          1170,
+          518
+        ],
+        "two_wheeler_class": "motorcycle",
+        "seg_sidewalk_ratio": 0.0,
+        "band_sidewalk_ratio": 0.0,
+        "world_sidewalk_bbox_score": 0.25,
+        "road_score": 0.4536
+      },
+      {
+        "frame_id": 168,
+        "time_sec": 5.6,
+        "status": "sidewalk_candidate",
+        "score": 0.385,
+        "has_rider_pair": true,
+        "best_rider_pair_score": 1.0,
+        "bbox": [
+          1141,
+          471,
+          1165,
+          520
+        ],
+        "two_wheeler_class": "bike",
+        "seg_sidewalk_ratio": 0.0,
+        "band_sidewalk_ratio": 0.0,
+        "world_sidewalk_bbox_score": 0.25,
+        "road_score": 0.4463
+      },
+      {
+        "frame_id": 168,
+        "time_sec": 5.6,
+        "status": "sidewalk_candidate",
+        "score": 0.385,
+        "has_rider_pair": true,
+        "best_rider_pair_score": 1.0,
+        "bbox": [
+          1134,
+          451,
+          1169,
+          521
+        ],
+        "two_wheeler_class": "motorcycle",
+        "seg_sidewalk_ratio": 0.0,
+        "band_sidewalk_ratio": 0.0,
+        "world_sidewalk_bbox_score": 0.25,
+        "road_score": 0.4544
+      },
+      {
+        "frame_id": 176,
+        "time_sec": 5.867,
+        "status": "sidewalk_candidate",
+        "score": 0.385,
+        "has_rider_pair": true,
+        "best_rider_pair_score": 1.0,
+        "bbox": [
+          1142,
+          480,
+          1169,
+          520
+        ],
+        "two_wheeler_class": "bicycle",
+        "seg_sidewalk_ratio": 0.0,
+        "band_sidewalk_ratio": 0.0,
+        "world_sidewalk_bbox_score": 0.25,
+        "road_score": 0.4677
+      },
+      {
+        "frame_id": 392,
+        "time_sec": 13.067,
+        "status": "sidewalk_candidate",
+        "score": 0.385,
+        "has_rider_pair": true,
+        "best_rider_pair_score": 1.0,
+        "bbox": [
+          1141,
+          508,
+          1163,
+          556
+        ],
+        "two_wheeler_class": "bike",
+        "seg_sidewalk_ratio": 0.0,
+        "band_sidewalk_ratio": 0.0,
+        "world_sidewalk_bbox_score": 0.25,
+        "road_score": 0.4674
+      },
+      {
+        "frame_id": 400,
+        "time_sec": 13.333,
+        "status": "sidewalk_candidate",
+        "score": 0.385,
+        "has_rider_pair": true,
+        "best_rider_pair_score": 1.0,
+        "bbox": [
+          1136,
+          505,
+          1168,
+          558
+        ],
+        "two_wheeler_class": "bike",
+        "seg_sidewalk_ratio": 0.0,
+        "band_sidewalk_ratio": 0.0,
+        "world_sidewalk_bbox_score": 0.25,
+        "road_score": 0.4003
+      },
+      {
+        "frame_id": 400,
+        "time_sec": 13.333,
+        "status": "sidewalk_candidate",
+        "score": 0.385,
+        "has_rider_pair": true,
+        "best_rider_pair_score": 1.0,
+        "bbox": [
+          1134,
+          461,
+          1171,
+          557
+        ],
+        "two_wheeler_class": "bike",
+        "seg_sidewalk_ratio": 0.0,
+        "band_sidewalk_ratio": 0.0,
+        "world_sidewalk_bbox_score": 0.25,
+        "road_score": 0.3974
+      },
+      {
+        "frame_id": 456,
+        "time_sec": 15.2,
+        "status": "sidewalk_candidate",
+        "score": 0.385,
+        "has_rider_pair": true,
+        "best_rider_pair_score": 1.0,
+        "bbox": [
+          1117,
+          516,
+          1151,
+          572
+        ],
+        "two_wheeler_class": "bicycle",
+        "seg_sidewalk_ratio": 0.0,
+        "band_sidewalk_ratio": 0.0,
+        "world_sidewalk_bbox_score": 0.25,
+        "road_score": 0.4055
+      },
+      {
+        "frame_id": 552,
+        "time_sec": 18.4,
+        "status": "sidewalk_candidate",
+        "score": 0.385,
+        "has_rider_pair": true,
+        "best_rider_pair_score": 1.0,
+        "bbox": [
+          1027,
+          529,
+          1074,
+          583
+        ],
+        "two_wheeler_class": "bike",
+        "seg_sidewalk_ratio": 0.0,
+        "band_sidewalk_ratio": 0.0,
+        "world_sidewalk_bbox_score": 0.25,
+        "road_score": 0.7471
+      }
+    ],
+    "reason": "이륜차 기준점 또는 하단 band가 인도 영역에 반복적으로 위치했습니다."
+  },
+  "helmet": {
+    "helmet_label": "helmet_unknown",
+    "no_helmet_score": 0.3041,
+    "is_no_helmet": false,
+    "rider_frames": 88,
+    "helmet_count": 3,
+    "no_helmet_count": 0,
+    "no_helmet_candidate_count": 1,
+    "unknown_count": 176,
+    "helmet_ratio": 0.0167,
+    "no_helmet_ratio": 0.0,
+    "candidate_ratio": 0.0056,
+    "unknown_ratio": 0.9778,
+    "best_evidence": [
+      {
+        "frame_id": 704,
+        "person_track_id": 1,
+        "two_wheeler_track_id": null,
+        "head_box": [
+          993,
+          466,
+          1059,
+          517
+        ],
+        "helmet_status": "no_helmet_candidate",
+        "helmet_confidence": 0.531,
+        "helmet_score": 0.0,
+        "no_helmet_score": 0.0,
+        "neutral_head_score": 0.231,
+        "reason": "head는 잡혔지만 helmet 후보가 약함. 후보로만 사용",
+        "world_matches": [
+          {
+            "label": "hat",
+            "confidence": 0.231,
+            "bbox": [
+              1016,
+              476,
+              1037,
+              492
+            ],
+            "match_score": 0.231,
+            "iou_head": 0.0998,
+            "overlap_head": 1.0,
+            "center_inside_head": true
+          },
+          {
+            "label": "hat",
+            "confidence": 0.0643,
+            "bbox": [
+              1017,
+              473,
+              1037,
+              488
+            ],
+            "match_score": 0.0643,
+            "iou_head": 0.0891,
+            "overlap_head": 1.0,
+            "center_inside_head": true
+          }
+        ],
+        "local_detections": [],
+        "time_sec": 23.467,
+        "no_helmet_frame_score": 0.531
+      },
+      {
+        "frame_id": 88,
+        "person_track_id": 1,
+        "two_wheeler_track_id": null,
+        "head_box": [
+          1115,
+          446,
+          1144,
+          472
+        ],
+        "helmet_status": "unknown",
+        "helmet_confidence": 0.0,
+        "helmet_score": 0.0,
+        "no_helmet_score": 0.0,
+        "neutral_head_score": 0.0,
+        "reason": "rider는 있으나 head-zone 내부 helmet/head 후보가 없음",
+        "world_matches": [],
+        "local_detections": [],
+        "time_sec": 2.933,
+        "no_helmet_frame_score": 0.0
+      },
+      {
+        "frame_id": 88,
+        "person_track_id": 1,
+        "two_wheeler_track_id": null,
+        "head_box": [
+          1115,
+          446,
+          1144,
+          472
+        ],
+        "helmet_status": "unknown",
+        "helmet_confidence": 0.0,
+        "helmet_score": 0.0,
+        "no_helmet_score": 0.0,
+        "neutral_head_score": 0.0,
+        "reason": "rider는 있으나 head-zone 내부 helmet/head 후보가 없음",
+        "world_matches": [],
+        "local_detections": [],
+        "time_sec": 2.933,
+        "no_helmet_frame_score": 0.0
+      },
+      {
+        "frame_id": 88,
+        "person_track_id": 1,
+        "two_wheeler_track_id": null,
+        "head_box": [
+          1115,
+          446,
+          1144,
+          472
+        ],
+        "helmet_status": "unknown",
+        "helmet_confidence": 0.0,
+        "helmet_score": 0.0,
+        "no_helmet_score": 0.0,
+        "neutral_head_score": 0.0,
+        "reason": "rider는 있으나 head-zone 내부 helmet/head 후보가 없음",
+        "world_matches": [],
+        "local_detections": [],
+        "time_sec": 2.933,
+        "no_helmet_frame_score": 0.0
+      },
+      {
+        "frame_id": 88,
+        "person_track_id": 1,
+        "two_wheeler_track_id": null,
+        "head_box": [
+          1115,
+          446,
+          1144,
+          472
+        ],
+        "helmet_status": "unknown",
+        "helmet_confidence": 0.0,
+        "helmet_score": 0.0,
+        "no_helmet_score": 0.0,
+        "neutral_head_score": 0.0,
+        "reason": "rider는 있으나 head-zone 내부 helmet/head 후보가 없음",
+        "world_matches": [],
+        "local_detections": [],
+        "time_sec": 2.933,
+        "no_helmet_frame_score": 0.0
+      },
+      {
+        "frame_id": 104,
+        "person_track_id": 1,
+        "two_wheeler_track_id": null,
+        "head_box": [
+          1126,
+          447,
+          1155,
+          473
+        ],
+        "helmet_status": "unknown",
+        "helmet_confidence": 0.0,
+        "helmet_score": 0.0,
+        "no_helmet_score": 0.0,
+        "neutral_head_score": 0.0,
+        "reason": "rider는 있으나 head-zone 내부 helmet/head 후보가 없음",
+        "world_matches": [],
+        "local_detections": [],
+        "time_sec": 3.467,
+        "no_helmet_frame_score": 0.0
+      },
+      {
+        "frame_id": 104,
+        "person_track_id": 1,
+        "two_wheeler_track_id": null,
+        "head_box": [
+          1126,
+          447,
+          1155,
+          473
+        ],
+        "helmet_status": "unknown",
+        "helmet_confidence": 0.0,
+        "helmet_score": 0.0,
+        "no_helmet_score": 0.0,
+        "neutral_head_score": 0.0,
+        "reason": "rider는 있으나 head-zone 내부 helmet/head 후보가 없음",
+        "world_matches": [],
+        "local_detections": [],
+        "time_sec": 3.467,
+        "no_helmet_frame_score": 0.0
+      },
+      {
+        "frame_id": 112,
+        "person_track_id": 1,
+        "two_wheeler_track_id": null,
+        "head_box": [
+          1130,
+          446,
+          1159,
+          472
+        ],
+        "helmet_status": "unknown",
+        "helmet_confidence": 0.0,
+        "helmet_score": 0.0,
+        "no_helmet_score": 0.0,
+        "neutral_head_score": 0.0,
+        "reason": "rider는 있으나 head-zone 내부 helmet/head 후보가 없음",
+        "world_matches": [],
+        "local_detections": [],
+        "time_sec": 3.733,
+        "no_helmet_frame_score": 0.0
+      },
+      {
+        "frame_id": 112,
+        "person_track_id": 1,
+        "two_wheeler_track_id": null,
+        "head_box": [
+          1130,
+          446,
+          1159,
+          472
+        ],
+        "helmet_status": "unknown",
+        "helmet_confidence": 0.0,
+        "helmet_score": 0.0,
+        "no_helmet_score": 0.0,
+        "neutral_head_score": 0.0,
+        "reason": "rider는 있으나 head-zone 내부 helmet/head 후보가 없음",
+        "world_matches": [],
+        "local_detections": [],
+        "time_sec": 3.733,
+        "no_helmet_frame_score": 0.0
+      },
+      {
+        "frame_id": 120,
+        "person_track_id": 1,
+        "two_wheeler_track_id": null,
+        "head_box": [
+          1132,
+          446,
+          1162,
+          473
+        ],
+        "helmet_status": "unknown",
+        "helmet_confidence": 0.0,
+        "helmet_score": 0.0,
+        "no_helmet_score": 0.0,
+        "neutral_head_score": 0.0,
+        "reason": "rider는 있으나 head-zone 내부 helmet/head 후보가 없음",
+        "world_matches": [],
+        "local_detections": [],
+        "time_sec": 4.0,
+        "no_helmet_frame_score": 0.0
+      },
+      {
+        "frame_id": 120,
+        "person_track_id": 1,
+        "two_wheeler_track_id": null,
+        "head_box": [
+          1132,
+          446,
+          1162,
+          473
+        ],
+        "helmet_status": "unknown",
+        "helmet_confidence": 0.0,
+        "helmet_score": 0.0,
+        "no_helmet_score": 0.0,
+        "neutral_head_score": 0.0,
+        "reason": "rider는 있으나 head-zone 내부 helmet/head 후보가 없음",
+        "world_matches": [],
+        "local_detections": [],
+        "time_sec": 4.0,
+        "no_helmet_frame_score": 0.0
+      },
+      {
+        "frame_id": 128,
+        "person_track_id": 1,
+        "two_wheeler_track_id": null,
+        "head_box": [
+          1134,
+          443,
+          1166,
+          471
+        ],
+        "helmet_status": "unknown",
+        "helmet_confidence": 0.0,
+        "helmet_score": 0.0,
+        "no_helmet_score": 0.0,
+        "neutral_head_score": 0.0,
+        "reason": "rider는 있으나 head-zone 내부 helmet/head 후보가 없음",
+        "world_matches": [],
+        "local_detections": [],
+        "time_sec": 4.267,
+        "no_helmet_frame_score": 0.0
+      }
+    ],
+    "reason": "rider는 있으나 helmet/no-helmet 근거가 부족합니다. 전용 헬멧 모델 연결 시 개선됩니다."
+  },
+  "intrusion": null,
+  "track_summary": {
+    "1": {
+      "length": 104,
+      "distance": 428.984,
+      "displacement": 245.627,
+      "mean_speed": 15.468,
+      "direction_changes": 0,
+      "first_frame": 88,
+      "last_frame": 920,
+      "first_time": 2.933,
+      "last_time": 30.667,
+      "track_source": "yolo_bytetrack"
+    }
+  },
+  "vehicle_track_summary": {
+    "1": {
+      "length": 93,
+      "distance": 635.579,
+      "displacement": 273.23,
+      "mean_speed": 24.321,
+      "direction_changes": 1,
+      "first_frame": 0,
+      "last_frame": 784,
+      "first_time": 0.0,
+      "last_time": 26.133,
+      "track_source": "custom_greedy"
+    },
+    "2": {
+      "length": 60,
+      "distance": 47.5,
+      "displacement": 9.862,
+      "mean_speed": 3.019,
+      "direction_changes": 0,
+      "first_frame": 0,
+      "last_frame": 472,
+      "first_time": 0.0,
+      "last_time": 15.733,
+      "track_source": "custom_greedy"
+    },
+    "3": {
+      "length": 3,
+      "distance": 196.392,
+      "displacement": 196.365,
+      "mean_speed": 245.49,
+      "direction_changes": 0,
+      "first_frame": 0,
+      "last_frame": 24,
+      "first_time": 0.0,
+      "last_time": 0.8,
+      "track_source": "custom_greedy"
+    },
+    "4": {
+      "length": 3,
+      "distance": 2.414,
+      "displacement": 1.0,
+      "mean_speed": 4.529,
+      "direction_changes": 0,
+      "first_frame": 8,
+      "last_frame": 24,
+      "first_time": 0.267,
+      "last_time": 0.8,
+      "track_source": "custom_greedy"
+    },
+    "5": {
+      "length": 2,
+      "distance": 13.285,
+      "displacement": 13.285,
+      "mean_speed": 49.945,
+      "direction_changes": 0,
+      "first_frame": 80,
+      "last_frame": 88,
+      "first_time": 2.667,
+      "last_time": 2.933,
+      "track_source": "custom_greedy"
+    },
+    "6": {
+      "length": 1,
+      "distance": 0.0,
+      "displacement": 0.0,
+      "mean_speed": 0.0,
+      "direction_changes": 0
+    },
+    "7": {
+      "length": 4,
+      "distance": 0.5,
+      "displacement": 0.5,
+      "mean_speed": 0.625,
+      "direction_changes": 0,
+      "first_frame": 120,
+      "last_frame": 144,
+      "first_time": 4.0,
+      "last_time": 4.8,
+      "track_source": "custom_greedy"
+    },
+    "8": {
+      "length": 6,
+      "distance": 17.869,
+      "displacement": 4.301,
+      "mean_speed": 13.405,
+      "direction_changes": 0,
+      "first_frame": 128,
+      "last_frame": 168,
+      "first_time": 4.267,
+      "last_time": 5.6,
+      "track_source": "custom_greedy"
+    },
+    "9": {
+      "length": 4,
+      "distance": 57.864,
+      "displacement": 11.927,
+      "mean_speed": 43.409,
+      "direction_changes": 1,
+      "first_frame": 200,
+      "last_frame": 240,
+      "first_time": 6.667,
+      "last_time": 8.0,
+      "track_source": "custom_greedy"
+    },
+    "10": {
+      "length": 2,
+      "distance": 6.083,
+      "displacement": 6.083,
+      "mean_speed": 22.782,
+      "direction_changes": 0,
+      "first_frame": 288,
+      "last_frame": 296,
+      "first_time": 9.6,
+      "last_time": 9.867,
+      "track_source": "custom_greedy"
+    },
+    "11": {
+      "length": 1,
+      "distance": 0.0,
+      "displacement": 0.0,
+      "mean_speed": 0.0,
+      "direction_changes": 0
+    },
+    "12": {
+      "length": 22,
+      "distance": 220.339,
+      "displacement": 106.569,
+      "mean_speed": 35.927,
+      "direction_changes": 0,
+      "first_frame": 368,
+      "last_frame": 552,
+      "first_time": 12.267,
+      "last_time": 18.4,
+      "track_source": "custom_greedy"
+    },
+    "13": {
+      "length": 1,
+      "distance": 0.0,
+      "displacement": 0.0,
+      "mean_speed": 0.0,
+      "direction_changes": 0
+    },
+    "14": {
+      "length": 1,
+      "distance": 0.0,
+      "displacement": 0.0,
+      "mean_speed": 0.0,
+      "direction_changes": 0
+    },
+    "15": {
+      "length": 1,
+      "distance": 0.0,
+      "displacement": 0.0,
+      "mean_speed": 0.0,
+      "direction_changes": 0
+    },
+    "16": {
+      "length": 11,
+      "distance": 115.82,
+      "displacement": 112.01,
+      "mean_speed": 43.427,
+      "direction_changes": 0,
+      "first_frame": 544,
+      "last_frame": 624,
+      "first_time": 18.133,
+      "last_time": 20.8,
+      "track_source": "custom_greedy"
+    },
+    "17": {
+      "length": 1,
+      "distance": 0.0,
+      "displacement": 0.0,
+      "mean_speed": 0.0,
+      "direction_changes": 0
+    },
+    "18": {
+      "length": 11,
+      "distance": 172.533,
+      "displacement": 167.184,
+      "mean_speed": 58.825,
+      "direction_changes": 0,
+      "first_frame": 624,
+      "last_frame": 712,
+      "first_time": 20.8,
+      "last_time": 23.733,
+      "track_source": "custom_greedy"
+    },
+    "19": {
+      "length": 1,
+      "distance": 0.0,
+      "displacement": 0.0,
+      "mean_speed": 0.0,
+      "direction_changes": 0
+    },
+    "20": {
+      "length": 7,
+      "distance": 59.017,
+      "displacement": 54.261,
+      "mean_speed": 24.59,
+      "direction_changes": 0,
+      "first_frame": 656,
+      "last_frame": 728,
+      "first_time": 21.867,
+      "last_time": 24.267,
+      "track_source": "custom_greedy"
+    },
+    "21": {
+      "length": 2,
+      "distance": 38.269,
+      "displacement": 38.269,
+      "mean_speed": 71.799,
+      "direction_changes": 0,
+      "first_frame": 680,
+      "last_frame": 696,
+      "first_time": 22.667,
+      "last_time": 23.2,
+      "track_source": "custom_greedy"
+    },
+    "22": {
+      "length": 1,
+      "distance": 0.0,
+      "displacement": 0.0,
+      "mean_speed": 0.0,
+      "direction_changes": 0
+    },
+    "23": {
+      "length": 20,
+      "distance": 228.786,
+      "displacement": 212.062,
+      "mean_speed": 45.152,
+      "direction_changes": 0,
+      "first_frame": 696,
+      "last_frame": 848,
+      "first_time": 23.2,
+      "last_time": 28.267,
+      "track_source": "custom_greedy"
+    },
+    "24": {
+      "length": 21,
+      "distance": 10.093,
+      "displacement": 1.118,
+      "mean_speed": 1.892,
+      "direction_changes": 0,
+      "first_frame": 760,
+      "last_frame": 920,
+      "first_time": 25.333,
+      "last_time": 30.667,
+      "track_source": "custom_greedy"
+    },
+    "25": {
+      "length": 2,
+      "distance": 3.041,
+      "displacement": 3.041,
+      "mean_speed": 11.391,
+      "direction_changes": 0,
+      "first_frame": 760,
+      "last_frame": 768,
+      "first_time": 25.333,
+      "last_time": 25.6,
+      "track_source": "custom_greedy"
+    },
+    "26": {
+      "length": 13,
+      "distance": 51.677,
+      "displacement": 48.26,
+      "mean_speed": 16.149,
+      "direction_changes": 0,
+      "first_frame": 824,
+      "last_frame": 920,
+      "first_time": 27.467,
+      "last_time": 30.667,
+      "track_source": "custom_greedy"
+    },
+    "27": {
+      "length": 1,
+      "distance": 0.0,
+      "displacement": 0.0,
+      "mean_speed": 0.0,
+      "direction_changes": 0
+    },
+    "28": {
+      "length": 2,
+      "distance": 134.035,
+      "displacement": 134.035,
+      "mean_speed": 167.543,
+      "direction_changes": 0,
+      "first_frame": 880,
+      "last_frame": 904,
+      "first_time": 29.333,
+      "last_time": 30.133,
+      "track_source": "custom_greedy"
+    }
+  },
+  "model_status": {
+    "cc_version": "cc_pipeline_split_bbox_reasoning_v1",
+    "device": "cuda",
+    "base_yolo": "yolo11s.pt",
+    "pose_model": "yolo11s-pose.pt",
+    "world_model": "C:\\Users\\우성한\\yolov8s-world.pt",
+    "world_model_active": true,
+    "world_classes": [
+      "person",
+      "rider",
+      "pedestrian",
+      "bicycle",
+      "bike",
+      "electric bike",
+      "motorcycle",
+      "motorbike",
+      "scooter",
+      "electric scooter",
+      "kickboard",
+      "moped",
+      "helmet",
+      "motorcycle helmet",
+      "bike helmet",
+      "no helmet",
+      "bare head",
+      "head",
+      "hat",
+      "cap",
+      "sidewalk",
+      "walkway",
+      "pavement",
+      "road",
+      "street",
+      "crosswalk",
+      "curb",
+      "lane",
+      "gate",
+      "entrance gate",
+      "fence",
+      "railing",
+      "barrier",
+      "wall"
+    ],
+    "segformer": "nvidia/segformer-b5-finetuned-cityscapes-1024-1024",
+    "helmet_backend": "none",
+    "helmet_model": null,
+    "tracker": "bytetrack.yaml"
+  },
+  "feature_json": "C:\\Users\\우성한\\outputs\\prediction\\cc\\cc_features\\스토킹__특정_구역_내_지속_배회__lo_e1281__lo_e1281_c2.json"
+}

@@ -1,0 +1,2322 @@
+{
+  "task": "ee_sliding_window_pair_fight_stalking",
+  "settings": {
+    "model": "yolo11n.pt",
+    "frame_stride": 5,
+    "window_sec": 4.0,
+    "step_sec": 1.0,
+    "fight_th": 0.56,
+    "stalking_th": 0.58,
+    "close_dist_norm": 1.2,
+    "very_close_dist_norm": 0.65
+  },
+  "summary": {
+    "video_name": "lo_e1281_c1.mp4",
+    "video_path": "C:\\Users\\우성한\\Sample (1)\\Sample\\01.원천데이터\\스토킹\\특정 구역 내 지속 배회\\lo_e1281\\lo_e1281_c1.mp4",
+    "fps": 30.0,
+    "total_frames": 909,
+    "duration_sec": 30.3,
+    "processed_frames": 182,
+    "max_people_seen": 3,
+    "pair_feature_rows": 22,
+    "window_rows": 6,
+    "final_label": "stalking",
+    "final_score": 0.945,
+    "best_fight_score": 0.1375,
+    "best_stalking_score": 0.945,
+    "final_reason": "사람 pair가 일정 거리에서 같은 방향으로 지속 이동하는 신호가 강함",
+    "event_start_sec": 24.0,
+    "event_end_sec": 28.0,
+    "event_pair": "1-3"
+  },
+  "best_windows": {
+    "best_fight_score": 0.13750589514824665,
+    "best_stalking_score": 0.9450000000000001,
+    "best_fight_window": {
+      "pair_key": "1-3",
+      "frame_count": 12,
+      "start_t": 22.0,
+      "end_t": 23.833333333333332,
+      "fight_score": 0.13750589514824665,
+      "stalking_score": 0.8350000000000001,
+      "close_ratio": 0.0,
+      "very_close_ratio": 0.0,
+      "moderate_ratio": 1.0,
+      "same_direction_ratio": 0.25,
+      "burst_ratio": 0.4166666666666667,
+      "p90_pair_motion": 0.2608442891557782,
+      "p90_relative_motion": 0.24412689066819998,
+      "p90_flow": 0.046815788795648815,
+      "mean_dist_norm": 1.7327028513127312,
+      "std_dist_norm": 0.18889796754408456,
+      "max_iou": 0.0,
+      "window_start": 20.0,
+      "window_end": 24.0
+    },
+    "best_stalking_window": {
+      "pair_key": "1-3",
+      "frame_count": 8,
+      "start_t": 24.0,
+      "end_t": 25.166666666666668,
+      "fight_score": 0.07675937067205468,
+      "stalking_score": 0.9450000000000001,
+      "close_ratio": 0.0,
+      "very_close_ratio": 0.0,
+      "moderate_ratio": 1.0,
+      "same_direction_ratio": 0.75,
+      "burst_ratio": 0.25,
+      "p90_pair_motion": 0.21322047408904077,
+      "p90_relative_motion": 0.1200505306258221,
+      "p90_flow": 0.04098382020211159,
+      "mean_dist_norm": 2.14547733965143,
+      "std_dist_norm": 0.2740812309741662,
+      "max_iou": 0.0,
+      "window_start": 24.0,
+      "window_end": 28.0
+    },
+    "final_label": "stalking",
+    "final_score": 0.9450000000000001,
+    "final_reason": "사람 pair가 일정 거리에서 같은 방향으로 지속 이동하는 신호가 강함",
+    "final_window": {
+      "pair_key": "1-3",
+      "frame_count": 8,
+      "start_t": 24.0,
+      "end_t": 25.166666666666668,
+      "fight_score": 0.07675937067205468,
+      "stalking_score": 0.9450000000000001,
+      "close_ratio": 0.0,
+      "very_close_ratio": 0.0,
+      "moderate_ratio": 1.0,
+      "same_direction_ratio": 0.75,
+      "burst_ratio": 0.25,
+      "p90_pair_motion": 0.21322047408904077,
+      "p90_relative_motion": 0.1200505306258221,
+      "p90_flow": 0.04098382020211159,
+      "mean_dist_norm": 2.14547733965143,
+      "std_dist_norm": 0.2740812309741662,
+      "max_iou": 0.0,
+      "window_start": 24.0,
+      "window_end": 28.0
+    }
+  },
+  "frame_summaries": [
+    {
+      "frame_idx": 0,
+      "t": 0.0,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 5,
+      "t": 0.16666666666666666,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 10,
+      "t": 0.3333333333333333,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 15,
+      "t": 0.5,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 20,
+      "t": 0.6666666666666666,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 25,
+      "t": 0.8333333333333334,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 30,
+      "t": 1.0,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 35,
+      "t": 1.1666666666666667,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 40,
+      "t": 1.3333333333333333,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 45,
+      "t": 1.5,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 50,
+      "t": 1.6666666666666667,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 55,
+      "t": 1.8333333333333333,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 60,
+      "t": 2.0,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 65,
+      "t": 2.1666666666666665,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 70,
+      "t": 2.3333333333333335,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 75,
+      "t": 2.5,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 80,
+      "t": 2.6666666666666665,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 85,
+      "t": 2.8333333333333335,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 90,
+      "t": 3.0,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 95,
+      "t": 3.1666666666666665,
+      "person_detections": 1,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 100,
+      "t": 3.3333333333333335,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 105,
+      "t": 3.5,
+      "person_detections": 0,
+      "active_tracks": 0,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 110,
+      "t": 3.6666666666666665,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 115,
+      "t": 3.8333333333333335,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 120,
+      "t": 4.0,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 125,
+      "t": 4.166666666666667,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 130,
+      "t": 4.333333333333333,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 135,
+      "t": 4.5,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 140,
+      "t": 4.666666666666667,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 145,
+      "t": 4.833333333333333,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 150,
+      "t": 5.0,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 155,
+      "t": 5.166666666666667,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 160,
+      "t": 5.333333333333333,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 165,
+      "t": 5.5,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 170,
+      "t": 5.666666666666667,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 175,
+      "t": 5.833333333333333,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 180,
+      "t": 6.0,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 185,
+      "t": 6.166666666666667,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 190,
+      "t": 6.333333333333333,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 195,
+      "t": 6.5,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 200,
+      "t": 6.666666666666667,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 205,
+      "t": 6.833333333333333,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 210,
+      "t": 7.0,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 215,
+      "t": 7.166666666666667,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 220,
+      "t": 7.333333333333333,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 225,
+      "t": 7.5,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 230,
+      "t": 7.666666666666667,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 235,
+      "t": 7.833333333333333,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 240,
+      "t": 8.0,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 245,
+      "t": 8.166666666666666,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 250,
+      "t": 8.333333333333334,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 255,
+      "t": 8.5,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 260,
+      "t": 8.666666666666666,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 265,
+      "t": 8.833333333333334,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 270,
+      "t": 9.0,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 275,
+      "t": 9.166666666666666,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 280,
+      "t": 9.333333333333334,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 285,
+      "t": 9.5,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 290,
+      "t": 9.666666666666666,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 295,
+      "t": 9.833333333333334,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 300,
+      "t": 10.0,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 305,
+      "t": 10.166666666666666,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 310,
+      "t": 10.333333333333334,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 315,
+      "t": 10.5,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 320,
+      "t": 10.666666666666666,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 325,
+      "t": 10.833333333333334,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 330,
+      "t": 11.0,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 335,
+      "t": 11.166666666666666,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 340,
+      "t": 11.333333333333334,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 345,
+      "t": 11.5,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 350,
+      "t": 11.666666666666666,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 355,
+      "t": 11.833333333333334,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 360,
+      "t": 12.0,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 365,
+      "t": 12.166666666666666,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 370,
+      "t": 12.333333333333334,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 375,
+      "t": 12.5,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 380,
+      "t": 12.666666666666666,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 385,
+      "t": 12.833333333333334,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 390,
+      "t": 13.0,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 395,
+      "t": 13.166666666666666,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 400,
+      "t": 13.333333333333334,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 405,
+      "t": 13.5,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 410,
+      "t": 13.666666666666666,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 415,
+      "t": 13.833333333333334,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 420,
+      "t": 14.0,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 425,
+      "t": 14.166666666666666,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 430,
+      "t": 14.333333333333334,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 435,
+      "t": 14.5,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 440,
+      "t": 14.666666666666666,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 445,
+      "t": 14.833333333333334,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 450,
+      "t": 15.0,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 455,
+      "t": 15.166666666666666,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 460,
+      "t": 15.333333333333334,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 465,
+      "t": 15.5,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 470,
+      "t": 15.666666666666666,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 475,
+      "t": 15.833333333333334,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 480,
+      "t": 16.0,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 485,
+      "t": 16.166666666666668,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 490,
+      "t": 16.333333333333332,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 495,
+      "t": 16.5,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 500,
+      "t": 16.666666666666668,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 505,
+      "t": 16.833333333333332,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 510,
+      "t": 17.0,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 515,
+      "t": 17.166666666666668,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 520,
+      "t": 17.333333333333332,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 525,
+      "t": 17.5,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 530,
+      "t": 17.666666666666668,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 535,
+      "t": 17.833333333333332,
+      "person_detections": 2,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 540,
+      "t": 18.0,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 545,
+      "t": 18.166666666666668,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 550,
+      "t": 18.333333333333332,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 555,
+      "t": 18.5,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 560,
+      "t": 18.666666666666668,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 565,
+      "t": 18.833333333333332,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 570,
+      "t": 19.0,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 575,
+      "t": 19.166666666666668,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 580,
+      "t": 19.333333333333332,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 585,
+      "t": 19.5,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 590,
+      "t": 19.666666666666668,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 595,
+      "t": 19.833333333333332,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 600,
+      "t": 20.0,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 605,
+      "t": 20.166666666666668,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 610,
+      "t": 20.333333333333332,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 615,
+      "t": 20.5,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 620,
+      "t": 20.666666666666668,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 625,
+      "t": 20.833333333333332,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 630,
+      "t": 21.0,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 635,
+      "t": 21.166666666666668,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 640,
+      "t": 21.333333333333332,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 645,
+      "t": 21.5,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 650,
+      "t": 21.666666666666668,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 655,
+      "t": 21.833333333333332,
+      "person_detections": 2,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 660,
+      "t": 22.0,
+      "person_detections": 2,
+      "active_tracks": 2,
+      "pair_count": 1
+    },
+    {
+      "frame_idx": 665,
+      "t": 22.166666666666668,
+      "person_detections": 2,
+      "active_tracks": 2,
+      "pair_count": 1
+    },
+    {
+      "frame_idx": 670,
+      "t": 22.333333333333332,
+      "person_detections": 2,
+      "active_tracks": 2,
+      "pair_count": 1
+    },
+    {
+      "frame_idx": 675,
+      "t": 22.5,
+      "person_detections": 2,
+      "active_tracks": 2,
+      "pair_count": 1
+    },
+    {
+      "frame_idx": 680,
+      "t": 22.666666666666668,
+      "person_detections": 2,
+      "active_tracks": 2,
+      "pair_count": 1
+    },
+    {
+      "frame_idx": 685,
+      "t": 22.833333333333332,
+      "person_detections": 2,
+      "active_tracks": 2,
+      "pair_count": 1
+    },
+    {
+      "frame_idx": 690,
+      "t": 23.0,
+      "person_detections": 2,
+      "active_tracks": 2,
+      "pair_count": 1
+    },
+    {
+      "frame_idx": 695,
+      "t": 23.166666666666668,
+      "person_detections": 2,
+      "active_tracks": 2,
+      "pair_count": 1
+    },
+    {
+      "frame_idx": 700,
+      "t": 23.333333333333332,
+      "person_detections": 2,
+      "active_tracks": 2,
+      "pair_count": 1
+    },
+    {
+      "frame_idx": 705,
+      "t": 23.5,
+      "person_detections": 2,
+      "active_tracks": 2,
+      "pair_count": 1
+    },
+    {
+      "frame_idx": 710,
+      "t": 23.666666666666668,
+      "person_detections": 2,
+      "active_tracks": 2,
+      "pair_count": 1
+    },
+    {
+      "frame_idx": 715,
+      "t": 23.833333333333332,
+      "person_detections": 2,
+      "active_tracks": 2,
+      "pair_count": 1
+    },
+    {
+      "frame_idx": 720,
+      "t": 24.0,
+      "person_detections": 3,
+      "active_tracks": 2,
+      "pair_count": 1
+    },
+    {
+      "frame_idx": 725,
+      "t": 24.166666666666668,
+      "person_detections": 3,
+      "active_tracks": 3,
+      "pair_count": 3
+    },
+    {
+      "frame_idx": 730,
+      "t": 24.333333333333332,
+      "person_detections": 2,
+      "active_tracks": 2,
+      "pair_count": 1
+    },
+    {
+      "frame_idx": 735,
+      "t": 24.5,
+      "person_detections": 2,
+      "active_tracks": 2,
+      "pair_count": 1
+    },
+    {
+      "frame_idx": 740,
+      "t": 24.666666666666668,
+      "person_detections": 2,
+      "active_tracks": 2,
+      "pair_count": 1
+    },
+    {
+      "frame_idx": 745,
+      "t": 24.833333333333332,
+      "person_detections": 2,
+      "active_tracks": 2,
+      "pair_count": 1
+    },
+    {
+      "frame_idx": 750,
+      "t": 25.0,
+      "person_detections": 2,
+      "active_tracks": 2,
+      "pair_count": 1
+    },
+    {
+      "frame_idx": 755,
+      "t": 25.166666666666668,
+      "person_detections": 2,
+      "active_tracks": 2,
+      "pair_count": 1
+    },
+    {
+      "frame_idx": 760,
+      "t": 25.333333333333332,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 765,
+      "t": 25.5,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 770,
+      "t": 25.666666666666668,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 775,
+      "t": 25.833333333333332,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 780,
+      "t": 26.0,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 785,
+      "t": 26.166666666666668,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 790,
+      "t": 26.333333333333332,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 795,
+      "t": 26.5,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 800,
+      "t": 26.666666666666668,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 805,
+      "t": 26.833333333333332,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 810,
+      "t": 27.0,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 815,
+      "t": 27.166666666666668,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 820,
+      "t": 27.333333333333332,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 825,
+      "t": 27.5,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 830,
+      "t": 27.666666666666668,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 835,
+      "t": 27.833333333333332,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 840,
+      "t": 28.0,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 845,
+      "t": 28.166666666666668,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 850,
+      "t": 28.333333333333332,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 855,
+      "t": 28.5,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 860,
+      "t": 28.666666666666668,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 865,
+      "t": 28.833333333333332,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 870,
+      "t": 29.0,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 875,
+      "t": 29.166666666666668,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 880,
+      "t": 29.333333333333332,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 885,
+      "t": 29.5,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 890,
+      "t": 29.666666666666668,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 895,
+      "t": 29.833333333333332,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 900,
+      "t": 30.0,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    },
+    {
+      "frame_idx": 905,
+      "t": 30.166666666666668,
+      "person_detections": 1,
+      "active_tracks": 1,
+      "pair_count": 0
+    }
+  ],
+  "pair_features": [
+    {
+      "frame_idx": 660,
+      "t": 22.0,
+      "track_a": 1,
+      "track_b": 3,
+      "pair_key": "1-3",
+      "dist_norm": 2.310699462878722,
+      "close": false,
+      "very_close": false,
+      "moderate_dist": true,
+      "iou": 0.0,
+      "speed_a": 0.021785900957137016,
+      "speed_b": 0.2659111832052358,
+      "pair_motion": 0.28769708416237283,
+      "relative_motion": 0.25321597989334843,
+      "direction_cos": 0.6097799479022068,
+      "approach_norm": 0.012174892830227258,
+      "roi_flow": 0.004190971035524126,
+      "union_bbox": [
+        280.36341857910156,
+        314.34104919433594,
+        786.6433563232422,
+        1153.3579864501953
+      ],
+      "bbox_a": [
+        653.065185546875,
+        411.15069580078125,
+        728.2264404296875,
+        606.3228149414062
+      ],
+      "bbox_b": [
+        338.78033447265625,
+        812.131103515625,
+        488.24188232421875,
+        1056.54833984375
+      ]
+    },
+    {
+      "frame_idx": 665,
+      "t": 22.166666666666668,
+      "track_a": 1,
+      "track_b": 3,
+      "pair_key": "1-3",
+      "dist_norm": 1.8384316440836388,
+      "close": false,
+      "very_close": false,
+      "moderate_dist": true,
+      "iou": 0.0,
+      "speed_a": 0.015701720552941955,
+      "speed_b": 0.14380775916019964,
+      "pair_motion": 0.15950947971314158,
+      "relative_motion": 0.1492085949190387,
+      "direction_cos": -0.2958307949480307,
+      "approach_norm": 0.1466819205693866,
+      "roi_flow": 0.01506869593768567,
+      "union_bbox": [
+        315.0528228759766,
+        315.7344909667969,
+        785.7106658935547,
+        1155.9050354003907
+      ],
+      "bbox_a": [
+        655.4798583984375,
+        412.67724609375,
+        731.4039916992188,
+        610.5650024414062
+      ],
+      "bbox_b": [
+        369.3594970703125,
+        745.1619873046875,
+        492.98040771484375,
+        1058.9622802734375
+      ]
+    },
+    {
+      "frame_idx": 670,
+      "t": 22.333333333333332,
+      "track_a": 1,
+      "track_b": 3,
+      "pair_key": "1-3",
+      "dist_norm": 1.7759517068933188,
+      "close": false,
+      "very_close": false,
+      "moderate_dist": true,
+      "iou": 0.0,
+      "speed_a": 0.009052471839997479,
+      "speed_b": 0.11751649333726523,
+      "pair_motion": 0.1265689651772627,
+      "relative_motion": 0.12610623541607202,
+      "direction_cos": -0.9450466655048454,
+      "approach_norm": 0.0726170256081111,
+      "roi_flow": 0.0020547197693973653,
+      "union_bbox": [
+        350.0646667480469,
+        319.0460571289062,
+        777.6578674316406,
+        1155.2954956054687
+      ],
+      "bbox_a": [
+        654.2521362304688,
+        415.536376953125,
+        728.3201904296875,
+        609.3281860351562
+      ],
+      "bbox_b": [
+        399.40234375,
+        743.7149047851562,
+        522.7180786132812,
+        1058.80517578125
+      ]
+    },
+    {
+      "frame_idx": 675,
+      "t": 22.5,
+      "track_a": 1,
+      "track_b": 3,
+      "pair_key": "1-3",
+      "dist_norm": 1.682469868818108,
+      "close": false,
+      "very_close": false,
+      "moderate_dist": true,
+      "iou": 0.0,
+      "speed_a": 0.055793081929829916,
+      "speed_b": 0.21186045726126923,
+      "pair_motion": 0.26765353919109913,
+      "relative_motion": 0.25148762506314515,
+      "direction_cos": -0.6450023472932305,
+      "approach_norm": 0.09834304284812294,
+      "roi_flow": 0.016148300111205795,
+      "union_bbox": [
+        390.89513397216797,
+        327.8611038208008,
+        762.0693740844727,
+        1168.7505599975586
+      ],
+      "bbox_a": [
+        640.4943237304688,
+        424.8868103027344,
+        719.2415771484375,
+        616.7173461914062
+      ],
+      "bbox_b": [
+        433.7229309082031,
+        756.0624389648438,
+        592.904052734375,
+        1071.724853515625
+      ]
+    },
+    {
+      "frame_idx": 680,
+      "t": 22.666666666666668,
+      "track_a": 1,
+      "track_b": 3,
+      "pair_key": "1-3",
+      "dist_norm": 1.6057108578777421,
+      "close": false,
+      "very_close": false,
+      "moderate_dist": true,
+      "iou": 0.0,
+      "speed_a": 0.040613883819213256,
+      "speed_b": 0.015878569955682185,
+      "pair_motion": 0.05649245377489544,
+      "relative_motion": 0.04062545274222573,
+      "direction_cos": 0.19475335188799545,
+      "approach_norm": 0.03139589032377922,
+      "roi_flow": 0.020245111165839942,
+      "union_bbox": [
+        398.05778045654296,
+        333.58457641601564,
+        751.8559463500976,
+        1177.127947998047
+      ],
+      "bbox_a": [
+        635.269287109375,
+        430.91650390625,
+        711.0330810546875,
+        627.0654907226562
+      ],
+      "bbox_b": [
+        438.8806457519531,
+        754.3897705078125,
+        593.0040283203125,
+        1079.7960205078125
+      ]
+    },
+    {
+      "frame_idx": 685,
+      "t": 22.833333333333332,
+      "track_a": 1,
+      "track_b": 3,
+      "pair_key": "1-3",
+      "dist_norm": 1.6161460368659957,
+      "close": false,
+      "very_close": false,
+      "moderate_dist": true,
+      "iou": 0.0,
+      "speed_a": 0.0401461663051068,
+      "speed_b": 0.09777521658652825,
+      "pair_motion": 0.13792138289163505,
+      "relative_motion": 0.13237112393747938,
+      "direction_cos": -0.8089071706735229,
+      "approach_norm": 0.04126218186958701,
+      "roi_flow": 0.023373608977604127,
+      "union_bbox": [
+        451.4467300415039,
+        338.4088165283203,
+        736.0382247924805,
+        1172.6680267333984
+      ],
+      "bbox_a": [
+        624.5756225585938,
+        434.66949462890625,
+        703.2007446289062,
+        631.5758056640625
+      ],
+      "bbox_b": [
+        484.2842102050781,
+        768.026611328125,
+        595.930419921875,
+        1076.4073486328125
+      ]
+    },
+    {
+      "frame_idx": 690,
+      "t": 23.0,
+      "track_a": 1,
+      "track_b": 3,
+      "pair_key": "1-3",
+      "dist_norm": 1.5837088658426388,
+      "close": false,
+      "very_close": false,
+      "moderate_dist": true,
+      "iou": 0.0,
+      "speed_a": 0.019101058602186777,
+      "speed_b": 0.0688016230771721,
+      "pair_motion": 0.08790268167935887,
+      "relative_motion": 0.0859935081003486,
+      "direction_cos": -0.8736866173714974,
+      "approach_norm": 0.013876528508127694,
+      "roi_flow": 0.011797585571709235,
+      "union_bbox": [
+        476.5655883789062,
+        335.61775360107424,
+        731.0650268554688,
+        1177.0933364868165
+      ],
+      "bbox_a": [
+        616.694580078125,
+        432.7110900878906,
+        701.69970703125,
+        636.237060546875
+      ],
+      "bbox_b": [
+        505.930908203125,
+        772.3685302734375,
+        608.54541015625,
+        1080.0
+      ]
+    },
+    {
+      "frame_idx": 695,
+      "t": 23.166666666666668,
+      "track_a": 1,
+      "track_b": 3,
+      "pair_key": "1-3",
+      "dist_norm": 1.6364333328945866,
+      "close": false,
+      "very_close": false,
+      "moderate_dist": true,
+      "iou": 0.0,
+      "speed_a": 0.043562860641833116,
+      "speed_b": 0.12105796962871163,
+      "pair_motion": 0.16462083027054475,
+      "relative_motion": 0.12972509097865106,
+      "direction_cos": -0.026153172966159485,
+      "approach_norm": 0.03962067041297161,
+      "roi_flow": 0.0469589539436946,
+      "union_bbox": [
+        507.42347412109376,
+        349.374609375,
+        725.1633178710938,
+        1168.76943359375
+      ],
+      "bbox_a": [
+        612.6275024414062,
+        443.920166015625,
+        700.0394897460938,
+        645.2741088867188
+      ],
+      "bbox_b": [
+        532.5473022460938,
+        792.58349609375,
+        638.5885009765625,
+        1074.223876953125
+      ]
+    },
+    {
+      "frame_idx": 700,
+      "t": 23.333333333333332,
+      "track_a": 1,
+      "track_b": 3,
+      "pair_key": "1-3",
+      "dist_norm": 1.6600367597690016,
+      "close": false,
+      "very_close": false,
+      "moderate_dist": true,
+      "iou": 0.0,
+      "speed_a": 0.020714800048459724,
+      "speed_b": 0.10492006069694233,
+      "pair_motion": 0.12563486074540206,
+      "relative_motion": 0.09801727441956719,
+      "direction_cos": 0.4209850029857885,
+      "approach_norm": 0.038880812122761635,
+      "roi_flow": 0.031588388805843456,
+      "union_bbox": [
+        524.6738067626953,
+        353.28013000488284,
+        725.7270111083984,
+        1153.666342163086
+      ],
+      "bbox_a": [
+        614.7259521484375,
+        445.63238525390625,
+        702.528564453125,
+        652.037109375
+      ],
+      "bbox_b": [
+        547.8722534179688,
+        802.4884643554688,
+        671.9829711914062,
+        1061.3140869140625
+      ]
+    },
+    {
+      "frame_idx": 705,
+      "t": 23.5,
+      "track_a": 1,
+      "track_b": 3,
+      "pair_key": "1-3",
+      "dist_norm": 1.6476627143111788,
+      "close": false,
+      "very_close": false,
+      "moderate_dist": true,
+      "iou": 0.0,
+      "speed_a": 0.009648612723846645,
+      "speed_b": 0.12402611011356375,
+      "pair_motion": 0.1336747228374104,
+      "relative_motion": 0.11447353603032245,
+      "direction_cos": 0.9908168667013961,
+      "approach_norm": -0.03366665789253331,
+      "roi_flow": 0.030206175265645615,
+      "union_bbox": [
+        552.8721282958984,
+        352.3245849609375,
+        721.5838653564454,
+        1174.9141845703125
+      ],
+      "bbox_a": [
+        619.59423828125,
+        447.23876953125,
+        701.6243286132812,
+        652.7975463867188
+      ],
+      "bbox_b": [
+        572.3388671875,
+        807.0573120117188,
+        702.1171264648438,
+        1080.0
+      ]
+    },
+    {
+      "frame_idx": 710,
+      "t": 23.666666666666668,
+      "track_a": 1,
+      "track_b": 3,
+      "pair_key": "1-3",
+      "dist_norm": 1.670748921387735,
+      "close": false,
+      "very_close": false,
+      "moderate_dist": true,
+      "iou": 0.0,
+      "speed_a": 0.028623334320027803,
+      "speed_b": 0.07199838618610213,
+      "pair_motion": 0.10062172050612994,
+      "relative_motion": 0.06365557814208059,
+      "direction_cos": 0.4733594184697683,
+      "approach_norm": -0.003941593015191784,
+      "roi_flow": 0.045527302463236746,
+      "union_bbox": [
+        578.8870239257812,
+        353.7174438476562,
+        725.2988891601562,
+        1174.7325073242187
+      ],
+      "bbox_a": [
+        618.540283203125,
+        448.449951171875,
+        702.4560546875,
+        665.12353515625
+      ],
+      "bbox_b": [
+        595.7807006835938,
+        823.6680908203125,
+        708.4052124023438,
+        1080.0
+      ]
+    },
+    {
+      "frame_idx": 715,
+      "t": 23.833333333333332,
+      "track_a": 1,
+      "track_b": 3,
+      "pair_key": "1-3",
+      "dist_norm": 1.76443404413011,
+      "close": false,
+      "very_close": false,
+      "moderate_dist": true,
+      "iou": 0.0,
+      "speed_a": 0.025186130914818045,
+      "speed_b": 0.17437490792307125,
+      "pair_motion": 0.1995610388378893,
+      "relative_motion": 0.1778802811136932,
+      "direction_cos": -0.06835929518314302,
+      "approach_norm": -0.01608968886845743,
+      "roi_flow": 0.06251911937742614,
+      "union_bbox": [
+        597.5539978027343,
+        362.95703125,
+        772.8684875488282,
+        1173.52734375
+      ],
+      "bbox_a": [
+        617.7825927734375,
+        456.484375,
+        700.1614990234375,
+        668.0567626953125
+      ],
+      "bbox_b": [
+        628.7469482421875,
+        839.5599365234375,
+        752.639892578125,
+        1080.0
+      ]
+    },
+    {
+      "frame_idx": 720,
+      "t": 24.0,
+      "track_a": 1,
+      "track_b": 3,
+      "pair_key": "1-3",
+      "dist_norm": 1.772712176858128,
+      "close": false,
+      "very_close": false,
+      "moderate_dist": true,
+      "iou": 0.0,
+      "speed_a": 0.020063426886075392,
+      "speed_b": 0.05000479707440708,
+      "pair_motion": 0.07006822396048247,
+      "relative_motion": 0.06639965099946814,
+      "direction_cos": -0.7504941049189509,
+      "approach_norm": 0.006791648233977192,
+      "roi_flow": 0.023177060494295562,
+      "union_bbox": [
+        593.4229553222656,
+        366.235400390625,
+        781.6152526855469,
+        1170.461865234375
+      ],
+      "bbox_a": [
+        615.137451171875,
+        459.03076171875,
+        696.055908203125,
+        671.4505615234375
+      ],
+      "bbox_b": [
+        643.8974609375,
+        841.9017333984375,
+        759.9007568359375,
+        1077.66650390625
+      ]
+    },
+    {
+      "frame_idx": 725,
+      "t": 24.166666666666668,
+      "track_a": 1,
+      "track_b": 3,
+      "pair_key": "1-3",
+      "dist_norm": 1.893364880169804,
+      "close": false,
+      "very_close": false,
+      "moderate_dist": true,
+      "iou": 0.0,
+      "speed_a": 0.02712505245754732,
+      "speed_b": 0.1194867140919897,
+      "pair_motion": 0.14661176654953703,
+      "relative_motion": 0.09921590228021722,
+      "direction_cos": 0.797425957879469,
+      "approach_norm": -0.04928969773835273,
+      "roi_flow": 0.030585981430084515,
+      "union_bbox": [
+        589.9216278076171,
+        368.58211212158204,
+        808.8607818603516,
+        1171.8379013061524
+      ],
+      "bbox_a": [
+        615.183837890625,
+        461.2654724121094,
+        700.316162109375,
+        680.0799560546875
+      ],
+      "bbox_b": [
+        664.205078125,
+        867.1285400390625,
+        783.5985717773438,
+        1079.154541015625
+      ]
+    },
+    {
+      "frame_idx": 725,
+      "t": 24.166666666666668,
+      "track_a": 1,
+      "track_b": 4,
+      "pair_key": "1-4",
+      "dist_norm": 1.3363539018785922,
+      "close": false,
+      "very_close": false,
+      "moderate_dist": true,
+      "iou": 0.0,
+      "speed_a": 0.037208350256066273,
+      "speed_b": 0.0045183109072470485,
+      "pair_motion": 0.04172666116331332,
+      "relative_motion": 0.03419262118244634,
+      "direction_cos": 0.7011142893340527,
+      "approach_norm": -0.014720134494555146,
+      "roi_flow": 0.004602281870859922,
+      "union_bbox": [
+        380.00532989501954,
+        428.4432998657227,
+        742.0958358764649,
+        712.9021286010742
+      ],
+      "bbox_a": [
+        615.183837890625,
+        461.2654724121094,
+        700.316162109375,
+        680.0799560546875
+      ],
+      "bbox_b": [
+        421.7850036621094,
+        526.2147216796875,
+        474.0348815917969,
+        621.48486328125
+      ]
+    },
+    {
+      "frame_idx": 725,
+      "t": 24.166666666666668,
+      "track_a": 3,
+      "track_b": 4,
+      "pair_key": "3-4",
+      "dist_norm": 3.1591156478465474,
+      "close": false,
+      "very_close": false,
+      "moderate_dist": true,
+      "iou": 0.0,
+      "speed_a": 0.16752476413482367,
+      "speed_b": 0.004618124966142103,
+      "pair_motion": 0.17214288910096578,
+      "relative_motion": 0.1669926609518574,
+      "direction_cos": 0.12882103578164214,
+      "approach_norm": -0.14965751227880425,
+      "roi_flow": 0.007244588815658802,
+      "union_bbox": [
+        367.5129684448242,
+        443.27374877929685,
+        837.8706069946289,
+        1162.0955139160155
+      ],
+      "bbox_a": [
+        664.205078125,
+        867.1285400390625,
+        783.5985717773438,
+        1079.154541015625
+      ],
+      "bbox_b": [
+        421.7850036621094,
+        526.2147216796875,
+        474.0348815917969,
+        621.48486328125
+      ]
+    },
+    {
+      "frame_idx": 730,
+      "t": 24.333333333333332,
+      "track_a": 1,
+      "track_b": 3,
+      "pair_key": "1-3",
+      "dist_norm": 2.0124773728700367,
+      "close": false,
+      "very_close": false,
+      "moderate_dist": true,
+      "iou": 0.0,
+      "speed_a": 0.03693281012303437,
+      "speed_b": 0.08861394943021571,
+      "pair_motion": 0.12554675955325006,
+      "relative_motion": 0.05843612658445835,
+      "direction_cos": 0.8863588779452583,
+      "approach_norm": -0.031826999683964706,
+      "roi_flow": 0.03495062111989939,
+      "union_bbox": [
+        592.7565093994141,
+        374.94657440185546,
+        824.8687957763672,
+        1171.96349029541
+      ],
+      "bbox_a": [
+        619.5386962890625,
+        466.9100646972656,
+        701.7684326171875,
+        688.494140625
+      ],
+      "bbox_b": [
+        677.6845703125,
+        889.7303466796875,
+        798.0866088867188,
+        1080.0
+      ]
+    },
+    {
+      "frame_idx": 735,
+      "t": 24.5,
+      "track_a": 1,
+      "track_b": 3,
+      "pair_key": "1-3",
+      "dist_norm": 2.0502304502104582,
+      "close": false,
+      "very_close": false,
+      "moderate_dist": true,
+      "iou": 0.0,
+      "speed_a": 0.06535171142373809,
+      "speed_b": 0.09438962370739173,
+      "pair_motion": 0.1597413351311298,
+      "relative_motion": 0.03685691301729498,
+      "direction_cos": 0.9582370326096507,
+      "approach_norm": 0.007587112595069934,
+      "roi_flow": 0.05506128472727339,
+      "union_bbox": [
+        602.4087219238281,
+        379.9117034912109,
+        846.0579528808594,
+        1167.2409454345702
+      ],
+      "bbox_a": [
+        630.5220947265625,
+        470.75738525390625,
+        714.8385009765625,
+        695.3377075195312
+      ],
+      "bbox_b": [
+        695.53271484375,
+        898.1962890625,
+        817.944580078125,
+        1076.395263671875
+      ]
+    },
+    {
+      "frame_idx": 740,
+      "t": 24.666666666666668,
+      "track_a": 1,
+      "track_b": 3,
+      "pair_key": "1-3",
+      "dist_norm": 2.1544656335937726,
+      "close": false,
+      "very_close": false,
+      "moderate_dist": true,
+      "iou": 0.0,
+      "speed_a": 0.02463924936758071,
+      "speed_b": 0.0927548156440693,
+      "pair_motion": 0.11739406501165,
+      "relative_motion": 0.06991211685997545,
+      "direction_cos": 0.9457485047253466,
+      "approach_norm": -0.04381172401784995,
+      "roi_flow": 0.019983240231960946,
+      "union_bbox": [
+        604.3668762207031,
+        379.7014892578125,
+        864.6456970214844,
+        1167.4196044921875
+      ],
+      "bbox_a": [
+        634.3990478515625,
+        470.592041015625,
+        720.6007080078125,
+        695.6356201171875
+      ],
+      "bbox_b": [
+        713.019775390625,
+        910.3240356445312,
+        834.613525390625,
+        1076.529052734375
+      ]
+    },
+    {
+      "frame_idx": 745,
+      "t": 24.833333333333332,
+      "track_a": 1,
+      "track_b": 3,
+      "pair_key": "1-3",
+      "dist_norm": 2.2590922118755383,
+      "close": false,
+      "very_close": false,
+      "moderate_dist": true,
+      "iou": 0.0,
+      "speed_a": 0.06353261335097347,
+      "speed_b": 0.19217814418346338,
+      "pair_motion": 0.25571075753443684,
+      "relative_motion": 0.14561851936811498,
+      "direction_cos": 0.8093676980230341,
+      "approach_norm": -0.05065114284103625,
+      "roi_flow": 0.020507088535979896,
+      "union_bbox": [
+        606.206332397461,
+        385.1959167480469,
+        909.1294219970703,
+        1170.0878967285157
+      ],
+      "bbox_a": [
+        641.1589965820312,
+        475.7603759765625,
+        727.3320922851562,
+        710.6173095703125
+      ],
+      "bbox_b": [
+        742.2833251953125,
+        932.694091796875,
+        874.1767578125,
+        1079.5234375
+      ]
+    },
+    {
+      "frame_idx": 750,
+      "t": 25.0,
+      "track_a": 1,
+      "track_b": 3,
+      "pair_key": "1-3",
+      "dist_norm": 2.29641484384184,
+      "close": false,
+      "very_close": false,
+      "moderate_dist": true,
+      "iou": 0.0,
+      "speed_a": 0.07535365834689513,
+      "speed_b": 0.10524573849354218,
+      "pair_motion": 0.1805993968404373,
+      "relative_motion": 0.10204474264123814,
+      "direction_cos": 0.3998227547787127,
+      "approach_norm": 0.011992974716471521,
+      "roi_flow": 0.0012463063235254109,
+      "union_bbox": [
+        604.5877502441406,
+        399.5271926879883,
+        934.3010437011719,
+        1168.7573226928712
+      ],
+      "bbox_a": [
+        642.631591796875,
+        488.2845153808594,
+        728.6507568359375,
+        726.1014404296875
+      ],
+      "bbox_b": [
+        757.61767578125,
+        944.2847900390625,
+        896.2572021484375,
+        1080.0
+      ]
+    },
+    {
+      "frame_idx": 755,
+      "t": 25.166666666666668,
+      "track_a": 1,
+      "track_b": 3,
+      "pair_key": "1-3",
+      "dist_norm": 2.7250611477918625,
+      "close": false,
+      "very_close": false,
+      "moderate_dist": true,
+      "iou": 0.0,
+      "speed_a": 0.04298475370153683,
+      "speed_b": 0.15202559891090567,
+      "pair_motion": 0.19501035261244248,
+      "relative_motion": 0.10909282116483945,
+      "direction_cos": 0.9991325109143375,
+      "approach_norm": -0.10396063343994949,
+      "roi_flow": 0.0013940499903811166,
+      "union_bbox": [
+        610.8451416015625,
+        409.78941955566404,
+        950.0581787109375,
+        1167.4187713623046
+      ],
+      "bbox_a": [
+        649.985107421875,
+        497.20819091796875,
+        730.4451904296875,
+        727.8643188476562
+      ],
+      "bbox_b": [
+        773.70849609375,
+        983.3948364257812,
+        910.918212890625,
+        1080.0
+      ]
+    }
+  ],
+  "window_scores": [
+    {
+      "pair_key": "1-3",
+      "frame_count": 12,
+      "start_t": 22.0,
+      "end_t": 23.833333333333332,
+      "fight_score": 0.13750589514824665,
+      "stalking_score": 0.8350000000000001,
+      "close_ratio": 0.0,
+      "very_close_ratio": 0.0,
+      "moderate_ratio": 1.0,
+      "same_direction_ratio": 0.25,
+      "burst_ratio": 0.4166666666666667,
+      "p90_pair_motion": 0.2608442891557782,
+      "p90_relative_motion": 0.24412689066819998,
+      "p90_flow": 0.046815788795648815,
+      "mean_dist_norm": 1.7327028513127312,
+      "std_dist_norm": 0.18889796754408456,
+      "max_iou": 0.0,
+      "window_start": 20.0,
+      "window_end": 24.0
+    },
+    {
+      "pair_key": "1-3",
+      "frame_count": 6,
+      "start_t": 22.0,
+      "end_t": 22.833333333333332,
+      "fight_score": 0.13520271113144822,
+      "stalking_score": 0.7046666666666667,
+      "close_ratio": 0.0,
+      "very_close_ratio": 0.0,
+      "moderate_ratio": 1.0,
+      "same_direction_ratio": 0.16666666666666666,
+      "burst_ratio": 0.3333333333333333,
+      "p90_pair_motion": 0.277675311676736,
+      "p90_relative_motion": 0.2523518024782468,
+      "p90_flow": 0.021809360071722034,
+      "mean_dist_norm": 1.8049015962362542,
+      "std_dist_norm": 0.24086267921136706,
+      "max_iou": 0.0,
+      "window_start": 19.0,
+      "window_end": 23.0
+    },
+    {
+      "pair_key": "1-3",
+      "frame_count": 18,
+      "start_t": 22.0,
+      "end_t": 24.833333333333332,
+      "fight_score": 0.11275595751400114,
+      "stalking_score": 0.8777777777777778,
+      "close_ratio": 0.0,
+      "very_close_ratio": 0.0,
+      "moderate_ratio": 1.0,
+      "same_direction_ratio": 0.4444444444444444,
+      "burst_ratio": 0.3888888888888889,
+      "p90_pair_motion": 0.25929359203143554,
+      "p90_relative_motion": 0.19996248429852884,
+      "p90_flow": 0.04938965317876824,
+      "mean_dist_norm": 1.8297098300739176,
+      "std_dist_norm": 0.22611245125788917,
+      "max_iou": 0.0,
+      "window_start": 21.0,
+      "window_end": 25.0
+    },
+    {
+      "pair_key": "1-3",
+      "frame_count": 20,
+      "start_t": 22.0,
+      "end_t": 25.166666666666668,
+      "fight_score": 0.10689499810682657,
+      "stalking_score": 0.879,
+      "close_ratio": 0.0,
+      "very_close_ratio": 0.0,
+      "moderate_ratio": 1.0,
+      "same_direction_ratio": 0.45,
+      "burst_ratio": 0.35,
+      "p90_pair_motion": 0.2569050357001031,
+      "p90_relative_motion": 0.1852410155086385,
+      "p90_flow": 0.04776918702205249,
+      "mean_dist_norm": 1.897812646648211,
+      "std_dist_norm": 0.30389067199880154,
+      "max_iou": 0.0,
+      "window_start": 22.0,
+      "window_end": 26.0
+    },
+    {
+      "pair_key": "1-3",
+      "frame_count": 14,
+      "start_t": 23.0,
+      "end_t": 25.166666666666668,
+      "fight_score": 0.08420764272643474,
+      "stalking_score": 0.9057142857142857,
+      "close_ratio": 0.0,
+      "very_close_ratio": 0.0,
+      "moderate_ratio": 1.0,
+      "same_direction_ratio": 0.5714285714285714,
+      "burst_ratio": 0.35714285714285715,
+      "p90_pair_motion": 0.19819583297025525,
+      "p90_relative_motion": 0.14085049085127582,
+      "p90_flow": 0.05263058549219976,
+      "mean_dist_norm": 1.9376316682533352,
+      "std_dist_norm": 0.31902857985075195,
+      "max_iou": 0.0,
+      "window_start": 23.0,
+      "window_end": 27.0
+    },
+    {
+      "pair_key": "1-3",
+      "frame_count": 8,
+      "start_t": 24.0,
+      "end_t": 25.166666666666668,
+      "fight_score": 0.07675937067205468,
+      "stalking_score": 0.9450000000000001,
+      "close_ratio": 0.0,
+      "very_close_ratio": 0.0,
+      "moderate_ratio": 1.0,
+      "same_direction_ratio": 0.75,
+      "burst_ratio": 0.25,
+      "p90_pair_motion": 0.21322047408904077,
+      "p90_relative_motion": 0.1200505306258221,
+      "p90_flow": 0.04098382020211159,
+      "mean_dist_norm": 2.14547733965143,
+      "std_dist_norm": 0.2740812309741662,
+      "max_iou": 0.0,
+      "window_start": 24.0,
+      "window_end": 28.0
+    }
+  ]
+}

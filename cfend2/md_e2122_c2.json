@@ -1,0 +1,11 @@
+{
+  "scene": "WAITING_OR_PARKING",
+  "feature": {
+    "vehicle_frames": 11,
+    "riding_frames": 1,
+    "riding_ratio": 0.091,
+    "total_pairs": 2,
+    "max_riding_streak": 1,
+    "avg_distance": 421.3
+  }
+}

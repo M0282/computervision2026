@@ -1,0 +1,8 @@
+﻿gt\pred,fight,stalking,sidewalk_riding,no_helmet,electric_kickboard,intrusion,other
+fight,1,0,0,0,0,0,1
+stalking,0,1,0,0,1,0,2
+sidewalk_riding,0,0,1,0,3,0,2
+no_helmet,2,0,0,0,1,1,0
+electric_kickboard,0,0,0,0,2,0,0
+intrusion,0,0,0,0,2,1,1
+other,0,0,0,0,0,0,0

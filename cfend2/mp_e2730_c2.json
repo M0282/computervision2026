@@ -1,0 +1,11 @@
+{
+  "scene": "RIDING",
+  "feature": {
+    "vehicle_frames": 67,
+    "riding_frames": 57,
+    "riding_ratio": 0.851,
+    "total_pairs": 109,
+    "max_riding_streak": 56,
+    "avg_distance": 230.0
+  }
+}

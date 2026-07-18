@@ -1,0 +1,11 @@
+{
+  "scene": "NO_TWO_WHEEL",
+  "feature": {
+    "vehicle_frames": 0,
+    "riding_frames": 0,
+    "riding_ratio": 0,
+    "total_pairs": 0,
+    "max_riding_streak": 0,
+    "avg_distance": 9999
+  }
+}

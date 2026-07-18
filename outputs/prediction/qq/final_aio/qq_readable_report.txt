@@ -1,0 +1,207 @@
+QQ 결과 요약
+total: 22
+final_label_count: {'stalking': 2, 'other': 14, 'two_wheeler_sidewalk_candidate': 3, 'two_wheeler_sidewalk_riding': 3}
+action_label_count: {'stalking': 2, 'other': 20}
+riding_label_count: {'two_wheeler_rider_like': 16, 'two_wheeler_sidewalk_candidate': 3, 'two_wheeler_sidewalk_riding': 3}
+helmet_label_count: {'helmet_model_not_connected': 22}
+helmet_backend: none
+
+영상별 최종 판정
+[1] lo_e1281_c1.mp4
+  final_label: stalking
+  candidates: stalking:0.7343, two_wheeler_rider_like:0.42, fight:0.032
+  fight_score: 0.0913
+  stalking_score: 0.6675
+  riding_label: two_wheeler_rider_like / detection=1.0 / sidewalk=0.0
+  helmet_label: helmet_model_not_connected / checked=0 / no_hits=0 / helmet_hits=0
+  path: 스토킹\특정 구역 내 지속 배회\lo_e1281\lo_e1281_c1.mp4
+
+[2] lo_e1281_c2.mp4
+  final_label: other
+  candidates: two_wheeler_rider_like:0.3486, fight:0.0221, stalking:0.0
+  fight_score: 0.0631
+  stalking_score: 0.0
+  riding_label: two_wheeler_rider_like / detection=0.8301 / sidewalk=0.0099
+  helmet_label: helmet_model_not_connected / checked=0 / no_hits=0 / helmet_hits=0
+  path: 스토킹\특정 구역 내 지속 배회\lo_e1281\lo_e1281_c2.mp4
+
+[3] fp_e1520_c1.mp4
+  final_label: other
+  candidates: two_wheeler_rider_like:0.2178, fight:0.0252, stalking:0.0
+  fight_score: 0.0719
+  stalking_score: 0.0
+  riding_label: two_wheeler_rider_like / detection=0.5185 / sidewalk=0.0
+  helmet_label: helmet_model_not_connected / checked=0 / no_hits=0 / helmet_hits=0
+  path: 스토킹\특정 인물을 뒤따라가며 배회\fp_e1520\fp_e1520_c1.mp4
+
+[4] fp_e1520_c2.mp4
+  final_label: two_wheeler_sidewalk_candidate
+  candidates: two_wheeler_sidewalk_candidate:0.3129, fight:0.0237, stalking:0.0
+  fight_score: 0.0676
+  stalking_score: 0.0
+  riding_label: two_wheeler_sidewalk_candidate / detection=0.842 / sidewalk=0.2119
+  helmet_label: helmet_model_not_connected / checked=0 / no_hits=0 / helmet_hits=0
+  path: 스토킹\특정 인물을 뒤따라가며 배회\fp_e1520\fp_e1520_c2.mp4
+
+[5] ph_e2063_c1.mp4
+  final_label: other
+  candidates: two_wheeler_rider_like:0.378, fight:0.0229, stalking:0.0
+  fight_score: 0.0654
+  stalking_score: 0.0
+  riding_label: two_wheeler_rider_like / detection=0.9 / sidewalk=0.0142
+  helmet_label: helmet_model_not_connected / checked=0 / no_hits=0 / helmet_hits=0
+  path: 싸움\신체적 충돌을 동반한 싸움\ph_e2063\ph_e2063_c1.mp4
+
+[6] ph_e2063_c2.mp4
+  final_label: other
+  candidates: two_wheeler_rider_like:0.378, fight:0.0005, stalking:0.0
+  fight_score: 0.0015
+  stalking_score: 0.0
+  riding_label: two_wheeler_rider_like / detection=0.9 / sidewalk=0.0
+  helmet_label: helmet_model_not_connected / checked=0 / no_hits=0 / helmet_hits=0
+  path: 싸움\신체적 충돌을 동반한 싸움\ph_e2063\ph_e2063_c2.mp4
+
+[7] ms_e3500_c1.mp4
+  final_label: other
+  candidates: two_wheeler_rider_like:0.2389, fight:0.0353, stalking:0.0
+  fight_score: 0.1009
+  stalking_score: 0.0
+  riding_label: two_wheeler_rider_like / detection=0.5687 / sidewalk=0.0
+  helmet_label: helmet_model_not_connected / checked=0 / no_hits=0 / helmet_hits=0
+  path: 이륜 이동수단 인도 주행\오토바이 인도 주행\ms_e3500\ms_e3500_c1.mp4
+
+[8] ms_e3500_c2.mp4
+  final_label: other
+  candidates: two_wheeler_rider_like:0.276, fight:0.0616, stalking:0.0
+  fight_score: 0.176
+  stalking_score: 0.0
+  riding_label: two_wheeler_rider_like / detection=0.6571 / sidewalk=0.0
+  helmet_label: helmet_model_not_connected / checked=0 / no_hits=0 / helmet_hits=0
+  path: 이륜 이동수단 인도 주행\오토바이 인도 주행\ms_e3500\ms_e3500_c2.mp4
+
+[9] bs_e4387_c1.mp4
+  final_label: two_wheeler_sidewalk_riding
+  candidates: two_wheeler_sidewalk_riding:0.6675, fight:0.0586, stalking:0.028
+  fight_score: 0.1674
+  stalking_score: 0.08
+  riding_label: two_wheeler_sidewalk_riding / detection=0.4094 / sidewalk=0.4685
+  helmet_label: helmet_model_not_connected / checked=0 / no_hits=0 / helmet_hits=0
+  path: 이륜 이동수단 인도 주행\자전거 인도 주행\bs_e4387\bs_e4387_c1.mp4
+
+[10] bs_e4387_c2.mp4
+  final_label: other
+  candidates: two_wheeler_rider_like:0.0571, fight:0.0323, stalking:0.0
+  fight_score: 0.0924
+  stalking_score: 0.0
+  riding_label: two_wheeler_rider_like / detection=0.1359 / sidewalk=0.0259
+  helmet_label: helmet_model_not_connected / checked=0 / no_hits=0 / helmet_hits=0
+  path: 이륜 이동수단 인도 주행\자전거 인도 주행\bs_e4387\bs_e4387_c2.mp4
+
+[11] es_e3768_c1.mp4
+  final_label: other
+  candidates: two_wheeler_rider_like:0.1816, fight:0.0387, stalking:0.0
+  fight_score: 0.1106
+  stalking_score: 0.0
+  riding_label: two_wheeler_rider_like / detection=0.4323 / sidewalk=0.0001
+  helmet_label: helmet_model_not_connected / checked=0 / no_hits=0 / helmet_hits=0
+  path: 이륜 이동수단 인도 주행\전동킥보드 인도 주행\es_e3768\es_e3768_c1.mp4
+
+[12] es_e3768_c2.mp4
+  final_label: two_wheeler_sidewalk_candidate
+  candidates: two_wheeler_sidewalk_candidate:0.3687, fight:0.0719, stalking:0.0162
+  fight_score: 0.2053
+  stalking_score: 0.0462
+  riding_label: two_wheeler_sidewalk_candidate / detection=1.0 / sidewalk=0.2487
+  helmet_label: helmet_model_not_connected / checked=0 / no_hits=0 / helmet_hits=0
+  path: 이륜 이동수단 인도 주행\전동킥보드 인도 주행\es_e3768\es_e3768_c2.mp4
+
+[13] md_e2122_c1.mp4
+  final_label: stalking
+  candidates: stalking:0.8182, fight:0.6802, two_wheeler_rider_like:0.42
+  fight_score: 0.5668
+  stalking_score: 0.7438
+  riding_label: two_wheeler_rider_like / detection=1.0 / sidewalk=0.0004
+  helmet_label: helmet_model_not_connected / checked=0 / no_hits=0 / helmet_hits=0
+  path: 이륜 이동수단 헬멧 미착용\이륜 이동수단 운전자 1인 헬멧 미착용\md_e2122\md_e2122_c1.mp4
+
+[14] md_e2122_c2.mp4
+  final_label: other
+  candidates: two_wheeler_rider_like:0.1676, fight:0.0243, stalking:0.0
+  fight_score: 0.0693
+  stalking_score: 0.0
+  riding_label: two_wheeler_rider_like / detection=0.399 / sidewalk=0.0001
+  helmet_label: helmet_model_not_connected / checked=0 / no_hits=0 / helmet_hits=0
+  path: 이륜 이동수단 헬멧 미착용\이륜 이동수단 운전자 1인 헬멧 미착용\md_e2122\md_e2122_c2.mp4
+
+[15] mp_e2730_c1.mp4
+  final_label: other
+  candidates: two_wheeler_rider_like:0.3633, fight:0.0494, stalking:0.0
+  fight_score: 0.1411
+  stalking_score: 0.0
+  riding_label: two_wheeler_rider_like / detection=0.8651 / sidewalk=0.0
+  helmet_label: helmet_model_not_connected / checked=0 / no_hits=0 / helmet_hits=0
+  path: 이륜 이동수단 헬멧 미착용\이륜 이동수단 탑승자 일부 또는 전체 헬멧 미착용\mp_e2730\mp_e2730_c1.mp4
+
+[16] mp_e2730_c2.mp4
+  final_label: other
+  candidates: two_wheeler_rider_like:0.378, fight:0.0154, stalking:0.0
+  fight_score: 0.0441
+  stalking_score: 0.0
+  riding_label: two_wheeler_rider_like / detection=0.9 / sidewalk=0.0002
+  helmet_label: helmet_model_not_connected / checked=0 / no_hits=0 / helmet_hits=0
+  path: 이륜 이동수단 헬멧 미착용\이륜 이동수단 탑승자 일부 또는 전체 헬멧 미착용\mp_e2730\mp_e2730_c2.mp4
+
+[17] st_e4803_c1.mp4
+  final_label: other
+  candidates: two_wheeler_rider_like:0.3281, fight:0.0055, stalking:0.0
+  fight_score: 0.0156
+  stalking_score: 0.0
+  riding_label: two_wheeler_rider_like / detection=0.7812 / sidewalk=0.0
+  helmet_label: helmet_model_not_connected / checked=0 / no_hits=0 / helmet_hits=0
+  path: 전동킥보드 2인 이상 주행\전동킥보드 앞뒤 2인 탑승\st_e4803\st_e4803_c1.mp4
+
+[18] st_e4803_c2.mp4
+  final_label: other
+  candidates: two_wheeler_rider_like:0.378, fight:0.002, stalking:0.0
+  fight_score: 0.0056
+  stalking_score: 0.0
+  riding_label: two_wheeler_rider_like / detection=0.9 / sidewalk=0.0
+  helmet_label: helmet_model_not_connected / checked=0 / no_hits=0 / helmet_hits=0
+  path: 전동킥보드 2인 이상 주행\전동킥보드 앞뒤 2인 탑승\st_e4803\st_e4803_c2.mp4
+
+[19] bl_e0272_c1.mp4
+  final_label: two_wheeler_sidewalk_riding
+  candidates: two_wheeler_sidewalk_riding:0.6722, stalking:0.1181, fight:0.0323
+  fight_score: 0.0923
+  stalking_score: 0.3375
+  riding_label: two_wheeler_sidewalk_riding / detection=0.9718 / sidewalk=0.3823
+  helmet_label: helmet_model_not_connected / checked=0 / no_hits=0 / helmet_hits=0
+  path: 침입\경계선을 통한 침입\bl_e0272\bl_e0272_c1.mp4
+
+[20] bl_e0272_c2.mp4
+  final_label: two_wheeler_sidewalk_riding
+  candidates: two_wheeler_sidewalk_riding:0.8359, fight:0.0208, stalking:0.0
+  fight_score: 0.0594
+  stalking_score: 0.0
+  riding_label: two_wheeler_sidewalk_riding / detection=0.9 / sidewalk=0.5247
+  helmet_label: helmet_model_not_connected / checked=0 / no_hits=0 / helmet_hits=0
+  path: 침입\경계선을 통한 침입\bl_e0272\bl_e0272_c2.mp4
+
+[21] ab_e0457_c1.mp4
+  final_label: two_wheeler_sidewalk_candidate
+  candidates: two_wheeler_sidewalk_candidate:0.3069, stalking:0.0316, fight:0.0204
+  fight_score: 0.0584
+  stalking_score: 0.0903
+  riding_label: two_wheeler_sidewalk_candidate / detection=0.5221 / sidewalk=0.2442
+  helmet_label: helmet_model_not_connected / checked=0 / no_hits=0 / helmet_hits=0
+  path: 침입\비정상적인 경로로의 침범\ab_e0457\ab_e0457_c1.mp4
+
+[22] ab_e0457_c2.mp4
+  final_label: other
+  candidates: two_wheeler_rider_like:0.378, fight:0.0213, stalking:0.0
+  fight_score: 0.0609
+  stalking_score: 0.0
+  riding_label: two_wheeler_rider_like / detection=0.9 / sidewalk=0.0078
+  helmet_label: helmet_model_not_connected / checked=0 / no_hits=0 / helmet_hits=0
+  path: 침입\비정상적인 경로로의 침범\ab_e0457\ab_e0457_c2.mp4
+
